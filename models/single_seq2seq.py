@@ -8,6 +8,9 @@ import tensorflow as tf
 
 PAD, PAD_ID = "<<PAD>>", 0
 UNK, UNK_ID = "<<UNK>>", 1
+#tokens for decoder inputs
+GO, GO_ID = "<<GO>>", 2
+EOS, EOS_ID = "<<EOS>>", 3
 
 
 class SingleSeq2Seq():

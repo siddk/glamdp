@@ -1,7 +1,7 @@
 """
 parse_lifted.py
 
-Parsing grounded commands from the test data to lifted AMDP reward functions. 
+Parsing grounded commands from the test data to lifted AMDP reward functions.
 
 """
 
@@ -12,17 +12,17 @@ L1_lifting = {'agentInRegion':'agentInRegion', 'agent0': '', 'block0': '', 'bloc
 L2_lifting = {'agentInRegion':'agentInRegion', 'agent0': '', 'block0': '', 'blockInRegion': 'blockInRegion', 'room1': 'roomIsGreen', 'room0': 'roomIsRed', 'room2': 'roomIsBlue'}
 
 
-#input: string with filename of commands file 
+#input: string with filename of commands file
 #output: list of strings, each string is a list of commands.
 def load_commands(filename):
 	with open(filename, 'r') as cmd_file:
 		return [line.strip() for line in cmd_file]
 
-#input: list of strings, filename 
+#input: list of strings, filename
 def save_commands(commands_list, outfile):
 	with open(outfile, 'w') as out:
 		out.write("\n".join(commands_list))
-	
+
 
 #input: string, dictionary specifying mapping between grounded groundings and lifted commands
 def lift_command(grounded_command, lifting_dict):
