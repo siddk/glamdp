@@ -7,7 +7,7 @@ Using GRU encoder and decoder.
 import numpy as np
 import tensorflow as tf
 
-# PAD + UNK Tokens 
+# PAD + UNK Tokens
 PAD, PAD_ID = "<<PAD>>", 0
 UNK, UNK_ID = "<<UNK>>", 1
 
@@ -27,7 +27,7 @@ class Seq2Seq_Lifted():
         """
         self.pc, self.epochs, self.bsz, self.verbose = parallel_corpus, epochs, batch_size, verbose
         self.embedding_sz, self.rnn_sz, self.h1_sz, self.h2_sz = embedding_size, rnn_size, h1_size, h2_size
-        
+
         # Create initializer and session
         self.init = tf.truncated_normal_initializer(stddev=0.1)
         self.session = tf.Session()
@@ -45,13 +45,14 @@ class Seq2Seq_Lifted():
         self.train_enc = self.vectorize(encoder_inputs, self.word2id_encoder, max(self.encoder_lengths), False)
         self.train_dec = self.vectorize(decoder_inputs, self.word2id_decoder, max(self.decoder_lengths), True)
         self.max_nl_len, self.max_ml_len = self.train_enc.shape[-1], self.train_dec.shape[-1]
-        
+
         # Create placeholders
         self.X = tf.placeholder(tf.int32, shape=[None, self.max_nl_len], name='NL_Command')
         self.Y = tf.placeholder(tf.int32, shape=[None, self.max_ml_len], name='ML_Command')
 
         self.X_len = tf.placeholder(tf.int32, shape=[None], name='NL_Length')
-        self.Y_len = tf.placeholder(tf.int32, shape=[None], name='ML_Length')
+        #self.Y_len = tf.placeholder(tf.int32, shape=[None], name='ML_Length')
+        self.Y_len = tf.constant(7, shape=[batch_size], name='ML_Length')
         # self.keep_prob = tf.placeholder(tf.float32, name='Dropout_Prob')
 
         # Instantiate Network Weights
@@ -71,6 +72,10 @@ class Seq2Seq_Lifted():
 
         # Initialize all variables
         self.session.run(tf.global_variables_initializer())
+
+        print self.decoder_lengths[0]
+        print self.id2word_decoder[11]
+        print self.train_dec[0]
 
     def build_vocabulary(self, corpus, is_decoder):
         """
@@ -105,25 +110,26 @@ class Seq2Seq_Lifted():
                 vec[i + offst] = word2id.get(seq[i], UNK_ID) #handling unknown words
 
             if is_decoder:
+                vec[0] = GO_ID
                 vec[i + 2] = EOS_ID
-            
+
             if not is_decoder:
                 vecs.append(vec)
             else:
                 vecs.append(vec)
         return np.array(vecs, dtype=np.int32)
-    
+
     def instantiate_weights(self):
         """
         Instantiate Network Weights, including Embedding Layers for both Input/Output,
         as well as Encoder/Decoder GRU Cells.
         """
         # Set up Embeddings
-        self.encoder_embedding = tf.get_variable("Encoder_Embeddings", shape=[len(self.word2id_encoder), 
+        self.encoder_embedding = tf.get_variable("Encoder_Embeddings", shape=[len(self.word2id_encoder),
                                                                               self.embedding_sz], initializer=self.init)
         self.decoder_embedding = tf.get_variable("Decoder_Embeddings", shape=[len(self.word2id_decoder),
                                                                               self.embedding_sz], initializer=self.init)
-    
+
     def inference(self):
         """
         Build the inference computation graph, going from the input (natural language) to the
@@ -135,14 +141,14 @@ class Seq2Seq_Lifted():
         # Feed through encoder
         with tf.variable_scope("Encoder") as encoder_scope:
             # Feed through Encoder GRU
-            encoder_outputs, encoder_state = tf.nn.dynamic_rnn(cell=tf.contrib.rnn.GRUCell(self.rnn_sz), 
+            encoder_outputs, encoder_state = tf.nn.dynamic_rnn(cell=tf.contrib.rnn.GRUCell(self.rnn_sz),
                                                                 inputs=encoder_embeddings,
                                                                 sequence_length=self.X_len,
                                                                 dtype=tf.float32,
                                                                 scope=encoder_scope)
             # Build Attention States
             attention_states = encoder_outputs
-        
+
         # Feed through decoder
         with tf.variable_scope("Decoder") as decoder_scope:
             # Prepare Attention Mechanism
@@ -155,6 +161,9 @@ class Seq2Seq_Lifted():
                                                                              attention_values=attn_vals,
                                                                              attention_score_fn=attn_score_fn,
                                                                              attention_construct_fn=attn_construct_fn)
+
+
+
 
             # Setup Output Function
             output_fn = lambda x: tf.contrib.layers.fully_connected(x, len(self.word2id_decoder), activation_fn=None)
@@ -170,7 +179,8 @@ class Seq2Seq_Lifted():
             print 'DECODER OUT:', decoder_out_train
             # Map to Distribution
             decoder_outputs_train = output_fn(decoder_out_train)
-            decoder_outputs_train = tf.reshape(decoder_outputs_train, [-1, self.max_ml_len, len(self.word2id_decoder)])
+            print "DECODER OUTPUT FUNCTION SAYS: ", decoder_outputs_train
+            #decoder_outputs_train = tf.reshape(decoder_outputs_train, [-1, self.max_ml_len, len(self.word2id_decoder)])
 
             # Reuse Variable Scope
             decoder_scope.reuse_variables()
@@ -178,10 +188,10 @@ class Seq2Seq_Lifted():
             # Setup Decoder Inference Function
             decoder_inference_fn = tf.contrib.seq2seq.attention_decoder_fn_inference(output_fn=output_fn,
                                         encoder_state=encoder_state, attention_keys=attn_keys,
-                                        attention_values=attn_vals, attention_score_fn=attn_score_fn, 
+                                        attention_values=attn_vals, attention_score_fn=attn_score_fn,
                                         attention_construct_fn=attn_construct_fn, embeddings=self.decoder_embedding,
-                                        start_of_sequence_id=GO_ID, end_of_sequence_id=EOS_ID, 
-                                        maximum_length=self.max_ml_len, num_decoder_symbols=len(self.word2id_decoder), 
+                                        start_of_sequence_id=GO_ID, end_of_sequence_id=EOS_ID,
+                                        maximum_length=self.max_ml_len, num_decoder_symbols=len(self.word2id_decoder),
                                         dtype=tf.int32)
 
             # Run through Decoder (Inference)
@@ -196,26 +206,25 @@ class Seq2Seq_Lifted():
         """
         print self.train_logits
         print self.Y
-        print self.Y_len
-        print self.max_ml_len
-        print len(self.word2id_decoder)
         weights = tf.sequence_mask(self.Y_len, self.max_ml_len, dtype=tf.float32)
+        print weights
         loss = tf.contrib.seq2seq.sequence_loss(self.train_logits, self.Y, weights)
-        return loss                            
+        return loss
 
     def fit(self):
         for e in range(self.epochs):
             curr_loss, batches = 0.0, 0
             for start, end in zip(range(0, len(self.train_enc) - self.bsz, self.bsz),
                                   range(self.bsz, len(self.train_enc), self.bsz)):
+
+                print self.train_dec[start:end][0]
+
                 loss, _ = self.session.run([self.loss_val, self.train_op],
                                            feed_dict={self.X: self.train_enc[start:end],
                                                       self.X_len: self.encoder_lengths[start:end],
-                                                      self.Y: self.train_dec[start:end],
-                                                      self.Y_len: self.decoder_lengths[start:end]})
+                                                      self.Y: self.train_dec[start:end]})
                 curr_loss += loss
                 batches += 1
                 print 'Epoch %d Batch %d\tCurrent Loss: %.3f' % (e, batches, curr_loss / batches)
             if self.verbose == 1:
                 print 'Epoch %s Average Loss:' % str(e), curr_loss / batches
-

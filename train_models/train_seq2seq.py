@@ -31,7 +31,7 @@ def run(args):
     # Create RNN model with given parallel corpus
     model = Seq2Seq_Lifted((data_nl, data_ml))
     model.fit()
-   
+
 
 
 if __name__ == "__main__":
