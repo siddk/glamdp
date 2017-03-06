@@ -1,0 +1,2 @@
+model_checkpoint_path: "trained_seq2seq_3_6_17"
+all_model_checkpoint_paths: "trained_seq2seq_3_6_17"

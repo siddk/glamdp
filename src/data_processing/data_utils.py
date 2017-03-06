@@ -23,17 +23,14 @@ def parse(args):
     return parser.parse_args(args)
 
 #loads list of list of tokens from filepath.
-def load_strings(filepath, level=None):
+def load_strings(filepath):
     with open(filepath, 'r') as textfile:
-        if level:
-            return [[level] + line.strip().split() for line in textfile]
-        else:
-            return [line.strip().split() for line in textfile]
+        return [line.strip().split() for line in textfile]
 
 #loads parallel corpus.
 #throws exception if not aligned.
-def load_pc(natural_lang, machine_lang, level):
-    nl, ml =  load_strings(natural_lang), load_strings(machine_lang, level)
+def load_pc(natural_lang, machine_lang):
+    nl, ml =  load_strings(natural_lang), load_strings(machine_lang)
     if len(ml) != len(nl):
         raise AlignmentError("corpuses of different lengths!")
     return nl, ml
