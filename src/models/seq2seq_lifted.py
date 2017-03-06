@@ -6,6 +6,9 @@ Using GRU encoder and decoder.
 """
 import numpy as np
 import tensorflow as tf
+import random as r
+
+r.seed(1)
 
 # PAD + UNK Tokens
 PAD, PAD_ID = "<<PAD>>", 0
@@ -17,7 +20,7 @@ EOS, EOS_ID = "<<EOS>>", 2
 
 class Seq2Seq_Lifted():
     def __init__(self, parallel_corpus, embedding_size=30, rnn_size=64, h1_size=60,
-        h2_size=50, epochs=10, batch_size=32, verbose=1):
+        h2_size=50, epochs=10, batch_size=32, verbose=1, pct_test=0.2):
         """
         Instantiates and Trains Model using the given parallel corpus.
 
@@ -32,26 +35,56 @@ class Seq2Seq_Lifted():
         self.init = tf.truncated_normal_initializer(stddev=0.1)
         self.session = tf.Session()
 
-        # Build vocab from parallel corpus
-        encoder_inputs, decoder_inputs = self.pc
+        #Zipping parallel corpus
+        zipped_data = zip(*self.pc)
 
-        self.word2id_encoder, self.id2word_encoder = self.build_vocabulary(encoder_inputs, False)
-        self.word2id_decoder, self.id2word_decoder = self.build_vocabulary(decoder_inputs, True)
+        #Shuffle parallel corpus
+        r.shuffle(zipped_data)
+
+        #Split parallel corpus into training and test data
+        num_test = int(len(zipped_data)*pct_test)
+
+        print "{} training phrases, {} test".format(num_test, len(zipped_data) - num_test)
+
+        train_data = zipped_data[:num_test]
+        test_data = zipped_data[num_test:]
+
+        encoder_inputs_train, decoder_inputs_train = zip(*train_data) #unzipping
+        encoder_inputs_test, decoder_inputs_test = zip(*test_data)
+
+        # Build vocab from training parallel corpus
+
+        self.word2id_encoder, self.id2word_encoder = self.build_vocabulary(encoder_inputs_train, False)
+        self.word2id_decoder, self.id2word_decoder = self.build_vocabulary(decoder_inputs_train, True)
 
         # Vectorize both the encoder and decoder corpora + get length
-        self.encoder_lengths = np.array([len(n) for n in encoder_inputs], dtype=np.int32)
-        self.decoder_lengths = np.array([len(n) for n in decoder_inputs], dtype=np.int32)
+        self.encoder_lengths_train = np.array([len(n) for n in encoder_inputs_train], dtype=np.int32)
+        self.decoder_lengths_train = np.array([len(n) for n in decoder_inputs_train], dtype=np.int32)
 
-        self.train_enc = self.vectorize(encoder_inputs, self.word2id_encoder, max(self.encoder_lengths), False)
-        self.train_dec = self.vectorize(decoder_inputs, self.word2id_decoder, max(self.decoder_lengths), True)
-        self.max_nl_len, self.max_ml_len = self.train_enc.shape[-1], self.train_dec.shape[-1]
+        #Produce lengths and vectorizing
+        self.encoder_lengths_test = np.array([len(n) for n in encoder_inputs_test], dtype=np.int32)
+        self.decoder_lengths_test = np.array([len(n) for n in decoder_inputs_test], dtype=np.int32)
+
+        #Get maximum length of training and test data
+        self.max_encoder_length = max(max(self.encoder_lengths_train), max(self.encoder_lengths_test))
+        self.max_decoder_length = max(max(self.decoder_lengths_train), max(self.decoder_lengths_test))
+
+        self.train_enc = self.vectorize(encoder_inputs_train, self.word2id_encoder, self.max_encoder_length, False)
+        self.train_dec = self.vectorize(decoder_inputs_train, self.word2id_decoder, self.max_decoder_length, True)
+
+        self.test_enc = self.vectorize(encoder_inputs_test, self.word2id_encoder, self.max_encoder_length, False)
+        self.test_dec = self.vectorize(decoder_inputs_test, self.word2id_decoder, self.max_decoder_length, True)
+
+        self.max_decoder_length += 2 #to account for GO and EOS tokens
 
         # Create placeholders
-        self.X = tf.placeholder(tf.int32, shape=[None, self.max_nl_len], name='NL_Command')
-        self.Y = tf.placeholder(tf.int32, shape=[None, self.max_ml_len], name='ML_Command')
+        self.X = tf.placeholder(tf.int32, shape=[None, self.max_encoder_length], name='NL_Command')
+        self.Y = tf.placeholder(tf.int32, shape=[None, self.max_decoder_length], name='ML_Command')
 
         self.X_len = tf.placeholder(tf.int32, shape=[None], name='NL_Length')
         #self.Y_len = tf.placeholder(tf.int32, shape=[None], name='ML_Length')
+        #to fix tensor size issue when computing loss function
+        #probably related to the ML sentence size technically not being the vector size - adding GO and EOS tokens?
         self.Y_len = tf.constant(7, shape=[batch_size], name='ML_Length')
         # self.keep_prob = tf.placeholder(tf.float32, name='Dropout_Prob')
 
@@ -72,10 +105,6 @@ class Seq2Seq_Lifted():
 
         # Initialize all variables
         self.session.run(tf.global_variables_initializer())
-
-        print self.decoder_lengths[0]
-        print self.id2word_decoder[11]
-        print self.train_dec[0]
 
     def build_vocabulary(self, corpus, is_decoder):
         """
@@ -176,10 +205,10 @@ class Seq2Seq_Lifted():
             decoder_out_train, decoder_state_train, _ = tf.contrib.seq2seq.dynamic_rnn_decoder(cell=decoder_cell,
                                                             decoder_fn=decoder_train_fn, inputs=decoder_inputs,
                                                             sequence_length=self.Y_len, scope=decoder_scope)
-            print 'DECODER OUT:', decoder_out_train
+            #print 'DECODER OUT:', decoder_out_train
             # Map to Distribution
             decoder_outputs_train = output_fn(decoder_out_train)
-            print "DECODER OUTPUT FUNCTION SAYS: ", decoder_outputs_train
+            #print "DECODER OUTPUT FUNCTION SAYS: ", decoder_outputs_train
             #decoder_outputs_train = tf.reshape(decoder_outputs_train, [-1, self.max_ml_len, len(self.word2id_decoder)])
 
             # Reuse Variable Scope
@@ -191,7 +220,7 @@ class Seq2Seq_Lifted():
                                         attention_values=attn_vals, attention_score_fn=attn_score_fn,
                                         attention_construct_fn=attn_construct_fn, embeddings=self.decoder_embedding,
                                         start_of_sequence_id=GO_ID, end_of_sequence_id=EOS_ID,
-                                        maximum_length=self.max_ml_len, num_decoder_symbols=len(self.word2id_decoder),
+                                        maximum_length=self.max_decoder_length, num_decoder_symbols=len(self.word2id_decoder),
                                         dtype=tf.int32)
 
             # Run through Decoder (Inference)
@@ -204,10 +233,10 @@ class Seq2Seq_Lifted():
         """
         Build loss computation, dependent on weights.
         """
-        print self.train_logits
-        print self.Y
-        weights = tf.sequence_mask(self.Y_len, self.max_ml_len, dtype=tf.float32)
-        print weights
+        #print self.train_logits
+        #print self.Y
+        weights = tf.sequence_mask(self.Y_len, self.max_decoder_length, dtype=tf.float32)
+        #print weights
         loss = tf.contrib.seq2seq.sequence_loss(self.train_logits, self.Y, weights)
         return loss
 
@@ -217,14 +246,26 @@ class Seq2Seq_Lifted():
             for start, end in zip(range(0, len(self.train_enc) - self.bsz, self.bsz),
                                   range(self.bsz, len(self.train_enc), self.bsz)):
 
-                print self.train_dec[start:end][0]
+                #print self.train_dec[start:end][0]
 
                 loss, _ = self.session.run([self.loss_val, self.train_op],
                                            feed_dict={self.X: self.train_enc[start:end],
-                                                      self.X_len: self.encoder_lengths[start:end],
+                                                      self.X_len: self.encoder_lengths_train[start:end],
                                                       self.Y: self.train_dec[start:end]})
                 curr_loss += loss
                 batches += 1
                 print 'Epoch %d Batch %d\tCurrent Loss: %.3f' % (e, batches, curr_loss / batches)
             if self.verbose == 1:
                 print 'Epoch %s Average Loss:' % str(e), curr_loss / batches
+
+    def test(self):
+        """
+        Performs tests on validation data.
+        """
+
+        y = self.session.run(self.inference_logits, feed_dict={self.X: self.test_enc,
+                                                    self.X_len: self.encoder_lengths_test,
+                                                        self.Y: self.test_dec})
+
+
+        print y.shape()

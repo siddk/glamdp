@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 nl=../data/lifted/L0.en
 ml=../data/lifted/L0.ml
 
