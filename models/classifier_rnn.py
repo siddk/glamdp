@@ -1,9 +1,8 @@
 """
-single_rnn.py
+classifier_rnn.py
 
-Core model definition file for the Single-RNN Language Grounding Model. Enumerates
-the total set of possible reward functions as possible outputs, and predicts
-singular labels.
+Model definition file for an RNN-based classifier sorting language into "low-level/action-specifying" and "high-level/goal-specifying language"
+Basically the same as the single-rnn model
 """
 import numpy as np
 import tensorflow as tf
@@ -11,46 +10,40 @@ import tensorflow as tf
 PAD, PAD_ID = "<<PAD>>", 0
 UNK, UNK_ID = "<<UNK>>", 1
 
-class SingleRNN():
+class ClassifierRNN():
     def __init__(self, train_path, test_path, embedding_size=30, rnn_size=50, h1_size=60,
-                 h2_size=50, epochs=10, batch_size=16):
+                 h2_size=50, epochs=10, batch_size=16, num_categories=2):
         """
-        Instantiate a SingleRNN Model, with the necessary parameters.
+        Instantiate RNN language classifier model.
+        """
 
-        :param train_en: Path to training natural language directives.
-        :param train_rf: Path to training reward function strings.
-        """
-        self.embedding_sz, self.rnn_sz, self.h1_sz, self.h2_sz = embedding_size, rnn_size, h1_size, h2_size
+        self.rnn_sz, self.embed_sz, self.num_categories = rnn_size, embedding_size, num_categories
+        self.h1_sz, self.h2_sz = h1_size, h2_size
         self.init, self.bsz, self.epochs = tf.truncated_normal_initializer(stddev=0.5), batch_size, epochs
-        self.session = tf.Session()
+        self.epochs = epochs
+        self.session = tf.Session() #Sidd's altar of the dark god TensorFlow
 
-        # Read Data + Assemble Commands, Parallel Corpus
-        with open(train_path + ".en", 'r') as f:
-            self.train_en = [x.split() for x in f.readlines()]
-        with open(train_path + ".ml", 'r') as f:
-            self.train_rf = [x.strip() for x in f.readlines()]
-        with open(test_path + ".en", 'r') as f:
-            self.test_en = [x.split() for x in f.readlines()]
-        with open(test_path + ".ml", 'r') as f:
-            self.test_rf = [x.strip() for x in f.readlines()]
-        self.commands = {rf: i for i, rf in enumerate(list(set(self.train_rf)))}
-        self.pc = zip(self.train_en, map(lambda x: self.commands[x], self.train_rf))
-        self.test_pc = zip(self.test_en, map(lambda x: self.commands[x], self.test_rf))
+        #Load data
+        self.train_data, self.train_labels = self.read_data(train_path)
+        self.test_data, self.test_labels = self.read_data(test_path)
 
         # Build vocabulary
         self.word2id, self.id2word = self.build_vocabulary()
 
-        # Vectorize Parallel Corpus
-        self.lengths = [len(n) for n, _ in self.pc]
-        self.train_x, self.train_y = self.vectorize()
+        # Vectorize training and test data corpus
+        self.train_lengths = [len(n) for n in self.train_data]
+        self.train_x = self.vectorize(self.train_data, max(self.train_lengths))
 
-         # Setup Placeholders
-        self.X = tf.placeholder(tf.int64, shape=[None, self.train_x.shape[-1]], name='NL_Directive')
-        self.Y = tf.placeholder(tf.int64, shape=[None], name='Lifted_RF')
+        self.test_lengths = [len(n) for n in self.test_data]
+        self.test_x = self.vectorize(self.test_data, max(self.train_lengths))
+
+        # Setup Placeholders
+        self.X = tf.placeholder(tf.int64, shape=[None, self.train_x.shape[-1]], name='NL_Command')
+        self.Y = tf.placeholder(tf.int64, shape=[None], name='Prediction')
         self.X_len = tf.placeholder(tf.int64, shape=[None], name='NL_Length')
         self.keep_prob = tf.placeholder(tf.float32, name='Dropout_Prob')
 
-        # Build Inference Graph
+        #build inference graph
         self.logits = self.inference()
 
         # Build Loss Computation
@@ -70,49 +63,61 @@ class SingleRNN():
         # Initialize all variables
         self.session.run(tf.global_variables_initializer())
 
+    def read_data(self, path):
+        """
+        reads data from file.
+        """
+
+        data = []
+        labels = []
+        with open(path, 'r') as f:
+            for line in f:
+                d, l = tuple(line.split(":"))
+                data.append(d)
+                labels.append(int(l.strip()))
+
+        return data, np.array(labels) #return as numpy array
+
     def build_vocabulary(self):
         """
-        Builds the vocabulary from the parallel corpus, adding the UNK ID.
+        Builds the vocabulary from the training language, adding PAD and UNK.
 
         :return: Tuple of Word2Id, Id2Word Dictionaries.
         """
         vocab = set()
-        for n, _ in self.pc:
-            for word in n:
+        for phrase in self.train_data:
+            for word in phrase:
                 vocab.add(word)
 
         id2word = [PAD, UNK] + list(vocab)
         word2id = {id2word[i]: i for i in range(len(id2word))}
         return word2id, id2word
-
-    def vectorize(self):
+    def vectorize(self, data, vec_len):
         """
-        Step through the Parallel Corpus, and convert each sequence to vectors.
+        Convert each natural language phrase into a vector of word tokens.
         """
-        x, y = [], []
-        for nl, ml in self.pc:
-            nvec, mlab = np.zeros((max(self.lengths)), dtype=np.int32), ml
+        x = []
+        for nl in data:
+            nvec = np.zeros((vec_len), dtype=np.int32)
             for i in range(len(nl)):
                 nvec[i] = self.word2id.get(nl[i], UNK_ID)
             x.append(nvec)
-            y.append(mlab)
-        return np.array(x, dtype=np.int32), np.array(y, dtype=np.int32)
+        return np.array(x, dtype=np.int32)
 
     def inference(self):
         """
-        Compile the LSTM Classifier, taking the input placeholder, generating the softmax
-        distribution over all possible reward functions.
+        Define GRU inference graph.
         """
         # Embedding
-        E = tf.get_variable("Embedding", shape=[len(self.word2id), self.embedding_sz],
+        E = tf.get_variable("Embedding", shape=[len(self.word2id), self.embed_sz],
                             dtype=tf.float32, initializer=self.init)
         embedding = tf.nn.embedding_lookup(E, self.X)               # Shape [None, x_len, embed_sz]
         embedding = tf.nn.dropout(embedding, self.keep_prob)
 
-        # LSTM
+        # GRU Cell
         cell = tf.contrib.rnn.GRUCell(self.rnn_sz)
         _, state = tf.nn.dynamic_rnn(cell, embedding, sequence_length=self.X_len, dtype=tf.float32)
-        h_state = state                                             # Shape [None, lstm_sz]
+        h_state = state                                             # Shape [None, rnn_sz]
 
         # ReLU Layer 1
         H1_W = tf.get_variable("H1_W", shape=[self.rnn_sz, self.h1_sz], dtype=tf.float32,
@@ -130,9 +135,9 @@ class SingleRNN():
         hidden = tf.nn.dropout(hidden, self.keep_prob)
 
         # Output Layer
-        O_W = tf.get_variable("Output_W", shape=[self.h2_sz, len(self.commands)],
+        O_W = tf.get_variable("Output_W", shape=[self.h2_sz, self.num_categories],
                               dtype=tf.float32, initializer=self.init)
-        O_B = tf.get_variable("Output_B", shape=[len(self.commands)], dtype=tf.float32,
+        O_B = tf.get_variable("Output_B", shape=[self.num_categories], dtype=tf.float32,
                               initializer=self.init)
         output = tf.matmul(hidden, O_W) + O_B
         return output
@@ -149,22 +154,21 @@ class SingleRNN():
                                   range(self.bsz, len(self.train_x[:chunk_size]), self.bsz)):
                 loss, acc, _ = self.session.run([self.loss, self.accuracy, self.train_op],
                                                 feed_dict={self.X: self.train_x[start:end],
-                                                           self.X_len: self.lengths[start:end],
+                                                           self.X_len: self.train_lengths[start:end],
                                                            self.keep_prob: 0.5,
-                                                           self.Y: self.train_y[start:end]})
+                                                           self.Y: self.train_labels[start:end]})
                 curr_loss, curr_acc, batches = curr_loss + loss, curr_acc + acc, batches + 1
             print 'Epoch %d\tAverage Loss: %.3f\tAverage Accuracy: %.3f' % (e, curr_loss / batches, curr_acc / batches)
 
     def eval(self):
         """
-        Perform an evaluation epoch, running through the test data, returning accuracy.
+        Evaluate the model against all test data
         """
-        num_correct = 0.0
-        for (nl_command, rf) in self.test_pc:
-            pred_rf, _ = self.score(nl_command)
-            if pred_rf == rf:
-                num_correct += 1
-        print "Test Accuracy: %.3f" % (num_correct / len(self.test_pc))
+        y = self.session.run(self.probs, feed_dict={self.X: self.test_x, self.X_len: self.test_lengths,
+                                                    self.keep_prob: 1.0})
+        pred = np.argmax(y, axis=1)
+        accuracy = np.sum(np.equal(pred, self.test_labels))/float(len(self.test_labels))
+        print "test correctness: {}".format(accuracy)
 
     def score(self, nl_command):
         """
@@ -172,10 +176,10 @@ class SingleRNN():
 
         :return: List of tokens representing predicted command, and score.
         """
-        seq, seq_len = np.zeros((max(self.lengths))), len(nl_command)
+        seq, seq_len = np.zeros((max(self.train_lengths))), len(nl_command)
         for i in range(min(len(nl_command), len(seq))):
             seq[i] = self.word2id.get(nl_command[i], UNK_ID)
         y = self.session.run(self.probs, feed_dict={self.X: [seq], self.X_len: [seq_len],
                                                     self.keep_prob: 1.0})
-        [pred_command] = np.argmax(y, axis=1)
-        return pred_command, y[0][pred_command]
+        [pred_class] = np.argmax(y, axis=1)
+        return pred_class, y[0][pred_class]

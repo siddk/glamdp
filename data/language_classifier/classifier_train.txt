@@ -1,0 +1,2437 @@
+go through the door then go south then west then north then east then south then west then north then south then west then north:1
+go to the green room:1
+go the the red room , go to the left of the chair , go to the right side of the room , go to the bottom of the chair , go to the blue room , go to the red room , go to the green room:1
+go through the door to the pink room , then behind the object and push the through the door of the green room:1
+go south to the wall go west to the wall turn north and then east immediately:1
+go to the red room and push the chair into the blue room:1
+move to green room:1
+move one step left:0
+take two steps down three steps to the left and three steps up:0
+go to the red room get the chair and come back:1
+leave the blue room and enter the red room and go behind the object and push it into the green room:1
+move south three spaces . move west four spaces . move north two spaces:0
+go south until you hit the wall go west until you hit the wall go north one step go east one step:0
+one move upward:0
+go to the door down two:1
+move through the door into the red room push the chair through the door into the blue room and go through the door into the green room:1
+make sure you are facing the right wall:0
+move south to the door and south to the next room:1
+move to the red room:1
+go to the door go to the red room go to the chair move the chair to the door move the chair to the blue room:1
+move all the way down into the red room get to the left of the chair and push it to the right and then up into the purple room move back down into the red room and walk west walk up into the green room:0
+move to the green room after placing the chair where you were:1
+move towards the door:1
+go south go west pick up chair go east go north go south go west go north:0
+please take the chair and go to green room:1
+go down five spots left four spots up three spots:0
+go to below yellow object then go to green door:1
+travel south:0
+go to the door of the blue room and enter the red room , push the bag to the other door of the red room into the green room , then go back to the first door and return to the blue room:1
+turn your body to the right and move one step:0
+move south four spaces , move west one space , move south one space , move west three spaces , move north three spaces:0
+go three step down:0
+go to the door:1
+move down move west move chair up:0
+go to pink room , locate chair , push chair back to starting point in blue room:1
+leave the blue room and go through the door to go to the pink room and bring the chair with you and go through the door to go to the blue room:1
+enter red room down two left five up one right four down one right one up three go to green room:1
+go to blue door , go thru blue door to pink room , go to 2nd pink room door , go thru it , go thru green room door:1
+go forward four steps turn right go one step turn left go one step turn right go three steps turn right go three steps:0
+go down , go down , go down , go right , go right , go right , go right , go up , go up:0
+go to door go through door go to chair move chair to first door go through door:1
+go to the red room and bring the chair from there back to the purple room:1
+make a counter-clockwise turn:0
+go down , go left and beneath the object , push the object up , go back down , go right and then up:0
+go to the pink room and then come back to where you started:1
+go to the door of the blue room then enter the red room and push the chair to the door of the red room into the blue room and finally go to the other door in the red room and enter the green room:1
+push the object in the red room into the green room then return to the blue room:1
+turn left:0
+go to the red room:1
+go south turn west push chair east then north to purple room then go south then west then north to green room:0
+go down right up left up:1
+go to the red room , push the chair into the blue room , go back into the red room , and then go to the green room:1
+go to the door , move to the red room , move to the red chair , move the red chair to the blue room door , move the red chair to the blue room , move to the red room , move to the green room door , move to the green room:1
+go to chair push chair into blue room:1
+go to the red room then go to the green room:1
+move to pink room pick up yellow thing move to green room:1
+go to door , pass through door and push yellow thing through other door , return to first door , pass through door:1
+go five south , four west , three north , one south , four east and two north:0
+go into the pink room push the chair into the blue room:1
+move to the red room:1
+go down five moves turn right and go five moves up one push the chair two moves then down one and push the chair up two moves into the purple room then back two moves left four moves and up one move into the green room:0
+move to the red room and pick up the chair then move the chair into the blue room , leave the chair and move to the red room and then move to the green room:1
+go to the door and then go south , then west , then south at the yellow object then push the object north , leave the object and go south and then east , then north:1
+move forward one spot:0
+go to the pink room:1
+get the chair from the red room and return it to the blue room:1
+go through the door and then come back through the door:1
+open the door go three steps to another room and move left four steps and open door go to two steps another room:1
+move into the red room , then move into the green room:1
+down down down:0
+move one step to your left and face the wall:0
+move into the red room and then push the chair into the blue room:1
+go down three left one down one left two down one left one up three down one right three up two:0
+go towards the east wall:0
+move down till end move left till end get chair move it to starting place go down go left three step and go up:0
+turn around and go the other way one spot:0
+get out of blue room and pick up item in pink room and take it to green room then leave green room and go back to blue room:1
+go five steops down five steps right one step up four steps right one step down one step left three steps up one step down four steps right two steps up:0
+move behind the yellow object move to the green room:1
+go down open the door pick up the chair open the same door you came from walk back to the blue room:1
+face east and make one move forward:0
+go through the door from the blue room to the red room go to the chair push the chair through the door between the red room and blue room go through the door from the blue room to the red room and then go through the door from the red room to the green room:1
+go from the blue room to the red room , and then go from the red room to the green room:1
+go into the red room and push the chair into the purple room:1
+go to the door and through it:1
+turn to your right and face the rightmost wall:0
+go south three spaces , west one , south one , west two , south one , west one , north three , south one , east four , north two:0
+leave the blue room and go to the pink room:1
+go to the door of the red room . go inside the red room . go behind the chair . move the chair right until it 's below the blue door . go below the chair . go up to the blue door . go through the blue door . go to the back through the blue door . go to the green door . go through the green door:1
+go down go down go down go down go down go left go left go left go left go left go up go right go right go right go right go down go right go up go up go up go up:0
+go down go down go down:0
+move to the red room , move to the yellow object , push the yellow object into the green room , move to the red room , move to the blue room:1
+five down , five over , one up , four over , one down , one over , three up , one down , four over , two up:0
+go down and then left and then up:0
+go to door of blue room , go to door of red room , go in red room find the chair , push chair to door or red room , go through door of red room to door of blu eroom , go in blue room:1
+down , down , down , down , down , left , left , left , left , left , up , right , right , right , right , down , right , up , up , up:0
+go to the door , go into the room , go behind the yellow thing , push it to the green door:1
+push the bag into the green room , then return to the blue room:1
+go into the red room , then push the chair into the green room:1
+do n't move at all:0
+go down and move left and go down and move left and go down and move left and take the toy and move up:0
+move to the red room then move with the object to the green room then move to the red room and then move to the blue room..:1
+down , down , down , down , down , left , left , left , left , left , up , right , right , right , right , down , right , up , up , up , down , left , left , left , left , up , up:0
+go to the door first go down through the door:1
+open the door and take the chair and return the room:1
+go down , go down , go down , go left , go left , go left , go left , go up , go up:0
+go to the red room move the chair to the blue room go to the green room:1
+go to door go south move chair to blue room:1
+go down:0
+down down down down down left left left left left up right right right right down right up up up down left left left up:0
+move to the red room , move the red chair to the blue room , move to the red room and then move to the green room:1
+move one space south , open the door and enter the next room:1
+keep still:0
+go to the red room and push the yellow thing into the green room:1
+down , down , down , left , left , left , left , up , up:0
+put backpack in green room and return to blue room:1
+move south to the red room and then push the chair back into the blue room:0
+forward:0
+go down to the bottom of the red room . go left to the far side of the room . go up a space behind the chair . go right until the chair is below the blue door . go down a space . go right a space . go up until the chair enters the blue room:0
+down left up right down right up:0
+stay where you are:0
+move to red room:1
+go down right right right down left up down right up:0
+go forward a step:0
+go to the red door , go to the green door , go to the red door , go to the blue door:1
+go down , go right , push dog up , go left , go up:0
+go to door , go to next room , go to far wall , go to yellow chair , push chair to door , push chair to adjacent room:1
+go through door on your left get chair bring chair through same door leave chair return through same door enter other door:1
+move to the green room:1
+go south one move:0
+go to the pink room:1
+go down three steps , left four steps , up two steps:0
+go down into the space below and push the chair back into the space with blue walls and then go back down and turn right until you see and opening and enter the space above:0
+move to the red room , then move to the green room:1
+go through the door to the pink room retrieve the chair and bring it back to the door and then the purple room before going back through the door to the other door and into the green room:1
+go south then east then north then west then north then south then east then north:0
+go down four left one down one left three up three:0
+go east one:0
+go to the red room and push the yellow toy to the green room:1
+turn to face the side of the room with the blue area:0
+move to the red room through the door , then move the chair back up to the blue room through the door , then move back to the red room through the door , and then into the green room through that door:1
+move to the red room then move with the object to the green room:1
+down , down , down , left , down , left , left , down , left , up , up , up , down , right , right , right , right , up , up:0
+i want you to go into the red room:1
+move south till you hit the wall move west till you hit another wall move north the move east and move the chair:0
+walk all of the way south , all the way east , up one , then right four then go south one , right one , and finally up three before turning around going down three , left four , and up two:0
+turn east and move forward in that direction:0
+go down:0
+move southmove west get chair move east push north throught door:1
+go down go left go down go left go up:0
+go straight:0
+go tot he door , enter room and move the chair to the same door , push it through:1
+move backwards on spot:0
+turn one step left:0
+take one step back:0
+move to the door and enter the red room , then move the object to the other door and into the green room:1
+go through the door to the pink room , then behind the object and push the object back to the door and back into the purple room before going back through the door , to the other door , and through it:1
+go to the door go to the red room go behind the yellow object go to the door enter the green room:1
+down down down:0
+go to the pink room then go to the green room:1
+get the chair and bring it back here:1
+move to the pink room move to the green room move to the pink room move to the blue room:1
+go down three steps then left one step then down one step then left two steps then down one step then left one step then up three steps then down one step then right four steps then up two steps:0
+go to door down left and up to other door:1
+move to the red room:1
+go down then go left then go up a step then go right then down a step then go up:0
+go into the red room place yourself behind the object and push it into the blue room:1
+go to the door of the blue room and enter the red room , then push the chair to the door of the red room , then push the chair into the blue room , turn around to face the blue door , enter the red room , go to the door between the red and green room , then go through the door into the green room:1
+go to the pink room door and locate the chair then push the chair through the door to the green room:1
+go down , go right , go down , go right , go up:0
+go south go south go south go south go west go west go west go west go north go east go east go east go south go east go north go north go north:0
+go to the pink room:1
+move to the red room and push the chair into the blue room then go to the green room:1
+go to the red room:1
+go to the door of the blue room go down thru it to the pink room and push the chair back up to the doorway of the pink room going up into the blue room:0
+go down three left one down one left two down one left one up three down one right four up two:0
+move up out push chair and move back into it:0
+move to the south side of the bag and push it into the green room:1
+move right one step:0
+go to the red room , take the yellow color object from there and go to green room with this object:1
+move to the blue/red door , enter the red room , move to the red/green door , enter the green room:1
+move up one square:0
+move up one space:0
+move into the red room and push the chair back into the purple room:1
+go through the door from the blue room to the red room , then push the chair from the red room through the door to the blue room:1
+go three down , three over , two up:0
+move down , then left , then up , then right to push the chair , then up , to move the chair to the first room:0
+go down three times , then go right four times then go up twice:0
+turn left then advance one space:0
+go to the red room:1
+go to the door and leave the room:1
+go to the red room:1
+go down go right go up go right go right go down go left go up:0
+down five left five up one right four down one right one up three down one left four up two:0
+look down , move down once:0
+go down go right go up go down go left go up:0
+move one foot forward:0
+go to the pink room:1
+go to red room move chair to blue room:1
+open the door and take the chair to same place and open the door and go to the nearest room:1
+go to the door to leave the blue room , go to the red room and push the red chair to the blue room by going through the door , then go to the door again to leave the blue room and then move to the green room:1
+go south and west , then go to the west side of the chair and move it east and north:0
+move south and push the chair north:0
+go to the door of this room , enter the room , go straight , go to the other door , go in to the room:1
+move to the pink room:1
+go down three steps an then to the right five steps and finally up three steps:0
+go down go west stop go up go east stop go up:0
+go south into the other room go west until you get to the chair and then push it west and then north until you push it into the blue room then go south east and north into the green room:0
+go down three left four up two:0
+go to the red room go to the red chair:1
+go to door , move through room to object , then go to door in next room and go back through door to second room and move through room to first door:1
+move forward one space:0
+go down then left then up then right then down then up then down then left then up:0
+move left one movement:0
+move down:0
+go through the first door , then to the second door , and now back to the first door:1
+go down to door and down right right right:1
+go to the red room , then the green room:1
+go in and then go into the green room:1
+go through the first door then the second door:1
+go through the door and get behind the object before pushing it to the door into the green room then return to the original door and go through it:1
+move chair to path upward move theplace:1
+go south five spaces and then left five spaces , push the chair to the right five spaces and then north five spaces:0
+go to the red room and push the chair back to the blue room:1
+move to the right one pace:0
+down down down down left down left left left up up up:0
+go through the door from the blue room to the red room go to the chair and then push the chair through the door between the red room and blue room:1
+go south three steps:0
+move door move pink room move west move east move door move purple room move door move pink room move west move door move green room:1
+go into the red room then head to the green room:1
+turn and move toward left wall once:0
+go south and stop when you reach a chair , push chair north to the green color return south to pink , travel east to blue:0
+make one move foward:0
+go through the door then go through the other door:1
+go to the door go to the red room go to the far side of the chair go to the other side of the room go to the bottom of the room next to the chair go to the door go to the blue room go to the door go to the red room go to the door go to the green room:1
+move towards the green room:0
+go the the door of the blue room and then go into the red room:1
+go south then west then north and push the chair east and north through the door into the blue room and then go south and west and then up into the green room:0
+down down down:0
+move one space forward:0
+go through the blue room door into the other room:1
+go to the pink room push the chair into the blue room then go to the green room:1
+go left one square:0
+go to the red room , then the green room and back to the red room , then the blue room:1
+go to blue door , go thru blue door to pink room:1
+go to the pink room and move the chair to the blue room and then go back to the pink room and then go into the green room:1
+move towards right:0
+move south through the doorway:0
+move to the green room:1
+go up:0
+move down five left five up one right four down one right one up three left four up two:0
+stand next to the door of the green room:0
+go to the door go to the red room go to the object move the object to the door of the green room move the object to the green room go to the red room go to the door of the blue room go to the blue room:1
+go down , go down , go down:0
+down , down , down , down , left , down , left , left , left , up , up , up:0
+go down three spaces:0
+go to the door enter the red room go to the other door enter the green room:1
+move down:0
+go to door , go to red room , go to door to green room , go to green room:1
+go south and stop:0
+go left until even with doorway:0
+go to the pink room collect the chair and return to the purple room:1
+go up:0
+go down the turn west pick up the chair turn east turn north:0
+move south four steps move west one step move south one step move west three steps move north three steps:0
+go to red room get the chair go back to purple room:1
+go up until reaching a wall:0
+go in the red room , bring chair back to blue room , then go back to red room , then into green room:1
+go to the door and enter the space beyond it:1
+take the chair from the red room and put it in the blue room then go to the green room:1
+go to the green room:1
+move south three times , move west one time , move south one time , move west two times , move south one time , move west one time , move north three times , move south one time , move east four times , move north two times:0
+go down to the pink room go right to the chair move the chair left and up to the blue room leave it there and then go down to the pink room right and up to the green room:0
+go down go down go down:0
+go to blue room door , go into red room , go to object in red room , push object to door of green room , push object into green room then go to door of green room , go into the red room then go to the door of the blue room and go into the blue room:1
+move down then to the left until you reach the animal , then push the animal up three steps:0
+go through the door and push the chair back into the blue room going through the doorway and then you move through the doorway to go to the green room:1
+go to the door of the blue room go thru it to the pink room and push the chair back to the doorway of the pink room going into the blue room then go to the pink room doorway that goes to the green room:1
+move right:0
+move south then west then north and then push the chair east , go south then east then push the chair north , go south then west and north again:0
+take a step left:0
+step forward:0
+move up one:0
+go to the door of the blue room and enter the red room then go to the other door of the red room and go into the green room:1
+first go to the door in the blue room then cross the red room to grab the bag and bring it to the door into the green room set it down and turn around to leave through the door into the red room cross then red room and go to the door into the blue room:1
+turn ninety degrees counter-clockwise:0
+go to the door and walk through it:1
+go to the red room and move the object to the green room:1
+go to pink room and move chair to blue room:1
+go to the door go through the door to the orange room push the chair to the door to the purple room push the chair through the doorway to the purple room go back through the doorway to the orange room go to the door to the green room and finally go through the doorway to the green room:1
+go through the door from the blue room into the red room , then push the yellow object through the door to the green room , then return to the red room and go through the door into the blue room:1
+go to the red room get the chair bring it to the blue room then go to the green room:1
+open door and move to next room go all the way down head west north a little bit then east again stop go south again go north open door continue up:1
+move to the red room , push the object into the blue room , move through the red room and enter the green room:1
+go down , then go left , then go up , then go right and push chair , then go down , then go right , then go up:0
+go down three steps:0
+move down down down down down left left left left left up right right right right down right up up up down left left left left up up:0
+push the chair into the blue room and you go to the green room:1
+go to the door , go to teh red room , push the red chair to the door to the green room , push into the green room , go back through the door into the red room , go to the door to the blue room , go into the blue room:1
+go south three times west four times then north two times:0
+go to the door to exit from the blue room into the pink room then in the pink room take one step west one step south two steps west one step south one more step west then to the door of the green room then one step south then to the door from the pink room into the blue room and then one step north into the blue room:1
+push chair from red room to green room:1
+go into the pink room push the chair into the blue room go through the pink room and into the green room:1
+go to the pink room and push the chair back into the blue room then go to the green room:1
+enter the red room , then enter the green room:1
+move to the red room:1
+go south to find the red dog push it east and then north to the blue room turn west until you reach the green room 's door and go through it:0
+go to the door of the blue room and enter the red room then push the chair to the same door of the red room back into the blue room and finally go to the other door of the red room into the green room:1
+go south three steps:0
+south four spaces , west five spaces , north one space , east four spaces , south one space , east one space , north three spaces , south two spaces , west four spaces , north two spaces:0
+go to blue room door , then into red room , then push yellow chair to red room door , then go to green room door and go in:1
+go to the red room get the chair return to the blue room:1
+go all the way down , all the way to the left , push the chair right , then up to the blue room . go down once , turn left , go left three times , then go up:0
+go to the green room:1
+go down three steps then go left four steps then go up two steps:0
+go east:0
+go down five steps go left five steps go up one step and then go right four steps with chair go down one right one without chair go up three steps with chair:0
+go to the pink room go to the chair pick up the chair go to the green room put down the chair go to the blue room:1
+go from the blue room to the red room , then to the green room:1
+go south , go east and then go north:0
+go east:0
+go out of the door , push the chair into the other door , go out of the door and back into the first door:1
+move south three spaces:0
+go fast and then stop after one foot:0
+go down three spaces:0
+move to the door move to the red room move to the chair move the chair to the door move the chair to the purple room move to the red room move to the door of the green room move to the green room:1
+go to the door , leave the blue room , go to the red room:1
+goto door go to pink room push chair to blue room door go through door:1
+go to the door go to the next room go to the other door go into the green room:1
+go to the door then go to the next room then go to the chair then go to the door then go to the next room:1
+go left:0
+go to the pink room , go to the chair , go back to the blue room:1
+go to the red room then get the chair then go back to the blue room then go into the green room:1
+move down one step:0
+go down five left five up one right four down two right one up three:0
+go down three steps:0
+go through the door and then push the backpack through the other door:1
+go to the door go to the next room go to the red chair:1
+go left:0
+go to the door go to the orange room pick up the chair go to the chair go to the door to the blue room go to the blue room:1
+go to red room then under object , move it up to the green room then move back to red room then go to the blue room:1
+move up:0
+go down three spaces:0
+go down:0
+move north then right then push then south:0
+move north in a direct route:1
+move to the red room:1
+down right up right down right up up up up:0
+go to the pink room:1
+down , down , down , down , down , left , left , left , left , left , up , right , right , right , right , down , right , up , up , up:0
+go south until you hit the wall go west until you hit the wall go north one step go east one step:0
+go to door go through the door:1
+move down five move left five move up one move right four times move down one move right one move up three:0
+down five left five up one right four down one right one up three:1
+go to door , go to other room:1
+go south as far as possible then west as far as possible then up one and right four down one right one up three south two west four north two:0
+move to pink room get the chair move to purple room:1
+move down:0
+go south go west go north one move go east four moves go south go east go north three moves go south one move go west four moves go north:0
+move to the door , open the door , move to the red room , more to the other door , open the other door , move to the green room:1
+go down:0
+go to the door leave the room go to the chair take the chair go back to the previous door enter the purple room leave the chair go to the door exit the door go to the other door enter the green room:1
+take one step away from the green area:0
+move south then east then push the chair east then push the chair north into the blue room then move south the move east then move north into the green room:0
+go through the door into the red room and push the red chair back through the door and into the blue room:1
+go down five spaces left five spaces up one space right four spaces down one space right one space up three spaces down one space left four spaces and up two spaces:0
+go to the orange room take the chair and push it back into the purple room:1
+down down down down down left left left left left up right right right right down right up up up:0
+go through the door to the pink room , then behind the object and push the object back to the door and back into the purple room:1
+south west south west south west north south east north:0
+go to the door , go across the room , get the object , go the door and into the next room , go to the door and back to the last room , the go across the room to the door and into that room:1
+go down down down left down left left down left up up up down right right right right up up:0
+go down through the door go left to the red chair:0
+go south three paces:0
+go to the red room get the chair then go to the blue room:1
+go to door then go to room , go to other door then into other room:1
+go through the door to the pink room go behind the yellow object go to the nearest doorway go through the door to the blue room:1
+push the chair into the blue room , then go into the green room:1
+move into the red room:1
+go to the red room and then to green room:1
+go to the door and move into the red room and then push the chair to the door of the blue room then push the chair into the blue room:1
+go to the door of the current room and enter the red room through this door . then , go to the door that opens to the green room and enter the green room through this door:1
+go south through the door wo east to the next door then go north through the door into the next room:0
+go down to the red room and bring the chair to blue room after that go to the green room:1
+please bring the chair to the blue room:1
+go to the blue door , go thru it to the pink door , locate chair , and push chair to pink door , go thru pink door and thru the blue door , locate the yellow object and push it thru the pink door and thru the green door:1
+go to the green room:1
+move right:0
+walk towards the wall on your right:0
+go push the yellow object into the green room then return to purple room:1
+pause a moment , then move forward:0
+step left:0
+go down to the pink room go right pick up the chair and move it up to the blue room:0
+south five west five north one east four south one east one three north:0
+go down thru the door:1
+turn left , walk a step , then face the wall:0
+go west one pace:0
+go to the door go to the next room go to the red chair and push it across the room:1
+leave the room and go through the nearest door and then leave the next room and bring the oject with you and go through the door in front of you and push the object into the room:1
+move east:0
+move until you are one square into the green room:1
+go through the door , find the chair and return through same doorway:1
+go to the pink room , go to the green room:1
+down down down:0
+go to the red room:1
+go down four , go over five , go up one , go over four , go down one , go over two , go up three , go down one , go over four , go up three:0
+go into the red room and push the chair into the green room:1
+turn left and move forward one spot:0
+go down , down , right , right , right , right , right , up , up:0
+go down , then left , then up , then right , then up , then down , then left , then up again:0
+go through the door to the green room:1
+go to the red room , take the yellow color object from there and go to green room with this object . leave the object there and come back to the red room and then to the blue room:1
+move down:0
+get red chair in pink room and bring it to the blue room:1
+move slightly to the west:0
+go to the north:0
+go to the door then into the red room go across the red room then back to the door and into the blue room then go back to the door and into the red room then go across the room and to the door and into the green room:1
+move ahead one space:0
+go to the door to the red room , move below the yellow object , move to the green room , then enter the green room:1
+enter the pink room go to the end of the room behind the chair go to the blue room door go to the green room door enter the green room:1
+down , down , down , down , left , down , left , left , left , up , up , up:0
+move towards the nearest door and through the door and then go to the farthest door and go through it:1
+go to the pink room and then push the yellow object into the green room , then go to the pink room and then go to the purple room:1
+go to the red room then to the green room:1
+go south:0
+go to the door , move to the red room and go to the chair , move the chair to the door , then move the chair to the blue room:1
+go down three left four and up five:0
+turn and move one spot to the right:0
+go through the door to the pink room then go through the door to the green room:1
+go to the pink room . go to the yellow chair . push the yellow chair into the green room . go to the pink room . go to the blue room:1
+go south three steps:0
+go into the red room find the chair and bring it back into the purple room:1
+go to the door of the blue room exit and enter the pink room go to the chair in the room and move it back to the blue room go to the door go to the green room:1
+go south go west go north:0
+go right:0
+go to the red room move the object to the green room return to the blue room:1
+go down three left four up two:0
+move up:0
+face north and go up:0
+go forward three steps turn right turn left go two steps turn left go one step turn right go forward three steps go down one step turn right go three steps turn left go forward three steps:0
+go down , go left , go right , go up:0
+right turn and forwared movefront chair:1
+go to the red rooma nd push the object into the green room:1
+go into the red room get the red chair and push it into the purple room then go over to the green room:1
+go to blu eroom door , go through into red room door , then go to green room door and go in room:1
+go to the pink room:1
+move to pink room and get object and move to green room:1
+look right , move right:0
+go through the door then down two steps:1
+move to the green room:1
+go to the red room , get the chair , then go to the blue room , go back into the red room , then go to the green room:1
+go down right up grab chair go right go up leave chair go down go right go up:0
+go to the door , enter room , go straight and right . go to other door , enter room , go to the room , go right . go to the door , enter the room:1
+go through blue room doors and find chair then push it back through blue room doors into blue room:1
+go into the pink room retrieve the yellow object move it to the green room:1
+down down down left left left left up up:0
+go from the purple room to the pink room go behind the chair and push the chair from the pink room to the purple room leave the chair in the purple room go back to the pink room and through the pink room to the green room:0
+go into the red room and push the chair into the blue room then go into the green room:1
+go through the door to the pink room move the chair to the blue room then go through the door to the pink room and then the door to the green room:1
+move away from the purple room:0
+move backwards one step:0
+bring the woman to the green room before going back to the blue room:1
+go to the door , move to the red room and go to the chair , move the chair to the door , then move the chair to the blue room , leave the chair then go to the door and move to the green room:1
+move south five times move west five times move north one time move east four times move south one time move east one time move north three times move south one times move west four times move north two times:0
+go to the door , go to the pink room , go to the chair , go to the door , go to the other door , go to the blue room:1
+go to the door . go to the red room . go to the chair . push the chair to the right , and then up , into the door to the blue room:1
+go down five times , go left five times , go up one time , go right four times , go down one time , go right one time , go up three times:0
+go close to the wall by the first door:0
+move up:0
+go down four , right one , down one , right three , up three:0
+go into the red room and push the chair into the blue room then go into the green room:1
+go forward two spaces turn sideways and go three spaces turn sideways again and go to spaces:1
+move down five times then right fives times then left five times then up four times then down three times then right four times then up two times:0
+move through the door to the red room then move with the object through the door to the green room then move through the door to the red room then move through the door to the blue room:1
+move to the red room:1
+go down three times , then go left once , then go down once , then go left twice , then go down once , then go left once , then go up three times , then go down once , then go right four times , then go up two times:0
+down down down down left down left left left up up up:0
+head down and then west and then north:0
+move down three times , then left four times , and then up twice:0
+turn slight right and stop , facing forward:0
+move to the red room:1
+move south one spot:0
+move to the red room:1
+go to the door to the pink room go to the pink room go to the chair pick up the chair go to the door to the green room go to the green room put down the chair go to the door to the pink room go to the pink room go to the door to the blue room go to the blue room:1
+go to the red room:1
+down down down right right right right:0
+go to the red room and then go into the green room:1
+go down , then go left , go up , then right , then up again:0
+go down go west go up go east go up:0
+move forward from the position you 're facing:0
+return back right move place to turn move to upward to place:1
+go in through the blue door and then go through the green door:1
+down down down down right right right right up right right right down right up:0
+down , down , down , left , down , left , left , down , left , up , up , up , down , right , right , right , right , up , up:0
+go to the door and open it then push the chair into the red room then head west until the door open it and enter the room:1
+move to the red room get the chair move to the blue room:1
+enter the pink room push the yellow object into the green room then enter the blue room:1
+face the green area:0
+go through the door of the blue room to the red room , go through the red door and then move through the door to get to the green room:1
+go south four spaces . go west one space . go south one space . go west three spaces . go north three spaces:0
+go to the red room move the chair to the blue room then go to the green room:1
+move through the door , move to the chair , push it through the blue room door and go through the green room door:1
+go as far south as possible then go west as far as possible then go up one space right four spaces down one space right another space and up three spaces:0
+go down until you reach the red room:0
+go to the door , into the next room , then go across the room and to that door and into the next room:1
+go to the door , go through the door to the red room , go to the yellow chair , push the yellow chair to the door , push the yellow chair into the green room:1
+move to red room , push yellow robot into green room:1
+move to the door and enter the red room , move the object to the other door and into the green room , then return to the first door and enter the blue room:1
+move south to the red room west to the chair and push the chair east and north thru the door:0
+move through door into pink room move to yellow thing pick up yellow thing move through door into green room:1
+go down as far as you can go left as far as you can go up once move right four times move down once move right once move up three times:0
+go to the pink room , go to the chair , go to the green room , go to the pink room , go to the blue room:1
+go down:0
+move through the door into the red room get to the left of the chair and push it through the doorway back into the purple room exit the purple room and walk towards the door to the green room and enter it:1
+go to the door of the blue room enter the red room and push the chair to the door of the red room back into the blue room then finally go to the other door of the red room into the green room:1
+go down thru the door and push the chair up thru the same door:1
+go to the door then to the red room behind the chair move the chair to the red room:1
+go down:0
+go down go west enter into the green room:1
+go to the door then go into the red room:1
+go to the door and then move to the other room:1
+go to blue room door , to red room door , into red room , push chair to red room door , to green room door , into green room , then back to red room door , into red room , to blue room door , into blue room:1
+go through the door , push the object past the other door , go back through that same door , then return to the first door:1
+go to door , move from room , and go to second door:1
+move to door , move into room , move through room to second door and move through door:1
+go to the room door then go through the door into the next room:1
+go through the blue room door into the door of the pink room:1
+go to blue room door , to red room door , into red room , bring chair to red room door , to blue room door , into blue room , go to red room door , into red roo , to green room door , into green room:1
+bring the red chair in the pink room to the blue room then go to the green room:1
+take five steps down then take five steps right , take one step up , take one step right , move the chair in front of you four steps right , leave the chair , take one step down , take one step right , move the chair in front of you up three steps:0
+move to the red room move to the chair move the chair into the blue room:1
+move west side pink room move east side move purple room:1
+go to red room , move item to green room , go to red room , go to blue room:1
+go to the door and enter the red room then go to the door of the green room then go to the door of the blue room and enter the blue room:1
+go down then to the left a little and then up:0
+move south as far as possible then west four steps then north four steps:0
+go to the green room:1
+slide to the left one spot:0
+go to the blue door enter the red room then push the bag from the red room into the green room:1
+go down four left one down one left three up three:0
+go down three spaces:0
+go to red room move left move up move right move to blue room move to green room:1
+go to the red room , get the chair and then go back to the blue room:1
+move forward one step:0
+move the chair from the red room to the blue room:1
+go down three left one down one left two down one left one up three down one right four up two:0
+go to the door and walk through it:1
+go south to the door then through the door:1
+go to the door and through it go to the chair and push it back to the door and through it:1
+go down three steps ,:0
+go to the pink room and then to the green room:1
+turn around and move forward:0
+move to the door at the bottom of the room then go through it into the next room:1
+go out the blue door into the red room then go out the red door to the green door and go into the green room:1
+go to the door then exit the room turn left and go to the next door enter it:1
+go down four times then go left two times down once left three times and up three times:0
+go through the door:1
+move to the red room , move to the object in the red room , move the object to the green room:1
+go down five right five up one right four down one left one up three:0
+go to the red room and then go to the blue room:1
+go to the door go to the red room grab the chair go to the door go to the green room go to the door go to the red room go to the door go to the green room:1
+go to the red room and grab the chair come back to the green room:1
+go through the door into the red room then go to the red chair push it back through the door into the purple room then back out of the door and go through the door into the green room:1
+go south three steps west four steps then north two steps:0
+go from the blue room through the door into the red room then go to the chair and push it through the door back into the blue room:1
+go into the red room and find the chair then bring it into the purple room then go back into the red room then go into the green room and stop:1
+go to the door open it go into the red room get behind the box and push it to the green room then go back to the other door open it and enter the blue room:1
+move the object to the green room then move to the blue room:1
+go down through the door to the far wall turn right and follow the wall then go up and into the room:0
+go to the door to the red room and enter the room and get behind the chair and push it to the door to the purple room and then into the purple room and then back through the door and go to the door for the green room and then enter the green room:1
+move through the door then push the yellow object trough the next door then retrace your steps:1
+go to the green room:1
+move west:0
+go south four spaces west one space south one space west three spaces and north three spaces while pushing the object:0
+go to pink room push chair to blue room:1
+go to the door and then down and left and then push the chair right and go to the door , then go back to the door without the chair , then go left and then go up to the door:1
+go into the red room take the chair and carry it back to the blue room:1
+go to the door then into the red room then find the chair and push it back into the purple room:1
+go to the green room:1
+go south until you see walls that are pink:0
+go to door step move two steps:1
+go down go left go right push the chair up go left go up:0
+move south five steps , west five steps , north one step , grasp the chair , east four steps , south one step , east one step , north three step , release the chair , five steps west , then two steps north:0
+move to the red room bring chair to the blue room:1
+go to the blue room door and then enter the red room:1
+go down down down down down left left left left left up right right right right down right up up up down left left left left up up:0
+go to red room move chair to blue room come back to blue room:1
+go down five steps , go left four steps , go up two steps , push the red chair four steps , go down one step , go right one step , push the red chair up four steps , go down two steps , go right four steps , go up two steps:0
+go to door go to chair go to door with chair go up:1
+go south west north east south east and then north:0
+grab the red chair come back to the blue room:1
+go straight down:0
+turn all the way to your right:0
+go to the door of the red room , then go in the red room:1
+move to the green room:1
+go through the door , go to the second door , go through the other door , go through the other door:1
+go in the red room and bring the chainr back to blue room:1
+go to the pink room and push the chair back to the purple room before going to the green room:1
+go to the door , go into the room , go straight and right , go straight to the door , enter into the room:1
+go to door , pass through door , bring the chair back to the door , pass through the door with the chair:1
+go to the green room:1
+go south four paces then go west one pace then go south one pace then go west three paces the go north three paces:0
+go to the red room and get behind the chair and push it to the blue room:1
+one move left:0
+go south one space through the door south another space then go west four spaces and finally go north a space through the door and north one more space:1
+go to the door and enter the room move to the bottom of the room go to the other end up the room move towards the nearest door go to the center of the room move to the other end of the room go to the nearest door go through the door and enter the room:1
+go to the red room and push the chair into the green room:1
+move five steps down five steps to the left one step up four steps to the right one step down one step to the right and then three steps up:0
+go south five steps , turn right , go five steps , turn right , turn right , go four steps , turn right , turn left , turn right , go three steps:0
+move to the door to the red room , then enter the red room , then move behind the yellow object , then move to the door to the green room , then move to the door to the blue room , and enter the blue room:1
+go to the door go to the red room go to the door go to the green room:1
+go south , then west , then north , then east , then south , then north:0
+go through blue room doors and find the chair push chair back through blue room doors then go back through the blue door and go through green room door:1
+go out the first door go to the chair push the chair into the blue room go out the first door go to into the second door:1
+go in door ahead:1
+move to the pink room and push the chair back into the blue room:1
+move to your right:0
+go to the door and through it go to the chair and behind it push the chair back to the door and through it go to the next door and enter it:1
+go to the door to the greeb room and bring the chair back to the blue room:1
+go to the red room:1
+go down and then left and then north:0
+down left up right down right up down left up:0
+go through the first door , then through the second door:1
+go to the door of the current room and enter the red room through this door . move to the door that opens to the green room with the object seen in the red room and enter the green room with this object . come back to red room with out the object through this same door and then go to the door that open to the blue room and enter the blue room through this door:1
+move to the red room , push the chair into the green room , go back into the red room and move into the blue room:1
+go through the door then push the backpack through the other door and then go through the original door:1
+down down down down left down left left left up up up down right right right right up up:0
+go to the red room go to the green room:1
+robt b go to door go to other room:1
+go down , turn right , then go up:0
+go to the door then push object to the door:1
+go south for three steps go west for four steps go north for two steps:0
+go to the red room and get dog , take it back to blue room , then go to the red room and then go to the green room:1
+go to door go down:1
+make a clockwise turn:0
+move to the door , move to the next room , move to the object , move the object to the other door , move the object to the next room:1
+move to the right a single step:0
+move to the red room , get the chair and go back to the blue room , go to the red room and to the green room:1
+go into the red room then push the chair into the blue room then go through the red room into the green room:1
+open the door then go to the red room then push the chair to the door open the door then push the chair into the blue room:1
+go down five left five up one right four down one right one up four:0
+move to the red room and then move to the green room:1
+go to red room , get chair , go to blue room , leave chair , go to red room , go to green room:1
+enter red room door then enter green room door:1
+go down then go right then go up behind the chair then go right then go down then go right then go up then go down then go right then go up:0
+go to the door and then south:1
+go to the chair in the red room , and then push the chair into the blue room:1
+go south:0
+go into the red room:1
+go to the pink room and retrieve the chair and push the chair back into the purple room:1
+go to the door , enter the the red room:1
+go to the door of the blue room and enter the red room , then push the chair back to the same door of the red room into the blue room:1
+go down go to the door go down:1
+go to the pink room and down around the bottom to the chair and then back up to the purple room:1
+go down go right go up go right go down go left go push the chair up:0
+enter the red room , go to the chair , push the chair across the red room , then push it into the blue room:1
+take three steps south one step west another step south two more steps west another step south one more step west three steps north one step south four steps east and then two steps north:0
+move south into the red room then east then push the chair west and then north into the blue room:0
+go down then go left then go up then go right then go down then go right then go up:0
+go to red room and push object to green room and come back to blue room:1
+go south until there is a wall go west until the wall go north one pace push the chair four paces go right and south one pace go east one pace go north three paces go south one pace go west four paces turn right go up two paces:0
+go down five right five up one left four down one left one up three:0
+south , south , south , west , west , west , west , west , north , north ,:0
+move south five times move left five move up one move right four move down one move right one move up three move down one move left four move up two:0
+go south then west then north then east then south then west then north then south then west then north:0
+please go down:0
+go south three time then west four times and then north two times:0
+go to the red room:1
+down right up left down right left up:1
+go down four left five up two:0
+go left:0
+do not move:0
+move one step left and face the wall:0
+move one step on right:0
+go out door go to chair push chair to blue room door push chair through door:1
+go to the red room push the chair to the blue room go to the green room:1
+down , down , down , left , down , left , left , down , left , up , up , up , down , right , right , right , right , up , up:0
+move south to the red room push the chair back to the blue room and enter the green room:1
+move backwards and carefully walk until you hit the wall behind you:0
+move to the green room:1
+go down to , go left , go right , go up , go down , go left , go right:0
+go to the blue door and exit the blue room then enter the red room:1
+go to the door go to the red room push the red chair to the door push the red chair to the green room:1
+go down , down , and down:0
+go to the pink room . go the yellow chair . push the yellow chair to the green room:1
+go to the pink room push the object into the green room go to the pink room go to the blue room:1
+go to the room of the blue door then go into the red room:1
+go to the red room:1
+go to the door first and go to the other room:1
+move one step:0
+go forward until reaching a wall:0
+move to the green room:1
+go south three moves go west one move go south one move go west two moves go south one move go west one move go north three moves go south one move go east four moves go north:0
+go to the door , then go into the next room:1
+move down three times , left once , down once , left twice , down once , left once , up three times , down once , right four times , then up twice:0
+down left up right up down left up:0
+go to the red room move the chair to the blue room then go to the green room:1
+go to door , go into red room , push chair to door , go up to purple room:1
+move south , turn west and go down move west then north:0
+go thru the blue room door into the pink room until you go thru the green room door:1
+go down five steps left five steps up one step right five steps down one step right one step up three steps down one step left four steps and up two steps:0
+go the the red room , go to the left of the chair , go to the right side of the room , go to the bottom of the chair , go to the blue room:1
+go to the blue door enter the red room then enter the green room:1
+look to your right:0
+go to the door of the blue room , enter the red room , go to the chair and push it across the red room , go to the door of the blue room , push the chair in , go to the door , enter the red room , go to the door of the green room , enter:1
+go to the door then bring the chair to the door:1
+go to the door to the red room , then enter the red room , then go to the door to the green room , then enter the green room:1
+go into the red room and push the chair into the green room:1
+go south south south south west south west west west north north north:0
+go to the red room and grab the chair and leave it in the blue room then go to the green room:1
+go to the door go to the red room go to the red chair push the red chair into the purple room go to the door to the red room walk through it and towards the other door walk into the green room:1
+go to the door move into the red room go to the chair move the chair to the door you entered move the chair into the blue room go to the other door move into the green room:1
+go take three steps down:0
+go to the door go to the red room go to the red chair:1
+move up right chair push room right chair:0
+move to the red room and move the chair into the blue room:1
+turn and travel north:0
+go to the door , enter the red room , go to the chair , push it to the door of the green room , push it through the door:1
+move to the pink room:1
+go to door push object in red room to the green room door push object into green room exit green room door go to blue room door enter blue room:1
+make a right turn and wait:0
+go to pink room , then go to green room:1
+head to the nearest door open the door enter the room open the other door enter the room:1
+go through blue room doors then through large room door and find chair push chair through large room door into blue room doors go back through large room doors and then through green room door:1
+go south three paces then go west one pace then go south one pace then go west two paces then go south one pace then go west one pace then go north three paces then go south one pace then go east four paces then go north two paces:0
+take a single step to your left:0
+turn yourself right and move one square forward:0
+go down three spaces:0
+go to the door , move to the red room , move to the red chair , move the red chair to the blue room door , move the red chair to the blue room:1
+go to the green room:1
+go down to south , turn west and go north:0
+face the wall to your right:0
+slide left:0
+move to the green room and now the red room:1
+go through the door of the blue room and then the one of the red room:1
+go to square ( 2,2 ) of the pink room:0
+go throught he blue door into the red room , get bind puppy and push through the red door into the green room , go through the green door into the red door , go through the red door into the blue room:1
+go down then left until you see the chair bring the chair to the right and then north:0
+please move the chair into the green room:1
+move east one spot:0
+go south , then west , and push the chair north:0
+go to the pink room and retrieve the object before pushing it back into the purple room and moving back to the pink room and then finally the green room:1
+move to the pink room and get the chair and go to the purple room , then go to the pink room and finally the green room:1
+go up:0
+go to the orange room , then push the chair from the orange room into the green room:1
+go down:0
+go south:0
+go to the door go to past the door:1
+go west one square:0
+open the door walk a few feet turn 1/4 walk to next door open door and enter:1
+go to the door push the chair back through the same door into the other room:1
+go to the red door , enter the red room , push the object to the green door , leave it in green room , go back to the door , enter red room , go to blue room door , then enter blue room:1
+locate the blue room door go throught it to the pink room door locate the chair and push the chair back through the pink room door into the blue room door:1
+take three steps south:0
+go down five spaces and then west until you hit the chair , push chair north five spaces:0
+move one tick left:0
+move to pink room move the chair to blue room:1
+go to the green room:1
+go to the door go to the red room push the yellow toy to the door push the yellow toy to the green room:1
+move south , then move west , move north one space , move east four spaces , move north two spaces , move south one space , move west four spaces , move north three spaces:0
+right leftin chair:1
+go down , down , down:0
+down , down , down , down , left , down , left , left , left , up , up , up:0
+move to door go south south south west west west north east east east east south east north north north south west west west west north north:1
+move south then west push object east and then north through the door then south and west finishing up heading north through the door into the green room:0
+go to the door , then go to the red room . get the chair , go to the blue room door , put the chair in the blue room . go to the green room door , then go in:1
+south , south , south , west , south , west , west , south , west , north , north , north , south , east , east , east , east , north , north:0
+go to pink room , locate yellow object , push to the green room:1
+go to the red room and push the toy into the green room go back to the purple room:1
+go to the nearest door open the door and enter the room go to the bottom of the room move to the other side of the room go to the nearest door open the door and enter the room:1
+go down three steps:0
+move away from the door going south and wait:0
+go south one space go through the door go south another space go west one space go south one space go west two spaces go south one space go west one space push the object two spaces north and then push the object past the doorway into the green room stop pushing and go back out of the doorway down one space go east four spaces and north one space and north again through the doorway into the blue room:1
+go to the door move behind the chair push the chair to the door push the chair into the blue room then go to the green room door go through the door into the green room:1
+go to door then go to next room , move under object and move it to door into other room:1
+go down:0
+go to the red room and push the chair to the blue room and leave it there and go back to the red room and go to the green room:1
+go down one space:0
+go from the blue room to the red room:1
+go through the door of the purple room taking four steps then make a quick jog that takes you over and down then go over until you are underneath the yellow dog and push it up until it is in the green room:1
+go to the door of the blue room and enter the red room:1
+go to pink room:1
+turn and go one space left:0
+exit blue room and go to pink room , push chair into the blue room , exit blue room and turn right in pink room and then go to green room:1
+go to red room , go to chair , push chair to blue room , go to red room , go to green room:1
+go to the room south of you go through the door:1
+go to the door then go through it to the room with the chair:1
+step once to the east:0
+move to door go through door to pink room move to the other door move to green room:1
+march one step backwards:0
+go into the red room:1
+go down three times:0
+go down to the right then up:0
+push out of room grab the chair push into other room:1
+down , down , down , left , left , left , left , up , up:0
+go to door , pass through door , push yellow thing to other door , pass through door:1
+go to the door , then go into the red room , then go to the other door , then go into the green room:1
+go down four times go left so down go left three times go up three times:0
+bring the chair in the red room back to the purple room:1
+go down:0
+move left:0
+go south , south , south , west , south , west , west , south , north , north , north , south , east , east , east , east , north , north:0
+go to the door and then into the next room:1
+move to red room and bring chair back:1
+go down to the red room then go left then up then right then up to the blue room:0
+go four steps south then go one step west then go one step south then three steps west then go three steps north:0
+go to the door and enter the pink room:1
+down three:0
+go through the door from the blue room into the red room then push the chair through the door into the blue room leave the chair then go through the door into the red room then go through the door into the green room:1
+go to the pink room push the chair into the blue room go to the green room:1
+move to the white door then move into the red room then move to the left of the chair then push the chair back into the blue room passing through the white door again:1
+go inside the red room . go behind the chair . move the chair right until it 's below the blue door . go below the chair . go through the blue door:1
+bring the chair to the blue room and then go to the green room:1
+go to red room , go to green room:1
+go down , turn right , go up , go back down:0
+go to red room , go to green room:1
+move to the red room , grab the chair , then move to the blue room:1
+go south , west , and then north:0
+move to the red room get the chair move to the blue room leave the chair move to the red room move to the green room:1
+down down down left down left left down left up up up down right right right right up up:0
+go to the red room then the green room:1
+go to the blue roomdoor , go to the red room door , go to the green room door:1
+go tot he door , push the chair into the green room through the door and then return to the blue door and room:1
+move to red room and push the chair back to blue room , then move to red room , then move to green room:1
+go south through the door:0
+move to the top of the red wall:0
+go into the room and find the chair then push it back into blue room:1
+bring the chair back to the blue room:1
+move to the red room , then move the yellow object to the green room , then move to the blue room:1
+one step forward:0
+go to the red room take the object there come back to the previous room:1
+move down three spaces:0
+move right one:0
+move left one spot:0
+move north one space:0
+move south one go through door move south one:1
+go into the red room:1
+go to the red room:1
+go to the red room:1
+go through the door into the next room , and move through the other door into the next room:1
+move north then right then left then south:0
+go to the door go through the room and go to the next door:1
+move to the red room:1
+go to door get chair go to door go to other door:1
+move down five spaces move left five spaces move up one space move right four spaces move down one space move right one spaces move up three spaces move down one spaces move left four spaces move up two spaces:0
+go the green room grab the chair bring that chair back to the red room:1
+move down move down again move down again move west move up:0
+move to the blue room:1
+go to the red room and take the chair to the blue room:1
+enter the red room and then push the object into green room:1
+go to the door walk through and head towards the chair and bring it back to the first room:1
+go to door other room other door room:1
+go to the door go to the red room:1
+go to the red room:1
+move to the red room:1
+go to the door go through the door into the next room then push the object in the room through the other door into the third room:1
+step in front of you:0
+push the backpack in from the red room into the green room:1
+go to the door open the door and go into the next room:1
+move from the blue room into the red room push the chair back to the blue room then go through the red room into the green room:1
+go to red room , pick up the chair and come back:1
+go to red room push chair to purple go to green room:1
+move to the red room and take the chair and go to violet room:1
+move down down down:0
+go through the first door:1
+go to the door and pick up chair and go back to the door:1
+go south and then east find the chair and oush it west and then north into the blue room:0
+go to the green room:1
+go down three times go left four times go up twice:0
+go to the door and through it go to the chair and push it back to the door and through it then go to the other door and go through it:1
+go south , go west , get dog , go east , go north , then go south , west and north:0
+go to the door then go to the red room go behind the chair and then go to the blue room 's door then go into the blue room:1
+go south through the blue room door into the door of the pink room:0
+go down:0
+go down down down left down left left down left up up up down right right right right up up:0
+go to the red room get the char com back now go to the green room:1
+move one step forwarrd:0
+go south five spaces , go west for five spaces , go north one for space , and then go east for four spaces , go south for one space , go east for one space , go north for three spaces , go south for one space , go west for four spaces , and go north for two spaces:0
+go south then stop:0
+go to red room push chair to blue room go to red room go to green room:1
+go through door:1
+go to the pink room:1
+leave room retrieve chair and and enter blue room leave blue room and go to green room:1
+good through the door into the other room grab the chair and push it in front of the room you came in through:1
+go to pink room , locate yellow object , push to the green room , return to pink room then to blue room:1
+leave the blue room and go through the door and go to the red room and then push the chair towards the blue room and go through the door:1
+go to door and go south:1
+go south go south go south go south go west go west go west go west go north go east go east go east go south go east go north go north go north go down go west go west go west go north go north:0
+move to door go through door move to pink room push chair to purple door push chair into purple room:1
+go south then go west then go north one step , push the chair east then turn south one step , east one step , then push the chair north:0
+go to red room door , then go into red room:1
+turn around and take a step toward the green area:0
+move down three , move left four , go up two:0
+turn and move north one spot:0
+go down , then left , then down , then left , then down , then left , then push the yellow object up , then go down , then right , then up:0
+move out of the green room:1
+go down , go left , go down , go left , go down , go up , go down , go right , go up:0
+go through the door go straight go towards the chair push the chair through the blue door go through the door to the green room:1
+move to your left:0
+take one step forward and face the wall:0
+robot c , move to the red room and then move to the green room:1
+go to the door go to the red room go behind the yellow object go to the door go to the green room go to the door go to the red room go to the door go to the blue room:1
+go to the door , move to red room , move behind the chair , push it to the blue room door , move it into blue room , go back to the door , move to red room , move to green room door , go into green room:1
+go down four , left one , down one , left three , up three:0
+head south then west then push the object north:0
+go left:0
+leave the chair in blue room and go to green room:1
+go through the door from the purple room to the pink room then go through the door from the pink room to the green room:1
+go down left up rioght and up , then down , left and up again:0
+move to green room:1
+move to pink room:1
+move down three:0
+go down then go right then go right again then go up:0
+go down till end and go left till end go up one step get the chair move to next room and go to left side room:0
+go south:0
+head south then west push object north:0
+move to the red room:1
+go down , go right , push dog up:0
+reach the other side by making four to five steps opposite to the chair:0
+go to the door and go to the other room:1
+move to the red room , push the chair into the blue room , go into the red room and enter the green room:1
+go down:0
+turn to your left and take a step:0
+go down three spaces:0
+go to door , go to red room , go to object , push object to green room door , push object into green room , go to red room , go to blue room door , go to blue room:1
+move to red room:1
+move to door go south south south west west west north east east east east south east north north north:1
+go down then go left then go up then go right pushing the chair then go down then go right then go up:0
+go down:0
+go to the green room:1
+move to the red room , then move the object into the green room:1
+go push object into green room:1
+go to the door of the blue room , enter the red room , push the chair back to the same door of the red room into the blue room , then go to the other door of the red room and enter the green room:1
+bring the chair back here and go to the green room:1
+move one space to the west:0
+move to the red room move the chair to the blue room:1
+first go to the door between the blue and red rooms then make your way through the red room to the door to the green room:1
+down down down left left left left up up:0
+go to door go down and left right and up go back to door go down and up:1
+leave the room and go through the door and go to the next room:1
+go to the red room:1
+move down five times left five times up once right four times down once right once and up three times:0
+down down down down down left left left left left up right right right right down right up up up down left left left left up up:0
+down down down:0
+turn right:0
+move to the red room , then go to the green room:1
+go through door into pink room walk and go through door into green room:1
+go down to door and go east then go west then go east then go west then east and turn east again until the door go through door then go north and then turn west and turn south and go through door:1
+go to the pink room:1
+go to the red room , push the object into the green room , return to the red room , and then go to the blue room:1
+travel toward the west:0
+go to door in purple room go to red room go to chair in red room move chair to door in red room go to purple room go to door go to red room go to door go to green room:1
+move to the red room:1
+move to the green room:1
+go to the door of current room and then enter the red room through this door:1
+move towards the green room:0
+move to green room:1
+go down go left go up push the chair to the blue room go down then to the green room:0
+south west north:0
+go to the pink room:1
+go to the red room:1
+go south one square:0
+go to the door in the blue room enter the pink room go to the other door enter the green room:1
+go east:0
+step once to the right:0
+move down three spaces:0
+go to square ( 4,2 ) of the pink room:0
+go into the red room and push the yellow chair into the green room , then come back to blue room:1
+move to the green room:1
+move south to the red room push the chair back to the blue room and enter the green room:1
+move down four times , left once , down once , left three times , then up three times:0
+move to the red room and pick up the chair then move the chair into the blue room:1
+move down five spaces left five spaces up one space right four spaces down one right one up three:0
+turn to your right:0
+move to the middle of the green room:1
+go to door , go to adjacent room , go to other door , go to adjacent room:1
+move to purple door go threw purple door move to pink room move chair to purple door push chair into purple room:1
+come out and take the chair to the room from where you were:0
+go to the door go down take left stop go north reach the door go up:1
+down five left five up one right four down one right one up three down two left four up two:0
+go south five spaces , go west for five spaces , go north one for space , and then go east for four spaces , go south for one space , go east for one space and go north for three spaces:0
+go to the door go down:1
+go go to the door first and enter red room , slide the chair and go to the first door and come back:1
+go down , then left , then down , then left , then up:0
+go down:0
+go south then turn right:0
+go down:0
+go to the pink room and get the chair and bring the chair to the blue room:1
+go to the door and through it:1
+turn right and move forward one space:0
+go to the pink room and return with chair leave chair in blue room go to green room:1
+turn to your left:0
+move down four , left one , down one , left three , up two:0
+take a single step in the left direction:0
+down down down left down left left down left up up up down right right right right up up:0
+step towards the green area:0
+move south five times , move west six times , move north one time , move east four times , move south one time , move east one time , move north three times , move south one time , move west four times and north two times:0
+go down four steps , left one step , down one step , left three steps , push puppy up three steps:0
+go to door:1
+go into the red room bring the chair into the blue room then go into the red room then go into the green room:1
+do not go anywhere:0
+go to the door then the red room then go to middle of red room push the chair to the door of the blue room go down go to door of green room go in:1
+take five steps down then take five steps right , take one step up , take one step right , move the chair in front of you four steps right , leave the chair , take one step down , take one step right , move the chair in front of you up three steps , leave the chair move down one step , move left four steps and move up two steps:0
+go in the room and find the chair push it into blue room then go into the green room without the chair:1
+go down three left one down one left two down one left one up four down one right four up two:0
+move into the red room and push the chair to the blue room then move to the green room:1
+move right one space:0
+go to the door and move to the red room and stop:1
+go down go left go up one space go right push chair to first room door push chair up through door room:0
+go down five spaces then right five spaces then right one space then east four spaces then down one space then left one space then up three spaces then down two spaces then right four spaces then up two spaces then stop:0
+move to the pink room:1
+go down , down , down , down , right , down , right , right , right . up , up , up , up , up , up:0
+take a step backwards:0
+turn around and go up:0
+move down one:0
+move up:0
+move the chair in the pink room to the blue room and leave it there then go to the green room:1
+go south turn west to chair push to east then north:0
+go down five times , go left five times , go up one time , go right four times , go down one time , go right one time , go up three times , go down one time , go left four times , go up two times:0
+head to the door go into the red room and find the chair push the chair to the door and enter blue room:1
+move up until you can not move anymore:0
+go to red room , go to chair , move chair to blue room:1
+move to the red room and push the chair into the blue room:1
+go to near by door , go to bottom of red room , go to back of chair , go towards blue door but stop before it , go to bottom of chair , go to blue door:1
+go to the red room move the object into the green room:1
+go to the door connecting the blue room with the pink room . go through the door . go the yellow chair . push the yellow chair to the door connecting the pink room with the green room . go through the door connecting the pink room with the green room:1
+go to the door and enter the red room then push the backpack to the door of then green room and then push it into the green room:1
+move to the red room:1
+move to the red room:1
+move to the pink room move to the left of the chair right right right down right move to the blue room move to the pink room move to the green room:1
+go from the purple room to the pink room go behind the chair and push the chair from the pink room to the purple room leave the chair in the purple room and go to the green room:1
+go to red room bring chair back to blue room and then go to green room:1
+move down five spaces left five spaces up one space right four spaces down one space right one space up three spaces down one space left four spaces up two spaces:0
+move away from the purple room:0
+down down down down down left left left left left up right right right right down right up up up:0
+please go to the door and step into the next room:1
+go south from the blue room into the pink room and locate the chair and push the chair east until it lines up with the door to the blue room then push it north into the blue room:0
+go four down one left one down three left three up:0
+move to the door move to the pink room move to the left of the chair push the chair to under the door move under the chair move to the door above you move back to the pink room move to the door by the green room move to the green room:1
+move south to the red room:0
+go down then right the up then right immediately:0
+go to the red room , get the chair , take it to the blue room , then go back to the red room , then go into the green room:1
+head south five steps west five steps north one step east four steps south one step east one step north three steps south one step west four steps north two steps:0
+go to door , go to red room:1
+go to the door and do not stop until you reach the red room:1
+move behind:0
+move to the red room and push the chair into the blue room then go into the green room:1
+move into red room and then into green room:1
+go into the red room , and enter the green room:1
+go to door go to next room go to chair move chair to door:1
+go to red room and move red chair to blue room and go to green room:1
+down down down down left down left left left up up up:0
+go to the pink room bring chair back to the blue room then back to the pink room and through the pink room door and into the green room door:1
+move west:0
+go east one square:0
+go to the green room:1
+leave the purple room and go to the green room:1
+go to green room:1
+go to the red , push dog into green room:1
+go to door go south:1
+go to the door then go to the red room grab the chair in the red room go to the door to the green room then come in:1
+go down down down down left left left left up right right right right down right up up up:0
+open the door and enter the pink room:1
+move to the door and then go to the red room and then go to the door and go to the green room:1
+move to the white door then move in the same direction one square into the red room:1
+go down to the wall go left until the wall go up one step push the red chair to the right so it is aligned with the doorway push the red chair up through the doorway:0
+go to the door:1
+enter the red room and bring the chair back to the blue room:1
+go to the door connecting the blue and pink rooms . go through the door . go to the door connecting the pink and green rooms . go through the door:1
+go to the pink room:1
+move to the doorway of the green room then go back into the blue room:1
+move the chair from the red room to the blue room and then go to the green room:1
+go to the door:1
+go to the door , go through the door , go into the next room , go to the next door , go through the door into the next room:1
+step sideways to the right one space:0
+go to red room , go to far wall , go to chair , push chair to blue room:1
+move one step to west:0
+look left:0
+go down and the left below the yellow object , then push the yellow object up:0
+down , down , down:0
+go to the door of the blue room go down thru it to the pink room and push the chair back up to the doorway of the pink room going up into the blue room then go back down into the pink room and go up into the doorway of the green room:0
+turn left and move one spot in front of you:0
+move south to the door , then into the red room:1
+move to the red room get the chair and move it to the purple room then move to the green room:1
+go down to the wall go left until you are lined up with the yellow toy push the yellow toy up into the green room go down one step go right until you are at the other door go up into the original room:0
+go down left up:0
+leave the room and go through the nearest door and enter the next room and go behind the object and push it to the nearest door and go through it and then leave it there and go through the door and go towards the farthest door and go through it and stay in the room:1
+move to the pink room and stop after entering:1
+put object into green room and then go back to blue room:1
+get red chair in pink room and move it to blue room:1
+go to the chicken go to the green room go to the blue room:1
+go through the door into the pink room , go to the animal and push it through the door into the green room , then go back through the door into the pink room and through the other door into the purple room:1
+move down to the door move down then left move up then right to the chair:1
+go to the door , and then take one more step:1
+turn left , then wait:0
+go down three:0
+take one step forward:0
+go down and to the left:0
+take three steps south:0
+go down go right go up go right go up go down go right go up:0
+go down one spot:0
+move up:0
+go south south south west south west west west south west north north north south east east east east north north:0
+go down three left one down one left two down one left one up three right four up three:0
+move back:0
+go to the door go to the red room go to the chair and bring it to the door go through the door:1
+move south four moves , west one move , south one move , west three moves , and north three moves:0
+go through the door:1
+go through the door:1
+go through doorway:1
+go through the door into the next room , find chair and push it through the door into the next room:1
+go down , right , right , left , up:0
+go to the red room push the red chair across the room:1
+go to the orange room and push the chair from the orange room into the green room , then go back into the orange room , then go back to the purple room:1
+go to the door and exit and go to the other door and enter:1
+go to the pink room and push the object into the green room before returning to the purple room:1
+go down down down left left left left up up:0
+go into the red room:1
+go to the red room move chair to the green room:1
+go to door move down move left move up move right move up go through door move down move up move right go through door:1
+go to door and go to yellow object and go to the door:1
+go to the pink room and push the chair into the purple room:1
+go into the red room take the chair to the blue room go back into the red room and then go into the green room:1
+go to the door go to the end of the room go to the chicken go to the door go to the other door:1
+go to the door and into the next room:1
+stand next to the door on your left side:0
+go down three:0
+go south:1
+go through the pink room door locate the chair and push it through the green room door return to the pink room and go through the door to the blue room:1
+move south to the red room and then north to the green room:0
+move down five times then go right five times then go up once and four times to the right move down once and then to the left lastly go up three times:0
+go down:0
+go to door , go to pink room , go to object , go to door , go to green room , go to door , go to pink room , go to door , go to purple room:1
+go through the door into the red room and push the chair back through the door into the purple room:1
+go to the red room push the box into the green room then go back to the blue room:1
+go to the door , then into the next room , then go to the other side of the room , then go back to the other side of the room , to the door and into the room you started in , then go back to the door , across the room , then to the door and into that room:1
+go to the red room . go to the green room:1
+i want you to go to the door and into the next room:1
+go to the door of the blue room , enter the red room , then go to the other door of the red room and enter the green room:1
+go south go west go east go north go south go west go north:0
+go to door south three west four go to door north one south one east four go to door north two:1
+move to the red room push the chair into the blue room move to the green room:1
+south three west two north two:0
+i want you to go to the door and then into the red room then go to the chair and carry the chair back to the blue room:1
+go straight and take three steps then take right turn , left turn and again right turn , slide the chair to up and take left and go up:0
+move to chair push chair to purple room move to green room:1
+go south through door till you reach a wall go west until you reach another wall go north one pace and then east four paces south one pace east one pace then north four paces through door south one pace through door west four paces and north two paces through door:1
+go down into the room:0
+move up:0
+move to the red room , grasp the backpack , then move to the green room:1
+follow south then right then left:0
+first go to door and enter the red room , then go to the door to enter the green room , go inside the green room and stand next to the door:1
+step once to the west:0
+go to the door , then go into the red room , then go to the chair , then push the chair to the second door , then push the chair into the green room:1
+go up one square:0
+go down to the wall go to the left to the wall go up one step push the red chair to the right go down one step push the red chair to the green room:0
+go to the door nd into the other room:1
+go to the red room and get the chair and move it to the purple room:1
+go to the red room , push the red chair back into the green room:1
+move to the red room bring the chair to the blue room then go to the green room:1
+go to the pink room move towards the object in the room and turn to the green room:1
+go south west north east south east north:0
+move to red room move west then down then west again and up to green room:1
+leave through the door to the red room then push the chair through the door into the blue room:1
+go south then east then north then west then north:0
+move south:0
+go to the door of the blue room then enter the red room and push the chair back to the door of the red room into the blue room:1
+move through the door into the red room move to the left side of the chair and push it back towards the door and move it back into the purple room:1
+go to peach room go to green room:1
+go to the door and then go to the other room:1
+go to the door then enter the red room , then go to the green door and enter green room:1
+move to the red room , push the chair through the door of the blue room , go to the green room:1
+go down three spots left four spots and up two spots:0
+go to the door , and move into the next room:1
+go out the blue room door into the red room then push the chair through the door to the blue room then exit that door to go into the red room then go through the door to enter the green room:1
+go through the blue room doors and then make a right and go through the green room door:1
+go to the door move to the large room go to the chair push the chair back to the starting room:1
+down , down , down:0
+go to the red room push the red chair to the other side of the room:1
+move to the door enter the red room push the chair to the blue room then go to the door at the green room then enter the green room:1
+push the yellow object into the green room:1
+go north once:0
+go to the door , get the chair , and then go back through the door:1
+go to the door go to the red room push the red chair to the door push the red chair through the door to the purple room:1
+go to the door , get the chair , go back to the door , go to the other door , go through the door:1
+move down down down down down left left left left left up right right right right right down right up up up:0
+go south then west then north and push the chair east and then north and up through the door:0
+go to the pink room then move south two steps then move west five steps them move north one step then move east four steps then move south one step move east one step then move north three steps then go to the green room:1
+move into pink room:1
+go to the green room:1
+go to the door of the blue room and south into the pink room push the chair east and north to the door of the pink room and into the blue room then go to the door of the blue room into the pink room and to the door of the pink room to the green room:1
+move to the green room:1
+go to the pink room pick up the chair and move it to the blue room:1
+so south four spaces , west one space , south one space , west three spaces , north three spaces:0
+go to the red room:1
+go south , and then go west:0
+move up and wait:0
+go out the door , then into the other door:1
+go down to the red room:0
+move to the red room , move to the green room:1
+go from the blue room to the red room then push the yellow object into the green room:1
+move one space:0
+go to the door , then into the next room , go the other side of the room , then go back to the side you came from and then to the door and into the room you started in:1
+go down until you hit a wall then go left until you hit a wall then go up once then right four times then down then right then up three times:0
+push chair into green room:1
+go west:0
+go to the pink room:1
+go to the red room:1
+go down into the next room:0
+turn around and go one space forward:0
+go south through door go west to next door go north and into room:0
+go to the red room to the red chair:1
+go north:0
+down:0
+go down and turn right three times push chair across then turn right then left and left again push chair up then go back and turn left then turn right:0
+go to door then to room , go under object and go to other door into room , go back to door then to the room , move to other door then into the room:1
+go down go left go up go right go up go down go left go up:0
+go to door enter red room push chair to green room door:1
+go to the door turn go to the other door enter:1
+go through door to chair and push it into blue room then go to green room:1
+step over one spot to the right:0
+move to the red room:1
+move to the red room:1
+move to the door then move to the other room:1
+go to the red room:1
+go south five steps , west five steps , north one step , east four steps , south one step , east one step , and north three steps:0
+bring the chair to the blue room then go to the green room:1
+move down as far as possible:0
+go to the red room:1
+go to door down left and up to other door:1
+move south through the door , east to the chair , push the chair west and then north through the door:0
+go to the door , go to red room , go to door , go to green room:1
+move to the door , move to the next room , move to the other door , move to the next room:1
+go to red room:1
+take one step forward going north:0
+go down three steps through the door:0
+move the chair to the blue room:1
+go down , then left , then up , then right , then down , then right , then up , then down , then left , then up:0
+go to the red room:1
+go to the door and then go to the red room:1
+go south from the blue room to the pink room:0
+push the object into the green room and then return to the blue room:1
+go down through door turn right turn right at door go up:0
+go into the red room and push the object into the green room:1
+go south till you reach a wall go west until you reach another wall go north one pace and then east four paces south one pace east one pace then north four paces south one pace west four paces and north two paces:0
+move south five steps then move west five steps then move north one step then move east four steps then move south one step move east one step then move north three steps:0
+move down to the red room , then move the chair up to the blue room:1
+go to the pink room and push the chair in the pink room into the purple room:1
+go to the green room:1
+open the door and go to the red room:1
+go to door and move to next room:1
+go to the red room , push the red chair to the green room , go to the red room , go to the blue room:1
+turn left , face forward and then do n't move:0
+go to the door in the blue room go thru the door and do not stop until you enter the pink room door:1
+go to pink room push chair to blue room:1
+move down five spaces left five up one right four down one right one and up three:0
+go through the door from blue room to the pink room:1
+move to the green room from the purple one:1
+go down three steps and move left four steps and go up two steps:0
+go to the door go to the big room go to the door of the original room go back to the door go to the door of the other room:1
+go the the red room go to the left side of the chair go to the right side of the room go to the bottom of the room next to the chair go to the blue room go to the green room:1
+go down three steps:0
+open the door and close it , then open it again:1
+please go south into the red room:0
+go down , down , down , down , down , left , left , left , left , left , up , right , right , right , right , down , right , up , up , up , down , left , left , left , up , up:0
+take the shortest available path from the purple room to the green room:1
+go through the door and push the chair in the next space back through the door and then go back out the door and go to the green room through the other door:1
+go to door move chair to door move chair into blue room move to door enter green room:1
+south five west four north three:0
+move through the door to the red room then move with the object through the door to the green room:1
+go to the door and then go to the pink room:1
+go to the blue door , go thru it to the pink door , locate chair , and push chair to pink door , go thru pink door and thru the blue door:1
+go to the red room:1
+move to the green room:1
+go through door on your left get chair return through same door:1
+go to the red room push the chair into the original room then go to the green room:1
+go down five times go left five times go up one time go right four times go down one time go right go up three times go down two times go left four times go up two times:0
+go to door go through door go to chair push chair to blue room door push chair through the door:1
+move down five times then go right five times then go up once and four times to the right move down once and then to the left then go up three times and come down once move right three times and lastly go up twice:0
+go to the door grab the chair go the door enter the blue room:1
+move left:0
+go to door down four left five up one right four down one right one up three down one left four up two:1
+go to the red room and push the chair in front of the blue room:1
+go to the first door and enter red room , pick up the chair and come back:1
+go from the blue room to the red room:1
+go out the door and then down:1
+go south:0
+step backwards:0
+move to the green room:1
+move to the red room , then the green room:1
+go to the pink room:1
+go east:0
+go to the door of the blue room into the red room , then push the bag to the other door of the red room into the green room:1
+go to the door then go to the red room:1
+go to the pink room and bring the chair to the blue room and then go to the green room:1
+go to the blue room door , go to the red room door , go to the green room door:1
+go down , and then go left past the object , then go up:0
+go to the red room , push the yellow chair to the green room , go back to the red room , go to the blue room:1
+move up until the wall is reached:0
+go to the pink room:1
+go to door , move to chair and push back up:1
+go through the door and keep going then move towards the chair push the chair level with the door push the chair through the door:1
+go down and the left and then up at the yellow object:0
+move to the door move to the red room move behind the chair push the chair towards to the blue room door move the chair to the blue room:1
+move upward chair to path:1
+go to red room get chair move chair to purple room go to red room go to green room:1
+move through the door into the next room , push the chair through the green room door into the room:1
+turn left and stop:0
+move to the red room , then grasp the backpack , then move to the green room , then release the backpack , then move to the red room , then move to the blue room:1
+move to the red room , move the yellow item to the green room:1
+move to the right:0
+go to the chair then push it to the red room:1
+go down to the door down left up right up:1
+go to the door of the blue room go through it to the pink room and push the chair back to the doorway of the pink room going into the blue room:1
+take a step to your right:0
+go to the door and into the red room push the red chair to the door into the purple room go to the door and into the green room:1
+go to the door to the red room:1
+go to the red room:1
+go to the green room:1
+move to the red room and push the object back into the blue room:1
+down right , right , left , up , leave chair , down right , right , up:0
+got to door , go through door , enter red room:1
+go into the red room:1
+go to blue room door , go thru to pink room door , locate chair , bring chair to pink room door , then thru blue room door , go back thru pink room door and locate 2nd pink room door , go thru and go thru green room door:1
+move to the pink room move to the green room:1
+three steps down through blue door four steps to the right and two through green door:0
+go down five spaces go left five spaces go up one space go right four spaces down one space right one space up three spaces down one space left four spaces up two spaces:0
+move to the door and move to the green room , while passing through the red room:1
+move to the bottom of the red room , move to the end of the red room , push the chair to the door:1
+move to the red room:1
+go through the door get the chair go back through the door leave chair go through the door go through the other door:1
+go down take left go north enter into the green room:1
+move to the door and then move to the other door to get to the other room:1
+go to the pink room and move the chair to the blue room:1
+go through the door to the red room and push the chair through the door to the green room and then you go back through the door to the blue room:1
+go to the blue door , go thru it to the pink door , locate chair , and push chair to pink door , go thru pink door and thru the blue door , locate the yellow object and push it thru the pink door and thru the green door , go back thru pink door , go to first pink door , go thru it to blue room:1
+go down five times go left five times go up one time go right four times go down one time go right go up three times:0
+go south to the wall head west to the next wall head north on pace head east four paces go south one pace then go east one pace then go north four paces then go back south two paces the west four paces then and north two paces:0
+go to the red room , push the chair into the blue room , go into the green room:1
+head to the door and into the other room push the chair to the same door then head out the door to the other door:1
+go down left up:1
+go ahead one step:0
+move south five spaces then move west five spaces then move north one space then move east four spaces then move south one space then move east one space then move north three spaces:0
+go to the door move down through the door then west then north pushing the object through the next door:1
+move to the red room:1
+move down twice , move left four times , move up twice:0
+go to door then room push object to other door then past return to first door and past to first room:1
+down , down , down:0
+move into large room:1
+go south to the wall go west to the wall go north one pace turn right and push the chair four paces go south one pace go east one pace go north three paces:0
+move to the pink room:1
+go to square ( 4,1 ) in the pink room:0
+move to the red room push the chair back to the blue room:1
+go to the pink room get behind the chair return to the original room:1
+move blue room to red room and take a toy move to green room:1
+move down until you are in the pink room:0
+move to the red room , move the chair to the blue room:1
+leave this room and go into the green room:1
+go down , down , down , down , down , left , left , left , left , left , up , right , right , right , right , down , right , up , up , up:0
+move to the red room and push the chair back into the blue room:1
+go to door go to other door:1
+move south five units , west five units , move north one units , move east four units , move south one unit , move east one unit , move north three units:0
+go forward:0
+move to the blue door room enter the red room retrieve the chair bring it back to the red room door and then enter the blue room:1
+go to the door and then move down to the wall move left till you hit the wall then move up half way and then go back right hit the chair and move it to the room:1
+go to the red room , then push the chair into the green room , then return to the red room , then go to the blue room:1
+move down and right and up and right:0
+move down to the door and then move down out of the room:1
+down left down up left and up:0
+go through the door move to the next room:1
+go south and then go west and then go north:0
+move left one:0
+move south:0
+go into red room get chair go into blue room:1
+move south four times , move west one time , move south one time , move west three times , move north three times:0
+move south one movement:0
+go south take left stop go north:0
+go left until green room is visible:0
+go to the door and pass into the red room then go to the door and pass into the green room:1
+go to the red room and then go to the chair ; push the chair to the blue room then go to the red room ; go to the green room:1
+take one step north:0
+go down five times , go left five times , go up one time , go right four times , go down one time , go right one time , go up three times:0
+go the red room , get dog and go back to blue room:1
+move to the pink room push the chair to the purple room:1
+go down four left one down one left three up three:0
+stand still:0
+go out of the door , move the chair into the first door , go out of the door and into the next door:1
+go south into the pink room push the chair east and north into the blue room:0
+go down five spaces left five spaces up one space right four spaces down one space right one space up three spaces down one space left four spaces then up two spaces:0
+go to the door open it then go behind the box and push it into the green room:1
+move to the red room , and move into the green room:1
+go forward open the door and walk to the red room:1
+go to pink room and move object to green room then return to pink room and finally to purple room:1
+go through door go to red chair bring chair through door:1
+move down four times , left once , down once , left three times , and finally up three times:0
+move right one block:0
+go down go north go east go south go up:0
+go down three steps left one down one left two down one left one up three down one right four and up two steps:0
+move down four times and then move right four times , move right once , then move down once and move right three times . go up three times:0
+go down to the wall go left to the next wall go up one step and stop push the red chair right across the room:0
+go into the red room , push the chair into the green room , go back into the red room and enter the blue room:1
+move to the red room:1
+go to the door and walk through it:1
+go to the chair and move it into the room:1
+go down thru the pink room door:0
+go through the door into the red room and push the chair back through the door to the blue room:1
+turn left and move forward one space:0
+move to the pink room then back to the purple room then into the green room:1
+down , down , down , left , left , left , left , up , up:0
+go through the other door:1
+move to the red room , move to the object in the red room , move the object to the green room , move back to the red room , move to the blue room:1
+go through door , get chair , go to other door , push through other door:1
+go to the red room:1
+go to the door go to the red room go to the door go to the green room:1
+go down , go down , go down , go down , go right , go down , go right , go right , go right , go up , go up , go up:0
+move left:0
+go to the door and then go through it:1
+go down , go left , go up beside the chair , go right , go down , go right under the chair , go up:0
+go down three steps turn right go forward four steps turn right go forward two steps:0
+go to the door of the blue room and then go through door of red room:1
+push the red chair back into the blue room:1
+move down three times and then move right four times . move up two times:0
+go south four moves go west one move go south one move go west three moves go north three moves:0
+go to the red room , go to the green room , go to the red room and go to the blue room:1
+turn left and move one square forward:0
+open the door enter the red room then go to the other door open it and enter the green room:1
+move to your left and face the left wall:0
+go to the door , move to the red room , push the object to the blue door , enter the blue room:1
+move down three move left four move up two:0
+move to the door move to the pink room move to the left of the chair push the chair to under the door move under the chair move to the door:1
+go to the green room:1
+so all the way south all the way west north one all the way east then north:0
+go to red room door and enter push item to green door and enter go to red room door and enter go to blue room door and enter:1
+three steps south:0
+go down go down go down go down go down go left go left go left go left go left go up go right go right go right go right go down go right go up go up go up go down go left go left go left go left go up go up:0
+move to the red room , move to the red chair , move the red chair to the blue room:1
+go south for three spaces , go west for three spaces and go north for two spaces:0
+go down , go down , go down , go right , go down , go right , go right , go down , go right , go up , go up , go down , go right , go right , go right , go right , go up , go up:0
+go to the door and enter the pink room and push the chair into the blue room:1
+go down:0
+go south south south:0
+go down three spaces:0
+go to the door then go to the red room:1
+go towards the west by one step:0
+walk to door go to chair go back to door exit door and go to next room:1
+go out the door into the next room and move the chair into through the door of the first room:1
+remain in the same position:0
+go to red room , slide chair twordas you and come back:1
+move down , then left , then up and push the chair to the right , then up and into the blue room . then move down , then left , then up , into the green room:0
+go to red room:1
+go south till you reach a wall go west until you reach another wall go north one pace and then east four paces south one pace east one pace then north four paces:0
+go to door , go to next room , go to far side of chair , push chair to blue door , push chair to blue room , go to green door , go to green room:1
+go down five times go left five times go up one go right four times go down go right then go up three times:0
+go south for three spaces , go west for one space , go south for one space , go west for two spaces , go south for one space , go west for one space , go north for three spaces , go south for one space , go east for four spaces , and go north for two spaces:0
+push the object in the next room into the green room:1
+go to door and go to other door and go in door:1
+go to the door open it and go into the other room:1
+go through the door of the purple room in the pink room pick up the dog and take it through the door into the green room go back through the door into the pink room and around through the door into the purple room:1
+go down left right down and up:0
+go north one square:0
+go through the door into the red room:1
+go through the door from the blue room into the red room then push the yellow object through the door into the green room:1
+move west:0
+down , down , down , left , left , left , left , up , up:0
+move east one step:0
+go down into the red room until you reach the wall turn right push the object north into the green room turn left and turn left again into the blue room:0
+go through the second door:1
+go to the door of the blue room enter the red room and push the chair through the door of the red room back into the blue room and then go to the other door in the red room to enter into the green room:1
+go south until you hit the wall:0
+go down:0
+go to red room push chair to blue room:1
+go through the door where the chair is at:1
+go down as far as you can go left as far as you can go up once move right four times move down once move right once move up three times move down once move left four times move up twice:0
+move through the door to the red room then push the chair through the door to the blue room:1
+go down go left go up go right go up:0
+go down to the wall in the red room and turn right to the next wall and turn right til you are even with the chair and push the chair even with the door and push the chair up to the purple room then come back down to the red room turn right and travel til the door of the green room and go up through the door:0
+move down as far as possible then right four steps then up four steps and then retrace your steps:0
+go down down down left left left left up up:0
+please go down three moves:0
+go down go to the left go up go right go up:0
+go to the red room and take the chair to the blue room . from the red room door , go to the green room:1
+go into the red room and move the chair to the blue room:1
+move away from the green room:0
+move chair to blue room and then go into the green room:1
+turn one hundred eighty degrees and move forward a space:0
+face the other direction and advance a space:0
+go to the door and go down then go west to the yellow object and then north to the door:1
+go down , go left , go up beside the chair , go right , go down , go right beneath the chair , go up until the chair is in the blue room , go left , go up into the green room:0
+go south , then west , then north , then east , then south , the east , then north:0
+go thru the pink room door turn left until you come to the green room door and then go up thru the door:0
+go south , then turn west , take one step north , push the chair east , stop , take one step south then one step east , push the chair north , stop , go south then west then stop , head north:0
+go backward until reaching a wall:0
+move the chair from the red room into the blue room:1
+go to the door in the purple room go through the door in the purple room and go through the door into the pink room:1
+go to the door and into the next room and then get behind the chair and push the chair back into the original room:1
+open the door an enter the red room:1
+move east one space:0
+go down , go left and below the object , push the object upwards:0
+go to red room and move red chair to blue room:1
+go down left up right down up left and then up:0
+move slightly to the right:0
+move to the red room move behind the chair move the chair into the red room:1
+go to red room , push chair into the blue room:1
+go down to the wall go left until you are next to the yellow toy push the yellow toy up into the green room:0
+move to red room , go to chair , move chair to blue room , move to red room , move to green room:1
+go to the door then into the red room then go south then west then north then east then south:1
+do not move:0
+go out the blue room door , go to the blue room door , go into the blue room:1
+shift your body to face right:0
+go down down down down left down left left left up up up:0
+go to the door:1
+push the backpack into the green room then go into the blue room:1
+go down until you hit the wall and then go left until you reach the end of the room and then go up one and push the chair over four steps to the right and then push it up three steps:0
+go straight down to the wall turn right and go to the wall and turn right again til you get to the chair and turn right again and push the chair to the door:0
+go down left and up:0
+turn to your right and go forward:0
+go to the red room:1
+go to the red room push the chair to the blue room and then go to the green room through the red room:1
+go to the red room:1
+go through the door and push the chair through the door back into blue room:1
+move south:0
+go down to the wall go left at the wall go up to the wall one step push the red chair to the other side of the room:0
+go down to the wall go left to the wall go up one step push the red chair to align with the doorway push it up through the doorway to the purple room go down to the purple room go left to the doorway and walk up into the green room:0
+move out of the room straight ahead:1
+go to the door and enter the red room and then go behind the chair and push it to the door of the purple room and then into the purple room:1
+four steps down , one step over , one step down , three steps over , three steps up:0
+go inside the red room . go behind the chair . move the chair right until it 's below the blue door . go below the chair . move the chair into the blue room . go to the red room . go to the green room:1
+down , down , down , down , down , left , left , left , left , left , left , up , right , right , right , down , right , up , up , up:0
+go to the door and walk through to the next room walk to the next doorway walk through next doorway and into next room:1
+go to the red room then push the chair into the blue room:1
+go to the door in the blue room , enter the red room , push the chair to the door in the red room , push the chair into the blue room , go to the door in the red room , go to the green room:1
+go to the green room:1
+take the shortest path so that you are underneath/below the backpack then push the backpack into the green room then take the shortest route back to the initial starting point in the blue room:1
+go to the red room and push the red chair into the purple room and then go to the green room:1
+push the object in the pink room into the green room:1
+south west three spaces go north one go east three north four:0
+go to the door of the orange room , then go into the orange room and push the chair to the door of the green room , then push the chair into the green room:1
+go to the door in the purple room and through the door go to the door at the pink room and through the door into the pink room go behind the chair and push the chair to the doorway in the pink room go through the door in the pink room and go through the door into the purple room leave the chair in the purple room go back to the door in the purple room and go through the door in the purple room go through the door in the pink room go right to get to the other door in the pink room go through the door in the pink room and go through the door to the green room:1
+go south into the room:0
+move to the pink room:1
+go past door:1
+go to the pink room and push the chair back into the blue room:1
+move from the blue room into the red room:1
+proceed by moving yourself east one movement:0
+move to the door go throught it push chair back to door of the room you started in push chair through door go back to door go throught it move to other door in room and go through it:1
+go to the door go to the red room go to the other door go to the green room:1
+move down into the red room , push the chair to the right and up into the blue room , then pass back into the red room , then up and left to the green room:1
+go down go left go up go right go down go right go up:0
+take one step:0
+go down and then left and up behind the chair push the chair into the blue room go down and then left and then up into the green room:0
+put chiir in red room return to green room:1
+move through the door into the red room:1
+proceed down to the wall:0
+go down until you can not go down , go right four steps , push the yellow chair up:0
+move to the door and then move to the chair and then move to the door and then move to the door and then go to the other door:1
+enter the red room and walked up to the wall go till you reach the next wall then north one pace then east to chair is lined up with door and finally push chair to door to north:1
+go down until reaching a wall:0
+push the bag into the green room:1
+go the the door , go to the red room , go the the far side of the chair , go to the other side of the room , go to the bottom of the chair , go to the door , go to the blue room , go to the door , go to the red room , go to the far door , go to the green room:1
+go to door , enter red room , move chair to door to blue room , move chair into blue room:1
+go to the door and through it to the pink room and push the pink chair to the door of the purple room and through it and then go into the green room:1
+go south three spaces then go west four spaces and finally go north three spaces:0
+go south and stop when you reach a chair , push chair north to return where you started:0
+go to the door go the chair move the chair to starting room:1
+go south , go west , go up , go east , go down , go right , go north:0
+push the chair into the green room and then you go back to the blue room:1
+move to the pink room move to the left of the chair right right right down right move to the door:1
+go to red room go down go right go down go to right door go down go right go to left door enter green room:1
+go down go right go backwards:0
+go straight and take three steps:0
+go to the door , go to the red room:1
+go to the door and enter the red room:1
+turn right , face forward and stop parallell to the nearest door:0
+go out the door push the chair and then move to the other room:1
+go through the white door of blue room enter red room through door push chair through white door of red room push chair through door of blue room:1
+go to the door , go into the red room , take the yellow thing to the door of green room , leave it there , go to the door , go into red room , and then go to the door of blue room:1
+leave the blue room and go to the red room and go behind the object and push it to the green room and leave it there and go to the red room and then go to the blue room:1
+go through the door into the pink room and push the chair back through the door into the blue room:1
+go out the door , go to the yellow thing , go to the other door:1
+south west north east north to room south to room west north to room:0
+move to the door connecting the blue and red room then move into the red room then move to the door connecting the red and green rooms then move into the green room:1
+go through the door from the blue room into the red room:1
+move south five times , move west five times , north one time , east four times , south one time , east one time , north three times:0
+head to the door in the other room push the object to the door and through it:1
+go south one space go through the door go south two more spaces west one space south one space west three spaces and north two spaces while pushing the object and then push the object through the doorway:1
+go down , left up right and up again:0
+go to red room:1
+go to the door enter the red room move to the object move the object to the other door move the object into the green room:1
+move to pink room push chair to purple room:1
+go to red room door , into red room , find chair , bring to red room door , out of red room , to blue room door , into blue room:1
+three steps down , one step over , one step down , two steps over , one step down , two steps over , three steps up , one step down , four steps over , one step up:0
+go to the door enter the red room move the chair to the blue room door move the chair to the blue room exit the blue room go to the green room door enter the green room:1
+go to the door and then go west , then go south below the yellow object , then push the yellow object north to the door:1
+move a step to your left:0
+move to the red room push the chair to the blue room go to the red room then go to the green room:1
+move from purple room to green room:1
+move south move west move north get chair put rioom go to green roomm:1
+move one step to wall:0
+move to the chicken go to the green room:1
+go to the red room and move the chair to the blue room:1
+down three:0
+go south for four spaces , go west for one space , go south for one space , go west for three spaces and go north for three spaces:0
+go south three spots to the other room:0
+go to the door of the current room and enter the red room through this door . move to the door that opens to the green room with the object seen in the red room and enter the green room with this object:1
+south three , west one , south one , west two , south one , west one , north three , south one , east four , north two , south one , west four , north two:0
+move south three steps then stop:0
+go to door go to bottom of red room go below yellow object go to green door:1
+move to red room , move to green room:1
+go to the pink room:1
+move through the door to the red room then move through the door to the green room:1
+go south to the red room go west and grab the chair go east then go north:0
+go down three steps then left four steps then up two steps:0
+go to the door then enter the red room then go to the door to the green room and enter the green room:1
+go into the red room and move the object into the green room:1
+move to the red room , move to the green room:1
+go from the blue room to the pink room:1
+go to door then go to red room:1
+go to the door of the purple room and go through the door to the orange room:1
+go to the blue door then enter the red room push the chair to the red door into the blue room the enter the red room go to the green door and enter the green room:1
+move one space forward:0
+first go to red room , then go to green room:1
+go down , down , down , down , down , left , left , left , left , left , up , right , right , right , right , down , right , up , up , up , down , left , left , left , left , up , up:0
+move five steps down five steps to the left one step up four steps to the right one step down one step to the right three steps up down one step four steps to the left and then up two steps:0
+move south three move west one move south one move west two move south one move west one move north three move south one move east four move north two:0
+move through the doorway into the pink room and push the red chair back into the blue room through the door:1
+move to red room , then move west and down and west and down to object and move to green room , then move back to red room and then to blue room:1
+go down turn left and walk:0
+move down five move left five move up one move right four move down one move left one move up three move down one move left four move up two:0
+go to the door of the red room . go inside the red room . go behind the chair . move the chair right until it 's below the blue door . go below the chair . go up to the blue door . go through the blue door:1
+go into the green room:1
+go to the door to leave the blue room , move the yellow item in the red room to the green room by pushing it to the door of the green room and pushing it through the door:1
+go to red room , push object to green room:1
+go into the pink room get the chair and bring it back to the blue room:1
+move east:0
+go down turn left then up then right then down a step then go up then down then move left then go up:0
+turn to your right and move ahead one space:0
+move up:0
+go to the door go to the red room go to the far side of the chair go to the other side of the room go to the bottom of the chair go to the door go to the blue room:1
+go through the door from the blue room into the red room:1
+go to the pink room:1
+go to red room move red chair to blue room:1
+go to through the door to the red room , then go through the door to the green room:1
+go out of the door and push the chair into the other door:1
+go to the door , go to the red room with the yellow chair , push the yellow chair to the door , push it to the green room , go to the other door , go through the door:1
+go through the first door to the wall then go to get behind the chair then push the chair through the door:1
+go to door first pick the chair go to door and place it:1
+go to the door bring the chair and go to the door:1
+go to the red room:1
+go to the red room:1
+go down go west go up go east go down go up to the red chair:0
+go to the red room move the red chair to the purple room:1
+go to the red room:1
+go to the door go through the door go to the chair take the chair go to the previous door go through the previous door leave the chair go to the door exit the room go to the other door enter the room:1
+go to the pink room and push the yellow object into the green room:1
+go to the door and enter the room:1
+go down all left all up one right four down1 right one up three down1 left three up three:0
+go down and then left then up then right then up:0
+move into the red room:1
+go south move the chair north and walk to the room on the west:0
+go to the door and enter the red room , find the object and push it through the door into the green room , then return to the blue room by going through the other door:1
+move down move left push chair into room:0
+travel west:0
+turn right near the closest door and halt:0
+south , south south , south , west , south , west , west , west , north , north , north:0
+go to the red room:1
+move down three move left one move down one move left two move down one move left one move up three move down one move right four move up two:0
+turn backwards:0
+go forward you will exit the purple room and enter the pink room:0
+go south three steps:0
+move towards the camera:0
+go to the door pick up chair go back to the door return to door go to other door:1
+move to the green room:1
+go to the red room and then go to the green room:1
+go down go down go down go left go down go left go left go left go up go up go up:0
+take a single step to the top:0
+quickly turn right and then stay near the door:0
+to go up down:0
+push object into the green room:1
+go down then go left then go up and push the chair right then go down then right then up leave the chair then go down then left then up:0
+go south then east then north:0
+go south three squares then west four squares then up three squares:0
+move to the red room:1
+down five left five up right four down right up three down left four up two:0
+robot a , go straight down turn right , go straight , go up:0
+go to red room , push yellow thing into green room:1
+move forward up and down out of there:1
+go to the door connecting the blue and pink rooms . go through the door . to the yellow chair . push the yellow chair to the door connecting the pink and green rooms . push the yellow chair into the green room . go to the door connecting the green and pink room . go through the door . go the door connecting the pink and blue room . go through the door connecting the pink and blue room:1
+go right:0
+go south through the door head west through the room and go north through the next door:0
+go back:0
+go down five steps left five steps up one step right four steps down one step right one step up three steps down one step left four steps and up two steps:0
+go to the red room:1
+go to the yellow chair , push the yellow chair into the green room:1
+go to the pink room:1
+exit through the blue room door and enter through the red room door:1
+go through the door collect the chair return through the door then exit and enter the room next door:1
+go to the door and then go to the red room and then go to the door and go to the green room:1
+go down four steps then go left one step and down one step then go left three steps then go up three steps:0
+go to the red room:1
+move south four times , move west one time , move south one time , move west three times , move north three times , move south one time , move east four times and north two times:0
+take one step right:0
+move in the following way - move down three times then move left four times then move up two times:0
+move down and then right and up and then right and then up and then left and up:0
+go thru the pink room door turn left until you are below the chair push the chair to the green room door and then go up thru the door leave the chair and go back thru the door into the pink room and then go up thru the door to the blue room:0
+move the chair into the room:1
+turn clockwise and take one step forward:0
+go to the green room:1
+go to the red room and push the box into the green room:1
+go down three spaces , left four spaces , up two spaces:0
+go to the door then left and go through the other door:1
+move one space to the left:0
+move to door go to pink room move underneath chair move to the other door move to green room move to the door move to the pink room move to the other door move to the blue room:1
+move forward one unit:0
+move into the red room get to the left of the chair and push the chair back up into the blue room:1
+move to the red room:1
+go to the pink room and get behind the chair before pushing the chair back into the purple room:1
+go south and stop when you reach pink:0
+go to the pink room and push the chair into the blue room , then go back to the pink room and enter the green room:1
+move to the green room:1
+go to door to red room , go into the red room , push the yellow robot into the green room through the door , go out door of green room to red room , go through door from red room to blue room , stay in blue room:1
+move to the behind the black box on the right side of the green door opening:0
+go south:0
+go to pink room walk go to green room:1
+go south to pink room , locate chair , return chair north to blue room , go south to pink room , travel west then north to go to green room and stop:0
+go south to room go to chair push it east:1
+go to the door , go to the pink room , go to the chair , go to the door , go to the green room:1
+move to door step get the red chair move to blue room door step place their:1
+move up once:0
+go to pink room pick up chair go back to blue room:1
+take one step south from your current point:0
+go to the door then go to the next room then go to the chair then push the chair to the door then push the chair to the room then go to the door then go to the next room then go to the other door then go to the other room:1
+move to the red/blue door , then enter the red room , grasp the red chair , move to the red/blue door , then enter the blue room , release the chair , then move to the red/blue door , then enter the red room , then move to the green/red door , then enter the green room:1
+go to door go to red room go west go north go east go north go to door go south go west go to door enter green room:1
+move into the red room and stay on the first square you end up on:1
+go through the door move to the back of the chair move it until the chair is level with the door go to the far side of the chair move into the doorway:1
+move to the red room , bring the chair back to the blue room , then move to the green room:1
+go south:0
+go to down and move left and move up and take the chair then move to right and go to up:0
+robot b , go through the door , go through the second door:1
+move south five steps move west five steps move north one step move east four steps move south one step move east one step move north three steps:0
+go to the door in the room and then move to the other room:1
+move chair right to path:1
+go south:0
+put the backpack in the green room:1
+go to red room push item to green room go to blue room:1
+move south three steps , then move west one step , then move south south one step , then move west two steps , then move south one steps , then move west one step , then grasp the backpack , then move north three steps , then release the backpack , then move south one step , then move east four steps , then move north two steps:0
+go the red room go to the left side of the chair go to the right side of the room go to the bottom of the room behind the chair go to the blue room:1
+go to center of the pink room:0
+go south:0
+go south four steps , turn right , go five steps , turn right , turn right , go east four steps , turn right , turn left , turn right , go north three steps , go back one , turn left , go four steps , turn right , go north two steps:0
+move south three times:0
+go to red room:1
+move to the red room , move the chair to the blue room , move to the red room , move to the green room:1
+i want you to go down:0
+go to the door go to the orange room pick up the chair go to the door to the blue room go to the blue room put down the chair go to the door go to the orange room go to the door to the green room go to the green room:1
+go to the yellow object in the pink room and move it to the green room:1
+move down until stop go left until stop up one right ten up five down five left ten up five:0
+go through the door collect the chair and go through the door again:1
+go to the pink room go to the chair pick up the chair go to the green room:1
+south , south , south , south , south , west , west , west , west , north , north , north , south , east , east , east , east , north , north:0
+go to door go out head left and push chair to blue room door push chair through door go out door go to green room door go through green door:1
+go to the pink room then go to the green room:1
+go to the red room then push the chair to the blue room then go to the green room:1
+move forward quickly and stop:0
+move towards the purple room:0
+slide back:0
+go to the door then go to the orange room:1
+take a step ahead:0
+go down and then down again and then down once more:0
+go down go right go up behind the chair go right go down go right and then go up:0
+move to purple door leave to pink room push chair to green door push chair threw green door go to purple door go into purple room:1
+stand still:0
+go through the blue room door into the door of the pink room locate the chair and push to pink room door finally going thru blue room door:1
+go to the red room grab the chair come back to the green room:1
+go to the door of blue room , into the door of red room , ush chair to door of red room , into the door of blue room , go back to door of red room , into red room and then to the door of green room , and into green room:1
+move to the left side one space:0
+move to the red room , move to the red chair , move the red chair to the blue room , move to the red room , move to the green room:1
+move to the door move to the red room move to the chair move the chair to the door move the chair to the purple room:1
+move to the red room , grasp the chair , move to the blue room , release the chair , move to the red room , then move to the green room:1
+go down five times go right go up push chair go up:0
+move down as far as you can , then move left as far as you can , then move up once , then move right four times , then move down once , then move right once , then move up as far as you can:0
+move through the white door into the pink room:1
+go down go right go down go up go left go up:0
+go to the door and exit room unto pink room:1
+go down until two spaces and get to the chair , push chair north into the green room and then return south , east , and north into the blue room:0
+move to the red room and push the chair to the blue room:1
+go to the door , go to the red room , go to the far side of the chair , go to the other side of the room , go to the bottom of the chair , go to the door , go to the blue room:1
+down , down , down , left , left , left , left , up , up:0
+go to door down right up down right up:1
+down four , one over , down one over three , up three:0
+move one step , turn left , and face the wall:0
+go down three steps , left one step , down one step , left two steps , down one step , up three steps , down one step , right four steps , up two steps:0
+go to past door to chair and push past other door:1
+exit room and go right to the green room:1
+go to the red room , push the object to the blue room:1
+move to chair move chair to green room move to purple room:1
+go east:0
+bring the chair to the blue room:1
+go to the door go left go down go left go up go down go to the next door:1
+go to red room , take dog back to blue room , return to red room and then go to green room:1
+go down five steps , left five steps , up one step , right four steps , down one step , right one step , up three steps , down one step , left four steps , up two steps:0
+move south five units , west five units , move north one units , move east four units , move south one unit , move east one unit , move north three units , move south one unit , move west four units , move north two units:0
+go to the red room and push the chair into the blue room:1
+move down:0
+go to the pink room , go to the chair , go to the blue room:1
+go to the red room:1
+go south and then west to push the red chair into the blue room and then you go to the green room:0
+move one step forward and stand still in front of the wall:0
+go south then east then north:0
+go from the blue room to the green room:1
+go to the door and enter the next room:1
+go to the south:0
+go down three units of distance:0
+go to the door then enter the pink room:1
+go down , down , down , down , down , left , left , left , left , left , up , right , right , right , right , down , right , up , up , up , down , right , right , right , right , up , up:0
+go to the pink room move the chair to the purple room then move to the green room:1
+go south , then west , then north:0
+go down to the wall , then go left to the wall , then go up halfway , turn right , push the chair right , then go up:0
+go from the blue room to the red room then go from the red room to the green room:1
+go through the door to the pink room push the red dog to the blue room then go the door to the green room:1
+go down then right then right again then up:0
+go to the door in the blue room enter the pink room push the object to the door to the green room enter the room:1
+turn to the right ninety degrees:0
+go into the red room and then go into the green room:1
+go into the red room , proceed all the way south , go to the west wall , go up , go east , go down , go right , go north into blue room:1
+go forward through the doors to the next room:1
+move to the orange room:1
+leave the blue room and go through the door to go to the pink room and bring the chair to go through the door to the blue room and go through the door to go to the pink room and go through the door to go to the green room:1
+move from the blue room and go to pink room push the yellow object in to the green room return to the blue room:1
+move away from the green room:0
+go all the way south all the way west north one east all but one north then back south west and north:0
+go to the red room , move behind the yellow object , then move to the green room:1
+go down and right and down and right and down and right and up and down and left and up:0
+move through the door then push the yellow object through the second door:1
+go into the red room and bring the chair back to the purple room:1
+push the yellow object into the green room then return to the blue room:1
+go out of the room and into the next room:1
+go south , south , south , south , west , south , west , west , west , north , north , north:0
+go one step:0
+turn right:0
+go in the red room and push the chair to the green room then come back to blue room:1
+move to the behind you:0
+once to the right:0
+move south three times , then move west four times , then move north two times:0
+go to the door then through the door then to your right moving west to the next door then go through that door into the next room:1
+go through the door into the pink room , then go through the door to the green room:1
+move to the red room:1
+go down once:0
+move one space to the right:0
+go down , go down , go down , go down , go left , go down , go left , go left , go left , go up , go up , go up:0
+go to the door pick the chair and go to door go to the second door step:1
+move to door go to pink room move underneath chair move to the other door move to green room:1
+go to door and go to object and go to the door and then go out of the door and to the other door:1
+down down down down left down left left left up up up:0
+go to the door go through the door to the orange room go behind the chair and push the chair to the orange room doorway then push the chair through the doorway to the purple room:1
+move north:0
+move towards the closest door and stop:0
+move through the door into the next room , push the chair through the green room door into the room , move back the the blue room door and go through it:1
+turn pointing in the west direction and move forward once:0
+very simple commands:1
+turn left and move forward one step:0
+go from the blue room through the door into the red room:1
+go south then east then north then south then east then north:0
+go to red room , move the item and go to green room:1
+open the door and move south three spaces , move west five spaces , north one space , east three spaces , south one space , east one space , north three spaces , south one space , west four spaces , and north two spaces:1
+go to the door and enter the red room then go to the other door and enter the green room:1
+go down three steps:0
+go to door , pass through door and stop:1
+move to the red room , move the object into the green room , then go back from the red room to the blue room:1
+move south two go threw door move south one move west four move north one go threw door move north one:1
+turn left and move once:0
+go to red room move chair to blue room go to green room:1
+move south to the pink room:0
+go into the red room and move the chair into the blue room:1
+walk from the red room to the green room:1
+go south five west three north one east four north two south two west four and north two:0
+face left:0
+go into the red room and push the chair back into the blue room then go into the green room:1
+make a short left turn and wait:0
+go to pink room bring chair to blue room:1
+go down then go left then go up then go right then go down then right then up then down then left then up:0
+go down , go down , go down , go down , go down , go left , go left , go left , go left , go left , go up , go right go right go right , go right , go down , go right , go up , go up , go up:0
+go down left right up:0
+go down three times:0
+go down down down:0
+i want you to go down then left then right then up:0
+go south west north east south east north south west and then north:0
+move to door move object to green room move to door go to blue room:1
+walk to the door on your left side and stand next to it:0
+go to the green room:1
+take the chair in the red room to the purple room then go to the green room:1
+go to the red room push the chair to the blue room then go in the green room:1
+go to the door to the red room move to the west of the chair move the chair level with the door push the chair to the blue room door push the chair inside move to the green door go inside:1
+go to door , go to pink room , go to door , go to green room:1
+move to south door then south room:1
+down , down , down , left , down , left , left , down , left , up , up , up , down , right , right , right , right , up , up:0
+go down left right and up down left and up:0
+go through the door:1
+go to pink room:1
+go down three steps into the red room then go left four steps then go up two steps into the green room:0
+go to the door then to the red room then to the chair then to the door then the blue room:1
+move down three times , left once , down once , left twice , down once , left once , up three times , down once , right four times , and finally up twice:0
+enter the pink room then push the chair into the blue room:1
+go through door and bring red chair back in to room leave door and go to the new room:1
+push the chair into red room and go into the green room:1
+move to the red room , and push the chair into the green room:1
+go to red room , go to far wall , go to chair , push chair to green room:1
+make sure you stand next do the door outside the green room:0
+go to door then exit room then go to chair then take chair then go to previous door then go into room:1
+go to red room , get chair , go to blue room:1
+continue backward one space:0
+go down to the bottom of the red room . go left to the far side of the red room . go up a space . push the chair right until it 's below the blue door . go down a space . go right a space . go up until the chair is in the blue room . go down until you reach the door room . go left until you are below the green room . go up into the green room:0
+go to door , go to chair , move chair to door to blue room , move chair to blue room , go to door to green room , move to green room:1
+go south and stop when you hit the wall:0
+go through the door to the pink room go get the red dog push it back through the door to the blue room:1
+go to red room , bring chair to green room , go back to red room , go back to purple room:1
+go down three steps left four steps then up two steps:0
+go to the door enter the red room through this door then go to the right hand side of the object there move along with the object to take it to the door that opens to the previous room and enter the previous room with this object:1
+go into the red room grab the chair and take it to the blue room ; then go to the green room:1
+move to red room go down down down left left left left up right right right right down right up up up go to green room:1
+go to the door go to the red room grab the chair come back to the door go up:1
+go to square ( 3,3 ) of the pink room:0
+turn right and move forward once:0
+go to the door go into the red room get the chair go to the blue room door go into the blue room:1
+go four steps south then one step west another step south three more steps west and then four steps north:0
+go south , go west , go south , go west , go north:0
+go down three spaces:0
+move south four times , then move west one time , then move south one time , then move east three times , then grasp the backpack , then move north three times:0
+go down to other door right to the door:1
+move to the door and move to the chair and go to the door:1
+go to door into pink room to yellow object push it to other door enter green room go to door enter pink room go to other door enter purple room:1
+go south:0
+turn east and make one move forward:0
+go to the door . enter room , push chair to same door , enter room:1
+move one space down:0
+go to the door , enter the other room and push the chair to the door , then push into the room:1
+go to the door of the blue room first:1
+move to the red room through the door , then move the chair back to the blue room through the door:1
+move to the green room:1
+go to the orange room , then go to the green room:1
+go to the red room:1
+go to red room and take the toy and go to green room and return go to red room and go to blue room:1
+go south:0
+push chair to blue room then go to green room:1
+go to the door go to the red room:1
+move south four times , move west one time , move south one time , move west three times and move north three times:0
+down down down left down left left down left up up up down down right right right up right up:0
+march one step ahead:0
+go down:0
+go to the pink room and push the chair to the blue room:1
+go south and stop when you reach a chair , push chair north to the green color:0
+go to the red room push the chair to the purple room go to the green room:1
+go to the pink room:1
+go to red room:1
+go down five times , go left five times , go up one time , go right four times , go down one time , go right one time , go up three times , go down one time , go left four times , go up two times:0
+move south west and north:0
+move to pink room get the chair move it to blue room place their:1
+go from the blue room to the red room , then push the chair to the blue room:1
+go to the door in the blue room , enter the red room , push chair to door to blue room , enter the blue room , go to door , enter red room , go to door to green room , enter green room:1
+move to the door enter the red room get the chair and move to the door and enter the purple room move to the door and enter the red room and move to the door and enter the green room:1
+bring red chair in the pink room to the blue room then go to the green room:1
+move to the red room move the chair to the purple room move to the green room:1
+go to the left one spot:0
+go five steps down five steps to the right one step up four steps right one step down one step left three steps up:0
+go through the door and move through the hallway into the red room push the chair through the same door into the purple room and then go back through that same door again into the red room go west to the other door and go through that door into the green room:1
+go to door other room push item to other door enter other room:1
+move south five times , move west five times , move north once , move east four times , move south once , move east once and north three times:0
+open door first then go south then to your left:1
+move to pink room push chair into purple room move to green room:1
+go into the red room , push puppy into the green room , go back into the red room , go to the blue room:1
+move one spot to the right:0
+go to the door then enter the red room go to the chair and push it to line up with the door then push it in the blue room:1
+go to green room:1
+go to the red room and push the chair back into the blue room:1
+move south three steps , west four steps , then north two steps:0
+go to the door on your left then into the pink room:1
+go to door , pass through door , bring chair back to door , push chair through door , go to other door , pass through the door:1
+go south to the red room and push the chair to the blue room through the door and then you move through the door to the green room:1
+slide over one space to the ride:0
+down down down:0
+walk to the red room push the red chair to the purple room go to the green room:1
+exit blue door and enter green door:1
+go into the pink room:1
+move down four move left one move down one move left three move up three:0
+go south then go west then go north then go south then go east and then go north:0
+go to the door move into the red room bring red chair to the blue door bring chair inside:1
+open the door and go to the bottom room and to the chair get behind the chair and push it back to the door and then into the room:1
+move south to the red room push the chair back to the blue room and enter the green room:0
+move to the green room:1
+move forward:0
+go down five spaces left five spaces up one space right four spaces down one space right one space then up three spaces:0
+go to the door and into the pink room then push the chair into the blue room then go to the door of the green room and into the green room:1
+go to door move through door move chair to far door push through door go to second door go through door:1
+go down then left then up then right then down then right then up:0
+move down five steps , left five steps , up one step , right four steps , down one step , right one step , and up three steps:0
+go down three , left four , up two:0
+go down four steps then left four steps and then up one step and push the chair over four steps and go down one step right one step and push the chair up four steps and then down one step and left three steps and then up two steps:0
+turn to your right and take one step forward:0
+go south south south west west west west north north north stop:0
+go to the green room:1
+go three moves south , four moves west , and and two moves north:0
+go to the door then go through the door:1
+move to the red room , move to the yellow item , move the yellow item to the green room:1
+go down into the next room go to your right and push the object up into the next room:0
+go past door get chair and push it back through door:1
+turn ninety degrees to your right:0
+go to the door to the orange room , go through the door and to the door to the green room , then go through that door into the green room:1
+go into the red room and push the chair back into the blue room:1
+move to the door move to the red room:1
+go to the door and into the pink room go to the chair and bring it back to the door then into the purple room:1
+go down:0
+go up:0
+move to the red room:1
+go down:0
+push the chair to the blue room and you go to the green room:1
+go three steps down four to the right and then two up:0
+move three steps from blue room to red room and move four steps left and two steps up to green room:1
+south , south , south , south , south , west , west , west , west , north , north , north:0
+go down take the doll go to green room go down go right enter into the first room:1
+go south to the door to exit the blue room the east to the door to enter the green room:1
+go down to the wall then left to the wall then up one step then right four steps then down one step then right one step then up:0
+go to red room push chair to green room:1
+go down:0
+go from blue room to the red room , go under object and move it to the green room:1
+go to the door go below object push object into green room:1
+enter the pink room:1
+go to the red room . push the chair into the blue room:1
+go down five units left six five units then up once and then right four units then down one right one up three:0
+go to door , go to red room , go to other door , go to green room:1
+move down one space:0
+go into the red room push the chair into the purple room then go back through the red room into the green room:1
+go from the blue room to the red room then push the yellow object into the green room:1
+move forward three spaces turn sideways one turn and then go forward while pushing the object five spaces turn around and go down one space turn ninety degrees and go four spaces:1
+three steps down , three steps over , two steps up:0
+go from the purple room to the pink room go behind the chair and push the chair from the pink room to the purple room:0
+go down five steps left five steps up one step right five steps down one step right one step and up three steps:0
+push chair to green room then return to blue room:1
+locate the chair to the green room and return to starting point:1
+go from the purple room into the green room pick up the dog and move him into the green room then return to the purple room:1
+move to the door , open the door , move to the chair , move the chair to the first door , open the door , move the chair into the room , move to the second door , open the door , move to the middle of the room:1
+move to the green room from the where you are:1
+go to the door , go to the pink room , go to the other door , go to the green room:1
+go to red room get chair go to blue room go to red room go to green room:1
+move to the door connecting the blue and red room then move into the red room then push the backpack to the doorway connecting the red and green room then push the backpack into the green room then move back to the doorway connecting the green and red rooms then move back into the red room then move to the doorway connecting the red and blue rooms then move into the blue room:1
+move down five spaces then left five spaces then up one spade then right four spaces down one space right one space up three spaces:0
+go down five times , go to the right four times , go up three times:0
+go down four times , then go left one time , then go down one time , then go left three times , then go up three times:0
+move south:0
+down , down , down , left , down , left , left , down , left , up , up , up , down , right , right , right , right , up , up:0
+face left and move forward:0
+move to the door , open the door , move to the yellow item , push the yellow item through the door:1
+go to pink room pick up yellow thing move yellow thing to green room drop yellow thing in green room move to pink room move to blue room:1
+go to the green room:1
+move to door step get the red chair move to blue room door step place their go to door step go to next door step:1
+go to door go out and bring the chair to the door go to the other room:1
+move south once:0
+go to pink room push chair to purp room go to green room:1
+go thru the pink room door turn left until you are below the chair push the chair to the green room door and then go up thru the door:0
+move forward:0
+go to the red room:1
+go to the south until you hit the wall go to the west until you hit the wall go north one step push the red chair east until it is in front of the door push the chair north into the purple room go south into the red room go west then go north into the green room:0
+move down three steps left one step down one step left two steps down one step left one step then up three steps:0
+move south five times move west five times move north one time move east four times move south once move east once move north three times:0
+go to the door and open it then go to the west behind the chair , then move the chair through the doorway:1
+move north:0
+go to the door in the blue room , then go into the red room , push the chair from the red room to the door in the red room , put the chair in the blue room:1
+take a step to the right:0
+go to the door of the purple room and through it:1
+take a step forward:0
+go to pink room:1
+go south , go west , go up , go east , go down , go right , go north , go down , go west , go north:0
+go to the red room:1
+go from the blue room to the red room , then push the yellow object from the red room into the green room:1
+move to the door connecting the blue and red room then move into the red room then push the backpack to the doorway connecting the red and green room then push the backpack into the green room:1
+move south five spaces move west five spaces move north one space move east four spaces move south one space move east one space move north three spaces move south one space move west four spaces move north two spaces:0
+south one:0
+leave the blue room and go to the pink room and from there go to the green room:1
+move to the blue/red door , enter the red room , grasp the backpack , then move to the red/green door:1
+go push door up to blue room:1
+go to the first door and enter the room:1
+go through door to red room , push dog through door to green room:1
+move south three times:0
+go to red room door and enter push object to green door and enter:1
+take a single step to the right:0
+take five steps south , five steps west , one step north , four steps east , one step south , one step east , three steps north , one step south , four steps west , and two steps north:0
+go down:0
+go right:0
+move down till end move left till end get chair move it to starting place:0
+travel east:0
+go down four spaces:0
+move one spot to your left:0
+move south to the door go south west north east south east north to the door south west north:1
+move to the door , then move to the red room , then bring the chair to the door , then bring the chair to the blue room:1
+go right:0
+go to the red room and move the object to the green room go to the red room go to the blue room:1
+go to the door , go to the red room:1
+go to the door enter the red room move the chair to the blue room door enter the blue room:1
+go to the green room:1
+go to the door and enter the red room , then go to the other door and enter the green room:1
+go through the door in front of you and continue until you reach the next room then stop:1
+go to the door to the pink room go to the pink room go to the chair pick up the chair go to the door to the green room go to the green room:1
+go to the door and go through the door into the next room then push the object out the other door into the third room:1
+move to the green room and then back to the purple room:1
+go to the door then go in the pink room and push the chair into the blue room:1
+down , down , down:0
+down x5 left x5 up left x4 down right up 3x:0
+move one move over to the left:0
+go straight and take three steps then take right turn , left turn and again right turn , pick up the chair and come back:0
+move south until you hit the wall then move west till you hit another wall then move north until the chair is directly east of you then move to the east pushing the chair until the chair is directly south of the door then move south then east until just south of the chair then move north pushing the chair into the purple room then turn around go south through the hall into the other room go west to the other door and go north into the next room:0
+go down , down , down , down , down , left , left , left , left , left , up , right , right , right , right , down , right , up , up , up:0
+move to the pink room move underneath chair move to the green room:1
+go five steps down , five steps left , one step up , four steps right , one step down , one step right , three steps up:0
+go to red room , bring chair back to blue room , go to red room , go to green room:1
+go to the red room and push the red chair to the purple room:1
+go down five right five up one right four down one left one up three leave the chair go down one right four up two:0
+take one step east:0
+go down go west go north go east push the chair go north go south go west go north:0
+go to the red room , move the chair into the blue room , come back to the red room and enter the green room:1
+move back until you hit the wall behind you:0
+take three steps to go to the red room:1
+push the bag into the green room:1
+go to pink room bring chair to blue room go to pink room stop in green room:1
+go south and stand still when you ca n't move anymore:0
+step in front of you one space:0
+exit blue room door enter red room door push chair through red room door to blue room through white door go out of blue room door enter red room door enter green room door:1
+turn right and take a step:0
+move right one space:0
+go to the chair in the red room , push the chair into the blue room , go into the red room , and then go into the green room:1
+go east:0
+go down:0
+go down three times left four times and up two times:0
+go to the pink room:1
+go north until you stop at the wall:0
+take a step backwards:0
+go to door , go to red room , go to object , push object to closest door , push object to green room , go to red room , go to furthest door , go to blue room:1
+move to the door enter the red room move to the object move the object to the other door move the object into the green room move back to the first door enter the blue room:1
+go down , then go west , then up to the chair and push the chair east and then north:0
+go to door retrieve chair go to door of green room:1
+go to door , go to red room , go to door , go to green room:1
+step forward:0
+move to the red room:1
+move the chair from the red room to the blue room and then go into the green room:1
+move north:0
+go to the red room get the chair and bring it to the purple room:1
+go south and then right and then right and then straight and then right and then go left then go left then go straight then go south then go right then go right:0
+take the chair bring to blue room:1
+go down to the wall then left to the wall then right two spaces then push the chair four spaces then right one space left one space and push the chair four spaces:0
+go down go right go up go right go up:0
+walk south to the door and into the next room:1
+go to the red room , push chair to blue room , go back to red room , go to green room:1
+down down down down down left left eft left left up right right right right down right up up up:0
+go to the doorway between the blue and pink rooms then move south three steps then move west five steps them move north one step then move east four steps then move south one step move east one step then move north three steps then move south one step then move west four steps then go to the doorway to the green room then move north one step:1
+down five left five up one right four down one right one up three:0
+go down five spaces left five space up one space right four spaces down one space right one space up there spaces:0
+go down go left go right go right go up:0
+down down down left left left left up up:0
+go to the door , go to the next room:1
+go to the door and leave the blue room and go to the green room:1
+go south to the door of the blue room and into the pink room push the chair east and north to the door of the pink room and into the blue room:1
+go down three times go left once go down once go left three times go down once go left once go up three times go down once go right four times go up twice:0
+go through the door of the purple and red room to the wall then turn west to the wall and turn north to level with the chair and push the chair til even with the door of the red room and push the chair through the door of the red roomnorth through to the door of the purple room then go south again through the purple and red room doors and turn west to the green room door and go north through the green room door:1
+go through the door , then go below the object in the room , then push it through the other door:1
+go to the red room , push the object into the green room:1
+go to the red room:1
+move to the red room , stand on the west side of the chair and push it to line up with the blue door , push the chair into the blue room , and then enter the green room:1
+go to the door and continue on to the next room:1
+go to the blue door enter the red room and move the bag into the green room then go to the green door enter the red room and enter the blue room:1
+go to the pink room through the door and turn around to find an object and go though another door in the room to reach the green room:1
+go three steps down:0
+turn and face the other direction and take one step:0
+go to red room , go to back of chair , go towards blue room but stop before it , go to bottom of chair , go to blue room , go to red room , go to green room:1
+go from the blue room to the pink room . go from the pink room to the green room:1
+go south , then west , then north:0
+three down , one over , one down , two over , one down , one over , three up , one down , three over , one up:0
+go south and then go west and then go north:0
+go down three steps to move to other room:1
+go to the door go to the red room grab the chair go to the blue room door go in:1
+go south through the blue room door into the door of the pink room turn west locate chair north push chair through pink room door into blue room vacate blue room by leaving south through the door into the pink room door turn north go through pink room door into green room door:0
+go to the door , go to the red room . go to the chair . push the chair to the door to the blue room . push the chair to the blue room . go to the door . go to the red room . go to the door to the green room . go to the green room:1
+move right:0
+go to the door , enter the room , move to the chair , push the chair across the room , go to door of blue room , push the chair through the door of the blue room:1
+go all the way south and then all the way west go up one then right one then continue right five steps before going up four steps:0
+down five left five up one right four down one right one up three:0
+move forward:0
+go left and stay parallell to the doors , then stop:0
+leave the blue room and go through the door to go to the red room and then push the chair towards the blue room and go through the door and leave the chair in the blue room and go through the door and go to the red room and go to the green room and go through the door and stay there:1
+go to the red room and push the chair to the blue room and then you move to the green room:0
+go to the door between the blue and pink rooms then move south three steps then move west five steps then move north one step then move east four steps then move south one step move east one step then move north three steps:1
+push the bag into the green room:1
+robot b , go through the door into the green room and then go to the next door into the pink room:1
+leave the blue room and go through the door to go to the pink room before you go to the door to go to the blue room:1
+move down five left five up one right four down one right one up three down one left four and up two times:0
+move to pink room:1
+go south through door till you reach a wall go west until you reach another wall go north one pace and then east four paces south one pace east one pace then north four paces through door south one pace through door west four paces and north two paces through door:1
+down three , right one , down one , right two , down one , right one , up three , down one , right four , up two:0
+go up:0
+move down five left five up one right four down one right one up three down one left four and up two:0
+go south till you hit the wall move west till you hit another wall move north then back east hit the chair and move it to the room:0
+go to the door of the blue room and enter the red room then push the bag towards the other door of the red room and into the green room:1
+go down four spaces left one space down one space left three spaces and up three spaces:0
+go to door to red room , go into the red room , push the yellow chair to the door of the blue room , push chair into the room , use door to go back to red room , use door to go to green room , go into the green room:1
+move to the red room and push the chair back into the blue room:1
+go south west north east south east north south west north:0
+go to door and exit , move south then turn east three times push chair then go west then east and push chair unto the door and enter room:1
+go south go west get chair go east go north leave chair go south go west go north:0
+go to door , go to red room , get chair , go to door , go to blue room , go to door , go to red room , go to other door , go to green room:1
+go down then turn right and turn right at the door:0
+go to the red room and then go to the green room:1
+go out the door in the first room and follow your way to door of second room:1
+go down through the door and turn left towards chair:1
+move to the red room move to the chair move the chair into the blue room move to the green room:1
+go to the door then go down and left , then up and right and push the chair right and then up to the door:1
+go down three go left once go down once go left twice go down once go left once move the object up three go down once go right four go up two:0
+move one spot to the left:0
+go to the door first and get inside:1
+look up , move upwards:0
+down down down down left down left left left up up up:0
+go down to the right down to right down to the right and up push to toy to green romm back up to the right and enter purple room:0
+go through the door and find the object before pushing the object through the door into the green room:1
+go to the red room take the object there come back to the previous room leave the object there and go to the green room:1
+go down turn right go up turn right go up turn right push chair up turn right go up turn left turn left push chair up to the blue room come down turn right go up to the green room:0
+turn to your right and advance a space:0
+move in the following way - move down four times then move left one time then down one time then move left three times then move up three times:0
+go south three spaces . go west one space . go south one space . go west two spaces . go south one space . go west one space . go north three spaces . go south one space . go east four spaces . go north to spaces:0
+go to red room down two left five up one right four down one right one up three:1
+go south by one step:0
+push the chair into the green room and return to the blue room:1
+move south:0
+go south to the pink room turn west locate chair push chair east until it lines up with the door on the pink room push it north into the blue room door turn around go south to the pink room go west until you see the pink room door lined up with the green room door and then go north:0
+go far to the left then move the chair far to the right and then up through the door:0
+go to the door leave the room go to the chair get the chair go to the previous door with the chair go into the purple room:1
+go into the red room , then go into the green room:1
+go to the red room pick up the chair and go backto the blue room:1
+go down , then turn right , then up:0
+go into the red room through the door push the red cahir into the blue room and then go into the green room:1
+go down go right go up go right go down go left go up go down go right:0
+go through the door into the pink room then into the other door to the green room:1
+go to door go to red room move chair to blue room go to door:1
+go down go left go up go right go down go right go up:0
+go to the door go to the end of the room turn to the chicken go to the chicken turn to the room go into the room:1
+go through door into pink room pick up yellow thing go through door into green room drop yellow thing go through door into pink room go through door into blue room:1
+go through the door from the blue room into the red room , then push the chair through the door into the blue room , then go back through the door into the red room , then go through the door into the green room:1
+go down then go left then go up then go right then go down then go right then go up:0
+go get the red dog push it to the blue room and go to the green room:1
+go from the blue room into the red room:1
+go to the pink room go to the chair go to the blue room go to the green room:1
+go to red room , go to bottom of object , push object to green room , go to red room , go to blue room:1
+turn to your right:0
+go down five steps , go right four steps , go up two steps , push chair four steps , go down one step , go right one step , push red chair four steps:0
+go down three times:0
+go to the door then enter the red room:1
+move to the red room and then push the object into the green room:1
+go to red room and then green room:1
+go south:0
+five down five left up one four right one down one right three up one down four left two up:0
+go to the door go to the red room push the red chair to the door to the purple room push the chair into the purple room go to the door and go through to the door to the green room go to the green room:1
+go down five moves then go right five moves turn up one move turn right and push the chair up four spaces:0
+do not move position:0
+go to the door:1
+move down:0
+proceed to the door at the bottom of the room go through it move next to the chair and push it back towards the original room you were in:1
+go to the door go to the red room go to the object move the object to the door of the green room move the object to the green room:1
+move right:0
+go down:0
+go to the red room , get the chair and take it to the blue room:1
+open the door and go:1
+turn around and travel forward:0
+go to the door leave and retrieve chair in the west:1
+go backwards one place:0
+go down , down , down:0
+go down through the door:0
+go south three spaces:0
+go to the pink room:1
+move south five move west five move north one move east four move south one move east one move north two go threw purple door move south one move west four move north once go threw green door once:1
+go to red room , push dog into green room and return to blue room:1
+down left up right up:0
+go to the door open it then push the chair back into the original room:1
+go to the door go to the chair go to the door:1
+go south five steps , west five steps , north one step , east four steps , south one step , east one step , north three steps , south one step , west four steps , and north two steps:0
+please go to the chair first and sit:1
+go to door , go to green room:1
+go to the red room:1
+move through the door into the pink room then through the second door into the green room:1
+go to the red room and get the chair and push it into the purple room and then go to the green room:1
+go to the door then enter the red room then push the backpack to the door to the green room and into the green room then go to the door to the blue room and enter the blue room:1
+move as far up as possible:0
+push the object from the red room into the green room:1
+move to the southern red wall:0
+move down turn right upward select chair:0
+move into the red room:1
+go towards the left wall:0
+move left:0
+go down down down:0
+go through the door from the blue room into the red room , then go through the door from the red room into the green room:1
+go down three steps , then go left four steps , then go up two steps:0
+move to the green room:1
+turn around and move forward a spot:0
+go to door go to red room go west go north go east go to door go to purple room:1
+go to the red room and push the chair into the green room:1
+turn and move one time:0
+get out of room and pick up item and take it to green room:1
+push the chair into the blue room:1
+go in and then go to the green room:1
+go to the door of the blue room and enter the red room , then push the chair to the door of the red room , and then push the chair into the blue room:1
+go down go west go up:0
+take four steps down , five steps over , one step up,3 steps over , one step down , one step over , three steps up:0
+go to the blue room door , then go through it into the red room , then go to red room go to green room door and go into green room:1
+go to the door to exit the blue room into the pink room once in there take another step south one step east one more step south three more steps east then go north to the door to enter the green room:1
+face north and advance one space:0
+go to the door of the blue room go through it to the pink room:1
+go to the door and enter the red room then push the chair to the door of the blue room then push the chair into the blue room then go to the door of the green room and enter the green room:1
+move east:0
+go down and then go left , at the yellow object go down and then push the yellow object up then leave the object and go down then right and then up:0
+leave the blue room and head towards the door that leads to the pink room and leave the pink room and go through the door that leads to the green roo:1
+go to the door in front of you and into the next room:1
+go to the door to the pink room go to the pink room go to the door to the green room go to the green room:1
+to door south west north to door north:1
+go to the door then go to the red room:1
+go into the red room and get the chair then push it into the purple room then come out of the purple room into the red room and go into the green room:1
+go down down down down down left left left left left up right right right right down right up up up:0
+move down one square:0
+go to the red room and then the green room:1
+go down go left go down go left go down go left go up go down go right go up:0
+go south:0
+move backwards one spot:0
+move to door go through door to pink room move to chair move chair to purple door push chair into purple room go through purple door go to green door go into green room:1
+move to your right and face the rightmost wall:0
+go to the door go to the red room get the chair go back to the door go to the blue room:1
+move south three times , move west four times and move north two times:0
+move to the red room and push the chair into the blue room:1
+down down down left left left left up up:0
+go to the green room:1
+go south then go west then go north one motion then go east six motions go south one motion go east one motion go north:0
+move your body forward one spot:0
+move to the door of the pink room then to the door of the green room then back to the door of the purple room then back to the door of the green room:1
+move north:0
+go south three spaces go west one space go south one space go west two spaces go south one space go west one space push the object three spaces north stop pushing and go down one space go east four spaces and north two spaces:0
+open the door and enter the red room and then push the chair back into the blue room:1
+move your body right:0
+down three:0
+go south three spaces , west one space , south another space , west two more spaces , south one space , west one space , north three spaces , south one space , east four spaces , and north two spaces:0
+move to door go into hall move towards the chair open door move into green room:1
+go down then go down then go down:0
+move down four steps and move left one step and go down one step and move three steps left and move one step up and take the toy and move two steps up:0
+go get the chair:1
+move to the red room:1
+go down to pick the chair move up to starting room go down to go left go up:0
+face left and move forward one spot:0
+gget the chair and return to this room:1
+walk to the door exit through the doorway and travel south to the pink room where you will stop after entering:1
+move one step behind you:0
+go to the door of the blue room then go into the red room:1
+go down down down:0
+go down then to the right down to the right down to the right go up go down go left go up:0
+move to red room then move to green room:1
+go three paces south:0
+go down go down go down go left go down go left go left go down go left go up go up go up go down go right go right go right go right go up go up:0
+go down go left go up go right go down go up:0
+go to the pink room locate chair and return chair to blue room , then go to pink room and then green room:1
+move all the way down and to the left of the chair and then push the chair to the right and then back up into the purple room:0
+go to down and move left and go up and take the chair and move right and go down and move right and move up and return go to down and move left and go to up:0
+go to the red room then push the chair into the blue room:1
+go to down:0
+go to the door and then go past the door:1
+go down go right go up go left go down go up go down go right go up:0
+go into the pink room and get under the yellow dog and push it into the green room:1
+step once towards the red room 's left wall:0
+move to the red room get the chair move to the purple room move to the red room move to the green room:1
+move to the red room and push the object to the green room:1
+go south to the door then go west after entering the room four steps go to the door to the north and enter the room:1
+go to red room , go to back of chair , go towards blue room but stop before it , go to bottom of chair , go to blue room:1
+go south , west , north one step , push the chair east , then north again:0
+got to door south three west four go to north door north one:1
+go down:1
+go to the pink room get the red dog and bring it back to the blue room:1
+go south east north west south west north east north:0
+go back on space:0
+put toy in green room and return to purple room:1
+go to the green room:1
+go to the red room grab the chair come back to the blue room:1
+move through the door into the red room then push the chair through the doorway you came out of and push it through the next door into the purple room:1
+take the shortest path so that you are underneath/below the backpack then push the backpack into the green room:1
+open the door and enter the red room , go to the bottom , then head to the end of the room , push the chair to the door and push it in , open the door go back in the red room open green room door and enter:1
+go up:0
+go to the blue door enter the red room then push the chair to the red door into the blue room:1
+go south for three steps go west for one step go west for three steps go south for one step go west for one step go north for three steps go south for one step go east for four steps go north for two steps:0
+go down five right five up one right four down one left one up three down one right three up one:0
+go to door move to red room move chair to green room go to door go up:1
+go the red room go behind the yellow object go to the green room go to the blue room:1
+move to the pink room and grab the chair:1
+go to peach room south three west four go to green room:1
+go to the door of the orange room , then go into the orange room , then push the chair to the door of the green room , then push the chair into the green room , then go back to the door to the orange room , go through it to the door to the purple room , then go into the purple room:1
+go down three steps:0
+go down until stop then left until stop up on and right until stop up stop:0
+go down , go down , go down , go down , go down , go right , go right , go right , go right , go right , go up , go right , go right , go right , go right , go down , go right , go up , go up , go up , go down , go right , go right , go right , go right , go up , go up:0
+move south five steps move west five steps move north one step move east four steps move south one step move east one step move north three steps move south one step move west four steps move north two steps:0
+go to the door then thru it to the next room:1
+go up right right and then down:0
+go to the red room , move the yellow thing into the green room:1
+go to red room move red chair to blue room then go to green room:1
+open the door from where you are and move to the next door and open it to get in:1
+take one step south:0
+go to the red room then get the chair then go back to the blue room:1
+get the chair from the red room and bring it back:1
+go to the door , go to the chair , go back to the door:1
+turn right , take a step and face the fall:0
+go back on step:0
+go through the door to the red room grab the chair bring the chair through the door to the blue room exit out the door to the red room go through the door to the green room:1
+move south:0
+go through blue room doors and then through large room door push chair back through large room door into blue room door:1
+move chair to green room:1
+go down four steps , then go left one step , then go down one step , then go left three steps , then go up three steps while pushing the yellow object:0
+go south then move to green room:1
+make a ninety degree turn to your left:0
+take the chair bring to blue room go to green room:1
+go down to the wall go to the left to the wall go up one step and push the red chair to the right push the red chair up to the purple room go down three steps go left until you are aligned with the door go into the green room:0
+go to the door go into the red room get the chair go to the blue room door go into the blue room leave the chair go back to the door go into the red room go to the green room door go into the green room:1
+move south one go threw door move south three move west one move south one move west three move north two go threw door move north one:1
+move forward five spots turn sideways one turn and move four spots move forward until you are in the room:1
+move to the red room , then move the chair to the blue room:1
+move to the red room:1
+go to the blue door and exit to the red room , get behind puppy in red room and push to the red door , go through the red door into the green room:1
+go to the door and go to the red room:1
+push the chair from the red room into the blue room:1
+go from the purple room to the pink room , then go over to the animal and push it into the green room:1
+move left:0
+go north:0
+go down one square:0
+go down two:0
+move from your room to the red room:1
+go to door go to red room go to door go to green room:1
+open the door and move to another and open another door and move to another room and return open the door and move to another room and open the door and move to another room:1
+goto red room , push object to green room:1
+bring chair through door and leave it . come back through door and go to the next door and up:1
+go all the way south and west then up one right one return all the way east then go north before turning back south heading west then finally north:0
+move down three , left one , down one , left two , down one , left one , up two:0
+go to the door , go to the chair , go back to the door:1
