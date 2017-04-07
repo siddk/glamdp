@@ -12,7 +12,7 @@ UNK, UNK_ID = "<<UNK>>", 1
 
 class ClassifierRNN():
     def __init__(self, train_path, test_path, embedding_size=30, rnn_size=50, h1_size=60,
-                 h2_size=50, epochs=10, batch_size=16, num_categories=2):
+                 h2_size=50, epochs=30, batch_size=25, num_categories=2):
         """
         Instantiate RNN language classifier model.
         """
