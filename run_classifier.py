@@ -12,8 +12,9 @@ tf.app.flags.DEFINE_string("test_path", "data/language_classifier/classifier_tes
 
 def main(_):
     # Create Model
+    #TODO: depreciated
     classifier = ClassifierRNN(FLAGS.train_path, FLAGS.test_path)
-    
+
     #running one epoch for now
     classifier.fit()
     classifier.eval()

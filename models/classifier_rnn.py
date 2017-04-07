@@ -24,18 +24,27 @@ class ClassifierRNN():
         self.session = tf.Session() #Sidd's altar of the dark god TensorFlow
 
         #Load data
-        self.train_data, self.train_labels = self.read_data(train_path)
-        self.test_data, self.test_labels = self.read_data(test_path)
+        self.train_data = self.read_data(train_path + ".en")
+        self.train_labels = self.read_labels(train_path + "_labels.txt")
+        self.train_lengths = [len(n) for n in self.train_data]
+
+        self.test_data = self.read_data(test_path + ".en")
+        self.test_labels = self.read_labels(test_path + "_labels.txt")
+        self.test_lengths = [len(n) for n in self.test_data]
 
         # Build vocabulary
         self.word2id, self.id2word = self.build_vocabulary()
 
-        # Vectorize training and test data corpus
-        self.train_lengths = [len(n) for n in self.train_data]
-        self.train_x = self.vectorize(self.train_data, max(self.train_lengths))
+        #get maximum vector length
+        vec_len = max(max(self.train_lengths), max(self.test_lengths))
 
-        self.test_lengths = [len(n) for n in self.test_data]
-        self.test_x = self.vectorize(self.test_data, max(self.train_lengths))
+        # Vectorize training and test data corpus
+
+        self.train_x = self.vectorize(self.train_data, vec_len)
+
+
+
+        self.test_x = self.vectorize(self.test_data, vec_len)
 
         # Setup Placeholders
         self.X = tf.placeholder(tf.int64, shape=[None, self.train_x.shape[-1]], name='NL_Command')
@@ -67,16 +76,16 @@ class ClassifierRNN():
         """
         reads data from file.
         """
-
-        data = []
-        labels = []
         with open(path, 'r') as f:
-            for line in f:
-                d, l = tuple(line.split(":"))
-                data.append(d)
-                labels.append(int(l.strip()))
+            data = [line.strip() for line in f]
 
-        return data, np.array(labels) #return as numpy array
+        return data #return as numpy array
+
+    def read_labels(self, path):
+        with open(path, 'r') as f:
+            labels = [1 if line.strip() == "E" else 0 for line in f]
+
+        return np.array(labels) #return as numpy array
 
     def build_vocabulary(self):
         """
@@ -92,6 +101,7 @@ class ClassifierRNN():
         id2word = [PAD, UNK] + list(vocab)
         word2id = {id2word[i]: i for i in range(len(id2word))}
         return word2id, id2word
+
     def vectorize(self, data, vec_len):
         """
         Convert each natural language phrase into a vector of word tokens.
@@ -169,6 +179,7 @@ class ClassifierRNN():
         pred = np.argmax(y, axis=1)
         accuracy = np.sum(np.equal(pred, self.test_labels))/float(len(self.test_labels))
         print "test correctness: {}".format(accuracy)
+
 
     def score(self, nl_command):
         """
