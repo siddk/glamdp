@@ -29,12 +29,12 @@ class NPI():
         # Build Vectorized Sentences
         self.word2id, self.trainX, self.testX, self.trainX_len, self.testX_len = self.parse_sentences()
 
-        # Build up Program Set 
+        # Build up Program Set
         self.progs, self.args, self.trainY, self.testY = self.parse_programs()
 
         # Add GO Program
         self.progs["<<GO>>"] = len(self.progs)
-        
+
         # Setup Placeholders
         self.X = tf.placeholder(tf.int32, shape=[None, self.trainX.shape[1]], name='NL_Directive')
         self.X_len = tf.placeholder(tf.int32, shape=[None], name="NL_Length")
@@ -46,7 +46,7 @@ class NPI():
 
         # Instantiate Network Weights
         self.instantiate_weights()
-        
+
         # Generate Input Representation
         self.s = self.encode_input()
 
@@ -84,7 +84,7 @@ class NPI():
         """
         # Create NL Embedding Matrix, with 0 Vector for PAD_ID (0)
         E = tf.get_variable("Embedding", [len(self.word2id), self.embed_sz], initializer=self.init)
-        zero_mask = tf.constant([0 if i == 0 else 1 for i in range(len(self.word2id))], 
+        zero_mask = tf.constant([0 if i == 0 else 1 for i in range(len(self.word2id))],
                                     dtype=tf.float32, shape=[len(self.word2id), 1])
         self.E = E * zero_mask
 
@@ -128,7 +128,7 @@ class NPI():
             _, state = tf.nn.dynamic_rnn(self.gru, state, dtype=tf.float32)
         h_state = state                                                       # Shape [None, npi_core_sz]
         return h_state
-    
+
     def terminate_net(self):
         """
         Build the NPI Termination Network, that takes in the NPI Core Hidden State, and returns
@@ -157,19 +157,19 @@ class NPI():
         for i in range(self.num_args):
             arg_hidden = tflearn.fully_connected(self.h, self.key_dim, activation='elu', regularizer='L2')
             arg_hidden = tf.nn.dropout(arg_hidden, self.keep_prob)
-            arg = tflearn.fully_connected(arg_hidden, len(self.args), activation='linear', 
+            arg = tflearn.fully_connected(arg_hidden, len(self.args), activation='linear',
                                           name='Argument_{}'.format(str(i)))
             args.append(arg)
         return args                                                         # Shape: [bsz, num_args]
-    
+
     def build_losses(self):
         """
         Build separate loss computations, using the logits from each of the sub-networks.
         """
         # Termination Network Loss
         termination_loss = tf.losses.sparse_softmax_cross_entropy(self.T_out, self.terminate)
-        
-        # Program Network Loss 
+
+        # Program Network Loss
         program_loss = tf.losses.sparse_softmax_cross_entropy(self.P_out, self.program_distribution)
 
         # Argument Network Losses
@@ -177,7 +177,7 @@ class NPI():
         for i in range(self.num_args):
             if i == 0:
                 arg_losses.append(tf.losses.sparse_softmax_cross_entropy(self.A1_out, self.arguments[i]))
-        
+
         return termination_loss, program_loss, arg_losses
 
     def fit(self):
@@ -202,7 +202,7 @@ class NPI():
                 curr_loss, batches = curr_loss + loss, batches + 1
                 curr_p_acc, curr_a1_acc = curr_p_acc + p_acc, curr_a1_acc + a1_acc
             print 'Epoch %d\tAverage Loss: %.3f\tProgram Accuracy: %.3f\tArg1 Accuracy: %.3f' % (e, curr_loss / batches, curr_p_acc / batches, curr_a1_acc / batches)
-    
+
     def eval(self):
         """
         Evaluate the model on the test data.
@@ -213,16 +213,19 @@ class NPI():
             true_prog, true_a1 = self.testY[i, P_IDX], self.testY[i, A1_IDX]
             if (pred_prog == int(true_prog)) and (pred_a1 == int(true_a1)):
                 num_correct += 1
-                
+
         print "Test Accuracy: %.3f" % (float(num_correct) / float(len(self.testX)))
-        
+
     def score(self, nl_command, length):
         """
         Given a natural language command, return predicted output and score.
 
         :return: List of tokens representing predicted command, and score.
         """
-        prog, a1 = self.session.run([self.program_distribution, self.arguments[0]], 
+
+        #TODO: update to take actual natural language commands
+
+        prog, a1 = self.session.run([self.program_distribution, self.arguments[0]],
                                     feed_dict={self.X: [nl_command], self.X_len: [length], self.P: [self.progs["<<GO>>"]], self.keep_prob: 1.0})
         pred_prog, pred_a1 = np.argmax(prog, axis=1), np.argmax(a1, axis=1)
         return pred_prog[0], pred_a1[0]
@@ -234,19 +237,19 @@ class NPI():
         """
         with open(self.train_path + ".en", 'r') as f:
             train_sentences = [x.split() for x in f.readlines()]
-        
+
         with open(self.test_path + ".en", 'r') as f:
             test_sentences = [x.split() for x in f.readlines()]
-        
+
         # Create Vocabulary + [0 PAD]
-        word2id = {w: i for i, w in enumerate(["PAD"] + list(set(reduce(lambda x, y: x + y, 
+        word2id = {w: i for i, w in enumerate(["PAD"] + list(set(reduce(lambda x, y: x + y,
                                                                         train_sentences + test_sentences))))}
 
         # Get Maximum Sentence Length
         max_len = max(map(lambda x: len(x), train_sentences + test_sentences))
         if max_len > max_sentence_len:
             max_len = max_sentence_len
-        
+
         # Vectorize Data
         trainX, testX = np.zeros((len(train_sentences), max_len)), np.zeros((len(test_sentences), max_len))
         trainX_len, testX_len = np.zeros((len(trainX)), dtype=np.int32), np.zeros((len(testX)), dtype=np.int32)
@@ -258,7 +261,7 @@ class NPI():
             testX_len[i] = min(max_len, len(test_sentences[i]))
             for j in range(testX_len[i]):
                 testX[i][j] = word2id[test_sentences[i][j]]
-        
+
         return word2id, trainX, testX, trainX_len, testX_len
 
     def parse_programs(self):
@@ -268,7 +271,7 @@ class NPI():
         """
         with open(self.train_path + ".ml", 'r') as f:
             train_programs = [x.split()[1:-1] for x in f.readlines()]
-        
+
         with open(self.test_path + ".ml", 'r') as f:
             test_programs = [x.split()[1:-1] for x in f.readlines()]
 
@@ -292,13 +295,13 @@ class NPI():
                         program_set[prog_key] = len(program_set)
                     if arg_key not in arg_set:
                         arg_set[arg_key] = len(arg_set)
-                    
+
                     trace.append((program_set[prog_key], arg_set[arg_key], TERMINATE))
                 if data_type == 0:
                     train_traces.append(trace)
                 else:
                     test_traces.append(trace)
-        
+
         # Vectorize Traces
         vtrain_traces, vtest_traces = np.zeros([len(train_traces), 3]), np.zeros([len(test_traces), 3])
         for i in range(len(train_traces)):
@@ -314,5 +317,3 @@ class NPI():
 
         # Return Program Set, Argument Set, Execution Traces
         return program_set, arg_set, vtrain_traces, vtest_traces
-
-    

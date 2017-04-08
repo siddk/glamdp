@@ -36,15 +36,15 @@ class ClassifierRNN():
         self.word2id, self.id2word = self.build_vocabulary()
 
         #get maximum vector length
-        vec_len = max(max(self.train_lengths), max(self.test_lengths))
+        self.vec_len = max(max(self.train_lengths), max(self.test_lengths))
 
         # Vectorize training and test data corpus
 
-        self.train_x = self.vectorize(self.train_data, vec_len)
+        self.train_x = self.vectorize(self.train_data, self.vec_len)
 
 
 
-        self.test_x = self.vectorize(self.test_data, vec_len)
+        self.test_x = self.vectorize(self.test_data, self.vec_len)
 
         # Setup Placeholders
         self.X = tf.placeholder(tf.int64, shape=[None, self.train_x.shape[-1]], name='NL_Command')
@@ -187,7 +187,7 @@ class ClassifierRNN():
 
         :return: List of tokens representing predicted command, and score.
         """
-        seq, seq_len = np.zeros((max(self.train_lengths))), len(nl_command)
+        seq, seq_len = np.zeros((self.vec_len)), len(nl_command)
         for i in range(min(len(nl_command), len(seq))):
             seq[i] = self.word2id.get(nl_command[i], UNK_ID)
         y = self.session.run(self.probs, feed_dict={self.X: [seq], self.X_len: [seq_len],
