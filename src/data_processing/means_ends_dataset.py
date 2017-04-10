@@ -28,7 +28,7 @@ def run(args):
     with open(args.ends + ml_ext, 'r') as ends_ml:
         ends_ml = [line.strip() for line in ends_ml]
 
-    with open(args.means + nl_ext, 'r') as ends_en:
+    with open(args.ends + nl_ext, 'r') as ends_en:
         ends_en = [line.strip() for line in ends_en]
 
     both_ml = means_ml + ends_ml
@@ -45,7 +45,7 @@ def run(args):
 
     save_strings(args.out + ml_ext, shuffled_ml)
     save_strings(args.out + nl_ext, shuffled_en)
-    save_strings(args.out + "labels.txt", shuffled_labels)
+    save_strings(args.out + "_labels.txt", shuffled_labels)
 
 
 if __name__=="__main__":

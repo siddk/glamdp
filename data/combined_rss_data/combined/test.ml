@@ -1,524 +1,610 @@
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
 (6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-NONE
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 blockInRegion roomIsGreen
+L1 blockInRegion roomIsGreen
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L1 agentInRegion roomIsRed
 (6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
 NONE
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
+NONE
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+NONE
+L1 agentInRegion roomIsRed
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+NONE
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L2 agentInRegion roomIsRed
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 blockInRegion roomIsGreen
+L1 agentInRegion roomIsRed
+L1 agentInRegion roomIsGreen
+L2 agentInRegion roomIsRed
+L2 agentInRegion roomIsRed
+NONE
+L2 agentInRegion roomIsRed
+L1 blockInRegion roomIsBlue
 (6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
 NONE
+L1 agentInRegion roomIsRed
 NONE
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-NONE
+L2 agentInRegion roomIsRed
 (6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
 (6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
 NONE
-NONE
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-NONE
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-NONE
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-NONE
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-NONE
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
 (6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
 NONE
+L1 agentInRegion roomIsGreen
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+NONE
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
+L1 blockInRegion roomIsBlue
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L2 blockInRegion roomIsBlue
+L2 blockInRegion roomIsBlue
+(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+NONE
+L1 agentInRegion roomIsGreen
 (6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-NONE
-NONE
-NONE
-NONE
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
+L2 agentInRegion roomIsRed
+L2 blockInRegion roomIsBlue
 (6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 agentInRegion roomIsGreen
+L2 agentInRegion roomIsRed
+NONE
+NONE
+L1 agentInRegion roomIsRed
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+NONE
+NONE
+NONE
+L2 blockInRegion roomIsGreen
+L1 blockInRegion roomIsBlue
+L2 blockInRegion roomIsBlue
+NONE
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 blockInRegion roomIsGreen
+L2 agentInRegion roomIsRed
+L2 agentInRegion roomIsRed
+L2 agentInRegion roomIsRed
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
+L1 blockInRegion roomIsBlue
+L2 agentInRegion roomIsRed
+L1 blockInRegion roomIsGreen
 (6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 blockInRegion roomIsGreen
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 blockInRegion roomIsBlue
+NONE
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
 NONE
 (6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+NONE
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
+NONE
+L1 blockInRegion roomIsBlue
 (6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-NONE
+L2 agentInRegion roomIsGreen
+L2 blockInRegion roomIsBlue
+L1 blockInRegion roomIsBlue
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
 (6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L1 blockInRegion roomIsBlue
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L2 agentInRegion roomIsRed
+L1 blockInRegion roomIsBlue
+L1 blockInRegion roomIsBlue
+L2 blockInRegion roomIsBlue
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
 NONE
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 blockInRegion roomIsGreen
+L1 blockInRegion roomIsGreen
+NONE
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
+L2 agentInRegion roomIsRed
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
 (6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
 NONE
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
 (6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-NONE
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
+L2 agentInRegion roomIsRed
+L2 agentInRegion roomIsGreen
+L2 agentInRegion roomIsGreen
 (6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-NONE
-(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-NONE
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-NONE
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
 (6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-NONE
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-NONE
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-NONE
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-NONE
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-NONE
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-NONE
-NONE
-NONE
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-NONE
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-NONE
-NONE
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-NONE
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-NONE
-NONE
-NONE
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-NONE
-NONE
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-NONE
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-NONE
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-NONE
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-NONE
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
 (6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
 NONE
 (6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L1 agentInRegion roomIsRed
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
+L1 blockInRegion roomIsGreen
+L1 agentInRegion roomIsRed
+NONE
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L1 agentInRegion roomIsRed
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
 (6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
+L2 blockInRegion roomIsBlue
+NONE
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L2 agentInRegion roomIsRed
+NONE
+L2 agentInRegion roomIsRed
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L2 blockInRegion roomIsGreen
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 agentInRegion roomIsRed
+L2 agentInRegion roomIsRed
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+NONE
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
 (6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
+L1 agentInRegion roomIsRed
+L2 agentInRegion roomIsRed
+L1 blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
+L1 blockInRegion roomIsGreen
+L2 blockInRegion roomIsGreen
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L2 blockInRegion roomIsBlue
 NONE
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
+NONE
+L2 blockInRegion roomIsBlue
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L2 blockInRegion roomIsBlue
+NONE
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+NONE
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 blockInRegion roomIsBlue
+L1 blockInRegion roomIsBlue
+L2 agentInRegion roomIsRed
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
+NONE
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 agentInRegion roomIsRed
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
+NONE
+NONE
+L1 agentInRegion roomIsRed
+L2 agentInRegion roomIsRed
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 agentInRegion roomIsGreen
+NONE
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
 (6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
+L1 agentInRegion roomIsGreen
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L2 blockInRegion roomIsGreen
+L1 blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
+L2 agentInRegion roomIsRed
+L1 agentInRegion roomIsGreen
+L1 blockInRegion roomIsBlue
+L2 agentInRegion roomIsRed
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 agentInRegion roomIsGreen
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
 (6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L1 agentInRegion roomIsGreen
+L2 blockInRegion roomIsGreen
+L1 blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+NONE
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 blockInRegion roomIsGreen
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 agentInRegion roomIsRed
+L1 blockInRegion roomIsBlue
+L2 agentInRegion roomIsRed
+L1 blockInRegion roomIsGreen
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
+L1 blockInRegion roomIsBlue
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L2 agentInRegion roomIsRed
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+NONE
+NONE
+L2 agentInRegion roomIsRed
+L2 agentInRegion roomIsRed
+NONE
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+NONE
+L2 blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
+NONE
+NONE
+L2 blockInRegion roomIsBlue
+NONE
+L1 blockInRegion roomIsGreen
+L2 agentInRegion roomIsGreen
+L1 agentInRegion roomIsRed
+L2 blockInRegion roomIsBlue
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
 NONE
 (6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+NONE
+L2 agentInRegion roomIsGreen
+NONE
+L1 agentInRegion roomIsGreen
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+NONE
+L2 blockInRegion roomIsGreen
+L1 agentInRegion roomIsRed
+(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
+L2 blockInRegion roomIsGreen
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
 NONE
 (6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+NONE
+L1 blockInRegion roomIsBlue
+NONE
+L2 agentInRegion roomIsRed
+NONE
+L1 blockInRegion roomIsGreen
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
 NONE
 NONE
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
+L1 agentInRegion roomIsRed
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
 NONE
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsGreen
+L1 agentInRegion roomIsRed
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsGreen
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L2 agentInRegion roomIsGreen
+L2 blockInRegion roomIsGreen
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
+L1 agentInRegion roomIsRed
 NONE
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L1 blockInRegion roomIsGreen
+L2 agentInRegion roomIsGreen
+L2 agentInRegion roomIsRed
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L1 agentInRegion roomIsGreen
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L2 blockInRegion roomIsGreen
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L1 agentInRegion roomIsRed
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsGreen
+L1 blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
+NONE
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L2 blockInRegion roomIsGreen
+NONE
+L2 agentInRegion roomIsRed
+NONE
+NONE
+L1 agentInRegion roomIsGreen
 NONE
 (6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
+L2 agentInRegion roomIsRed
+L1 blockInRegion roomIsGreen
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L2 agentInRegion roomIsRed
+L1 blockInRegion roomIsBlue
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L2 agentInRegion roomIsGreen
+L2 blockInRegion roomIsGreen
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
 NONE
+L1 blockInRegion roomIsBlue
+NONE
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 blockInRegion roomIsGreen
+(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 blockInRegion roomIsBlue
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
+L2 agentInRegion roomIsRed
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 agentInRegion roomIsRed
+NONE
+NONE
+NONE
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L1 blockInRegion roomIsBlue
+L2 blockInRegion roomIsBlue
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L1 agentInRegion roomIsGreen
+L1 agentInRegion roomIsRed
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 agentInRegion roomIsRed
+L2 agentInRegion roomIsGreen
+L2 agentInRegion roomIsGreen
+L1 blockInRegion roomIsGreen
+L1 blockInRegion roomIsBlue
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L2 blockInRegion roomIsGreen
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L1 blockInRegion roomIsBlue
+L1 blockInRegion roomIsBlue
+(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
+L2 blockInRegion roomIsBlue
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L1 blockInRegion roomIsGreen
+L1 blockInRegion roomIsBlue
+L2 blockInRegion roomIsGreen
+L1 blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
+L2 agentInRegion roomIsGreen
+NONE
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
+L2 blockInRegion roomIsBlue
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+NONE
+L2 blockInRegion roomIsBlue
+L1 blockInRegion roomIsBlue
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
+NONE
+NONE
+L1 agentInRegion roomIsRed
+L2 blockInRegion roomIsBlue
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 agentInRegion roomIsGreen
+L1 blockInRegion roomIsBlue
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 agentInRegion roomIsGreen
+NONE
+NONE
+NONE
+L2 agentInRegion roomIsGreen
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L2 agentInRegion roomIsGreen
+L2 agentInRegion roomIsRed
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+NONE
+NONE
+L2 agentInRegion roomIsRed
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
+L2 agentInRegion roomIsRed
+L1 blockInRegion roomIsGreen
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 blockInRegion roomIsBlue
+NONE
+L1 agentInRegion roomIsGreen
+L1 blockInRegion roomIsBlue
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+NONE
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+NONE
+L1 agentInRegion roomIsRed
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L2 agentInRegion roomIsGreen
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+NONE
+NONE
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L1 agentInRegion roomIsGreen
+NONE
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L1 blockInRegion roomIsBlue
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
 NONE
 (6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-NONE
-NONE
 (6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
 NONE
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-NONE
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-NONE
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-NONE
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-NONE
-NONE
-NONE
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-NONE
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-NONE
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-NONE
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-NONE
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
 (6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
+L2 agentInRegion roomIsGreen
 (6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+NONE
+NONE
+L2 blockInRegion roomIsBlue
+L1 agentInRegion roomIsRed
+NONE
+L1 agentInRegion roomIsGreen
+L2 blockInRegion roomIsBlue
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L2 agentInRegion roomIsRed
+L2 agentInRegion roomIsRed
+NONE
+NONE
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L2 agentInRegion roomIsGreen
+L2 agentInRegion roomIsRed
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
 (6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
 (6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
 NONE
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L1 blockInRegion roomIsGreen
+L2 blockInRegion roomIsGreen
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+L1 blockInRegion roomIsGreen
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 blockInRegion roomIsBlue
+L1 blockInRegion roomIsBlue
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsGreen
+(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 agentInRegion roomIsRed
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
 NONE
+L2 blockInRegion roomIsGreen
+L2 blockInRegion roomIsBlue
+L2 blockInRegion roomIsBlue
 NONE
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L2 agentInRegion roomIsRed
+L2 blockInRegion roomIsGreen
+L1 agentInRegion roomIsRed
+L1 blockInRegion roomIsBlue
+(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
 (6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-NONE
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-NONE
-NONE
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-NONE
-(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-NONE
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
+L1 agentInRegion roomIsGreen
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
 (6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L1 agentInRegion roomIsRed
+L2 blockInRegion roomIsGreen
+NONE
+L2 agentInRegion roomIsRed
+L2 blockInRegion roomIsBlue
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
 (6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
+L2 blockInRegion roomIsGreen
+L2 agentInRegion roomIsGreen
+L2 blockInRegion roomIsBlue
 NONE
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L1 agentInRegion roomIsRed
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
 NONE
+L2 agentInRegion roomIsRed
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 blockInRegion roomIsBlue
+L2 agentInRegion roomIsRed
+L1 agentInRegion roomIsRed
 (6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+L2 agentInRegion roomIsRed
+L1 agentInRegion roomIsGreen
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L2 agentInRegion roomIsRed
+L1 blockInRegion roomIsBlue
+L2 blockInRegion roomIsGreen
+(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 blockInRegion roomIsGreen
+NONE
+L1 blockInRegion roomIsBlue
+L2 agentInRegion roomIsRed
+L2 blockInRegion roomIsBlue
+(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+L1 agentInRegion roomIsGreen
+L1 blockInRegion roomIsGreen
+NONE
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
 (6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
 NONE
 NONE
-NONE
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
 (6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-NONE
-NONE
-NONE
-NONE
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-NONE
-NONE
-(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen <<EOS>>
-NONE
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-NONE
-<<GO>> L1 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-NONE
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-NONE
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-NONE
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
 (6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L1 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
+NONE
+L1 agentInRegion roomIsBlue blockInRegion roomIsGreen
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
+NONE
+L1 blockInRegion roomIsBlue
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
 (6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
+L2 blockInRegion roomIsBlue
+L2 agentInRegion roomIsBlue blockInRegion roomIsGreen
 NONE
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 blockInRegion roomIsGreen <<EOS>>
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
 (6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-(6,6,0) (7,6,270) EAST(6,6,0);(7,6,270)
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
+L2 agentInRegion roomIsGreen
+NONE
+NONE
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsGreen
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L1 agentInRegion roomIsGreen blockInRegion roomIsBlue
+NONE
+L2 agentInRegion roomIsGreen blockInRegion roomIsBlue
+L2 blockInRegion roomIsBlue
 (6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-<<GO>> L2 agentInRegion roomIsRed <<EOS>>
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-NONE
-NONE
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-(6,6,0) (6,7,180) NORTH(6,6,180);(6,7,180)
-(6,6,0) (6,3,0) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
-<<GO>> L2 blockInRegion roomIsGreen <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-NONE
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-(6,6,0) (5,6,90) WEST(6,6,0);(5,6,90)
-<<GO>> L2 agentInRegion roomIsGreen <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-(6,6,0) (6,5,0) SOUTH(6,6,0);(6,5,0)
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-NONE
-NONE
-<<GO>> L2 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-NONE
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-NONE
-NONE
-<<GO>> L2 blockInRegion roomIsBlue <<EOS>>
-<<GO>> L1 agentInRegion roomIsGreen blockInRegion roomIsBlue <<EOS>>
-NONE
-NONE
-(6,6,0) (3,6,180) SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
-<<GO>> L2 agentInRegion roomIsBlue blockInRegion roomIsGreen <<EOS>>
-<<GO>> L1 blockInRegion roomIsBlue <<EOS>>
-NONE

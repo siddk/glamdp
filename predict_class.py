@@ -34,7 +34,8 @@ def load_labels(filepath):
 def run(args):
     #create classifier RNN, train model
     classifier_rnn = ClassifierRNN(args.train, args.test)
-    #classifier_rnn.fit()
+
+    classifier_rnn.fit()
 
     #load test data and labels from full corpus
     test_data = load_data(args.test + ".en")

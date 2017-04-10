@@ -34,6 +34,10 @@ class NPI():
 
         # Add GO Program
         self.progs["<<GO>>"] = len(self.progs)
+        #create id2prog hashmap
+        self.id2prog = {i:prog for prog, i in self.progs.iteritems()}
+
+        self.id2arg = {i:arg for arg, i in self.args.iteritems()}
 
         # Setup Placeholders
         self.X = tf.placeholder(tf.int32, shape=[None, self.trainX.shape[1]], name='NL_Directive')
@@ -223,12 +227,38 @@ class NPI():
         :return: List of tokens representing predicted command, and score.
         """
 
-        #TODO: update to take actual natural language commands
-
         prog, a1 = self.session.run([self.program_distribution, self.arguments[0]],
                                     feed_dict={self.X: [nl_command], self.X_len: [length], self.P: [self.progs["<<GO>>"]], self.keep_prob: 1.0})
         pred_prog, pred_a1 = np.argmax(prog, axis=1), np.argmax(a1, axis=1)
         return pred_prog[0], pred_a1[0]
+
+    def score_nl(self, nl_command):
+        '''
+        Given a natural language string, return a string representing the lifted RF
+        '''
+        vec, length = self.vectorize_sentence(nl_command)
+        pred_prog, pred_a1 = self.score(vec, length)
+
+        #produce string representation of RF
+        #level first, then either one or two more programs
+
+        prog_split = self.id2prog[pred_prog].split("_")
+        args = self.id2arg[pred_a1].split("_")
+        level = prog_split[0]
+        progs = prog_split[1:]
+
+        #handling case of argument size mismatch
+        if len(progs) > len(args):
+            args.append("NONE")
+        elif len(args) > len(progs):
+            progs.append("NONE")
+
+        string_rf = "{}".format(level)
+
+        for prog, arg in zip(progs, args):
+            string_rf+=(" {} {}".format(prog, arg))
+
+        return string_rf
 
     def parse_sentences(self, max_sentence_len=50):
         """
@@ -242,27 +272,43 @@ class NPI():
             test_sentences = [x.split() for x in f.readlines()]
 
         # Create Vocabulary + [0 PAD]
-        word2id = {w: i for i, w in enumerate(["PAD"] + list(set(reduce(lambda x, y: x + y,
+        word2id = {w: i for i, w in enumerate(["PAD", "UNK"] + list(set(reduce(lambda x, y: x + y,
                                                                         train_sentences + test_sentences))))}
-
         # Get Maximum Sentence Length
-        max_len = max(map(lambda x: len(x), train_sentences + test_sentences))
-        if max_len > max_sentence_len:
-            max_len = max_sentence_len
+        self.max_len = max(map(lambda x: len(x), train_sentences + test_sentences))
+        if self.max_len > max_sentence_len:
+            self.max_len = max_sentence_len
 
         # Vectorize Data
-        trainX, testX = np.zeros((len(train_sentences), max_len)), np.zeros((len(test_sentences), max_len))
+        trainX, testX = np.zeros((len(train_sentences), self.max_len)), np.zeros((len(test_sentences), self.max_len))
         trainX_len, testX_len = np.zeros((len(trainX)), dtype=np.int32), np.zeros((len(testX)), dtype=np.int32)
         for i in range(len(train_sentences)):
-            trainX_len[i] = min(max_len, len(train_sentences[i]))
+            trainX_len[i] = min(self.max_len, len(train_sentences[i]))
             for j in range(trainX_len[i]):
                 trainX[i][j] = word2id[train_sentences[i][j]]
         for i in range(len(test_sentences)):
-            testX_len[i] = min(max_len, len(test_sentences[i]))
+            testX_len[i] = min(self.max_len, len(test_sentences[i]))
             for j in range(testX_len[i]):
                 testX[i][j] = word2id[test_sentences[i][j]]
 
         return word2id, trainX, testX, trainX_len, testX_len
+
+    def vectorize_sentence(self, nl_sentence):
+        '''
+        Vectorizes a single sentence.
+        '''
+        sent = nl_sentence.split()
+        sentence_len = len(sent)
+
+
+        vec = np.zeros((self.max_len,))
+
+
+        #TODO: case where sentence too long handled by truncating 
+        for i in range(min(sentence_len, self.max_len)):
+            vec[i] = self.word2id.get(sent[i], self.word2id['UNK'])
+
+        return vec, sentence_len
 
     def parse_programs(self):
         """
@@ -270,10 +316,10 @@ class NPI():
         program set, as well as set of execution traces.
         """
         with open(self.train_path + ".ml", 'r') as f:
-            train_programs = [x.split()[1:-1] for x in f.readlines()]
+            train_programs = [x.split() for x in f.readlines()]
 
         with open(self.test_path + ".ml", 'r') as f:
-            test_programs = [x.split()[1:-1] for x in f.readlines()]
+            test_programs = [x.split() for x in f.readlines()]
 
         # Assemble Program Set, Argument Set, Execution Traces
         program_set, arg_set, train_traces, test_traces = {}, {"NULL": 0}, [], []

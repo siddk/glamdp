@@ -4,7 +4,6 @@ import random as r
 from sys import argv
 from argparse import ArgumentParser
 
-
 r.seed(1)
 levels = ['L0', 'L1', 'L2']
 nl_ext = '.en'
