@@ -5,12 +5,12 @@ from sys import argv
 
 def parse(args):
     parser = ArgumentParser()
-    parser.add_argument("--means", help="location of means machine language data")
-    parser.add_argument("--traces", help="location of action traces")
+    parser.add_argument("--ml", help="location of machine language data")
+    parser.add_argument("--traces", help="location of corresponding action trace set")
     parser.add_argument("--out", help="outfile location")
     return parser.parse_args(args)
 
-#loads traces from the traces_amdp file, match their ML commands to their traces via a hashmap
+#loads traces from the traces annotation file, match their ML commands to their traces via a hashmap
 def load_traces(filename):
     traces_dict = {}
     start_dict = {}

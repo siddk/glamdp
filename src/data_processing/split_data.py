@@ -12,6 +12,7 @@ def parse(args):
     parser = ArgumentParser()
     parser.add_argument("--ml", help="machine language")
     parser.add_argument("--en", help="corresponding english data")
+    parser.add_argument("--pfx", help="data prefix, i.e. means or ends")
     parser.add_argument("--pct", help="percent training data", type=float)
     parser.add_argument("--out", help="output location string")
     return parser.parse_args(args)
@@ -27,7 +28,7 @@ def save_strings(outfile, data):
 def run(args):
 
     with open(args.ml, 'r') as f:
-        ml = [line.strip() for line in f]
+        ml = [args.pfx + " " + line.strip() for line in f]
 
     with open(args.en, 'r') as f:
         en = [line.strip() for line in f]

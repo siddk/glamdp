@@ -1,11 +1,11 @@
 #!/bin/bash
 
-means=../../data/combined_rss_data/means
-ends=../../data/combined_rss_data/ends
-combined=../../data/combined_rss_data/combined
+means=../../data/rss_data/means
+ends=../../data/rss_data/ends
+both=../../data/rss_data/both
 
 #combine training data
-python means_ends_dataset.py --means $means/means_train --ends $ends/no_l0_train --out $combined/train
+python means_ends_dataset.py --means $means/L0_train --ends $ends/L2_train --out $both/all_train
 
 #combine test data
-python means_ends_dataset.py --means $means/means_test --ends $ends/no_l0_test --out $combined/test
+python means_ends_dataset.py --means $means/L0_test --ends $ends/L2_test --out $both/all_test

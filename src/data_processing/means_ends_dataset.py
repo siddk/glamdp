@@ -34,18 +34,14 @@ def run(args):
     both_ml = means_ml + ends_ml
     both_en = means_en + ends_en
 
-    #create ends/means label file
-    labels = ["M" for item in means_ml] + ["E" for item in ends_ml]
-
     #zip and shuffle
-    combined = zip(both_ml, both_en, labels)
+    combined = zip(both_ml, both_en)
     r.shuffle(combined)
 
-    shuffled_ml, shuffled_en, shuffled_labels = zip(*combined) #unzipping
+    shuffled_ml, shuffled_en = zip(*combined) #unzipping
 
     save_strings(args.out + ml_ext, shuffled_ml)
     save_strings(args.out + nl_ext, shuffled_en)
-    save_strings(args.out + "_labels.txt", shuffled_labels)
 
 
 if __name__=="__main__":

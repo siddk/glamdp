@@ -22,7 +22,8 @@ rf_results=results/rf_results.txt
 #separating into separate scripts enables intermediate data products to be saved
 
 #python predict_class.py --train $classifier_train --test $classifier_test --means $pred_means --ends $pred_ends
-#python predict_rf.py --train $npi_train --test $npi_test --pred_ends $pred_ends --results $rf_results
-python gen_settrc.py --parallel_data $means_train --out $settrc
-python gen_settrc.py --parallel_data $pred_means --out $ccgsettrc --test
+#python predict_rf_npi.py --train $npi_train --test $npi_test --pred_ends $pred_ends --results $rf_results
+python predict_rf_rnn.py --train $npi_train --test $npi_test --pred_ends $pred_ends --results $rf_results
+#python gen_settrc.py --parallel_data $means_train --out $settrc
+#python gen_settrc.py --parallel_data $pred_means --out $ccgsettrc --test
 #java -Xmx8g -jar $navi_path $pipeline_exp

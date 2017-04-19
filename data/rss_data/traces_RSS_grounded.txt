@@ -1,0 +1,28 @@
+#action traces for the AMDP reward functions in the RSS dataset
+#starting location for agent: (6,6,0),0 orientation default
+#transforming between local and global directions
+
+
+agentInRoom agent0 room0
+SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+
+agentInRegion agent0 room0
+SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);(6,3,0)
+
+agentInRoom agent0 room1
+SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+
+agentInRegion agent0 room1
+SOUTH(6,6,0);SOUTH(6,5,0);SOUTH(6,4,0);WEST(6,3,0);WEST(5,3,90);WEST(4,3,90);WEST(3,3,90);NORTH(2,3,180);NORTH(2,4,180);NORTH(2, 5, 180);(2,6,180)
+
+goNorth
+NORTH(6,6,0);(6,7,180)
+
+goSouth
+SOUTH(6,6,0);(6,5,0)
+
+goEast
+EAST(6,6,0);(7,6,270)
+
+goWest
+WEST(6,6,0);(5,6,90)

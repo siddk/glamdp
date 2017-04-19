@@ -164,7 +164,11 @@ class SingleRNN():
             pred_rf, _ = self.score(nl_command)
             if pred_rf == rf:
                 num_correct += 1
-        print "Test Accuracy: %.3f" % (num_correct / len(self.test_pc))
+
+        acc = (num_correct / len(self.test_pc))
+        print "Test Accuracy: %.3f" % acc
+        return acc
+
 
     def score(self, nl_command):
         """
