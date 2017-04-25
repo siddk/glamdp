@@ -16,21 +16,22 @@ def ground_rf(lifted, domain):
         grounded_list.append(grounded_rf)
 
     rf = " ".join(grounded_list)
-
     return rf
 
 def parse(args):
     parser = ArgumentParser()
-    parser.add_argument("--rf", help="list of reward functions")
-    parser.add_argument("--domain", help="domain ID")
+    parser.add_argument("--rf", help="list of lifted reward functions")
+    parser.add_argument("--domain", help="list of corresponding domain IDs for each RF")
     parser.add_argument("--out", help="list of grounded reward function")
     return parser.parse_args(args)
 
 def run(args):
     domain = domains.id2domain[args.domain]
-    with open(args.rf, 'r') as rfs:
-        grounded_rfs = [ground_rf(lifted.strip(), domain) for lifted in rfs]
-
+    with open(args.rf, 'r') as f:
+        lifted_rfs = [line.strip() for line in f]
+    with open(args.domain, 'r') as f:
+        domain_nums = [line.strip() for line in f]
+    grounded_rfs = [ground_rf(lifted.strip(), domains.id2domain[domain_id]) for lifted, domain_id in zip(lifted_rfs, domain_nums)]
     with open(args.out, 'w') as f:
         f.write("\n".join(grounded_rfs))
 
