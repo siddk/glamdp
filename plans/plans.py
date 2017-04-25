@@ -1,10 +1,10 @@
 #plans precomputed from AMDP planner for each domain
 
 
-south = 'SOUTH'
-north = 'NORTH'
-east = 'EAST'
-west = 'WEST'
+south = 'Down'
+north = 'Up'
+east = 'Right'
+west = 'Left'
 pull = 'PULL'
 
 plans_cd1 = {"agentInRegion agent0 room0": [south, south, south]
