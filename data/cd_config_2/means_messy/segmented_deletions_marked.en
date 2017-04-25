@@ -44,6 +44,7 @@ Go down , | right , | up .
 Go down , | turn right | and then take a left .
 Go Down , | Go Down , | Go Down , | Go Right , | Go Right , | Go Right , | Go Right , | Go Up , | Go Up
 Go South | then East | and then North .
+DELETED
 down , | down , | down , | right , | right , | right , | right , | up , | up
 Go south , | then turn east , | and then go up north .
 down , | down , | down , | right , | right , | right , | right , | up , | up
@@ -51,6 +52,7 @@ down , | down , | right , | right , | right , | right , | up , | up
 Go down , | turn east , | go forward , | go up
 Go down south , | turn left | and then turn up | to the left | and head to the north
 Go down 3 steps , | turn right and go 4 steps , | turn up and go 3 steps.
+DELETED
 Go down | then left | then left .
 Go down , | go left , | go up
 Go down 3 , | right 4 , | up 2
@@ -64,9 +66,11 @@ Move down 3 spaces , | right 3 spaces , | and then up 2 spaces .
 down , | down , | down , | right , | right , | right , | right , | up , | up
 Go down , | go left , | go up .
 Move down 3 times , | turn left and move 4 times , | then move up twice.
+DELETED
 Go down , | go to the right , | go up
 Go down 3 steps , | 4 steps right , | then 2 steps up .
 Go south 3 steps , | east 4 steps , | and north 2 steps .
+DELETED
 Go down 3 steps , | go left 4 steps , | go up two steps , | and stop .
 Go down three times , | then go right 4 times , | then go up 2 times .
 Three steps down , | four steps right , | two steps up
@@ -81,18 +85,24 @@ go down , | go down , | go down , | go right , | go right , | go right , | go ri
 Go down , | down , | down , | right , | right , | right , | right , | right , | up , | up , | up
 up , | up , | up , | left , | up , | up , | up , | up , | left , | up , | up , | up
 Go south | and then go east | and the go north
+DELETED
 go down , | left , | up , | left , | up , | right , | down , | down .
 go south three , | go east four | then south two
 south two , | right three , | up four , | right one , | down two
 Go down , | then go right , | then go up , | then step to the left , | then up , | then to the right , | then move down .
+DELETED
 Go down 3 , | right 3 , | up 2 , | left 1 , | up 2 , | right 1 , | down 3
 move down 3 , | move right 4 , | move up 2 , | move left 1 , | move up 2 , | move right 1 , | move down 3
 Go south three steps , | go east four steps , | go north two steps , | go west one step , | go north two steps , | go east one step | and go south three steps .
 Down , | down , | down , | right , | right , | right , | right , | up , | up , | left , | up , | up , | right , | down , | down , | down .
 Go 3 down , | 4 left , | 2 up , | 1  left , | 2 up , | 1 right , | three down .
+DELETED
 Go south , | go south , | go south , | go east , | go east , | go east , | go east , | go north , | go north , | go west , | go north , | go north , | go east , | go south , | go south , | go south
+DELETED
+DELETED
 Go up , | go left , | go left , | go left , | go right , | go right , | go left .
 Go down south , | turn left | and then turn up to the left | and head to the north | and turn south
+DELETED
 go down three robot steps , | left four robot steps , | up two robot steps , | left one robot step , | up two robot steps , | right one robot step , | down three robot steps
 Go down , | go down , | go down , | go left , | go left , | go left , | go left , | go up , | go up , | go left , | go up , | go up , | go right , | go down , | go down , | go down .
 Go straight 3 spots , | go left 4 spots , | go up 2 sports , | go left 1 spot , | go up 3 spots , | go right 1 sport , | go down 4 sports .
@@ -100,13 +110,18 @@ down , | down , | down , | right , | right , | right , | right , | up , | up , |
 go down , | go right , | go up , | go left , | go up , | go right , | go down
 Go down 3 spaces , | go right 4 spaces , | go up 2 spaces , | go left 1 space , | go up 2 spaces , | go right 1 space , | go down 3 spaces
 Go down , | go right , | go up , | go left , | go up , | go left , | go down
+DELETED
 Go down 3 steps | then right 4 steps | then up 3 steps | then left one | then up two | then right one | then down 3
 go south , | south , | south , | east , | east , | east , | east , | north , | north , | west , | north , | north , | east , | south , | south , | and south .
 Go 3 down , | 4 left , | 2 up , | 1 left , | 2 up , | 1 right , | 3 down .
 Take 3 steps south , | 4 steps to the right , | 3 steps north , | 1 step left , | 3 steps north , | 1 step right | and then down 2 steps
+DELETED
 Go down 3 squares , | go right 4 squares , | go up 2 squares , | go left , | up 2 squares , | right , | down 3 squares
+DELETED
 down , | down , | down , | right , | right , | right , | right , | up , | up , | left , | up , | up , | right , | down , | down
 Go south 3 moves , | go east 4 moves , | go north 2 moves , | go west 1 move , | go north 2 moves , | go east 1 move , | go south 3 moves
+DELETED
+DELETED
 Go up , | up , | left , | up , | up , | up , | left , | up , | up , | right , | down , | down , | down .
 down | down | down , | right | right | right | right , | up , | left , | up | up | up , | right , | down , | down , | down
 Go down , | down , | down | then go right , | go right , | go right , | go right , | go up , | go left , | go up , | go up , | go right , | go down , | go down , | go down .
@@ -116,28 +131,39 @@ Down | Down | Down | Right | Right | Right | Right | Up | Up | Left | Up | Up | 
 Go down , | right , | up , | left , | right | and down
 Go down , | turn right , | then left , | another left , | up , | right | and then down .
 Go Down , | Go Down , | Go Down , | Go Right , | Go Right , | Go Right , | Go Right , | Go Up , | Go Up , | Go Left , | Go Up , | Go Up , | Go Right , | Go Down , | Go Down , | Go Down
+DELETED
+DELETED
 down , | down , | right , | right , | right , | right , | up , | up , | left , | up | up , | right , | down , | down , | down
 Go south , | then turn east | and go up | and turn west , | then go up , | east | and lastly south .
 down , | down , | down , | right , | right , | right , | right , | up , | up , | left , | up , | right , | down , | down , | down
 down , | down , | down , | right , | right , | right , | right , | up , | up , | left , | up , | up , | right , | down , | down
+DELETED
 Go down south , | turn left | and then turn up to the left | and head to the north | and then to the South
 move down 3 steps , | move right 4 steps , | move up 2 steps , | move left 1 step , | move up 2 steps | move right 1 step , | move down 3 steps
+DELETED
 Go down , | down , | down , | left , | left , | left , | left , | up , | up , | left , | up , | up , | right , | down , | down , | down .
 Go down , | go left , | go up , | go left , | go up , | go right , | go down
+DELETED
+DELETED
 Go down 3 spaces , | go left 4 spaces | go 2 spaces north , | go left one space , | go up 2 spaces | turn go right 1 space | and then down 2 spaces
 Go down , | follow north , | follow north , | follow east , | follow east , | follow east , | follow east , | follow north , | go up , | go up , | go left , | go north , | go north , | go right , | follow south , | follow south , | go down .
 Go down , | then go right , | then go up , | move left , | then up , | then right , | move the object down
+DELETED
+DELETED
 Move three spaces down , | three spaces right , | then four spaces up , | turn around , | and then move 3 spaces down .
 down , | down , | down , | right , | right , | right , | right , | up , | up , | left , | up , | up , | right , | right , | down , | down , | down
 Go down , | go left , | go up , | go left , | go up , | go right , | go down .
 Move down 3 , | then turn left and move 4 , | then move up 2 , | move right 1 | and up 2 , | then left 1 | and down 3 .
 Move down three , | right four , | up two , | left one , | up two , | right one , | and down three .
+DELETED
 Go down 3 steps , | then 4 steps right , | then 2 steps up , | 1 step left , | 2 steps up , | 1 step right , | then 4 steps down
 Go south 3 steps , | east 4 steps , | north 2 steps , | west 1 step , | north 2 steps , | east 1 step , | and finally , south 3 steps .
+DELETED
 Go down three steps , | go left four steps , | go up two steps , | go left one step , | go up two steps , | go right one step , | go down three steps .
 Go down 3 times , | go right 4 times , | go up 2 times , | go left once , | go up 2 times , | go right once , | then go down 3 times .
 Three steps down , | four steps right , | two steps up , | one step left , | two steps up , | one step right , | three steps down .
 go down | go left | go up | go left | go right | go down
+DELETED
 Go down , | go down , | go down , | go right , | go right , | go right , | go right , | go up , | go up , | go left , | go up , | go up , | go right , | go down , | go down , | go down
 Move down 3 spaces . | Move right 4 spaces . | Move up 2 spaces . | Move left 1 spaces . | Move up 2 spaces . | Move right 1 spaces . | Move down 3 spaces .
 GO DOWN THREE STEPS , | GO OVER FOUR STEPS , | GO UP 2 STEPS , | GO LEFT 1 STEP , | GO UP 2 STEPS , | GO OVER ONE STEP , | GO DOWN THREE STEPS
@@ -147,30 +173,43 @@ go down , | go down , | go down , | go right , | go right , | go right , | go ri
 Go down , | down , | down , | left , | left , | left , | left , | up , | up , | left , | up , | up , | up , | right , | down , | down , | down , | down
 up , | up , | up , | left , | up , | up , | up , | left , | up , | up , | left , | up , | right , | up , | up , | right , | up , | up , | up , | up
 go south for three steps | and then go east for four steps , | then north for two steps , | then west for one step , | then north for two steps | and then east for one step , | and then south for three steps
+DELETED
 move down , | left , | up , | left , | up , | right , | down , | right  , | up .
 go down three steps | then east four steps | then up two | west one | then up two | east one | down four | then west four | and up two .
 three down , | four right , | two up , | one left , | two up , | one right , | four down , | four left , | two up
 Go down , | then go right , | then go up , | then go left , | then go up , | then go right , | then go down , | then go left , | then go up .
+DELETED
 Down 3 , | right 4 , | up 2 , | left 1 , | up 2 , | right 1 , | down 3 , | left 4 , | up 2
 move down 3 , | move right 4 , | move up 2 , | move west 1 , | move north 2 , | move east 1 , | move down 4 , | move left 4 , | move up 3
 Go south three steps , | go east four steps , | go north two steps , | go west one step , | go north two steps , | go east one step , | go south four steps , | go west four steps | and then go north two steps .
 Down , | down , | down , | right , | right , | right , | right , | up , | up , | left , | up , | up , | right , | down , | down , | down , | down , | left , | left , | left , | left , | up , | up .
 Go 3 down , | 4 left , | 2 up , | 1 left , | 2 up , | 1 right , | 4 down , | 4 right , | 2 up .
+DELETED
 Go south , | go south , | go south , | go east , | go east , | go east , | go east , | go north , | go north , | go west , | go north , | go north , | go east , | go south , | go south , | go south , | go south , | go west , | go west , | go west , | go west , | go north , | go north .
+DELETED
+DELETED
 Go forward , | go left , | go left , | go left , | go right , | go right , | go forward , | go left , | go right .
+DELETED
+DELETED
 go down three robot steps , | left four robot steps , | up two robot steps , | left one robot step , | up two robot steps , | right one robot step , | down four robot steps , | right four robot steps , | up two robot steps
 go down , | go down , | go down , | go right , | go right , | go right , | go right , | go up , | go up , | go left , | go up , | go up , | go right , | go down , | go down , | go down , | go down , | go left , | go left , | go left , | go left , | go up , | go up .
+DELETED
 down , | down , | down , | right , | right , | right , | right , | up , | up , | left , | up , | up , | right , | down , | down , | down , | down , | left , | left , | left , | left , | up , | up
 go down , | go up , | go left , | go up , | go right , | go down , | go left | go up
 Go down 3 spaces , | go right 4 spaces , | go up 2 spaces , | go left 1 space , | go up 2 spaces , | go right 1 space , | go down 4 spaces , | go left 4 spaces , | go up 2 spaces
 Go down , | go left , | go up , | go left , | go up , | go right , | go down , | go left , | go up
+DELETED
 go down 3 , | right 4 , | up 2 | left 1 | up 2 | right 1 | down 4 | then left 4 | then up 2
 Go south , | south , | south , | east , | east , | east , | east , | north , | north , | west , | north , | north , | east , | south , | south , | south , | south , | west , | west , | west , | west , | north , | and north .
 Go 3 down , | 4 left , | 2 up , | 1 left , | 2 up , | 1 right , | 4 down , | 4 right , | 2 up .
 3 down , | 4 right , | 2 north , | 1 left , | 3 north , | 1 right , | 4 south , | 4 left , | 2 north
+DELETEd
 Down 3 squares , | right 4 squares , | up 2 squares , | left , | up 2 squares , | right , | down 4 squares , | left 4 squares , | up 2 squares
+DELETED
 down , | down , | down , | right , | right , | right , | right , | up , | up , | right , | up , | up , | right , | down , | down , | down , | down , | left , | left , | left , | left , | up , | up
 Go south 3 moves , | go east 4 moves , | go north 2 moves , | go west 1 move , | go north 2 moves , | go east 1 move , | go south 4 moves , | go east 4 moves , | go north 2 moves
+DELETED
+DELETED
 Go up , | up , | up , | left , | up , | up , | up , | left , | up , | up , | up , | left , | up , | up , | up , | up , | right , | up , | up , | up , | up , | up , | up , | left , | up
 down , | down , | down , | right , | right , | right , | right , | left , | up , | right , | up , | up , | up , | up , | left , | left , | left , | left , | up , | up
 Go down , | down , | down | then go right , | go right , | go right , | go right , | go up , | go left , | go up , | go up , | go right , | go down , | go down , | go down , | go down , | go down , | go left , | go left , | go left , | go left , | go up , | go up .
@@ -180,29 +219,44 @@ Down | Down | Down | Right | Right | Right | Right | Up | Up | Left | Up | Up | 
 Go down , | right , | up , | right , | left , | right , | down , | left , | up .
 South , | east , | north , | west , | north , | east , | south , | west , | north .
 Go Down , | Go Down , | Go Down , | Go Right , | Go Right , | Go Right , | Go Right , | Go Up , | Go Up , | Go Left , | Go Up , | Go Up , | Go Right , | Go Down , | Go Down , | Go Down , | Go Down , | Go Left , | Go Left , | Go Left , | Go Left , | Go Up , | Go UP
+DELETED
+DELETED
 down , | down , | down , | right , | right , | right , | right , | right , | up , | up , | left , | up , | right , | down , | down , | down , | down , | left , | left , | left , | left , | up , | up
 Go south , | turn east | and go north , | then west , | then north again , | turn east | and go south , | then turn west | and go north .
 down , | down , | down , | right , | right , | right , | right , | up , | up , | left , | up , | up , | down , | down , | down , | down , | left , | left , | left , | left , | up , | up
 down , | down , | down , | right , | right , | right , | right , | up , | up , | left , | up , | up , | down , | down , | down , | down , | left , | left , | left , | left , | up , | up
+DELETED
+DELETED
 take 3 steps down , | 4 steps right , | two steps up , | one step left , | two steps up , | 4 steps down , | 4 steps left | and 2 steps up
+DELETED
 Go down , | down , | down , | left , | left , | left , | left , | up , | up , | left , | up , | up , | right , | down , | down , | down , | down , | right , | right , | right , | right , | up , | up .
 go down , | go left , | go up , | go left , | go up , | go right , | go down , | go right , | go up
 Go down 3 , | right 4 , | up 2 , | right 1 , | down 4 , | left 4 , | up 2
+DELETED
+DELETED
 Follow north , | go down , | go right , | follow east , | follow east , | follow east ,| follow east , | go up , | follow west , | follow north , | go right , | follow south , | follow south , | follow south , | go down , | go left , | follow west , | follow west , | follow west , | follow west , | go up , | follow south .
+DELETED
+DELETED
+DELETED
 Move down 3 spaces , | move right 3 spaces , | move up three spaces , | move down 4 spaces , | move left 3 spaces , | move up 2 spaces .
 down , | down , | down , | right , | right , | right , | right , | up , | up , | left , | up , | up , | right , | down , | down , | down , | down , | left , | left , | left , | left , | up , | up
 Go down , | go left , | go up , | go left , | go up , | go right , | go down , | go right , | go up .
 Move down 3 , | left 4 , | up 2 , | right 1 , | up 2 , | left 1 , | down 4 , | right 4 , | and up 2 .
 Move down three , | right four , | up two , | left one , | up two , | right one , | down four , | left four , | and up two .
+DELETED
 Go down 3 , | right 4 , | up 2 , | 1 left , | up 2 , | 1 right , | down 4 , | left 4 , | up 2
 Go 3 steps south , | 4 steps east , | 2 steps north , | 1 step west , | 2 steps north , | 1 step east , | 4 steps south , | 4 steps west , | and finally , 2 steps north .
+DELETED
 Go down three steps , | go left four steps , | go up two steps , | go left one step , | go up two steps , | go right one step , | go down three steps , | go right four steps , | go up two steps .
 Go down 3 times , | go right 4 times , | go up 2 times , | go left once , | go up 2 times , | go right once , | go down 4 times , | go left 4 times , | then go up 2 times .
 Go down three steps , | right four steps , | up two steps , | left one step , | up two steps , | right one step , | down four steps , | left four steps , | up two steps .
 Go down | go left | go up | go left | go right | go down | go right | go up
+DELETED
 Go down , | go down , | go down , | go right , | go right , | go right , | go right , | go up , | go up , | go left , | go up , | go up , | go right , | go down , | go down , | go down , | go down , | go down , | go left , | go left , | go left , | go left , | go up , | go up
+DELETED
 GO DOWN THREE STEPS , | GO OVER FOUR STEPS , | GO UP TWO STEPS , | GO LEFT ONE STEP , | GO UP TWO STEPS , | GO RIGHT ONE STEP , | GO DOWN FOUR STEPS , | GO RIGHT FOUR STEPS , | GO UP TWO STEPS
 Go down 3 , | right 4 , | up 2
+DELETED
 go down , | go down , | go down , | go right , | go right , | go right , | go right , | go up , | go up , | go left , | go up , | go up , | go right , | go down , | go down , | go down , | go left , | go left , | go left , | go up , | go up
 Go down , | down , | down , | left , | left , | left , | left , | up , | up , | left , | left , | left , | down , | down , | down , | right , | right , | right , | right , | up , | up , | up , | up
 up , | up , | up , | left , | up , | up , | up , | left , | up , | up , | left , | up , | right , | up , | up , | right , | up , | right , | up , | up , | up , | up , | up

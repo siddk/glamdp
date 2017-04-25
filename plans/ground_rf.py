@@ -9,20 +9,21 @@ def ground_rf(lifted, domain):
     #lifted reward function consists of a sequence of prop function, binding constraint pairs
     rf_list = lifted.split()
     assert len(rf_list)% 2 == 0, "reward function {} is invalid".format(lifted)
-
     grounded_list = []
-
     for i in range(0, len(rf_list) - 1, 2):
-
         obj = "agent0" if rf_list[i] == 'agentInRegion' else 'block0'
         grounded_rf = "{} {} {}".format(rf_list[i], obj, domain[rf_list[i + 1]])
-        print grounded_rf
+        grounded_list.append(grounded_rf)
+
+    rf = " ".join(grounded_list)
+
+    return rf
 
 def parse(args):
     parser = ArgumentParser()
-    parser.parse_args("--rf", help="list of reward functions")
-    parser.parse_args("--domain", help="domain ID")
-    parser.parse_args("--out", help="list of grounded reward function")
+    parser.add_argument("--rf", help="list of reward functions")
+    parser.add_argument("--domain", help="domain ID")
+    parser.add_argument("--out", help="list of grounded reward function")
     return parser.parse_args(args)
 
 def run(args):
@@ -32,7 +33,6 @@ def run(args):
 
     with open(args.out, 'w') as f:
         f.write("\n".join(grounded_rfs))
-
 
 
 if __name__=="__main__":

@@ -10,11 +10,11 @@ ml_ext = '.ml'
 
 def parse(args):
     parser = ArgumentParser()
-    parser.add_argument("--ml", help="machine language")
+    parser.add_argument("--grounded_ml", help="grounded machine language")
+    parser.add_argument("--lifted_ml", help = "lifted machine language")
     parser.add_argument("--en", help="corresponding english data")
-    parser.add_argument("--pfx", help="data prefix, i.e. means or ends")
-    parser.add_argument("--pct", help="percent training data", type=float)
-    parser.add_argument("--out", help="output location string")
+    parser.add_argument("--pct", help="percent test data", type=float)
+    parser.add_argument("--out", help="output location ")
     return parser.parse_args(args)
 
 #save strings to file
@@ -24,38 +24,33 @@ def save_strings(outfile, data):
         textfile.write(outstr)
         print "saved to {}".format(outfile)
 
-
 def run(args):
 
-    with open(args.ml, 'r') as f:
-        ml = [args.pfx + " " + line.strip() for line in f]
+    with open(args.grounded_ml, 'r') as f:
+        grounded_ml = [line.strip() for line in f]
+
+    with open(args.lifted_ml, 'r') as f:
+        lifted_ml = [line.strip() for line in f]
 
     with open(args.en, 'r') as f:
         en = [line.strip() for line in f]
 
-    combined = zip(ml, en)
+    combined = zip(en, grounded_ml, lifted_ml)
 
     r.shuffle(combined)
 
     num_train = int(len(combined)*args.pct)
 
-    combined_train = combined[:num_train]
-    combined_test = combined[num_train:]
+    train_en, train_grounded, train_lifted = zip(*combined[:num_train])
+    test_en, test_grounded, test_lifted = zip(*combined[num_train:])
 
-    train_ml, train_en = zip(*combined_train)
-    test_ml, test_en = zip(*combined_test)
+    save_strings(args.out + "train.en", train_en)
+    save_strings(args.out + "train_npi_lifted.ml", train_lifted)
+    save_strings(args.out + "train_rnn_grounded.ml", train_grounded)
 
-    #Create output locations
-    out_train_nl = args.out + "_train" + nl_ext
-    out_train_ml = args.out + "_train" + ml_ext
-
-    out_test_nl = args.out + "_test" + nl_ext
-    out_test_ml = args.out + "_test" + ml_ext
-
-    save_strings(out_train_nl, train_en)
-    save_strings(out_train_ml, train_ml)
-    save_strings(out_test_nl, test_en)
-    save_strings(out_test_ml, test_ml)
+    save_strings(args.out + "test.en", train_en)
+    save_strings(args.out + "test_npi_lifted.ml", train_lifted)
+    save_strings(args.out + "test_rnn_grounded.ml", train_grounded)
 
 if __name__=="__main__":
     run(parse(argv[1:]))
