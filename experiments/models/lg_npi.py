@@ -7,8 +7,6 @@ import numpy as np
 import tensorflow as tf
 import tflearn
 
-tf.set_random_seed(21)
-
 TERMINATE, CONTINUE = 1, 0
 P_IDX, A1_IDX, T_IDX = 0, 1, 2
 
