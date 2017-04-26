@@ -1,7 +1,7 @@
 """
-run_npi.py
+load_npi.py
 
-Core script for loading, training, and evaluating the NPI model for grounding language 
+Core script for loading and evaluating the NPI model for grounding language 
 to lifted reward functions.
 """
 from models.lg_npi import NPI
@@ -15,18 +15,13 @@ tf.app.flags.DEFINE_string("ends_test_path", "npi_train_test/L2_train", "Path to
 
 def main(_):
     # Create Model
-    npi = NPI(FLAGS.means_train_path, FLAGS.ends_train_path, FLAGS.means_test_path, FLAGS.ends_test_path)
+    npi = NPI(FLAGS.means_train_path, FLAGS.ends_train_path, FLAGS.means_test_path, FLAGS.ends_test_path, 
+              restore='checkpoints/npi.ckpt')
 
-    # Train Model + Evaluate
-    for i in range(25):
-        print 'ITERATION:', i + 1
-        npi.fit()
-        npi.eval_means()
-        npi.eval_means_all()
-        npi.eval_ends()
-    
-    # Save Model
-    npi.saver.save(npi.session, "checkpoints/npi.ckpt")
+    # Evaluate Model
+    npi.eval_means()
+    npi.eval_means_all()
+    npi.eval_ends()
 
 if __name__ == "__main__":
     tf.app.run()

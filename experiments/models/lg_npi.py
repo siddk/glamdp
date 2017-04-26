@@ -7,13 +7,15 @@ import numpy as np
 import tensorflow as tf
 import tflearn
 
+tf.set_random_seed(21)
+
 TERMINATE, CONTINUE = 1, 0
 P_IDX, A1_IDX, T_IDX = 0, 1, 2
 
 class NPI():
     def __init__(self, means_train_path, ends_train_path, means_test_path, ends_test_path,
                  embedding_size=30, num_args=1, npi_core_dim=64, key_dim=32, batch_size=16, 
-                 num_epochs=5, initializer=tf.random_normal_initializer(stddev=0.1)):
+                 num_epochs=5, initializer=tf.random_normal_initializer(stddev=0.1), restore=False):
         """
         Instantiate an NPI for grounding language to lifted Reward Functions, with the necessary
         parameters.
@@ -30,17 +32,16 @@ class NPI():
         self.epochs = num_epochs
         self.session = tf.Session()
 
-        # Build Vectorized Sentences
-        self.word2id, self.trainX, self.testX, self.trainX_len, self.testX_len = self.parse()
-
-        # Build up Program Set
-        self.progs, self.args, self.trainY, self.testY = self.parse_programs()
+        # Parse Inputs
+        self.word2id, self.progs, self.args, self.trainX, self.trainX_len, self.testMeansX, self.testMeans_len, self.testEndsX, self.testEnds_len, self.trainY, self.testMeansY, self.testEndsY = self.parse()
 
         # Add GO Program
         self.progs["<<GO>>"] = len(self.progs)
-        #create id2prog hashmap
+        
+        # Create id2prog Map
         self.id2prog = {i:prog for prog, i in self.progs.iteritems()}
 
+        # Create id2arg Map
         self.id2arg = {i:arg for arg, i in self.args.iteritems()}
 
         # Setup Placeholders
@@ -83,8 +84,14 @@ class NPI():
         correct_a1 = tf.equal(tf.argmax(self.arguments[0], 1), self.A1_out)
         self.a1_accuracy = tf.reduce_mean(tf.cast(correct_a1, tf.float32), name="A1_Accuracy")
 
-        # Initialize all Variables
-        self.session.run(tf.global_variables_initializer())
+        # Create Saver
+        self.saver = tf.train.Saver()
+
+        if restore:
+            self.saver.restore(self.session, restore)
+        else:
+            # Initialize all Variables
+            self.session.run(tf.global_variables_initializer())
 
     def instantiate_weights(self):
         """
@@ -95,9 +102,6 @@ class NPI():
         zero_mask = tf.constant([0 if i == 0 else 1 for i in range(len(self.word2id))],
                                     dtype=tf.float32, shape=[len(self.word2id), 1])
         self.E = E * zero_mask
-
-        # Create Learnable Mask
-        # self.inp_mask = tf.get_variable("Inp_Mask", [self.trainX.shape[1], 1], initializer=tf.constant_initializer(1.0))
 
         # Create Program Embedding Matrix
         self.PE = tf.get_variable("Program_Embedding", [len(self.progs), self.embed_sz], initializer=self.init)
@@ -168,7 +172,7 @@ class NPI():
             arg = tflearn.fully_connected(arg_hidden, len(self.args), activation='linear',
                                           name='Argument_{}'.format(str(i)))
             args.append(arg)
-        return args                                                         # Shape: [bsz, num_args]
+        return args                                                          # Shape: [bsz, num_args]
 
     def build_losses(self):
         """
@@ -211,18 +215,57 @@ class NPI():
                 curr_p_acc, curr_a1_acc = curr_p_acc + p_acc, curr_a1_acc + a1_acc
             print 'Epoch %d\tAverage Loss: %.3f\tProgram Accuracy: %.3f\tArg1 Accuracy: %.3f' % (e, curr_loss / batches, curr_p_acc / batches, curr_a1_acc / batches)
 
-    def eval(self):
+    def eval_means(self):
         """
         Evaluate the model on the test data.
         """
         num_correct, total = 0.0, 0.0
-        for i in range(len(self.testX)):
-            pred_prog, pred_a1 = self.score(self.testX[i], self.testX_len[i])
-            true_prog, true_a1 = self.testY[i, P_IDX], self.testY[i, A1_IDX]
+        for i in range(len(self.testMeansX)):
+            pred_prog, pred_a1 = self.score(self.testMeansX[i], self.testMeans_len[i])
+            true_prog, true_a1 = self.testMeansY[i, P_IDX], self.testMeansY[i, A1_IDX]
             if (pred_prog == int(true_prog)) and (pred_a1 == int(true_a1)):
                 num_correct += 1
 
-        print "Test Accuracy: %.3f" % (float(num_correct) / float(len(self.testX)))
+        print "Means Per-Segment Test Accuracy: %.3f" % (float(num_correct) / float(len(self.testMeansX)))
+    
+    def eval_means_all(self):
+        """
+        Evaluate the model on ALL the means data (not per-segment, but per-sentence).
+        """
+        num_correct, total = 0.0, 0.0
+        with open(self.means_test_path + ".en", 'r') as f:
+            means_sentences, lens = [x.strip().split('|') for x in f.readlines()], []
+            for i in means_sentences:
+                lens.append(len(i))
+        
+        counter = 0
+        for i in range(len(means_sentences)):
+            correct = 1
+            for j in range(lens[i]):
+                pred_prog, pred_a1 = self.score(self.testMeansX[counter], self.testMeans_len[counter])
+                true_prog, true_a1 = self.testMeansY[counter, P_IDX], self.testMeansY[counter, A1_IDX]
+                if (pred_prog == int(true_prog)) and (pred_a1 == int(true_a1)):
+                    correct *= 1
+                else:
+                    correct *= 0
+                counter += 1
+            num_correct += correct
+            total += 1
+        assert(counter == len(self.testMeansX))
+        print "Means Full-Sentence Test Accuracy: %.3f" % (float(num_correct) / float(total))
+
+    def eval_ends(self):
+        """
+        Evaluate the model on the test data.
+        """
+        num_correct, total = 0.0, 0.0
+        for i in range(len(self.testEndsX)):
+            pred_prog, pred_a1 = self.score(self.testEndsX[i], self.testEnds_len[i])
+            true_prog, true_a1 = self.testEndsY[i, P_IDX], self.testEndsY[i, A1_IDX]
+            if (pred_prog == int(true_prog)) and (pred_a1 == int(true_a1)):
+                num_correct += 1
+
+        print "Ends Test Accuracy: %.3f" % (float(num_correct) / float(len(self.testEndsX)))
 
     def score(self, nl_command, length):
         """
@@ -236,32 +279,41 @@ class NPI():
         return pred_prog[0], pred_a1[0]
 
     def score_nl(self, nl_command):
-        '''
+        """
         Given a natural language string, return a string representing the lifted RF
-        '''
+        """
         vec, length = self.vectorize_sentence(nl_command)
         pred_prog, pred_a1 = self.score(vec, length)
 
-        #produce string representation of RF
-        #level first, then either one or two more programs
-
+        # Produce string representation of RF
         prog_split = self.id2prog[pred_prog].split("_")
         args = self.id2arg[pred_a1].split("_")
-        level = prog_split[0]
-        progs = prog_split[1:]
 
-        #handling case of argument size mismatch
-        if len(progs) > len(args):
-            args.append("NONE")
-        elif len(args) > len(progs):
-            progs.append("NONE")
+        # Handle AgentInRegion_BlockInRegion
+        if len(prog_split) == 2:
+            if len(args) != 2:
+                args.append("NONE")
+            return prog_split[0] + " | " + args[0] + " | " + prog_split[1] + " | " + args[1]
+        elif len(prog_split) == 1:
+            if prog_split[0] in ["Up", "Down", "Left", "Right"]:
+                if args[0].isdigit():
+                    return " | ".join([prog_split[0] for _ in range(int(args[0]))])    
+            return prog_split[0] + " | " + args[0]
+    
+    def vectorize_sentence(self, nl_sentence):
+        """
+        Vectorizes a single sentence.
+        """
+        sent = nl_sentence.split()
+        sentence_len = len(sent)
 
-        string_rf = "{}".format(level)
+        vec = np.zeros((self.max_len,))
 
-        for prog, arg in zip(progs, args):
-            string_rf+=(" {} {}".format(prog, arg))
+        # Truncate Sentences that are too long
+        for i in range(min(sentence_len, self.max_len)):
+            vec[i] = self.word2id.get(sent[i], self.word2id['UNK'])
 
-        return string_rf
+        return vec, sentence_len
 
     def parse(self, max_sentence_len=50):
         """
@@ -405,7 +457,6 @@ class NPI():
             test_ends_traces.append((program_set[prog_key], arg_set[arg], TERMINATE))
         assert(len(test_ends_traces) == len(testEndsX))
 
-
         # Vectorize Traces
         vtrain_traces = np.zeros([len(train_traces), 3])
         vtest_means_traces, vtest_ends_traces = np.zeros([len(test_means_traces), 3]), np.zeros([len(test_ends_traces), 3])
@@ -427,76 +478,4 @@ class NPI():
             vtest_ends_traces[i][A1_IDX] = trace[1]
             vtest_ends_traces[i][T_IDX] = trace[2]
 
-        import ipdb
-        ipdb.set_trace()
-
-        return word2id, trainX, testX, trainX_len, testX_len
-
-    def vectorize_sentence(self, nl_sentence):
-        '''
-        Vectorizes a single sentence.
-        '''
-        sent = nl_sentence.split()
-        sentence_len = len(sent)
-
-        vec = np.zeros((self.max_len,))
-
-        # Truncate Sentences that are too long
-        for i in range(min(sentence_len, self.max_len)):
-            vec[i] = self.word2id.get(sent[i], self.word2id['UNK'])
-
-        return vec, sentence_len
-
-    def parse_programs(self):
-        """
-        Parse the machine language (reward functions) in the training and test data, generating
-        program set, as well as set of execution traces.
-        """
-        with open(self.train_path + ".ml", 'r') as f:
-            train_programs = [x.split() for x in f.readlines()]
-
-        with open(self.test_path + ".ml", 'r') as f:
-            test_programs = [x.split() for x in f.readlines()]
-
-        # Assemble Program Set, Argument Set, Execution Traces
-        program_set, arg_set, train_traces, test_traces = {}, {"NULL": 0}, [], []
-        for data_type in range(2):
-            for program in ([train_programs, test_programs][data_type]):
-                lvl, trace = program[0], []
-                if len(program) == 3:
-                    prog_key, arg_key = lvl + "_" + program[1], program[2]
-                    if prog_key not in program_set:
-                        program_set[prog_key] = len(program_set)
-                    if arg_key not in arg_set:
-                        arg_set[arg_key] = len(arg_set)
-                    trace.append((program_set[prog_key], arg_set[arg_key], TERMINATE))
-                else:
-                    assert(len(program) == 5)
-                    prog_key = lvl + "_" + program[1] + "_" + program[3]
-                    arg_key = program[2] + "_" + program[4]
-                    if prog_key not in program_set:
-                        program_set[prog_key] = len(program_set)
-                    if arg_key not in arg_set:
-                        arg_set[arg_key] = len(arg_set)
-
-                    trace.append((program_set[prog_key], arg_set[arg_key], TERMINATE))
-                if data_type == 0:
-                    train_traces.append(trace)
-                else:
-                    test_traces.append(trace)
-
-        # Vectorize Traces
-        vtrain_traces, vtest_traces = np.zeros([len(train_traces), 3]), np.zeros([len(test_traces), 3])
-        for i in range(len(train_traces)):
-            trace = train_traces[i][0]
-            vtrain_traces[i][P_IDX] = trace[0]
-            vtrain_traces[i][A1_IDX] = trace[1]
-            vtrain_traces[i][T_IDX] = trace[2]
-        for i in range(len(test_traces)):
-            trace = test_traces[i][0]
-            vtest_traces[i][P_IDX] = trace[0]
-            vtest_traces[i][A1_IDX] = trace[1]
-            vtest_traces[i][T_IDX] = trace[2]
-
-        # Return Program Set, Argument Set, Execution Traces
-        return program_set, arg_set, vtrain_traces, vtest_traces
+        return word2id, program_set, arg_set, trainX, trainX_len, testMeansX, testMeans_len, testEndsX, testEnds_len, vtrain_traces, vtest_means_traces, vtest_ends_traces
