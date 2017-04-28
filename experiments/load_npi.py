@@ -12,6 +12,7 @@ tf.app.flags.DEFINE_string("means_train_path", "npi_train_test/L0_npi_train", "P
 tf.app.flags.DEFINE_string("ends_train_path", "npi_train_test/L2_train", "Path to ends training data.")
 tf.app.flags.DEFINE_string("means_test_path", "npi_train_test/L0_test", "Path to means test data.")
 tf.app.flags.DEFINE_string("ends_test_path", "npi_train_test/L2_train", "Path to ends test data.")
+tf.app.flags.DEFINE_string("permuted_ends_test_path", "permuted_ends_test/L2_test", "Path to permuted ends test data.")
 
 def main(_):
     # Create Model
@@ -22,6 +23,7 @@ def main(_):
     npi.eval_means()
     npi.eval_means_all()
     npi.eval_ends()
+    npi.eval_permuted_ends(FLAGS.permuted_ends_test_path)
 
 if __name__ == "__main__":
     tf.app.run()

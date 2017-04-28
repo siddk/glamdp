@@ -71,7 +71,8 @@ class NPI():
 
         # Build Losses
         self.t_loss, self.p_loss, self.a_losses = self.build_losses()
-        self.loss = 1 * sum([self.t_loss, self.p_loss]) + sum(self.a_losses)
+        # self.loss = 1 * sum([self.t_loss, self.p_loss]) + sum(self.a_losses)
+        self.loss = self.p_loss + sum(self.a_losses)
 
         # Build Training Operation
         self.train_op = tf.train.AdamOptimizer().minimize(self.loss)
@@ -102,7 +103,7 @@ class NPI():
         self.E = E * zero_mask
 
         # Create Program Embedding Matrix
-        self.PE = tf.get_variable("Program_Embedding", [len(self.progs), self.embed_sz], initializer=self.init)
+        # self.PE = tf.get_variable("Program_Embedding", [len(self.progs), self.embed_sz], initializer=self.init)
 
         # Create GRU NPI Core
         self.gru = tf.contrib.rnn.GRUCell(self.npi_core_dim)
@@ -124,13 +125,13 @@ class NPI():
         Concatenate input encoding and program embedding, and feed through NPI Core.
         """
         # Embed the Program
-        program_embedding = tf.nn.embedding_lookup(self.PE, self.P)           # [None, embed_sz]
+        # program_embedding = tf.nn.embedding_lookup(self.PE, self.P)           # [None, embed_sz]
 
         # Concatenate state and program embedding
-        p_embedding = tf.expand_dims(program_embedding, axis=1)               # [None, 1, embed_sz]
+        # p_embedding = tf.expand_dims(program_embedding, axis=1)               # [None, 1, embed_sz]
         s_embedding = tf.expand_dims(self.s, axis=1)                          # [None, 1, embed_sz]
-        state = tf.concat([s_embedding, p_embedding], 2)                      # [None, 1, 2 * embed_sz]
-        state = tf.nn.dropout(state, self.keep_prob)
+        # state = tf.concat([s_embedding, p_embedding], 2)                      # [None, 1, 2 * embed_sz]
+        state = tf.nn.dropout(s_embedding, self.keep_prob)
 
         # Feed through NPI Core
         with tf.variable_scope("Core"):
@@ -265,6 +266,54 @@ class NPI():
 
         print "Ends Test Accuracy: %.3f" % (float(num_correct) / float(len(self.testEndsX)))
 
+    def eval_permuted_ends(self, permuted_ends_path):
+        """
+        Evaluate the model on the permuted test data.
+        """
+        with open(permuted_ends_path + ".en", 'r') as f:
+            ends_sentences = [x.split() for x in f.readlines()]
+            
+        with open(permuted_ends_path + "_lifted_gt.ml", 'r') as f:
+            ends_programs = [x.split() for x in f.readlines()]
+            for i in range(len(ends_programs)):
+                if len(ends_programs[i]) == 4:
+                    program = ends_programs[i]
+                    ends_programs[i] = [program[0] + "_" + program[2], program[1] + "_" + program[3]]
+        
+        permuted_ends = zip(ends_sentences, ends_programs)
+
+        # Build Language Representations
+        permutedEndsX, permutedEnds_len = np.zeros((len(permuted_ends), self.trainX.shape[1])), np.zeros((len(permuted_ends)), dtype=np.int32)
+        for i in range(len(permuted_ends)):
+            nl_sentence = permuted_ends[i][0]
+            permutedEnds_len[i] = min(self.trainX.shape[1], len(nl_sentence))
+            for j in range(permutedEnds_len[i]):
+                permutedEndsX[i][j] = self.word2id[nl_sentence[j]]
+
+        # Build Program Representations
+        permuted_ends_traces = []
+        for _, program in permuted_ends:
+            prog_key, arg = program
+            permuted_ends_traces.append((self.progs[prog_key], self.args[arg], TERMINATE))
+        assert(len(permuted_ends_traces) == len(permutedEndsX))
+
+        # Vectorize Traces
+        vpermuted_traces = np.zeros([len(permuted_ends_traces), 3])
+        for i in range(len(permuted_ends_traces)):
+            trace = permuted_ends_traces[i]
+            vpermuted_traces[i][P_IDX] = trace[0]
+            vpermuted_traces[i][A1_IDX] = trace[1]
+            vpermuted_traces[i][T_IDX] = trace[2]
+
+        num_correct, total = 0.0, 0.0
+        for i in range(len(permutedEndsX)):
+            pred_prog, pred_a1 = self.score(permutedEndsX[i], permutedEnds_len[i])
+            true_prog, true_a1 = vpermuted_traces[i, P_IDX], vpermuted_traces[i, A1_IDX]
+            if (pred_prog == int(true_prog)) and (pred_a1 == int(true_a1)):
+                num_correct += 1
+
+        print "Permuted Ends Test Accuracy: %.3f" % (float(num_correct) / float(len(permutedEndsX)))
+
     def score(self, nl_command, length):
         """
         Given a natural language command, return predicted output and score.
@@ -377,10 +426,10 @@ class NPI():
         
         assert(len(means_segments) == len(means_programs))
         
-        with open(self.ends_train_path + ".en", 'r') as f:
+        with open(self.ends_test_path + ".en", 'r') as f:
             ends_sentences = [x.split() for x in f.readlines()]
             
-        with open(self.ends_train_path + "_npi_lifted.ml", 'r') as f:
+        with open(self.ends_test_path + "_npi_lifted.ml", 'r') as f:
             ends_programs = [x.split() for x in f.readlines()]
             for i in range(len(ends_programs)):
                 if len(ends_programs[i]) == 4:
