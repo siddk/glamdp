@@ -58,7 +58,8 @@ class NPI():
         self.s = self.encode_input()
 
         # Feed through NPI Core, get Hidden State
-        self.h = self.npi_core()
+        # self.h = self.npi_core()
+        self.h = self.s
 
         # Build Termination Network => Returns Probability of Terminating
         self.terminate = self.terminate_net()
@@ -154,8 +155,10 @@ class NPI():
         distribution over possible next programs.
         """
         # Compute Distribution over Programs
-        hidden = tflearn.fully_connected(self.h, self.key_dim, activation='elu', regularizer='L2')
+        hidden = tflearn.fully_connected(self.h, self.key_dim, activation='relu', regularizer='L2')
         hidden = tf.nn.dropout(hidden, self.keep_prob)
+        # hidden = tflearn.fully_connected(hidden, self.key_dim, activation='relu', regularizer='L2')
+        # hidden = tf.nn.dropout(hidden, self.keep_prob)
         prog_dist = tflearn.fully_connected(hidden, len(self.progs))         # Shape: [bsz, num_progs]
         return prog_dist
 
@@ -166,8 +169,10 @@ class NPI():
         """
         args = []
         for i in range(self.num_args):
-            arg_hidden = tflearn.fully_connected(self.h, self.key_dim, activation='elu', regularizer='L2')
+            arg_hidden = tflearn.fully_connected(self.h, self.key_dim, activation='relu', regularizer='L2')
             arg_hidden = tf.nn.dropout(arg_hidden, self.keep_prob)
+            # arg_hidden = tflearn.fully_connected(arg_hidden, self.key_dim, activation='relu', regularizer='L2')
+            # arg_hidden = tf.nn.dropout(arg_hidden, self.keep_prob)
             arg = tflearn.fully_connected(arg_hidden, len(self.args), activation='linear',
                                           name='Argument_{}'.format(str(i)))
             args.append(arg)
@@ -386,9 +391,11 @@ class NPI():
         
         with open(self.ends_train_path + ".en", 'r') as f:
             ends_sentences = [x.split() for x in f.readlines()]
+            ends_sentences = ends_sentences[:(9 * (len(ends_sentences) / 10))]
             
         with open(self.ends_train_path + "_npi_lifted.ml", 'r') as f:
             ends_programs = [x.split() for x in f.readlines()]
+            ends_programs = ends_programs[:(9 * (len(ends_programs) / 10))]
             for i in range(len(ends_programs)):
                 if len(ends_programs[i]) == 4:
                     program = ends_programs[i]
@@ -406,6 +413,10 @@ class NPI():
         random.shuffle(self.train_set)
         random.shuffle(self.train_set)
         random.shuffle(self.train_set)
+
+        # # Sample Efficiency Time
+        # total_length = len(self.train_set)
+        # self.train_set = self.train_set[:(9 * (total_length / 10))]
         
         # Parse Test Data
         with open(self.means_test_path + ".en", 'r') as f:
@@ -428,9 +439,12 @@ class NPI():
         
         with open(self.ends_test_path + ".en", 'r') as f:
             ends_sentences = [x.split() for x in f.readlines()]
+            ends_sentences = ends_sentences[(9 * (len(ends_sentences) / 10)):]
             
         with open(self.ends_test_path + "_npi_lifted.ml", 'r') as f:
             ends_programs = [x.split() for x in f.readlines()]
+            ends_programs = ends_programs[(9 * (len(ends_programs) / 10)):]
+
             for i in range(len(ends_programs)):
                 if len(ends_programs[i]) == 4:
                     program = ends_programs[i]
