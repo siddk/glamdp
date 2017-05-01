@@ -327,8 +327,24 @@ class NPI():
         """
         prog, a1 = self.session.run([self.program_distribution, self.arguments[0]],
                                     feed_dict={self.X: [nl_command], self.X_len: [length], self.P: [self.progs["<<GO>>"]], self.keep_prob: 1.0})
-        pred_prog, pred_a1 = np.argmax(prog, axis=1), np.argmax(a1, axis=1)
-        return pred_prog[0], pred_a1[0]
+        pred_prog = np.argmax(prog, axis=1)[0]
+        
+        best_a, best_val = -1, -1000000000
+        for a in range(len(a1[0])):
+            if self.id2prog[pred_prog] in ['Down', 'Left', 'Up', 'Right', 'down', 'West', 'North', 'South']:
+                if not self.id2arg[a].isdigit():
+                    continue 
+                else:
+                   if a1[0][a] > best_val:
+                       best_a, best_val = a, a1[0][a]
+            else:
+                if self.id2arg[a].isdigit():
+                    continue
+                else:
+                    if a1[0][a] > best_val:
+                       best_a, best_val = a, a1[0][a]
+
+        return pred_prog, best_a
 
     def score_nl(self, nl_command):
         """

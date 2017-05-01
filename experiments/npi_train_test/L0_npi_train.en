@@ -332,7 +332,6 @@ move south three steps
 go south | then west | then north | then east | then south
 go down | right | up | grab chair go right | go up leave chair | go down | go right | go up
 go west
-go down five | left five | up one | right four | down one | right one | up four
 move north
 move down
 move down three |, left one |, down one |, left two |, down one |, left one |, up two
