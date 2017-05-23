@@ -60,9 +60,6 @@ class IDRAGGN():
         # Generate Input Representation
         self.prog_s, self.arg_s = self.encode_input()
 
-        # Feed through NPI Core, get Hidden State
-        self.h = self.s
-
         # Build Termination Network => Returns Probability of Terminating
         self.terminate = self.terminate_net()
 
@@ -77,7 +74,8 @@ class IDRAGGN():
         self.loss = self.p_loss + sum(self.a_losses)
 
         # Build Training Operation
-        self.train_op = tf.train.AdamOptimizer().minimize(self.loss)
+        self.p_train_op = tf.train.AdamOptimizer().minimize(self.p_loss)
+        self.a_train_op = tf.train.AdamOptimizer().minimize(sum(self.a_losses))
 
         # Build Accuracy Operation
         correct_prog = tf.equal(tf.argmax(self.program_distribution, 1), self.P_out)
@@ -98,36 +96,42 @@ class IDRAGGN():
         """
         Instantiate all network weights, including NPI Core GRU Cell.
         """
-        # Create NL Embedding Matrix, with 0 Vector for PAD_ID (0)
+        # Create NL Embedding Matrix, with 0 Vector for PAD_ID (0) [Program Net]
         PE = tf.get_variable("P_Embedding", [len(self.word2id), self.embed_sz], initializer=self.init)
         zero_mask = tf.constant([0 if i == 0 else 1 for i in range(len(self.word2id))],
                                     dtype=tf.float32, shape=[len(self.word2id), 1])
-        self.E = E * zero_mask
+        self.PE = PE * zero_mask
 
-        # Create Program Embedding Matrix
-        # self.PE = tf.get_variable("Program_Embedding", [len(self.progs), self.embed_sz], initializer=self.init)
-
-        # Create GRU NPI Core
-        self.gru = tf.contrib.rnn.GRUCell(self.npi_core_dim)
+        # Create NL Embedding Matrix, with 0 Vector for PAD_ID (0) [Arg Net]
+        AE = tf.get_variable("A_Embedding", [len(self.word2id), self.embed_sz], initializer=self.init)
+        self.AE = AE * zero_mask
 
     def encode_input(self):
         """
         Map Natural Language Directive to Fixed Size Vector Embedding.
         """
-        directive_embedding = tf.nn.embedding_lookup(self.E, self.X)          # [None, sent_len, embed_sz]
-        directive_embedding = tf.nn.dropout(directive_embedding, self.keep_prob)
+        p_directive_embedding = tf.nn.embedding_lookup(self.PE, self.X)          # [None, sent_len, embed_sz]
+        p_directive_embedding = tf.nn.dropout(p_directive_embedding, self.keep_prob)
 
-        with tf.variable_scope("Encoder"):
-            self.encoder_gru = tf.contrib.rnn.GRUCell(self.embed_sz)
-            _, state = tf.nn.dynamic_rnn(self.encoder_gru, directive_embedding, sequence_length=self.X_len, dtype=tf.float32)
-        return state
+        a_directive_embedding = tf.nn.embedding_lookup(self.AE, self.X)          # [None, sent_len, embed_sz]
+        a_directive_embedding = tf.nn.dropout(a_directive_embedding, self.keep_prob)
+
+        with tf.variable_scope("P_Encoder"):
+            self.p_encoder_gru = tf.contrib.rnn.GRUCell(self.embed_sz)
+            _, p_state = tf.nn.dynamic_rnn(self.p_encoder_gru, p_directive_embedding, sequence_length=self.X_len, dtype=tf.float32)
+        
+        with tf.variable_scope("A_Encoder"):
+            self.a_encoder_gru = tf.contrib.rnn.GRUCell(self.embed_sz)
+            _, a_state = tf.nn.dynamic_rnn(self.a_encoder_gru, a_directive_embedding, sequence_length=self.X_len, dtype=tf.float32)
+        
+        return p_state, a_state
 
     def terminate_net(self):
         """
         Build the NPI Termination Network, that takes in the NPI Core Hidden State, and returns
         the probability of terminating program.
         """
-        p_terminate = tflearn.fully_connected(self.h, 2, activation='linear', regularizer='L2')
+        p_terminate = tflearn.fully_connected(self.prog_s, 2, activation='linear', regularizer='L2')
         return p_terminate                                                   # Shape: [bsz, 2]
 
     def program_net(self):
@@ -136,7 +140,7 @@ class IDRAGGN():
         distribution over possible next programs.
         """
         # Compute Distribution over Programs
-        hidden = tflearn.fully_connected(self.h, self.key_dim, activation='relu', regularizer='L2')
+        hidden = tflearn.fully_connected(self.prog_s, self.key_dim, activation='relu', regularizer='L2')
         hidden = tf.nn.dropout(hidden, self.keep_prob)
         prog_dist = tflearn.fully_connected(hidden, len(self.progs))         # Shape: [bsz, num_progs]
         return prog_dist
@@ -148,7 +152,7 @@ class IDRAGGN():
         """
         args = []
         for i in range(self.num_args):
-            arg_hidden = tflearn.fully_connected(self.h, self.key_dim, activation='relu', regularizer='L2')
+            arg_hidden = tflearn.fully_connected(self.arg_s, self.key_dim, activation='relu', regularizer='L2')
             arg_hidden = tf.nn.dropout(arg_hidden, self.keep_prob)
             arg = tflearn.fully_connected(arg_hidden, len(self.args), activation='linear',
                                           name='Argument_{}'.format(str(i)))
@@ -183,8 +187,8 @@ class IDRAGGN():
             curr_loss, curr_p_acc, curr_a1_acc, curr_a2_acc, batches = 0.0, 0.0, 0.0, 0.0, 0.0
             for start, end in zip(range(0, len(self.trainX[:chunk_size]) - self.bsz, self.bsz),
                                   range(self.bsz, len(self.trainX[:chunk_size]), self.bsz)):
-                loss, p_acc, a1_acc, _ = self.session.run([self.loss, self.p_accuracy, self.a1_accuracy,
-                                                           self.train_op], feed_dict={
+                loss, p_acc, a1_acc, _, _ = self.session.run([self.loss, self.p_accuracy, self.a1_accuracy,
+                                                              self.p_train_op, self.a_train_op], feed_dict={
                                                                        self.X: self.trainX[start:end],
                                                                        self.X_len: self.trainX_len[start:end],
                                                                        self.P: [self.progs["<<GO>>"]] * self.bsz,
