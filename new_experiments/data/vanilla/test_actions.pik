@@ -1,0 +1,1477 @@
+(lp0
+(S'go right'
+p1
+S'Right 1'
+p2
+tp3
+a(S"go south and stand still when you can't move anymore"
+p4
+S'Down 1'
+p5
+tp6
+a(S'and then left'
+p7
+S'Left 1'
+p8
+tp9
+a(S'south'
+p10
+S'Down 1'
+p11
+tp12
+a(S'go down'
+p13
+S'Down 1'
+p14
+tp15
+a(S'go down'
+p16
+S'Down 1'
+p17
+tp18
+a(S', east one time'
+p19
+S'Right 1'
+p20
+tp21
+a(S'move down three'
+p22
+S'Down 3'
+p23
+tp24
+a(S'go west for one step'
+p25
+S'Left 1'
+p26
+tp27
+a(S'left four spaces'
+p28
+S'Left 4'
+p29
+tp30
+a(S'then north'
+p31
+S'Up 1'
+p32
+tp33
+a(S'up three'
+p34
+S'Up 3'
+p35
+tp36
+a(S'go down three spaces'
+p37
+S'Down 3'
+p38
+tp39
+a(S'down'
+p40
+S'Down 1'
+p41
+tp42
+a(S'move north two steps'
+p43
+S'Up 2'
+p44
+tp45
+a(S'and up two steps'
+p46
+S'Up 2'
+p47
+tp48
+a(S'go down'
+p49
+S'Down 1'
+p50
+tp51
+a(S'then go north'
+p52
+S'Up 1'
+p53
+tp54
+a(S'then east'
+p55
+S'Right 1'
+p56
+tp57
+a(S'and go up two steps'
+p58
+S'Up 2'
+p59
+tp60
+a(S', south'
+p61
+S'Down 1'
+p62
+tp63
+a(S'then go east six motions'
+p64
+S'Right 6'
+p65
+tp66
+a(S'left once'
+p67
+S'Left 1'
+p68
+tp69
+a(S'left four spaces'
+p70
+S'Left 4'
+p71
+tp72
+a(S'three steps south'
+p73
+S'Down 3'
+p74
+tp75
+a(S'up there spaces'
+p76
+S'Up 3'
+p77
+tp78
+a(S'up three'
+p79
+S'Up 3'
+p80
+tp81
+a(S'move up three spaces'
+p82
+S'Up 3'
+p83
+tp84
+a(S'down'
+p85
+S'Down 1'
+p86
+tp87
+a(S'go down to south'
+p88
+S'Down 1'
+p89
+tp90
+a(S'left'
+p91
+S'Left 1'
+p92
+tp93
+a(S'go down'
+p94
+S'Down 1'
+p95
+tp96
+a(S'go down'
+p97
+S'Down 1'
+p98
+tp99
+a(S'then up two spaces'
+p100
+S'Up 2'
+p101
+tp102
+a(S'go south'
+p103
+S'Down 1'
+p104
+tp105
+a(S'right five'
+p106
+S'Right 5'
+p107
+tp108
+a(S'then go south'
+p109
+S'Down 1'
+p110
+tp111
+a(S'go down'
+p112
+S'Down 1'
+p113
+tp114
+a(S'right four'
+p115
+S'Right 4'
+p116
+tp117
+a(S'go up three times'
+p118
+S'Up 3'
+p119
+tp120
+a(S'down'
+p121
+S'Down 1'
+p122
+tp123
+a(S'one step down'
+p124
+S'Down 1'
+p125
+tp126
+a(S'west'
+p127
+S'Left 1'
+p128
+tp129
+a(S'and up two spots'
+p130
+S'Up 2'
+p131
+tp132
+a(S'up'
+p133
+S'Up 1'
+p134
+tp135
+a(S'down'
+p136
+S'Down 1'
+p137
+tp138
+a(S'down'
+p139
+S'Down 1'
+p140
+tp141
+a(S'go south by one step'
+p142
+S'Up 1'
+p143
+tp144
+a(S'right one space'
+p145
+S'Right 1'
+p146
+tp147
+a(S'go down four'
+p148
+S'Down 4'
+p149
+tp150
+a(S'go right'
+p151
+S'Right 1'
+p152
+tp153
+a(S'go south one square'
+p154
+S'Down 1'
+p155
+tp156
+a(S'east'
+p157
+S'Right 1'
+p158
+tp159
+a(S'up three'
+p160
+S'Up 2'
+p161
+tp162
+a(S'then up'
+p163
+S'Up 1'
+p164
+tp165
+a(S'down'
+p166
+S'Down 1'
+p167
+tp168
+a(S'then go west'
+p169
+S'Left 1'
+p170
+tp171
+a(S'down'
+p172
+S'Down 1'
+p173
+tp174
+a(S'move south one step'
+p175
+S'Down 1'
+p176
+tp177
+a(S', down'
+p178
+S'Down 1'
+p179
+tp180
+a(S'turn right then go forward one spot'
+p181
+S'Right 1'
+p182
+tp183
+a(S'go west'
+p184
+S'Left 1'
+p185
+tp186
+a(S'then down'
+p187
+S'Down 1'
+p188
+tp189
+a(S'up'
+p190
+S'Up 1'
+p191
+tp192
+a(S'go right'
+p193
+S'Right 1'
+p194
+tp195
+a(S'up'
+p196
+S'Up 1'
+p197
+tp198
+a(S'down one'
+p199
+S'Down 1'
+p200
+tp201
+a(S'move south one spot'
+p202
+S'Down 1'
+p203
+tp204
+a(S', move west one time'
+p205
+S'Left 1'
+p206
+tp207
+a(S'right'
+p208
+S'Right 1'
+p209
+tp210
+a(S'then right'
+p211
+S'Right 1'
+p212
+tp213
+a(S', down'
+p214
+S'Down 1'
+p215
+tp216
+a(S'move one spot to your left'
+p217
+S'Left 1'
+p218
+tp219
+a(S'down'
+p220
+S'Down 1'
+p221
+tp222
+a(S'and move left four steps'
+p223
+S'Left 4'
+p224
+tp225
+a(S'down'
+p226
+S'Down 1'
+p227
+tp228
+a(S', go right four times'
+p229
+S'Right 4'
+p230
+tp231
+a(S'left'
+p232
+S'Left 1'
+p233
+tp234
+a(S'up three'
+p235
+S'Up 3'
+p236
+tp237
+a(S'go right four'
+p238
+S'Right 4'
+p239
+tp240
+a(S'go north for three steps'
+p241
+S'Up 3'
+p242
+tp243
+a(S'west three'
+p244
+S'Left 3'
+p245
+tp246
+a(S'up two spaces'
+p247
+S'Up 2'
+p248
+tp249
+a(S'right'
+p250
+S'Right 1'
+p251
+tp252
+a(S'go up one time'
+p253
+S'Up 1'
+p254
+tp255
+a(S'north three spaces'
+p256
+S'Up 3'
+p257
+tp258
+a(S'three steps up'
+p259
+S'Up 3'
+p260
+tp261
+a(S'down'
+p262
+S'Down 1'
+p263
+tp264
+a(S'move west'
+p265
+S'Right 1'
+p266
+tp267
+a(S'up'
+p268
+S'Up 1'
+p269
+tp270
+a(S'and up again'
+p271
+S'Up 1'
+p272
+tp273
+a(S'move west three times'
+p274
+S'Left 3'
+p275
+tp276
+a(S', go west'
+p277
+S'Left 1'
+p278
+tp279
+a(S'up'
+p280
+S'Up 1'
+p281
+tp282
+a(S'left'
+p283
+S'Left 1'
+p284
+tp285
+a(S'move south five times'
+p286
+S'Down 5'
+p287
+tp288
+a(S'go south'
+p289
+S'Down 1'
+p290
+tp291
+a(S', left'
+p292
+S'Left 1'
+p293
+tp294
+a(S'right'
+p295
+S'Right 1'
+p296
+tp297
+a(S'move to your left one step'
+p298
+S'Left 1'
+p299
+tp300
+a(S'move left four'
+p301
+S'Left 4'
+p302
+tp303
+a(S'north'
+p304
+S'Up 1'
+p305
+tp306
+a(S'down'
+p307
+S'Down 1'
+p308
+tp309
+a(S'then left four steps'
+p310
+S'Left 4'
+p311
+tp312
+a(S'west'
+p313
+S'Left 1'
+p314
+tp315
+a(S'move down five'
+p316
+S'Down 5'
+p317
+tp318
+a(S'go north'
+p319
+S'Up 1'
+p320
+tp321
+a(S'south'
+p322
+S'Down 1'
+p323
+tp324
+a(S'go up'
+p325
+S'Up 1'
+p326
+tp327
+a(S'then east'
+p328
+S'Left 1'
+p329
+tp330
+a(S'up'
+p331
+S'Up 1'
+p332
+tp333
+a(S'go left'
+p334
+S'Left 1'
+p335
+tp336
+a(S', move right once'
+p337
+S'Right 1'
+p338
+tp339
+a(S'move down three times'
+p340
+S'Down 3'
+p341
+tp342
+a(S'right'
+p343
+S'Right 1'
+p344
+tp345
+a(S'move in the following way - move down four times'
+p346
+S'Down 4'
+p347
+tp348
+a(S'right'
+p349
+S'Right 1'
+p350
+tp351
+a(S'east three moves'
+p352
+S'Right 3'
+p353
+tp354
+a(S'left five steps'
+p355
+S'Left 5'
+p356
+tp357
+a(S'go to the left once'
+p358
+S'Left 1'
+p359
+tp360
+a(S'move west'
+p361
+S'Left 1'
+p362
+tp363
+a(S'go down'
+p364
+S'Down 1'
+p365
+tp366
+a(S', down'
+p367
+S'Down 1'
+p368
+tp369
+a(S', north'
+p370
+S'Up 1'
+p371
+tp372
+a(S'go south'
+p373
+S'Down 1'
+p374
+tp375
+a(S'move to your right'
+p376
+S'Right 1'
+p377
+tp378
+a(S'south'
+p379
+S'Down 1'
+p380
+tp381
+a(S'move up three spaces'
+p382
+S'Up 3'
+p383
+tp384
+a(S'and north three steps'
+p385
+S'Up 3'
+p386
+tp387
+a(S'down'
+p388
+S'Down 1'
+p389
+tp390
+a(S'up two'
+p391
+S'Up 2'
+p392
+tp393
+a(S'and move west'
+p394
+S'Left 1'
+p395
+tp396
+a(S', left'
+p397
+S'Left 1'
+p398
+tp399
+a(S'then up'
+p400
+S'Up 1'
+p401
+tp402
+a(S', then go left twice'
+p403
+S'Left 2'
+p404
+tp405
+a(S'go up'
+p406
+S'Up 1'
+p407
+tp408
+a(S'go up'
+p409
+S'Up 1'
+p410
+tp411
+a(S'go left'
+p412
+S'Left 1'
+p413
+tp414
+a(S'go up'
+p415
+S'Up 1'
+p416
+tp417
+a(S'left'
+p418
+S'Left 1'
+p419
+tp420
+a(S'then two steps north'
+p421
+S'Up 2'
+p422
+tp423
+a(S'move south one step'
+p424
+S'Down 1'
+p425
+tp426
+a(S'south'
+p427
+S'Down 1'
+p428
+tp429
+a(S'then up'
+p430
+S'Up 1'
+p431
+tp432
+a(S'south'
+p433
+S'Down 1'
+p434
+tp435
+a(S'left'
+p436
+S'Left 1'
+p437
+tp438
+a(S'left five'
+p439
+S'Left 5'
+p440
+tp441
+a(S'down'
+p442
+S'Down 1'
+p443
+tp444
+a(S', go up'
+p445
+S'Up 1'
+p446
+tp447
+a(S'up'
+p448
+S'Up 1'
+p449
+tp450
+a(S'go down'
+p451
+S'Down 5'
+p452
+tp453
+a(S'go down'
+p454
+S'Down 1'
+p455
+tp456
+a(S'move west four steps'
+p457
+S'Left 4'
+p458
+tp459
+a(S'go left'
+p460
+S'Left 1'
+p461
+tp462
+a(S', go up'
+p463
+S'Up 1'
+p464
+tp465
+a(S'move left one pace'
+p466
+S'Left 1'
+p467
+tp468
+a(S'right four'
+p469
+S'Right 4'
+p470
+tp471
+a(S'go down four times'
+p472
+S'Down 4'
+p473
+tp474
+a(S'right'
+p475
+S'Right 1'
+p476
+tp477
+a(S', down'
+p478
+S'Down 1'
+p479
+tp480
+a(S', south'
+p481
+S'Down 1'
+p482
+tp483
+a(S'east'
+p484
+S'Right 1'
+p485
+tp486
+a(S'i want you to go down'
+p487
+S'Down 1'
+p488
+tp489
+a(S'go down'
+p490
+S'Down 1'
+p491
+tp492
+a(S'north'
+p493
+S'Up 1'
+p494
+tp495
+a(S'go right'
+p496
+S'Right 1'
+p497
+tp498
+a(S'right four steps'
+p499
+S'Right 1'
+p500
+tp501
+a(S'take five steps south'
+p502
+S'Down 5'
+p503
+tp504
+a(S'go south'
+p505
+S'Down 1'
+p506
+tp507
+a(S'down'
+p508
+S'Down 1'
+p509
+tp510
+a(S'move north one units'
+p511
+S'Up 1'
+p512
+tp513
+a(S'go south'
+p514
+S'Down 1'
+p515
+tp516
+a(S'go down'
+p517
+S'Down 1'
+p518
+tp519
+a(S'down one space'
+p520
+S'Down 1'
+p521
+tp522
+a(S'go down one space'
+p523
+S'Down 1'
+p524
+tp525
+a(S'then up once ;'
+p526
+S'Up 1'
+p527
+tp528
+a(S'go south for one space'
+p529
+S'Down 1'
+p530
+tp531
+a(S'go south'
+p532
+S'Down 1'
+p533
+tp534
+a(S'south'
+p535
+S'Down 1'
+p536
+tp537
+a(S'and move left'
+p538
+S'Left 1'
+p539
+tp540
+a(S'down'
+p541
+S'Down 1'
+p542
+tp543
+a(S'left'
+p544
+S'Left 1'
+p545
+tp546
+a(S', four steps east'
+p547
+S'Right 4'
+p548
+tp549
+a(S'and up two spaces'
+p550
+S'Up 2'
+p551
+tp552
+a(S'go down three steps'
+p553
+S'Down 3'
+p554
+tp555
+a(S'down'
+p556
+S'Down 1'
+p557
+tp558
+a(S'go down'
+p559
+S'Down 1'
+p560
+tp561
+a(S'go north'
+p562
+S'Up 1'
+p563
+tp564
+a(S'right'
+p565
+S'Right 1'
+p566
+tp567
+a(S'then north'
+p568
+S'Up 1'
+p569
+tp570
+a(S'go south'
+p571
+S'Down 1'
+p572
+tp573
+a(S'up'
+p574
+S'Up 1'
+p575
+tp576
+a(S'go up'
+p577
+S'Up 1'
+p578
+tp579
+a(S'right one'
+p580
+S'Right 1'
+p581
+tp582
+a(S', go down'
+p583
+S'Down 1'
+p584
+tp585
+a(S'left five'
+p586
+S'Left 5'
+p587
+tp588
+a(S', go down'
+p589
+S'Down 1'
+p590
+tp591
+a(S'turn left , walk a step , then face the wall'
+p592
+S'Left 1'
+p593
+tp594
+a(S'down'
+p595
+S'Down 1'
+p596
+tp597
+a(S'go north'
+p598
+S'Up 1'
+p599
+tp600
+a(S'then up three steps'
+p601
+S'Up 3'
+p602
+tp603
+a(S'five steps west'
+p604
+S'Left 5'
+p605
+tp606
+a(S', right'
+p607
+S'Right 1'
+p608
+tp609
+a(S'right four'
+p610
+S'Right 4'
+p611
+tp612
+a(S'up'
+p613
+S'Up 1'
+p614
+tp615
+a(S'go down three units of distance'
+p616
+S'Down 3'
+p617
+tp618
+a(S'three steps down through blue door'
+p619
+S'Down 3'
+p620
+tp621
+a(S'go down'
+p622
+S'Down 1'
+p623
+tp624
+a(S'three steps north'
+p625
+S'Up 3'
+p626
+tp627
+a(S'then right'
+p628
+S'Right 1'
+p629
+tp630
+a(S'move north one step'
+p631
+S'Up 1'
+p632
+tp633
+a(S'down'
+p634
+S'Down 1'
+p635
+tp636
+a(S', right'
+p637
+S'Right 1'
+p638
+tp639
+a(S'left'
+p640
+S'Left 1'
+p641
+tp642
+a(S'go down four times'
+p643
+S'Down 4'
+p644
+tp645
+a(S'go down'
+p646
+S'Down 1'
+p647
+tp648
+a(S'move south'
+p649
+S'Down 1'
+p650
+tp651
+a(S'turn right go straight'
+p652
+S'Right 1'
+p653
+tp654
+a(S'then up again'
+p655
+S'Up 1'
+p656
+tp657
+a(S'up one'
+p658
+S'Up 1'
+p659
+tp660
+a(S'go up'
+p661
+S'Up 1'
+p662
+tp663
+a(S'and north two spaces'
+p664
+S'Up 2'
+p665
+tp666
+a(S'left'
+p667
+S'Left 1'
+p668
+tp669
+a(S'move up one space'
+p670
+S'Up 1'
+p671
+tp672
+a(S'left'
+p673
+S'Left 1'
+p674
+tp675
+a(S'then go up twice'
+p676
+S'Up 2'
+p677
+tp678
+a(S'go east one motion'
+p679
+S'Right 1'
+p680
+tp681
+a(S'and four times to the right'
+p682
+S'Right 4'
+p683
+tp684
+a(S'up'
+p685
+S'Up 1'
+p686
+tp687
+a(S'down'
+p688
+S'Down 1'
+p689
+tp690
+a(S'move down five spaces'
+p691
+S'Down 5'
+p692
+tp693
+a(S'go left'
+p694
+S'Left 1'
+p695
+tp696
+a(S'then move north one step'
+p697
+S'Up 1'
+p698
+tp699
+a(S'then right four times'
+p700
+S'Right 4'
+p701
+tp702
+a(S', go up'
+p703
+S'Up 1'
+p704
+tp705
+a(S'then right'
+p706
+S'Right 1'
+p707
+tp708
+a(S'move north one space'
+p709
+S'Up 1'
+p710
+tp711
+a(S'up'
+p712
+S'Up 1'
+p713
+tp714
+a(S'right'
+p715
+S'Right 1'
+p716
+tp717
+a(S'left'
+p718
+S'Left 1'
+p719
+tp720
+a(S'then right'
+p721
+S'Right 1'
+p722
+tp723
+a(S'go down'
+p724
+S'Down 1'
+p725
+tp726
+a(S'go down'
+p727
+S'Down 3'
+p728
+tp729
+a(S'east one step'
+p730
+S'Right 1'
+p731
+tp732
+a(S'go south'
+p733
+S'Down 1'
+p734
+tp735
+a(S'go south for three spaces'
+p736
+S'Down 3'
+p737
+tp738
+a(S'left'
+p739
+S'Left 1'
+p740
+tp741
+a(S'and up and'
+p742
+S'Up 1'
+p743
+tp744
+a(S'then go left four steps'
+p745
+S'Left 4'
+p746
+tp747
+a(S'so south four spaces'
+p748
+S'Down 4'
+p749
+tp750
+a(S'right'
+p751
+S'Right 1'
+p752
+tp753
+a(S'go west'
+p754
+S'Left 1'
+p755
+tp756
+a(S'go west one move'
+p757
+S'Left 1'
+p758
+tp759
+a(S'move south one step'
+p760
+S'Down 1'
+p761
+tp762
+a(S'go down four'
+p763
+S'Down 4'
+p764
+tp765
+a(S'go up'
+p766
+S'Up 1'
+p767
+tp768
+a(S'up one space'
+p769
+S'Up 1'
+p770
+tp771
+a(S'go up'
+p772
+S'Up 1'
+p773
+tp774
+a(S'east one step'
+p775
+S'Right 1'
+p776
+tp777
+a(S'east'
+p778
+S'Right 1'
+p779
+tp780
+a(S'up'
+p781
+S'Up 1'
+p782
+tp783
+a(S'north three steps'
+p784
+S'Up 3'
+p785
+tp786
+a(S'move south one time'
+p787
+S'Down 1'
+p788
+tp789
+a(S'up'
+p790
+S'Up 1'
+p791
+tp792
+a(S'up'
+p793
+S'Up 1'
+p794
+tp795
+a(S'and go west'
+p796
+S'Left 1'
+p797
+tp798
+a(S'go south'
+p799
+S'Down 1'
+p800
+tp801
+a(S'right'
+p802
+S'Right 1'
+p803
+tp804
+a(S'down'
+p805
+S'Down 1'
+p806
+tp807
+a(S'and then north'
+p808
+S'Up 1'
+p809
+tp810
+a(S'east'
+p811
+S'Right 1'
+p812
+tp813
+a(S'east'
+p814
+S'Right 1'
+p815
+tp816
+a(S'one right'
+p817
+S'Right 1'
+p818
+tp819
+a(S'down'
+p820
+S'Down 1'
+p821
+tp822
+a(S'left three spaces'
+p823
+S'Left 3'
+p824
+tp825
+a(S'five steps left'
+p826
+S'Left 5'
+p827
+tp828
+a(S', go down'
+p829
+S'Down 1'
+p830
+tp831
+a(S'go up three times'
+p832
+S'Up 3'
+p833
+tp834
+a(S'go down three times'
+p835
+S'Down 3'
+p836
+tp837
+a(S'up'
+p838
+S'Up 1'
+p839
+tp840
+a(S'and take four steps to the right'
+p841
+S'Right 4'
+p842
+tp843
+a(S'go north'
+p844
+S'Up 1'
+p845
+tp846
+a(S'go north'
+p847
+S'Up 1'
+p848
+tp849
+a(S'move north one step'
+p850
+S'Up 1'
+p851
+tp852
+a(S'right'
+p853
+S'Right 1'
+p854
+tp855
+a(S'go north'
+p856
+S'Up 1'
+p857
+tp858
+a(S'go down four'
+p859
+S'Down 4'
+p860
+tp861
+a(S'west'
+p862
+S'Left 1'
+p863
+tp864
+a(S'move north three units'
+p865
+S'Up 3'
+p866
+tp867
+a(S'south'
+p868
+S'Down 1'
+p869
+tp870
+a(S', go right'
+p871
+S'Right 1'
+p872
+tp873
+a(S'move down one spaces'
+p874
+S'Down 1'
+p875
+tp876
+a(S'then move west four times'
+p877
+S'Left 4'
+p878
+tp879
+a(S'go south for one step'
+p880
+S'Down 1'
+p881
+tp882
+a(S'four steps to the right'
+p883
+S'Right 4'
+p884
+tp885
+a.

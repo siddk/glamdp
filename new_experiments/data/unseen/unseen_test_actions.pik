@@ -1,0 +1,332 @@
+(lp0
+(S', left three'
+p1
+S'Left 3'
+p2
+tp3
+a(S'and up five'
+p4
+S'Up 5'
+p5
+tp6
+a(S'move south four times'
+p7
+S'Down 4'
+p8
+tp9
+a(S', then go left three times'
+p10
+S'Left 3'
+p11
+tp12
+a(S'move south four steps'
+p13
+S'Down 4'
+p14
+tp15
+a(S'go down four spaces'
+p16
+S'Down 4'
+p17
+tp18
+a(S'and move three steps left'
+p19
+S'Left 3'
+p20
+tp21
+a(S'go down two'
+p22
+S'Down 2'
+p23
+tp24
+a(S'then left three steps'
+p25
+S'Left 3'
+p26
+tp27
+a(S', go west for three spaces'
+p28
+S'Left 3'
+p29
+tp30
+a(S'right three'
+p31
+S'Right 3'
+p32
+tp33
+a(S'then three steps west'
+p34
+S'Left 3'
+p35
+tp36
+a(S'move right three times'
+p37
+S'Right 3'
+p38
+tp39
+a(S'right three'
+p40
+S'Right 3'
+p41
+tp42
+a(S'go down two steps'
+p43
+S'Down 2'
+p44
+tp45
+a(S'go left three times'
+p46
+S'Left 3'
+p47
+tp48
+a(S'go down four spaces'
+p49
+S'Down 4'
+p50
+tp51
+a(S'move down four times'
+p52
+S'Down 4'
+p53
+tp54
+a(S'move down twice'
+p55
+S'Down 2'
+p56
+tp57
+a(S'move down four steps'
+p58
+S'Down 4'
+p59
+tp60
+a(S'go down two'
+p61
+S'Down 2'
+p62
+tp63
+a(S'go down four'
+p64
+S'Down 4'
+p65
+tp66
+a(S'down two'
+p67
+S'Down 2'
+p68
+tp69
+a(S'left three'
+p70
+S'Left 3'
+p71
+tp72
+a(S'go down four times'
+p73
+S'Down 4'
+p74
+tp75
+a(S'down two'
+p76
+S'Down 2'
+p77
+tp78
+a(S'west three spaces'
+p79
+S'Left 3'
+p80
+tp81
+a(S'south two'
+p82
+S'Down 2'
+p83
+tp84
+a(S'down four'
+p85
+S'Down 4'
+p86
+tp87
+a(S'move down four'
+p88
+S'Down 4'
+p89
+tp90
+a(S'go down four steps'
+p91
+S'Down 4'
+p92
+tp93
+a(S'left three'
+p94
+S'Left 3'
+p95
+tp96
+a(S'and move right three times'
+p97
+S'Right 3'
+p98
+tp99
+a(S'then move east three times'
+p100
+S'Right 3'
+p101
+tp102
+a(S'go east three'
+p103
+S'Right 3'
+p104
+tp105
+a(S'left three spaces'
+p106
+S'Left 3'
+p107
+tp108
+a(S'move west three steps'
+p109
+S'Left 3'
+p110
+tp111
+a(S'left three'
+p112
+S'Left 3'
+p113
+tp114
+a(S'four steps down'
+p115
+S'Down 4'
+p116
+tp117
+a(S'then move left three times'
+p118
+S'Left 3'
+p119
+tp120
+a(S', move west three times'
+p121
+S'Left 3'
+p122
+tp123
+a(S'move south four times'
+p124
+S'Down 4'
+p125
+tp126
+a(S'and north two'
+p127
+S'Up 4'
+p128
+tp129
+a(S'go west for three steps'
+p130
+S'Right 3'
+p131
+tp132
+a(S'move south four moves'
+p133
+S'Down 4'
+p134
+tp135
+a(S'go south for four spaces'
+p136
+S'Down 4'
+p137
+tp138
+a(S'go down two times'
+p139
+S'Down 2'
+p140
+tp141
+a(S'north four'
+p142
+S'Up 4'
+p143
+tp144
+a(S'west three spaces'
+p145
+S'Left 3'
+p146
+tp147
+a(S'then up four times'
+p148
+S'Up 4'
+p149
+tp150
+a(S'go four steps south'
+p151
+S'Down 4'
+p152
+tp153
+a(S'move south four times'
+p154
+S'Down 4'
+p155
+tp156
+a(S'move down four times'
+p157
+S'Down 4'
+p158
+tp159
+a(S'left three times'
+p160
+S'Left 3'
+p161
+tp162
+a(S'go down four spaces'
+p163
+S'Down 4'
+p164
+tp165
+a(S'go down four'
+p166
+S'Down 4'
+p167
+tp168
+a(S'west three'
+p169
+S'Left 3'
+p170
+tp171
+a(S'move west three times'
+p172
+S'Left 3'
+p173
+tp174
+a(S'move in the following way - move down four times'
+p175
+S'Down 4'
+p176
+tp177
+a(S'east three moves'
+p178
+S'Right 3'
+p179
+tp180
+a(S'go down four times'
+p181
+S'Down 4'
+p182
+tp183
+a(S'go down four times'
+p184
+S'Down 4'
+p185
+tp186
+a(S'so south four spaces'
+p187
+S'Down 4'
+p188
+tp189
+a(S'go down four'
+p190
+S'Down 4'
+p191
+tp192
+a(S'left three spaces'
+p193
+S'Left 3'
+p194
+tp195
+a(S'go down four'
+p196
+S'Down 4'
+p197
+tp198
+a.

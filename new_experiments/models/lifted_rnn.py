@@ -1,21 +1,23 @@
 """
-single_rnn.py
+lifted_rnn.py
 
-Core model definition file for the Single-RNN Language Grounding Model. Enumerates
-the total set of possible reward functions as possible outputs, and predicts
+Core model definition file for the Lifted-RNN Language Grounding Model. Enumerates
+the total set of possible lifted reward functions as possible outputs, and predicts
 singular labels.
 """
 import numpy as np
+import pickle
 import tensorflow as tf
 
 PAD, PAD_ID = "<<PAD>>", 0
 UNK, UNK_ID = "<<UNK>>", 1
 
-class SingleRNN():
-    def __init__(self, means_train_path, ends_train_path, means_test_path, ends_test_path,
-                 embedding_size=30, rnn_size=50, h1_size=60, h2_size=50, epochs=10, batch_size=32):
+class LiftedRNN():
+    def __init__(self, means_train_path, ends_train_path, means_test_path, ends_test_path, is_pik=False,
+                 pik_train_path=None, pik_test_path=None, embedding_size=30, rnn_size=50, h1_size=60, 
+                 h2_size=50, epochs=10, batch_size=32):
         """
-        Instantiate a SingleRNN Model, with the necessary parameters.
+        Instantiate a LiftedRNN Model, with the necessary parameters.
 
         :param train_en: Path to training natural language directives.
         :param train_rf: Path to training reward function strings.
@@ -25,69 +27,49 @@ class SingleRNN():
         self.session = tf.Session()
 
         # Read Data + Assemble Commands, Parallel Corpus
-        with open(means_train_path + ".en", 'r') as f:
-            means_sentences, means_segments = [x.strip().split('|') for x in f.readlines()], []
-            for i in means_sentences:
-                for j in i:
-                    means_segments.append(j.split())
-            self.train_means_en = means_segments
-        
-        with open(means_train_path + "_actions.ml", 'r') as f:
-            sentence_rfs, segment_rfs = [x.strip().split('|') for x in f.readlines()], []
-            for i in sentence_rfs:
-                for j in i:
-                    segment_rfs.append(j.strip())
-            self.train_means_rf = segment_rfs
-        
+        with open(means_train_path, 'r') as f:
+            self.train_means_en, self.train_means_rf = map(list, zip(*pickle.load(f)))
+    
         assert(len(self.train_means_en) == len(self.train_means_rf))
-
+            
         with open(ends_train_path + ".en", 'r') as f:
             self.train_ends_en = [x.split() for x in f.readlines()]
             self.train_ends_en = self.train_ends_en[:(9 * (len(self.train_ends_en) / 10))]
         
-        with open(ends_train_path + "_rnn_grounded.ml", 'r') as f:
+        with open(ends_train_path + ".ml", 'r') as f:
             self.train_ends_rf = [x.strip() for x in f.readlines()]
             self.train_ends_rf = self.train_ends_rf[:(9 * (len(self.train_ends_rf) / 10))]
 
-        with open(means_test_path + ".en", 'r') as f:
-            means_sentences, means_segments = [x.strip().split('|') for x in f.readlines()], []
-            for i in means_sentences:
-                for j in i:
-                    means_segments.append(j.split())
-            self.test_means_en = means_segments
-
-        with open(means_test_path + "_actions.ml", 'r') as f:
-            sentence_rfs, segment_rfs = [x.strip().split('|') for x in f.readlines()], []
-            for i in sentence_rfs:
-                for j in i:
-                    segment_rfs.append(j.strip())
-            self.test_means_rf = segment_rfs
-
+        with open(means_test_path, 'r') as f:
+            self.test_means_en, self.test_means_rf = map(list, zip(*pickle.load(f)))
+        
         assert(len(self.test_means_en) == len(self.test_means_rf))
 
         with open(ends_test_path + ".en", 'r') as f:
             self.test_ends_en = [x.split() for x in f.readlines()]
             self.test_ends_en = self.test_ends_en[(9 * (len(self.test_ends_en) / 10)):]
 
-        with open(ends_test_path + "_rnn_grounded.ml", 'r') as f:
+        with open(ends_test_path + ".ml", 'r') as f:
             self.test_ends_rf = [x.strip() for x in f.readlines()]
             self.test_ends_rf = self.test_ends_rf[(9 * (len(self.test_ends_rf) / 10)):]
+        
+        if is_pik:
+            with open(pik_train_path, 'r') as f:
+                self.train_ends_en, self.train_ends_rf = map(list, zip(*pickle.load(f)))
+            with open(pik_test_path, 'r') as f:
+                self.test_ends_en, self.test_ends_rf = map(list, zip(*pickle.load(f)))
 
-        self.commands = {rf: i for i, rf in enumerate(list(set(self.train_means_rf + self.train_ends_rf + self.test_means_rf)))}
+        self.commands = {rf: i for i, rf in enumerate(list(set(self.train_means_rf + self.train_ends_rf + self.test_means_rf + self.test_ends_rf)))}
         self.pc = zip(self.train_means_en + self.train_ends_en, map(lambda x: self.commands[x], self.train_means_rf + self.train_ends_rf))
         self.test_means_pc = zip(self.test_means_en, map(lambda x: self.commands[x], self.test_means_rf))
         self.test_ends_pc = zip(self.test_ends_en, map(lambda x: self.commands[x], self.test_ends_rf))
-
+        
         # Shuffle PC
         import random
         random.seed(21)
         random.shuffle(self.pc)
         random.shuffle(self.pc)
         random.shuffle(self.pc)
-
-        # # Sample Efficiency Time
-        # total_length = len(self.pc)
-        # self.pc = self.pc[:(9 * (total_length / 10))]
 
         # Build vocabulary
         self.word2id, self.id2word = self.build_vocabulary()
@@ -234,30 +216,6 @@ class SingleRNN():
         acc = (num_correct / len(self.test_ends_pc))
         print "Ends Test Accuracy: %.3f" % acc
         return acc
-
-    def eval_permuted_ends(self, permuted_ends):
-        """
-        Perform evaluation on permuted ends data. 
-        """
-        with open(permuted_ends + ".en", 'r') as f:
-            permuted_ends_en = [x.split() for x in f.readlines()]
-            permuted_ends_en = permuted_ends_en[(9 * (len(permuted_ends_en) / 10)):]
-        
-        with open('permuted_ends_test/randomized_grounded_gt.ml', 'r') as f:
-            permuted_ends_rf = [x.strip() for x in f.readlines()]
-            permuted_ends_rf = permuted_ends_rf[(9 * (len(permuted_ends_rf) / 10)):]
-        
-        permuted_pc = zip(permuted_ends_en, permuted_ends_rf)
-        num_correct = 0.0
-        for (nl_command, rf_str) in permuted_pc:
-            pred_rf, _ = self.score(nl_command)
-            if pred_rf == self.commands.get(rf_str, -1):
-                num_correct += 1
-        
-        acc = (num_correct / len(permuted_pc))
-        print "Permuted Ends Test Accuracy: %.3f" % acc 
-        return acc
-
 
     def score(self, nl_command):
         """

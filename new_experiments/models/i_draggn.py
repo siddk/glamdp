@@ -1,19 +1,21 @@
 """
-lg_npi.py
+i_draggn.py
 
-Core model definition file for the LG-NPI for Lifted RF Grounding.
+Core model definition file for the Conditionally Independent DRAGGN (I-DRAGGN) Model.
 """
 import numpy as np
+import pickle
 import tensorflow as tf
 import tflearn
 
 TERMINATE, CONTINUE = 1, 0
 P_IDX, A1_IDX, T_IDX = 0, 1, 2
 
-class NPI():
+class IDRAGGN():
     def __init__(self, means_train_path, ends_train_path, means_test_path, ends_test_path,
-                 embedding_size=30, num_args=1, npi_core_dim=64, key_dim=32, batch_size=16, 
-                 num_epochs=5, initializer=tf.random_normal_initializer(stddev=0.1), restore=False):
+                 is_pik=False, pik_train_path=None, pik_test_path=None, embedding_size=30, 
+                 num_args=1, npi_core_dim=64, key_dim=32, batch_size=16, num_epochs=5, 
+                 initializer=tf.random_normal_initializer(stddev=0.1), restore=False):
         """
         Instantiate an NPI for grounding language to lifted Reward Functions, with the necessary
         parameters.
@@ -25,6 +27,7 @@ class NPI():
         """
         self.means_train_path, self.ends_train_path = means_train_path, ends_train_path
         self.means_test_path, self.ends_test_path = means_test_path, ends_test_path
+        self.is_pik, self.pik_train, self.pik_test = is_pik, pik_train_path, pik_test_path
         self.embed_sz, self.num_args, self.init = embedding_size, num_args, initializer
         self.npi_core_dim, self.key_dim, self.bsz = npi_core_dim, key_dim, batch_size
         self.epochs = num_epochs
@@ -55,10 +58,9 @@ class NPI():
         self.instantiate_weights()
 
         # Generate Input Representation
-        self.s = self.encode_input()
+        self.prog_s, self.arg_s = self.encode_input()
 
         # Feed through NPI Core, get Hidden State
-        # self.h = self.npi_core()
         self.h = self.s
 
         # Build Termination Network => Returns Probability of Terminating
@@ -72,7 +74,6 @@ class NPI():
 
         # Build Losses
         self.t_loss, self.p_loss, self.a_losses = self.build_losses()
-        # self.loss = 1 * sum([self.t_loss, self.p_loss]) + sum(self.a_losses)
         self.loss = self.p_loss + sum(self.a_losses)
 
         # Build Training Operation
@@ -98,7 +99,7 @@ class NPI():
         Instantiate all network weights, including NPI Core GRU Cell.
         """
         # Create NL Embedding Matrix, with 0 Vector for PAD_ID (0)
-        E = tf.get_variable("Embedding", [len(self.word2id), self.embed_sz], initializer=self.init)
+        PE = tf.get_variable("P_Embedding", [len(self.word2id), self.embed_sz], initializer=self.init)
         zero_mask = tf.constant([0 if i == 0 else 1 for i in range(len(self.word2id))],
                                     dtype=tf.float32, shape=[len(self.word2id), 1])
         self.E = E * zero_mask
@@ -121,26 +122,6 @@ class NPI():
             _, state = tf.nn.dynamic_rnn(self.encoder_gru, directive_embedding, sequence_length=self.X_len, dtype=tf.float32)
         return state
 
-    def npi_core(self):
-        """
-        Concatenate input encoding and program embedding, and feed through NPI Core.
-        """
-        # Embed the Program
-        # program_embedding = tf.nn.embedding_lookup(self.PE, self.P)           # [None, embed_sz]
-
-        # Concatenate state and program embedding
-        # p_embedding = tf.expand_dims(program_embedding, axis=1)               # [None, 1, embed_sz]
-        s_embedding = tf.expand_dims(self.s, axis=1)                          # [None, 1, embed_sz]
-        # state = tf.concat([s_embedding, p_embedding], 2)                      # [None, 1, 2 * embed_sz]
-        state = tf.nn.dropout(s_embedding, self.keep_prob)
-
-        # Feed through NPI Core
-        with tf.variable_scope("Core"):
-            self.gru = tf.contrib.rnn.GRUCell(self.npi_core_dim)
-            _, state = tf.nn.dynamic_rnn(self.gru, state, dtype=tf.float32)
-        h_state = state                                                       # Shape [None, npi_core_sz]
-        return h_state
-
     def terminate_net(self):
         """
         Build the NPI Termination Network, that takes in the NPI Core Hidden State, and returns
@@ -155,10 +136,8 @@ class NPI():
         distribution over possible next programs.
         """
         # Compute Distribution over Programs
-        hidden = tflearn.fully_connected(self.h, self.key_dim, activation='elu', regularizer='L2')
+        hidden = tflearn.fully_connected(self.h, self.key_dim, activation='relu', regularizer='L2')
         hidden = tf.nn.dropout(hidden, self.keep_prob)
-        # hidden = tflearn.fully_connected(hidden, self.key_dim, activation='relu', regularizer='L2')
-        # hidden = tf.nn.dropout(hidden, self.keep_prob)
         prog_dist = tflearn.fully_connected(hidden, len(self.progs))         # Shape: [bsz, num_progs]
         return prog_dist
 
@@ -169,10 +148,8 @@ class NPI():
         """
         args = []
         for i in range(self.num_args):
-            arg_hidden = tflearn.fully_connected(self.h, self.key_dim, activation='elu', regularizer='L2')
+            arg_hidden = tflearn.fully_connected(self.h, self.key_dim, activation='relu', regularizer='L2')
             arg_hidden = tf.nn.dropout(arg_hidden, self.keep_prob)
-            # arg_hidden = tflearn.fully_connected(arg_hidden, self.key_dim, activation='relu', regularizer='L2')
-            # arg_hidden = tf.nn.dropout(arg_hidden, self.keep_prob)
             arg = tflearn.fully_connected(arg_hidden, len(self.args), activation='linear',
                                           name='Argument_{}'.format(str(i)))
             args.append(arg)
@@ -231,32 +208,6 @@ class NPI():
                 num_correct += 1
 
         print "Means Per-Segment Test Accuracy: %.3f" % (float(num_correct) / float(len(self.testMeansX)))
-    
-    def eval_means_all(self):
-        """
-        Evaluate the model on ALL the means data (not per-segment, but per-sentence).
-        """
-        num_correct, total = 0.0, 0.0
-        with open(self.means_test_path + ".en", 'r') as f:
-            means_sentences, lens = [x.strip().split('|') for x in f.readlines()], []
-            for i in means_sentences:
-                lens.append(len(i))
-        
-        counter = 0
-        for i in range(len(means_sentences)):
-            correct = 1
-            for j in range(lens[i]):
-                pred_prog, pred_a1 = self.score(self.testMeansX[counter], self.testMeans_len[counter])
-                true_prog, true_a1 = self.testMeansY[counter, P_IDX], self.testMeansY[counter, A1_IDX]
-                if (pred_prog == int(true_prog)) and (pred_a1 == int(true_a1)):
-                    correct *= 1
-                else:
-                    correct *= 0
-                counter += 1
-            num_correct += correct
-            total += 1
-        assert(counter == len(self.testMeansX))
-        print "Means Full-Sentence Test Accuracy: %.3f" % (float(num_correct) / float(total))
 
     def eval_ends(self):
         """
@@ -270,54 +221,6 @@ class NPI():
                 num_correct += 1
 
         print "Ends Test Accuracy: %.3f" % (float(num_correct) / float(len(self.testEndsX)))
-
-    def eval_permuted_ends(self, permuted_ends_path):
-        """
-        Evaluate the model on the permuted test data.
-        """
-        with open(permuted_ends_path + ".en", 'r') as f:
-            ends_sentences = [x.split() for x in f.readlines()]
-            
-        with open(permuted_ends_path + "_lifted_gt.ml", 'r') as f:
-            ends_programs = [x.split() for x in f.readlines()]
-            for i in range(len(ends_programs)):
-                if len(ends_programs[i]) == 4:
-                    program = ends_programs[i]
-                    ends_programs[i] = [program[0] + "_" + program[2], program[1] + "_" + program[3]]
-        
-        permuted_ends = zip(ends_sentences, ends_programs)
-
-        # Build Language Representations
-        permutedEndsX, permutedEnds_len = np.zeros((len(permuted_ends), self.trainX.shape[1])), np.zeros((len(permuted_ends)), dtype=np.int32)
-        for i in range(len(permuted_ends)):
-            nl_sentence = permuted_ends[i][0]
-            permutedEnds_len[i] = min(self.trainX.shape[1], len(nl_sentence))
-            for j in range(permutedEnds_len[i]):
-                permutedEndsX[i][j] = self.word2id[nl_sentence[j]]
-
-        # Build Program Representations
-        permuted_ends_traces = []
-        for _, program in permuted_ends:
-            prog_key, arg = program
-            permuted_ends_traces.append((self.progs[prog_key], self.args[arg], TERMINATE))
-        assert(len(permuted_ends_traces) == len(permutedEndsX))
-
-        # Vectorize Traces
-        vpermuted_traces = np.zeros([len(permuted_ends_traces), 3])
-        for i in range(len(permuted_ends_traces)):
-            trace = permuted_ends_traces[i]
-            vpermuted_traces[i][P_IDX] = trace[0]
-            vpermuted_traces[i][A1_IDX] = trace[1]
-            vpermuted_traces[i][T_IDX] = trace[2]
-
-        num_correct, total = 0.0, 0.0
-        for i in range(len(permutedEndsX)):
-            pred_prog, pred_a1 = self.score(permutedEndsX[i], permutedEnds_len[i])
-            true_prog, true_a1 = vpermuted_traces[i, P_IDX], vpermuted_traces[i, A1_IDX]
-            if (pred_prog == int(true_prog)) and (pred_a1 == int(true_a1)):
-                num_correct += 1
-
-        print "Permuted Ends Test Accuracy: %.3f" % (float(num_correct) / float(len(permutedEndsX)))
 
     def score(self, nl_command, length):
         """
@@ -390,32 +293,33 @@ class NPI():
         """
         # Parse Training Data
         counter = 0
-        with open(self.means_train_path + ".en", 'r') as f:
-            means_sentences, means_segments = [x.strip().split('|') for x in f.readlines()], []
-            for i in means_sentences:
-                counter += 1
-                for j in i:
-                    means_segments.append(j.split())
-        
-        with open(self.means_train_path + "_actions.ml", 'r') as f:
-            means_sentences, means_programs = [x.strip().split('|') for x in f.readlines()], []
-            for i in means_sentences:
-                for j in i:
-                    means_programs.append(j.split())
-        
+        with open(self.means_train_path, 'r') as f:
+            means_segments, means_programs = map(list, zip(*pickle.load(f)))
+            means_programs = map(lambda x: x.split(), means_programs)
+    
         assert(len(means_segments) == len(means_programs))
         
         with open(self.ends_train_path + ".en", 'r') as f:
             ends_sentences = [x.split() for x in f.readlines()]
             ends_sentences = ends_sentences[:(9 * (len(ends_sentences) / 10))]
             
-        with open(self.ends_train_path + "_npi_lifted.ml", 'r') as f:
+        with open(self.ends_train_path + ".ml", 'r') as f:
             ends_programs = [x.split() for x in f.readlines()]
             ends_programs = ends_programs[:(9 * (len(ends_programs) / 10))]
             for i in range(len(ends_programs)):
                 if len(ends_programs[i]) == 4:
                     program = ends_programs[i]
                     ends_programs[i] = [program[0] + "_" + program[2], program[1] + "_" + program[3]]
+        
+        if self.is_pik:
+            with open(self.pik_train, 'r') as f:
+                ends_sentences, ends_labels = map(list, zip(*pickle.load(f)))
+            ends_programs = []
+            for i in range(len(ends_labels)):
+                label = ends_labels[i].split()
+                if len(label) == 4:
+                    label = [label[0] + "_" + label[2], label[1] + "_" + label[3]]
+                ends_programs.append(label)
         
         assert(len(ends_sentences) == len(ends_programs))
 
@@ -429,27 +333,11 @@ class NPI():
         random.shuffle(self.train_set)
         random.shuffle(self.train_set)
         random.shuffle(self.train_set)
-
-        # # Sample Efficiency Time
-        # total_length = len(self.train_set)
-        # self.train_set = self.train_set[:(9 * (total_length / 10))]
         
         # Parse Test Data
-        with open(self.means_test_path + ".en", 'r') as f:
-            means_sentences, means_segments = [x.strip().split('|') for x in f.readlines()], []
-            lens = []
-            for i in means_sentences:
-                lens.append(len(i))
-                for j in i:
-                    means_segments.append(j.split())
-        
-        with open(self.means_test_path + "_actions.ml", 'r') as f:
-            means_sentences, means_programs = [x.strip().split('|') for x in f.readlines()], []
-            plens = []
-            for i in means_sentences:
-                plens.append(len(i))
-                for j in i:
-                    means_programs.append(j.split())
+        with open(self.means_test_path, 'r') as f:
+            means_segments, means_programs = map(list, zip(*pickle.load(f)))
+            means_programs = map(lambda x: x.split(), means_programs)
         
         assert(len(means_segments) == len(means_programs))
         
@@ -457,7 +345,7 @@ class NPI():
             ends_sentences = [x.split() for x in f.readlines()]
             ends_sentences = ends_sentences[(9 * (len(ends_sentences) / 10)):]
             
-        with open(self.ends_test_path + "_npi_lifted.ml", 'r') as f:
+        with open(self.ends_test_path + ".ml", 'r') as f:
             ends_programs = [x.split() for x in f.readlines()]
             ends_programs = ends_programs[(9 * (len(ends_programs) / 10)):]
 
@@ -465,6 +353,16 @@ class NPI():
                 if len(ends_programs[i]) == 4:
                     program = ends_programs[i]
                     ends_programs[i] = [program[0] + "_" + program[2], program[1] + "_" + program[3]]
+        
+        if self.is_pik:
+            with open(self.pik_test, 'r') as f:
+                ends_sentences, ends_labels = map(list, zip(*pickle.load(f)))
+            ends_programs = []
+            for i in range(len(ends_labels)):
+                label = ends_labels[i].split()
+                if len(label) == 4:
+                    label = [label[0] + "_" + label[2], label[1] + "_" + label[3]]
+                ends_programs.append(label)
         
         assert(len(ends_sentences) == len(ends_programs))
 
@@ -511,6 +409,8 @@ class NPI():
         # Parse Program Data
         program_set, arg_set, train_traces, test_means_traces, test_ends_traces = {}, {}, [], [], []
         for i, program in self.train_set + self.test_set:
+            if len(program) != 2:
+                print i, program
             assert(len(program) == 2)
             p, arg = program
             if p not in program_set:
