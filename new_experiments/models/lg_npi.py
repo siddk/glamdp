@@ -200,27 +200,35 @@ class NPI():
         """
         Evaluate the model on the test data.
         """
-        num_correct, total = 0.0, 0.0
+        num_correct, num_prog, num_arg, total = 0.0, 0.0, 0.0, 0.0
         for i in range(len(self.testMeansX)):
             pred_prog, pred_a1 = self.score(self.testMeansX[i], self.testMeans_len[i])
             true_prog, true_a1 = self.testMeansY[i, P_IDX], self.testMeansY[i, A1_IDX]
             if (pred_prog == int(true_prog)) and (pred_a1 == int(true_a1)):
                 num_correct += 1
+            if pred_prog == int(true_prog):
+                num_prog += 1
+            if pred_a1 == int(true_a1):
+                num_arg += 1
 
-        print "Means Per-Segment Test Accuracy: %.3f" % (float(num_correct) / float(len(self.testMeansX)))
+        print "Means Per-Segment Test Program: %.3f Argument: %.3f Overall: %.3f" % ((float(num_prog) / float(len(self.testMeansX))), (float(num_arg) / float(len(self.testMeansX))), (float(num_correct) / float(len(self.testMeansX))))
 
     def eval_ends(self):
         """
         Evaluate the model on the test data.
         """
-        num_correct, total = 0.0, 0.0
+        num_correct, num_prog, num_arg, total = 0.0, 0.0, 0.0, 0.0
         for i in range(len(self.testEndsX)):
             pred_prog, pred_a1 = self.score(self.testEndsX[i], self.testEnds_len[i])
             true_prog, true_a1 = self.testEndsY[i, P_IDX], self.testEndsY[i, A1_IDX]
             if (pred_prog == int(true_prog)) and (pred_a1 == int(true_a1)):
                 num_correct += 1
+            if pred_prog == int(true_prog):
+                num_prog += 1
+            if pred_a1 == int(true_a1):
+                num_arg += 1
 
-        print "Ends Test Accuracy: %.3f" % (float(num_correct) / float(len(self.testEndsX)))
+        print "Ends Test Program: %.3f Argument: %.3f Overall: %.3f" % ((float(num_prog) / float(len(self.testEndsX))), (float(num_arg) / float(len(self.testEndsX))), (float(num_correct) / float(len(self.testEndsX))))
 
     def score(self, nl_command, length):
         """
