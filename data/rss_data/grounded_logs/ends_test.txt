@@ -1,3 +1,0 @@
-train data: data/rss_data/both/all_train 
-test data: data/rss_data/ends/L2_test 
-reward function prediction accuracy: 0.850574712644

@@ -1,0 +1,1199 @@
+Robot into red room
+agentTo roomIsRed
+
+Move to another room
+agentTo roomIsRed
+
+Go to the room with the chair
+agentTo blockIsChair
+
+Robot move to room green
+agentTo roomIsGreen
+
+Go into the green room
+agentTo roomIsGreen
+
+Go stand in the blue room
+agentTo roomIsBlue
+
+move to the room with the red chair
+agentTo blockIsRedChair
+
+Move to the blue room
+agentTo roomIsBlue
+
+Relocate to where the blue room is
+agentTo roomIsBlue
+
+Move into the blue room
+agentTo roomIsBlue
+
+Move to the pink room as well as get close to the red chair
+agentTo roomIsRed
+
+Please move to the red room
+agentTo roomIsRed
+
+go through the white pathway
+agentTo roomIsBlue
+
+Please go to the object and stand next to it
+agentTo blockIsChair
+
+Try to move from your house to the next house
+agentTo roomIsGreen
+
+Go to the red room
+agentTo roomIsRed
+
+Change locations to be in the green colored room
+agentTo roomIsGreen
+
+Move robot one step from chair
+agentTo blockIsChair
+
+Please go to the object and stand next to it
+agentTo blockIsChair
+
+Proceed to the green colored room
+agentTo roomIsGreen
+
+move to the far side of the red chair
+agentTo blockIsRedChair
+
+Move from the current location to the pink room
+agentTo roomIsRed
+
+Move the chair or cage into the different colored big room
+agentTo roomIsBlue
+
+Move close to the red chair
+agentTo roomIsRed
+
+Enter the pink room
+agentTo roomIsRed
+
+Move down into the next room
+agentTo roomIsRed
+
+Move to red chair
+agentTo blockIsRedChair
+
+Keep moving closer to the trash can
+agentTo roomIsRed
+
+Move from the current room to the room that is pink
+agentTo roomIsRed
+
+Go to the red room
+agentTo roomIsRed
+
+Proceed to the pink room
+agentTo roomIsRed
+
+Move robot to red room
+agentTo roomIsRed
+
+Go to the blue room
+agentTo roomIsBlue
+
+Go into the blue area
+agentTo roomIsBlue
+
+Robot go to purple room
+agentTo roomIsBlue
+
+Move to the pink room
+agentTo roomIsRed
+
+Move as quick as possible to the chair
+agentTo blockIsChair
+
+Move towards the red chair in the red room
+agentTo blockIsRedChair
+
+Find the room with the red chair
+agentTo blockIsRedChair
+
+Move to the blue room
+agentTo roomIsBlue
+
+Move to the green room
+agentTo roomIsGreen
+
+Enter the room with the red chair and stand next to it
+agentTo blockIsRedChair
+
+Move into the blue colored room
+agentTo roomIsBlue
+
+Move robot until green room
+agentTo roomIsGreen
+
+Move as close to chair as possible
+agentTo blockIsChair
+
+Go stand in the green room
+agentTo roomIsGreen
+
+Move from whatever current room to the pink room
+agentTo roomIsRed
+
+Robot in purple room
+agentTo roomIsBlue
+
+Move to the red room
+agentTo roomIsRed
+
+Move to the far side of the red chair
+agentTo blockIsRedChair
+
+Go to the red room
+agentTo roomIsRed
+
+Enter the green colored room
+agentTo roomIsGreen
+
+Go away from the red chair in the purple room
+agentTo roomIsGreen
+
+Go to a spot close to the red chair
+agentTo blockIsRedChair
+
+Move to the green room
+agentTo roomIsGreen
+
+Exit your room, find the room with the red chair and stand next to it
+agentTo blockIsRedChair
+
+Enter the pink room
+agentTo roomIsRed
+
+Relocate to wherever the green room is
+agentTo roomIsGreen
+
+robot move next to chair
+agentTo blockIsChair
+
+Go into the room that is green
+agentTo roomIsGreen
+
+Change the room that you are in
+agentTo roomIsGreen
+
+Proceed to the blue room
+agentTo roomIsBlue
+
+Move into the blue room
+agentTo roomIsBlue
+
+Perform task in room with chair
+agentTo blockIsChair
+
+Move to the pink room no matter the location
+agentTo roomIsRed
+
+Find the red chair and stand close to it
+agentTo blockIsRedChair
+
+Move into the green room
+agentTo roomIsGreen
+
+Move into a new room of the house
+agentTo roomIsBlue
+
+Go from the first position to the green room
+agentTo roomIsGreen
+
+move to the green room
+agentTo roomIsGreen
+
+Move to the green room
+agentTo roomIsGreen
+
+Move to the red room
+agentTo roomIsRed
+
+Move yourself into the green room
+agentTo roomIsGreen
+
+Move into the blue room
+agentTo roomIsBlue
+
+Move next to the chair that is red
+agentTo blockIsRedChair
+
+move to the blue room
+agentTo roomIsBlue
+
+Go into the green room
+agentTo roomIsGreen
+
+Move from original room to blue room
+agentTo roomIsBlue
+
+Stand next to the red chair unless it is in the green room
+agentTo roomIsBlue
+
+Move to the blue room
+agentTo roomIsBlue
+
+Move to the green room
+agentTo roomIsGreen
+
+Go to another room inside the house
+agentTo roomIsGreen
+
+Move to the opposite color that you are on
+agentTo roomIsRed
+
+Move to the room with the red chair
+agentTo blockIsRedChair
+
+Move into the blue room
+agentTo roomIsBlue
+
+Go stand in the blue room
+agentTo roomIsBlue
+
+Move to the green room from wherever the initial location is
+agentTo roomIsGreen
+
+Robot move purple room
+agentTo roomIsBlue
+
+Move from one room into another
+agentTo roomIsRed
+
+Move to the blue room, unless you are in the blue room, than move to the green
+agentTo roomIsBlue
+
+Find and approach the chair
+agentTo blockIsChair
+
+Move to the blue room from wherever the starting point is
+agentTo roomIsBlue
+
+robot go downstairs and clean house
+agentTo roomIsRed
+
+Move by the red chair
+agentTo blockIsRedChair
+
+Move close to the chair
+agentTo blockIsChair
+
+move to the blue room
+agentTo roomIsBlue
+
+Go into the red colored room
+agentTo roomIsRed
+
+Move to the pink room
+agentTo roomIsRed
+
+Move towards the chair
+agentTo blockIsChair
+
+Go to the chair
+agentTo blockIsChair
+
+Change locations to the green room
+agentTo roomIsGreen
+
+Move to the room with the red chair
+agentTo blockIsRedChair
+
+Move to the green room
+agentTo roomIsGreen
+
+Move the red chair from room to room
+agentTo blockIsRedChair
+
+Enter the room with the red chair
+agentTo blockIsRedChair
+
+Go near the chair
+agentTo blockIsChair
+
+Go in the red room
+agentTo roomIsRed
+
+Move to the blue area
+agentTo roomIsBlue
+
+Move to the green area
+agentTo roomIsGreen
+
+Leave your current room and enter the blue room
+agentTo roomIsBlue
+
+Do not stand next to the red chair
+agentTo roomIsBlue
+
+Move the red chair into the opposite room
+agentTo roomIsGreen
+
+Move to the pink part of the layout
+agentTo roomIsRed
+
+Switch to the blue colored room
+agentTo roomIsBlue
+
+Move to the closest you can get to the chair
+agentTo blockIsChair
+
+Go to the red room
+agentTo roomIsRed
+
+move to the blue room
+agentTo roomIsBlue
+
+Move close to the red chair
+agentTo blockIsRedChair
+
+Move to the room that contains the chair
+agentTo blockIsChair
+
+Go to the blue room
+agentTo roomIsBlue
+
+Move robot to red room
+agentTo roomIsRed
+
+move to the room with the red chair
+agentTo blockIsRedChair
+
+Move locations so that you are inside the blue room
+agentTo roomIsBlue
+
+Move to the green room
+agentTo roomIsGreen
+
+Enter the room that is blue
+agentTo roomIsBlue
+
+Move close to the red chair
+agentTo blockIsRedChair
+
+Move to the blue room from original position
+agentTo roomIsBlue
+
+Enter the pink room
+agentTo roomIsRed
+
+Go to the red room
+agentTo roomIsRed
+
+Move as close to the chair as you can go
+agentTo blockIsChair
+
+stand next to the red chair
+agentTo blockIsRedChair
+
+Go next to the red chair
+agentTo blockIsRedChair
+
+Move from first position to the green room
+agentTo roomIsGreen
+
+Move to the purple room
+agentTo roomIsBlue
+
+Move into the blue room
+agentTo roomIsBlue
+
+Move to the same side and close to the chair
+agentTo blockIsChair
+
+Go to the purple room now
+agentTo roomIsBlue
+
+Enter the room with the chair in it
+agentTo blockIsChair
+
+Stand next to the red chair
+agentTo blockIsRedChair
+
+Stand inside the pink room
+agentTo roomIsRed
+
+Move chair to robot room
+agentTo blockIsChair
+
+Move to the green room
+agentTo roomIsGreen
+
+Go stand in the green room
+agentTo roomIsGreen
+
+Move to the blue room
+agentTo roomIsBlue
+
+Move so that you are inside the blue room
+agentTo roomIsBlue
+
+Move into the green room
+agentTo roomIsGreen
+
+Move to the room that contains the chair
+agentTo blockIsChair
+
+Move to the room with the red chair
+agentTo blockIsRedChair
+
+Move to the room that is blue
+agentTo roomIsBlue
+
+Move to the green room
+agentTo roomIsGreen
+
+Find and stand by the red chair
+agentTo blockIsRedChair
+
+Move up or down into a new room
+agentTo roomIsBlue
+
+Enter the blue room and stand there
+agentTo roomIsBlue
+
+Move to the green room
+agentTo roomIsGreen
+
+Go to the other room
+agentTo roomIsRed
+
+Move from current room to pink room
+agentTo roomIsRed
+
+Move yourself next to the chair
+agentTo blockIsChair
+
+Move to the room with the chair
+agentTo blockIsChair
+
+Move to the blue room
+agentTo roomIsBlue
+
+Move to another room
+agentTo roomIsGreen
+
+Please go to the chair and stand next to it
+agentTo blockIsChair
+
+Put yourself in the green room
+agentTo roomIsGreen
+
+Robot go to chair
+agentTo blockIsChair
+
+Go stand next to the red chair
+agentTo blockIsRedChair
+
+Please move to the red room
+agentTo roomIsRed
+
+Go stand near the chair
+agentTo blockIsChair
+
+Move to the room with a pink floor
+agentTo roomIsRed
+
+go into the green room
+agentTo roomIsGreen
+
+Find the blue room and then stand in it
+agentTo roomIsBlue
+
+Please move to the red area
+agentTo roomIsRed
+
+Go near red chair
+agentTo blockIsRedChair
+
+Move towards the red chair
+agentTo blockIsRedChair
+
+Move through the doorway
+agentTo roomIsBlue
+
+Go stand by the red chair
+agentTo blockIsRedChair
+
+Go to the room with the chair and sit close to it
+agentTo blockIsChair
+
+Please move to the chair and stand next to it
+agentTo blockIsChair
+
+Move on to the pink room
+agentTo roomIsRed
+
+Go sit next to the chair
+agentTo blockIsChair
+
+Go stand in the green room
+agentTo roomIsGreen
+
+Robot to green room
+agentTo roomIsGreen
+
+Move to the area that is behind the chair
+agentTo roomIsRed
+
+Move from the room that you're in and stop at the room with red chair and stand by the red chair
+agentTo blockIsRedChair
+
+Stand in the green room
+agentTo roomIsGreen
+
+Please go to the red room
+agentTo roomIsRed
+
+Move into the pink room
+agentTo roomIsRed
+
+Move to the blue room
+agentTo roomIsBlue
+
+Approach the chair
+agentTo blockIsChair
+
+Move to same location as the chair is at
+agentTo blockIsChair
+
+Move to the blue room from whatever starting position
+agentTo roomIsBlue
+
+go into the purple room
+agentTo roomIsBlue
+
+Leave your current room and enter the blue room
+agentTo roomIsBlue
+
+Go to the red room
+agentTo roomIsRed
+
+Move robot to chair
+agentTo blockIsChair
+
+Go to the blue room
+agentTo roomIsBlue
+
+Move robot into green room
+agentTo roomIsGreen
+
+Move to the green room
+agentTo roomIsGreen
+
+Robot stop green room
+agentTo roomIsGreen
+
+Move directly above the red chair unless you are already there, in which case move to the green room
+agentTo roomIsGreen
+
+Move to the blue room
+agentTo roomIsBlue
+
+Move close to the red chair
+agentTo blockIsRedChair
+
+Move to the blue room
+agentTo roomIsBlue
+
+move to the blue room
+agentTo roomIsBlue
+
+Move to the red room
+agentTo roomIsRed
+
+Move into the green room
+agentTo roomIsGreen
+
+Move into the blue room
+agentTo roomIsBlue
+
+Please go to the red room
+agentTo roomIsRed
+
+Move into the pink colored room
+agentTo roomIsRed
+
+Robot go to chair that is red
+agentTo blockIsRedChair
+
+Go to the side of the chair
+agentTo blockIsChair
+
+Move to the same room as the chair and if in same room, move closer
+agentTo blockIsChair
+
+move to the green room
+agentTo roomIsGreen
+
+Move into the green room
+agentTo roomIsGreen
+
+Go to the chair
+agentTo blockIsChair
+
+Go to the pink room
+agentTo roomIsRed
+
+Move close to the red chair
+agentTo blockIsRedChair
+
+Move to the same room as the chair and move very close to it
+agentTo blockIsChair
+
+Move to the red chair
+agentTo blockIsRedChair
+
+Position yourself next to the red chair
+agentTo blockIsRedChair
+
+Please go to the red room
+agentTo roomIsRed
+
+Move to the same room as the chair and if already in the same room, move closer
+agentTo blockIsChair
+
+Move around the chair without touching it
+agentTo roomIsRed
+
+Approach the chair
+agentTo blockIsChair
+
+Proceed to the pink colored room
+agentTo roomIsRed
+
+Move next to the chair
+agentTo blockIsChair
+
+Move into the green room
+agentTo roomIsGreen
+
+Go to where the green room is
+agentTo roomIsGreen
+
+Change rooms so that you are inside the green one
+agentTo roomIsGreen
+
+Move to the red room
+agentTo roomIsRed
+
+Be next to the red chair and not the blue chair
+agentTo blockIsChair
+
+Go next to the red chair
+agentTo blockIsRedChair
+
+Move to the blue room
+agentTo roomIsBlue
+
+grab the red chair
+agentTo blockIsRedChair
+
+Enter the blue room
+agentTo roomIsBlue
+
+Move close to the red chair
+agentTo blockIsRedChair
+
+Move to the room that contains the chair
+agentTo blockIsChair
+
+Move next to the chair
+agentTo blockIsChair
+
+Move from the current room to the pink room
+agentTo roomIsRed
+
+Find the green room and go stand in it
+agentTo roomIsGreen
+
+Move to the pink room if there is a red chair or green room if there is not
+agentTo blockIsRedChair
+
+robot go red chair
+agentTo blockIsRedChair
+
+Go to the red room
+agentTo roomIsRed
+
+move to the room with the red chair
+agentTo blockIsRedChair
+
+Move to the room with a purple floor
+agentTo roomIsBlue
+
+Stand next to the chair
+agentTo blockIsChair
+
+Find and walk up to the chair
+agentTo blockIsChair
+
+Move next to the chair in the pink room
+agentTo blockIsRedChair
+
+Move into the green room
+agentTo roomIsGreen
+
+Get close to the chair, Robot
+agentTo blockIsChair
+
+Move to the green room
+agentTo roomIsGreen
+
+Find and enter the pink room
+agentTo roomIsRed
+
+Move to the room with the chair
+agentTo blockIsChair
+
+Robot, move to another room
+agentTo roomIsRed
+
+Change locations to be next to the chair
+agentTo blockIsChair
+
+Move the blue and red chair in and out of the rooms
+agentTo blockIsRedChair
+
+Find the red chair and stand next to it
+agentTo blockIsRedChair
+
+Find the green room and then go into it
+agentTo roomIsGreen
+
+Move to the red room
+agentTo roomIsRed
+
+move to the green room
+agentTo roomIsGreen
+
+Move as close to chair as possible
+agentTo blockIsChair
+
+Go to the purple room
+agentTo roomIsBlue
+
+Move to the room with the red chair and stand next to it
+agentTo blockIsRedChair
+
+Go from the red room to the green room
+agentTo roomIsGreen
+
+Move from the current location to wherever the pink room is at
+agentTo roomIsRed
+
+Move to the blue room from the original position
+agentTo roomIsBlue
+
+Move into the blue room
+agentTo roomIsBlue
+
+Move to the pink room
+agentTo roomIsRed
+
+Exit the room or stay put, but leave the green room empty
+agentTo blockIsRedChair
+
+Move to the green room
+agentTo roomIsGreen
+
+Go to the room with the chair and sit close to it
+agentTo blockIsChair
+
+Move to the room with the chair and get right next to it
+agentTo blockIsChair
+
+Leave the pink room and enter the blue room
+agentTo roomIsBlue
+
+Go in the red room by the red chair
+agentTo blockIsRedChair
+
+Move to whatever room the red chair is in and get close to it
+agentTo blockIsRedChair
+
+Go to a location that is adjacent to the chair
+agentTo blockIsChair
+
+Change rooms so that you are in the room that is red
+agentTo roomIsRed
+
+Move toward the red chair
+agentTo blockIsRedChair
+
+Stand in the blue room
+agentTo roomIsBlue
+
+Move into a room that is red in color
+agentTo roomIsRed
+
+Relocate to the blue room
+agentTo roomIsBlue
+
+move to the room with the red chair
+agentTo blockIsRedChair
+
+Move from either Blue to Pink or Green to Pink
+agentTo roomIsRed
+
+Do not move the blue chair, instead move the red chair
+agentTo blockIsRedChair
+
+Move to whatever room the red chair is in
+agentTo blockIsRedChair
+
+Robot move until green room
+agentTo roomIsGreen
+
+Find and approach the chair
+agentTo blockIsChair
+
+Move your body away from Chair
+agentTo blockIsChair
+
+Go to purple room
+agentTo roomIsBlue
+
+Proceed to the green room
+agentTo roomIsGreen
+
+Move into a new room
+agentTo roomIsRed
+
+Put yourself in the blue room
+agentTo roomIsBlue
+
+Move the basket into the red room and the chair into the green room
+agentTo roomIsBlue
+
+Move by the red chair
+agentTo blockIsRedChair
+
+Enter the pink room
+agentTo roomIsRed
+
+Go to green room
+agentTo roomIsGreen
+
+Find and enter the pink room
+agentTo roomIsRed
+
+Enter one of the two smaller sized rooms
+agentTo roomIsRed
+
+Move next to the side of the red chair
+agentTo blockIsRedChair
+
+Get in the blue room
+agentTo roomIsBlue
+
+Go stand in the blue room
+agentTo roomIsBlue
+
+Move to the room with the red chair and get close to it
+agentTo blockIsRedChair
+
+Move to the green room
+agentTo roomIsGreen
+
+Go from one room to another without hitting the chair on the way
+agentTo roomIsGreen
+
+Perform task in room with chair
+agentTo blockIsChair
+
+Go to the room with the chair and sit close to it
+agentTo blockIsChair
+
+Move to the pink room
+agentTo roomIsRed
+
+Change the room you're in
+agentTo roomIsRed
+
+Complete the task in a room other than the green room
+agentTo roomIsBlue
+
+Stand next to the red chair
+agentTo blockIsRedChair
+
+Change locations to be by the red chair
+agentTo blockIsRedChair
+
+Go near the red object
+agentTo blockIsRedChair
+
+Move to the red room
+agentTo roomIsRed
+
+Move to the red room
+agentTo roomIsRed
+
+Move from on
+agentTo roomIsGreen
+
+Move away from the red object into a room
+agentTo roomIsBlue
+
+Move to the red room
+agentTo roomIsRed
+
+When the rectangle is green, move next to the red chair; when the rectangle is blue, move to the opposite square
+agentTo roomIsGreen
+
+Position yourself in the green room
+agentTo roomIsGreen
+
+Move to the same room as the chair and get close to it
+agentTo blockIsChair
+
+Enter the blue room
+agentTo roomIsBlue
+
+Change locations to be in the red room
+agentTo roomIsRed
+
+Leave the pink room and enter the green room
+agentTo roomIsGreen
+
+go into the green room
+agentTo roomIsGreen
+
+Only stand next to the chair in the purple room
+agentTo roomIsBlue
+
+Move into the blue room
+agentTo roomIsBlue
+
+Stand in the pink colored room
+agentTo roomIsRed
+
+Move to the green room
+agentTo roomIsGreen
+
+move to the room with the red chair
+agentTo blockIsRedChair
+
+Proceed to the blue colored room
+agentTo roomIsBlue
+
+Move to the close part of the chair
+agentTo blockIsChair
+
+move to the room with the red chair
+agentTo blockIsRedChair
+
+Go to the room with the chair and sit close to it
+agentTo blockIsChair
+
+Find and approach the chair
+agentTo blockIsChair
+
+Move to the same room as the chair and stand next to it
+agentTo blockIsChair
+
+Move to purple room
+agentTo roomIsBlue
+
+move to the green room
+agentTo roomIsGreen
+
+Move to the red room
+agentTo roomIsRed
+
+Move into the green room
+agentTo roomIsGreen
+
+Move into the pink room
+agentTo roomIsRed
+
+Move as close to the chair as you can
+agentTo blockIsChair
+
+Move to the green room
+agentTo roomIsGreen
+
+Move the chair but do not move the wastebasket
+agentTo roomIsBlue
+
+Go close to the chair
+agentTo blockIsChair
+
+Stand next to the red chair
+agentTo blockIsRedChair
+
+Go into another room and don't knock down the chair
+agentTo roomIsBlue
+
+move to the blue room
+agentTo roomIsBlue
+
+Move to the green room
+agentTo roomIsGreen
+
+Go to the red room
+agentTo roomIsRed
+
+Go in the red room
+agentTo roomIsRed
+
+Robot go to red room
+agentTo roomIsRed
+
+Go into the green colored room
+agentTo roomIsGreen
+
+Please move to the red area
+agentTo roomIsRed
+
+Move to the green room
+agentTo roomIsGreen
+
+Move close to the red chair
+agentTo blockIsRedChair
+
+Move close to the red chair
+agentTo blockIsRedChair
+
+Move to the room with the red chair and stop when adjacent to it
+agentTo blockIsRedChair
+
+Move to the red room
+agentTo roomIsRed
+
+Find and get close to the chair
+agentTo blockIsChair
+
+move to the green room
+agentTo roomIsGreen
+
+Switch to the room with the chair and sit close to it
+agentTo blockIsChair
+
+Move into the room with the red chair
+agentTo blockIsRedChair
+
+Leave the room
+agentTo roomIsRed
+
+Robot to red chair
+agentTo blockIsRedChair
+
+Stand next to the red chair unless it is in the purple room
+agentTo roomIsGreen
+
+Move towards the red chair
+agentTo blockIsRedChair
+
+Move to the red room
+agentTo roomIsRed
+
+Go into the green room
+agentTo roomIsGreen
+
+Move robot to purple room
+agentTo roomIsBlue
+
+Move to the pink part of the layout
+agentTo roomIsRed
+
+Move into the pink room
+agentTo roomIsRed
+
+Go inside the blue room
+agentTo roomIsBlue
+
+Move from small room to large room
+agentTo roomIsRed
+
+Go to the chair
+agentTo blockIsChair
+
+Find and enter the pink room
+agentTo roomIsRed
+
+Relocate to the green room
+agentTo roomIsGreen
+
+Move close to the chair
+agentTo blockIsChair
+
+Go in the red room
+agentTo roomIsRed
+
+Move to the red room
+agentTo roomIsRed
+
+Move to the blue room
+agentTo roomIsBlue
+
+Get close to the red chair in whatever room that is in
+agentTo blockIsRedChair
+
+Go stand next to the red chair
+agentTo blockIsRedChair
+
+Please move next to the chair
+agentTo blockIsChair
+
+Perform task in room with chair
+agentTo blockIsChair
+
+Move from original position to the room with the red chair
+agentTo blockIsRedChair
+
+Move to the pink colored room
+agentTo roomIsRed
+
+Move to the green room
+agentTo roomIsGreen
+
+move to the blue room
+agentTo roomIsBlue
+
+Move close to the red chair
+agentTo blockIsRedChair
+
+Please go to the chair and stand next to it
+agentTo blockIsChair
+
+Move to the center of the green room, but stop if you hit an obstacle
+agentTo roomIsGreen
+
+Go near the chair
+agentTo blockIsChair
+
+Move to a position adjacent to the red chair
+agentTo blockIsRedChair
+
+Move closer to the red chair
+agentTo blockIsRedChair
+
+Move to where the red chair is and get close to it
+agentTo blockIsRedChair
+
+Robot got to red chair
+agentTo blockIsRedChair
+
+Move into the room with the red chair
+agentTo blockIsRedChair
+
+Move to where you are right up against the chair
+agentTo blockIsChair
+
+Move to the room with the chair and close to it
+agentTo blockIsChair
+
+move to the blue room
+agentTo roomIsBlue
+
+Move to a different room in the house
+agentTo blockIsChair
+
+Go stand next to the red chair
+agentTo blockIsRedChair
