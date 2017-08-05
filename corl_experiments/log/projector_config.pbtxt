@@ -1,0 +1,12 @@
+embeddings {
+  tensor_name: "mul:0"
+}
+embeddings {
+  metadata_path: "log/pemb.tsv"
+}
+embeddings {
+  tensor_name: "mul_1:0"
+}
+embeddings {
+  metadata_path: "log/aemb.tsv"
+}
