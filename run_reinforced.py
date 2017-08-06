@@ -19,6 +19,5 @@ def main(_):
     # Eval
     reinforced_draggn.eval(testX, testX_len, testY)
 
-
 if __name__ == "__main__":
     tf.app.run()
