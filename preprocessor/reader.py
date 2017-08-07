@@ -2,6 +2,7 @@
 reader.py
 """
 import numpy as np
+import pickle
 
 DATA_PATH = 'data/'
 PAD = "<<PAD>>"
@@ -57,5 +58,48 @@ def parse():
             tsX[i][j] = word2id[word]
         tsX_len[i] = test_x_len[i]
         tsY[i] = labels[test_y[i]]
+
+    return trX, trX_len, trY, tsX, tsX_len, tsY, word2id, labels
+
+
+def parse_valid():
+    with open('data/validation_function.pik', 'r') as f:
+        train, test = pickle.load(f)
+
+    # Build X, Y
+    train_x, train_y = map(lambda x: list(x), zip(*train))
+    test_x, test_y = map(lambda x: list(x), zip(*test))
+
+    # Labels
+    labels = {w: i for i, w in enumerate(reduce(lambda x, y: x | y, train_y + test_y))}
+
+    # Split train_x, test_x
+    train_x, test_x = map(lambda x: x.lower().split(), train_x), map(lambda x: x.lower().split(), test_x)
+
+    # Get Lengths
+    train_x_len, test_x_len = map(lambda x: len(x), train_x), map(lambda x: len(x), test_x)
+
+    # Get Max Len
+    max_len = max(max(train_x_len), max(test_x_len))
+
+    # Build Vocabulary
+    word2id = {w: i for i, w in enumerate([PAD] + list(set(reduce(lambda x, y: x + y, train_x + test_x))))}
+
+    # Build Vectors
+    trX, trX_len = np.zeros([len(train_x), max_len], dtype=int), np.zeros([len(train_x)], dtype=int)
+    tsX, tsX_len = np.zeros([len(test_x), max_len], dtype=int), np.zeros([len(test_x)], dtype=int)
+    trY, tsY = [[] for _ in range(len(train_x))], [[] for _ in range(len(test_y))]
+
+    for i, line in enumerate(train_x):
+        for j, word in enumerate(line):
+            trX[i][j] = word2id[word]
+        trX_len[i] = train_x_len[i]
+        trY[i] += map(lambda x: labels[x], list(train_y[i]))
+
+    for i, line in enumerate(test_x):
+        for j, word in enumerate(line):
+            tsX[i][j] = word2id[word]
+        tsX_len[i] = test_x_len[i]
+        tsY[i] += map(lambda x: labels[x], list(test_y[i]))
 
     return trX, trX_len, trY, tsX, tsX_len, tsY, word2id, labels

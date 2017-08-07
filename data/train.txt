@@ -1,5 +1,5 @@
 Robot into red room
-agentTo roomIsRed
+agentTo blockIsRedChair
 
 Move to another room
 agentTo roomIsRed

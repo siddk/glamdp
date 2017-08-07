@@ -1,0 +1,4121 @@
+((lp0
+(S'Robot into red room'
+p1
+c__builtin__
+set
+p2
+((lp3
+S'nextToChair'
+p4
+aS'nextToRedChair'
+p5
+atp6
+Rp7
+tp8
+a(S'Move to another room'
+p9
+g2
+((lp10
+S'inRedRoom'
+p11
+atp12
+Rp13
+tp14
+a(S'Go to the room with the chair'
+p15
+g2
+((lp16
+g4
+atp17
+Rp18
+tp19
+a(S'Robot move to room green'
+p20
+g2
+((lp21
+S'inGreenRoom'
+p22
+atp23
+Rp24
+tp25
+a(S'Go into the green room'
+p26
+g2
+((lp27
+g22
+atp28
+Rp29
+tp30
+a(S'Go stand in the blue room'
+p31
+g2
+((lp32
+S'inBlueRoom'
+p33
+atp34
+Rp35
+tp36
+a(S'move to the room with the red chair'
+p37
+g2
+((lp38
+g4
+ag5
+atp39
+Rp40
+tp41
+a(S'Move to the blue room'
+p42
+g2
+((lp43
+g33
+atp44
+Rp45
+tp46
+a(S'Relocate to where the blue room is'
+p47
+g2
+((lp48
+g33
+atp49
+Rp50
+tp51
+a(S'Move into the blue room'
+p52
+g2
+((lp53
+g33
+atp54
+Rp55
+tp56
+a(S'Move to the pink room as well as get close to the red chair'
+p57
+g2
+((lp58
+g4
+ag5
+atp59
+Rp60
+tp61
+a(S'Please move to the red room'
+p62
+g2
+((lp63
+g11
+atp64
+Rp65
+tp66
+a(S'go through the white pathway'
+p67
+g2
+((lp68
+g33
+atp69
+Rp70
+tp71
+a(S'Please go to the object and stand next to it'
+p72
+g2
+((lp73
+g4
+atp74
+Rp75
+tp76
+a(S'Try to move from your house to the next house'
+p77
+g2
+((lp78
+g22
+atp79
+Rp80
+tp81
+a(S'Go to the red room'
+p82
+g2
+((lp83
+g11
+atp84
+Rp85
+tp86
+a(S'Change locations to be in the green colored room'
+p87
+g2
+((lp88
+g22
+atp89
+Rp90
+tp91
+a(S'Move robot one step from chair'
+p92
+g2
+((lp93
+g4
+atp94
+Rp95
+tp96
+a(S'Please go to the object and stand next to it'
+p97
+g2
+((lp98
+g4
+atp99
+Rp100
+tp101
+a(S'Proceed to the green colored room'
+p102
+g2
+((lp103
+g22
+atp104
+Rp105
+tp106
+a(S'move to the far side of the red chair'
+p107
+g2
+((lp108
+g4
+ag5
+atp109
+Rp110
+tp111
+a(S'Move from the current location to the pink room'
+p112
+g2
+((lp113
+g11
+atp114
+Rp115
+tp116
+a(S'Move the chair or cage into the different colored big room'
+p117
+g2
+((lp118
+g33
+atp119
+Rp120
+tp121
+a(S'Move close to the red chair'
+p122
+g2
+((lp123
+g4
+ag5
+atp124
+Rp125
+tp126
+a(S'Enter the pink room'
+p127
+g2
+((lp128
+g11
+atp129
+Rp130
+tp131
+a(S'Move down into the next room'
+p132
+g2
+((lp133
+g11
+atp134
+Rp135
+tp136
+a(S'Move to red chair'
+p137
+g2
+((lp138
+g4
+ag5
+atp139
+Rp140
+tp141
+a(S'Keep moving closer to the trash can'
+p142
+g2
+((lp143
+g11
+atp144
+Rp145
+tp146
+a(S'Move from the current room to the room that is pink'
+p147
+g2
+((lp148
+g11
+atp149
+Rp150
+tp151
+a(S'Go to the red room'
+p152
+g2
+((lp153
+g11
+atp154
+Rp155
+tp156
+a(S'Proceed to the pink room'
+p157
+g2
+((lp158
+g11
+atp159
+Rp160
+tp161
+a(S'Move robot to red room'
+p162
+g2
+((lp163
+g11
+atp164
+Rp165
+tp166
+a(S'Go to the blue room'
+p167
+g2
+((lp168
+g33
+atp169
+Rp170
+tp171
+a(S'Go into the blue area'
+p172
+g2
+((lp173
+g33
+atp174
+Rp175
+tp176
+a(S'Robot go to purple room'
+p177
+g2
+((lp178
+g33
+atp179
+Rp180
+tp181
+a(S'Move to the pink room'
+p182
+g2
+((lp183
+g11
+atp184
+Rp185
+tp186
+a(S'Move as quick as possible to the chair'
+p187
+g2
+((lp188
+g4
+atp189
+Rp190
+tp191
+a(S'Move towards the red chair in the red room'
+p192
+g2
+((lp193
+g4
+ag5
+atp194
+Rp195
+tp196
+a(S'Find the room with the red chair'
+p197
+g2
+((lp198
+g4
+ag11
+ag5
+atp199
+Rp200
+tp201
+a(S'Move to the blue room'
+p202
+g2
+((lp203
+g33
+atp204
+Rp205
+tp206
+a(S'Move to the green room'
+p207
+g2
+((lp208
+g22
+atp209
+Rp210
+tp211
+a(S'Enter the room with the red chair and stand next to it'
+p212
+g2
+((lp213
+g4
+ag5
+atp214
+Rp215
+tp216
+a(S'Move into the blue colored room'
+p217
+g2
+((lp218
+g33
+atp219
+Rp220
+tp221
+a(S'Move robot until green room'
+p222
+g2
+((lp223
+g22
+atp224
+Rp225
+tp226
+a(S'Move as close to chair as possible'
+p227
+g2
+((lp228
+g4
+atp229
+Rp230
+tp231
+a(S'Go stand in the green room'
+p232
+g2
+((lp233
+g22
+atp234
+Rp235
+tp236
+a(S'Move from whatever current room to the pink room'
+p237
+g2
+((lp238
+g11
+atp239
+Rp240
+tp241
+a(S'Robot in purple room'
+p242
+g2
+((lp243
+g33
+atp244
+Rp245
+tp246
+a(S'Move to the red room'
+p247
+g2
+((lp248
+g11
+atp249
+Rp250
+tp251
+a(S'Move to the far side of the red chair'
+p252
+g2
+((lp253
+g4
+ag5
+atp254
+Rp255
+tp256
+a(S'Go to the red room'
+p257
+g2
+((lp258
+g11
+atp259
+Rp260
+tp261
+a(S'Enter the green colored room'
+p262
+g2
+((lp263
+g22
+atp264
+Rp265
+tp266
+a(S'Go away from the red chair in the purple room'
+p267
+g2
+((lp268
+g22
+atp269
+Rp270
+tp271
+a(S'Go to a spot close to the red chair'
+p272
+g2
+((lp273
+g4
+ag5
+atp274
+Rp275
+tp276
+a(S'Move to the green room'
+p277
+g2
+((lp278
+g22
+atp279
+Rp280
+tp281
+a(S'Exit your room, find the room with the red chair and stand next to it'
+p282
+g2
+((lp283
+g4
+ag5
+atp284
+Rp285
+tp286
+a(S'Enter the pink room'
+p287
+g2
+((lp288
+g11
+atp289
+Rp290
+tp291
+a(S'Relocate to wherever the green room is'
+p292
+g2
+((lp293
+g22
+atp294
+Rp295
+tp296
+a(S'robot move next to chair'
+p297
+g2
+((lp298
+g4
+atp299
+Rp300
+tp301
+a(S'Go into the room that is green'
+p302
+g2
+((lp303
+g22
+atp304
+Rp305
+tp306
+a(S'Change the room that you are in'
+p307
+g2
+((lp308
+g22
+atp309
+Rp310
+tp311
+a(S'Proceed to the blue room'
+p312
+g2
+((lp313
+g33
+atp314
+Rp315
+tp316
+a(S'Move into the blue room'
+p317
+g2
+((lp318
+g33
+atp319
+Rp320
+tp321
+a(S'Perform task in room with chair'
+p322
+g2
+((lp323
+g4
+atp324
+Rp325
+tp326
+a(S'Move to the pink room no matter the location'
+p327
+g2
+((lp328
+g11
+atp329
+Rp330
+tp331
+a(S'Find the red chair and stand close to it'
+p332
+g2
+((lp333
+g4
+ag5
+atp334
+Rp335
+tp336
+a(S'Move into the green room'
+p337
+g2
+((lp338
+g22
+atp339
+Rp340
+tp341
+a(S'Move into a new room of the house'
+p342
+g2
+((lp343
+g33
+atp344
+Rp345
+tp346
+a(S'Go from the first position to the green room'
+p347
+g2
+((lp348
+g22
+atp349
+Rp350
+tp351
+a(S'move to the green room'
+p352
+g2
+((lp353
+g22
+atp354
+Rp355
+tp356
+a(S'Move to the green room'
+p357
+g2
+((lp358
+g22
+atp359
+Rp360
+tp361
+a(S'Move to the red room'
+p362
+g2
+((lp363
+g11
+atp364
+Rp365
+tp366
+a(S'Move yourself into the green room'
+p367
+g2
+((lp368
+g22
+atp369
+Rp370
+tp371
+a(S'Move into the blue room'
+p372
+g2
+((lp373
+g33
+atp374
+Rp375
+tp376
+a(S'Move next to the chair that is red'
+p377
+g2
+((lp378
+g4
+ag5
+atp379
+Rp380
+tp381
+a(S'move to the blue room'
+p382
+g2
+((lp383
+g33
+atp384
+Rp385
+tp386
+a(S'Go into the green room'
+p387
+g2
+((lp388
+g22
+atp389
+Rp390
+tp391
+a(S'Move from original room to blue room'
+p392
+g2
+((lp393
+g33
+atp394
+Rp395
+tp396
+a(S'Stand next to the red chair unless it is in the green room'
+p397
+g2
+((lp398
+g33
+atp399
+Rp400
+tp401
+a(S'Move to the blue room'
+p402
+g2
+((lp403
+g33
+atp404
+Rp405
+tp406
+a(S'Move to the green room'
+p407
+g2
+((lp408
+g22
+atp409
+Rp410
+tp411
+a(S'Go to another room inside the house'
+p412
+g2
+((lp413
+g22
+atp414
+Rp415
+tp416
+a(S'Move to the opposite color that you are on'
+p417
+g2
+((lp418
+g11
+atp419
+Rp420
+tp421
+a(S'Move to the room with the red chair'
+p422
+g2
+((lp423
+g4
+atp424
+Rp425
+tp426
+a(S'Move into the blue room'
+p427
+g2
+((lp428
+g33
+atp429
+Rp430
+tp431
+a(S'Go stand in the blue room'
+p432
+g2
+((lp433
+g33
+atp434
+Rp435
+tp436
+a(S'Move to the green room from wherever the initial location is'
+p437
+g2
+((lp438
+g22
+atp439
+Rp440
+tp441
+a(S'Robot move purple room'
+p442
+g2
+((lp443
+g33
+atp444
+Rp445
+tp446
+a(S'Move from one room into another'
+p447
+g2
+((lp448
+g11
+atp449
+Rp450
+tp451
+a(S'Move to the blue room, unless you are in the blue room, than move to the green'
+p452
+g2
+((lp453
+g33
+atp454
+Rp455
+tp456
+a(S'Find and approach the chair'
+p457
+g2
+((lp458
+g4
+atp459
+Rp460
+tp461
+a(S'Move to the blue room from wherever the starting point is'
+p462
+g2
+((lp463
+g33
+atp464
+Rp465
+tp466
+a(S'robot go downstairs and clean house'
+p467
+g2
+((lp468
+g11
+atp469
+Rp470
+tp471
+a(S'Move by the red chair'
+p472
+g2
+((lp473
+g4
+ag5
+atp474
+Rp475
+tp476
+a(S'Move close to the chair'
+p477
+g2
+((lp478
+g4
+atp479
+Rp480
+tp481
+a(S'move to the blue room'
+p482
+g2
+((lp483
+g33
+atp484
+Rp485
+tp486
+a(S'Go into the red colored room'
+p487
+g2
+((lp488
+g11
+atp489
+Rp490
+tp491
+a(S'Move to the pink room'
+p492
+g2
+((lp493
+g11
+atp494
+Rp495
+tp496
+a(S'Move towards the chair'
+p497
+g2
+((lp498
+g4
+atp499
+Rp500
+tp501
+a(S'Go to the chair'
+p502
+g2
+((lp503
+g4
+atp504
+Rp505
+tp506
+a(S'Change locations to the green room'
+p507
+g2
+((lp508
+g22
+atp509
+Rp510
+tp511
+a(S'Move to the room with the red chair'
+p512
+g2
+((lp513
+g4
+ag5
+atp514
+Rp515
+tp516
+a(S'Move to the green room'
+p517
+g2
+((lp518
+g22
+atp519
+Rp520
+tp521
+a(S'Move the red chair from room to room'
+p522
+g2
+((lp523
+g4
+ag5
+atp524
+Rp525
+tp526
+a(S'Enter the room with the red chair'
+p527
+g2
+((lp528
+g4
+ag5
+atp529
+Rp530
+tp531
+a(S'Go near the chair'
+p532
+g2
+((lp533
+g4
+atp534
+Rp535
+tp536
+a(S'Go in the red room'
+p537
+g2
+((lp538
+g11
+atp539
+Rp540
+tp541
+a(S'Move to the blue area'
+p542
+g2
+((lp543
+g33
+atp544
+Rp545
+tp546
+a(S'Move to the green area'
+p547
+g2
+((lp548
+g22
+atp549
+Rp550
+tp551
+a(S'Leave your current room and enter the blue room'
+p552
+g2
+((lp553
+g33
+atp554
+Rp555
+tp556
+a(S'Do not stand next to the red chair'
+p557
+g2
+((lp558
+g33
+atp559
+Rp560
+tp561
+a(S'Move the red chair into the opposite room'
+p562
+g2
+((lp563
+g22
+atp564
+Rp565
+tp566
+a(S'Move to the pink part of the layout'
+p567
+g2
+((lp568
+g11
+atp569
+Rp570
+tp571
+a(S'Switch to the blue colored room'
+p572
+g2
+((lp573
+g33
+atp574
+Rp575
+tp576
+a(S'Move to the closes you can get to the chair'
+p577
+g2
+((lp578
+g4
+atp579
+Rp580
+tp581
+a(S'Go to the red room'
+p582
+g2
+((lp583
+g11
+atp584
+Rp585
+tp586
+a(S'move to the blue room'
+p587
+g2
+((lp588
+g33
+atp589
+Rp590
+tp591
+a(S'Move close to the red chair'
+p592
+g2
+((lp593
+g4
+ag5
+atp594
+Rp595
+tp596
+a(S'Move to the room that contains the chair'
+p597
+g2
+((lp598
+g4
+atp599
+Rp600
+tp601
+a(S'Go to the blue room'
+p602
+g2
+((lp603
+g33
+atp604
+Rp605
+tp606
+a(S'Move robot to red room'
+p607
+g2
+((lp608
+g11
+atp609
+Rp610
+tp611
+a(S'move to the room with the red chair'
+p612
+g2
+((lp613
+g4
+ag5
+atp614
+Rp615
+tp616
+a(S'Move locations so that you are inside the blue room'
+p617
+g2
+((lp618
+g33
+atp619
+Rp620
+tp621
+a(S'Move to the green room'
+p622
+g2
+((lp623
+g22
+atp624
+Rp625
+tp626
+a(S'Enter the room that is blue'
+p627
+g2
+((lp628
+g33
+atp629
+Rp630
+tp631
+a(S'Move close to the red chair'
+p632
+g2
+((lp633
+g4
+ag11
+ag5
+atp634
+Rp635
+tp636
+a(S'Move to the blue room from original position'
+p637
+g2
+((lp638
+g33
+atp639
+Rp640
+tp641
+a(S'Enter the pink room'
+p642
+g2
+((lp643
+g11
+atp644
+Rp645
+tp646
+a(S'Go to the red room'
+p647
+g2
+((lp648
+g11
+atp649
+Rp650
+tp651
+a(S'Move as close to the chair as you can go'
+p652
+g2
+((lp653
+g4
+atp654
+Rp655
+tp656
+a(S'stand next to the red chair'
+p657
+g2
+((lp658
+g4
+ag5
+atp659
+Rp660
+tp661
+a(S'Go next to the red chair'
+p662
+g2
+((lp663
+g4
+ag5
+atp664
+Rp665
+tp666
+a(S'Move from first position to the green room'
+p667
+g2
+((lp668
+g22
+atp669
+Rp670
+tp671
+a(S'Move to the purple room'
+p672
+g2
+((lp673
+g33
+atp674
+Rp675
+tp676
+a(S'Move into the blue room'
+p677
+g2
+((lp678
+g33
+atp679
+Rp680
+tp681
+a(S'Move to the same side and close to the chair'
+p682
+g2
+((lp683
+g4
+atp684
+Rp685
+tp686
+a(S'Go to the purple room now'
+p687
+g2
+((lp688
+g33
+atp689
+Rp690
+tp691
+a(S'Enter the room with the chair in it'
+p692
+g2
+((lp693
+g4
+atp694
+Rp695
+tp696
+a(S'Stand next to the red chair'
+p697
+g2
+((lp698
+g4
+ag5
+atp699
+Rp700
+tp701
+a(S'Stand inside the pink room'
+p702
+g2
+((lp703
+g11
+atp704
+Rp705
+tp706
+a(S'Move chair to robot room'
+p707
+g2
+((lp708
+g4
+atp709
+Rp710
+tp711
+a(S'Move to the green room'
+p712
+g2
+((lp713
+g22
+atp714
+Rp715
+tp716
+a(S'Go stand in the green room'
+p717
+g2
+((lp718
+g22
+atp719
+Rp720
+tp721
+a(S'Move to the blue room'
+p722
+g2
+((lp723
+g33
+atp724
+Rp725
+tp726
+a(S'Move so that you are inside the blue room'
+p727
+g2
+((lp728
+g33
+atp729
+Rp730
+tp731
+a(S'Move into the green room'
+p732
+g2
+((lp733
+g22
+atp734
+Rp735
+tp736
+a(S'Move to the room that contains the chair'
+p737
+g2
+((lp738
+g4
+atp739
+Rp740
+tp741
+a(S'Move to the room with the red chair'
+p742
+g2
+((lp743
+g4
+ag5
+atp744
+Rp745
+tp746
+a(S'Move to the room that is blue'
+p747
+g2
+((lp748
+g33
+atp749
+Rp750
+tp751
+a(S'Move to the green room'
+p752
+g2
+((lp753
+g22
+atp754
+Rp755
+tp756
+a(S'Find and stand by the red chair'
+p757
+g2
+((lp758
+g4
+ag5
+atp759
+Rp760
+tp761
+a(S'Move up or down into a new room'
+p762
+g2
+((lp763
+g33
+atp764
+Rp765
+tp766
+a(S'Enter the blue room and stand there'
+p767
+g2
+((lp768
+g33
+atp769
+Rp770
+tp771
+a(S'Move to the green room'
+p772
+g2
+((lp773
+g22
+atp774
+Rp775
+tp776
+a(S'Go to the other room'
+p777
+g2
+((lp778
+g11
+atp779
+Rp780
+tp781
+a(S'Move from current room to pink room'
+p782
+g2
+((lp783
+g11
+atp784
+Rp785
+tp786
+a(S'Move yourself next to the chair'
+p787
+g2
+((lp788
+g4
+atp789
+Rp790
+tp791
+a(S'Move to the room with the chair'
+p792
+g2
+((lp793
+g4
+atp794
+Rp795
+tp796
+a(S'Move to the blue room'
+p797
+g2
+((lp798
+g33
+atp799
+Rp800
+tp801
+a(S'Move to another room'
+p802
+g2
+((lp803
+g22
+atp804
+Rp805
+tp806
+a(S'Please go to the chair and stand next to it'
+p807
+g2
+((lp808
+g4
+atp809
+Rp810
+tp811
+a(S'Put yourself in the green room'
+p812
+g2
+((lp813
+g22
+atp814
+Rp815
+tp816
+a(S'Robot go to chair'
+p817
+g2
+((lp818
+g4
+atp819
+Rp820
+tp821
+a(S'Go stand next to the red chair'
+p822
+g2
+((lp823
+g4
+ag5
+atp824
+Rp825
+tp826
+a(S'Please move to the red room'
+p827
+g2
+((lp828
+g11
+atp829
+Rp830
+tp831
+a(S'Go stand near the chair'
+p832
+g2
+((lp833
+g4
+atp834
+Rp835
+tp836
+a(S'Move to the room with a pink floor'
+p837
+g2
+((lp838
+g11
+atp839
+Rp840
+tp841
+a(S'go into the green room'
+p842
+g2
+((lp843
+g22
+atp844
+Rp845
+tp846
+a(S'Find the blue room and then stand in it'
+p847
+g2
+((lp848
+g33
+atp849
+Rp850
+tp851
+a(S'Please move to the red area'
+p852
+g2
+((lp853
+g11
+atp854
+Rp855
+tp856
+a(S'Go near red chair'
+p857
+g2
+((lp858
+g4
+atp859
+Rp860
+tp861
+a(S'Move towards the red chair'
+p862
+g2
+((lp863
+g4
+ag11
+ag5
+atp864
+Rp865
+tp866
+a(S'Move through the doorway'
+p867
+g2
+((lp868
+g33
+atp869
+Rp870
+tp871
+a(S'Go stand by the red chair'
+p872
+g2
+((lp873
+g4
+ag5
+atp874
+Rp875
+tp876
+a(S'Go to the room with the chair and sit close to it'
+p877
+g2
+((lp878
+g4
+atp879
+Rp880
+tp881
+a(S'Please move to the chair and stand next to it'
+p882
+g2
+((lp883
+g4
+atp884
+Rp885
+tp886
+a(S'Move on to the pink room'
+p887
+g2
+((lp888
+g11
+atp889
+Rp890
+tp891
+a(S'Go sit next to the chair'
+p892
+g2
+((lp893
+g4
+atp894
+Rp895
+tp896
+a(S'Go stand in the green room'
+p897
+g2
+((lp898
+g22
+atp899
+Rp900
+tp901
+a(S'Robot to green room'
+p902
+g2
+((lp903
+g22
+atp904
+Rp905
+tp906
+a(S'Move to the area that is behind the chair'
+p907
+g2
+((lp908
+g11
+atp909
+Rp910
+tp911
+a(S"Move from the room that you're in and stop at the room with red chair and stand by the red chair"
+p912
+g2
+((lp913
+g4
+ag5
+atp914
+Rp915
+tp916
+a(S'Stand in the green room'
+p917
+g2
+((lp918
+g22
+atp919
+Rp920
+tp921
+a(S'Please go to the red room'
+p922
+g2
+((lp923
+g11
+atp924
+Rp925
+tp926
+a(S'Move into the pink room'
+p927
+g2
+((lp928
+g11
+atp929
+Rp930
+tp931
+a(S'Move to the blue room'
+p932
+g2
+((lp933
+g33
+atp934
+Rp935
+tp936
+a(S'Approach the chair'
+p937
+g2
+((lp938
+g4
+atp939
+Rp940
+tp941
+a(S'Move to same location as the chair is at'
+p942
+g2
+((lp943
+g4
+atp944
+Rp945
+tp946
+a(S'Move to the blue room from whatever starting position'
+p947
+g2
+((lp948
+g33
+atp949
+Rp950
+tp951
+a(S'go into the purple room'
+p952
+g2
+((lp953
+g33
+atp954
+Rp955
+tp956
+a(S'Leave your current room and enter the blue room'
+p957
+g2
+((lp958
+g33
+atp959
+Rp960
+tp961
+a(S'Go to the red room'
+p962
+g2
+((lp963
+g11
+atp964
+Rp965
+tp966
+a(S'Move robot to chair'
+p967
+g2
+((lp968
+g4
+atp969
+Rp970
+tp971
+a(S'Go to the blue room'
+p972
+g2
+((lp973
+g33
+atp974
+Rp975
+tp976
+a(S'Move robot into green room'
+p977
+g2
+((lp978
+g22
+atp979
+Rp980
+tp981
+a(S'Move to the green room'
+p982
+g2
+((lp983
+g22
+atp984
+Rp985
+tp986
+a(S'Robot stop green room'
+p987
+g2
+((lp988
+g22
+atp989
+Rp990
+tp991
+a(S'Move directly above the red chair unless you are already there, in which case move to the green room'
+p992
+g2
+((lp993
+g22
+atp994
+Rp995
+tp996
+a(S'Move to the blue room'
+p997
+g2
+((lp998
+g33
+atp999
+Rp1000
+tp1001
+a(S'Move close to the red chair'
+p1002
+g2
+((lp1003
+g4
+ag5
+atp1004
+Rp1005
+tp1006
+a(S'Move to the blue room'
+p1007
+g2
+((lp1008
+g33
+atp1009
+Rp1010
+tp1011
+a(S'move to the blue room'
+p1012
+g2
+((lp1013
+g33
+atp1014
+Rp1015
+tp1016
+a(S'Move to the red room'
+p1017
+g2
+((lp1018
+g11
+atp1019
+Rp1020
+tp1021
+a(S'Move into the green room'
+p1022
+g2
+((lp1023
+g22
+atp1024
+Rp1025
+tp1026
+a(S'Move into the blue room'
+p1027
+g2
+((lp1028
+g33
+atp1029
+Rp1030
+tp1031
+a(S'Please go to the red room'
+p1032
+g2
+((lp1033
+g11
+atp1034
+Rp1035
+tp1036
+a(S'Move into the pink colored room'
+p1037
+g2
+((lp1038
+g11
+atp1039
+Rp1040
+tp1041
+a(S'Robot go to chair that is red'
+p1042
+g2
+((lp1043
+g4
+ag5
+atp1044
+Rp1045
+tp1046
+a(S'Go to the side of the chair'
+p1047
+g2
+((lp1048
+g4
+atp1049
+Rp1050
+tp1051
+a(S'Move to the same room as the chair and if in same room, move closer'
+p1052
+g2
+((lp1053
+g4
+atp1054
+Rp1055
+tp1056
+a(S'move to the green room'
+p1057
+g2
+((lp1058
+g22
+atp1059
+Rp1060
+tp1061
+a(S'Move into the green room'
+p1062
+g2
+((lp1063
+g22
+atp1064
+Rp1065
+tp1066
+a(S'Go to the chair'
+p1067
+g2
+((lp1068
+g4
+atp1069
+Rp1070
+tp1071
+a(S'Go to the pink room'
+p1072
+g2
+((lp1073
+g11
+atp1074
+Rp1075
+tp1076
+a(S'Move close to the red chair'
+p1077
+g2
+((lp1078
+g4
+ag5
+atp1079
+Rp1080
+tp1081
+a(S'Move to the same room as the chair and move very close to it'
+p1082
+g2
+((lp1083
+g4
+atp1084
+Rp1085
+tp1086
+a(S'Move to the red chair'
+p1087
+g2
+((lp1088
+g4
+ag5
+atp1089
+Rp1090
+tp1091
+a(S'Position yourself next to the red chair'
+p1092
+g2
+((lp1093
+g4
+ag5
+atp1094
+Rp1095
+tp1096
+a(S'Please go to the red room'
+p1097
+g2
+((lp1098
+g11
+atp1099
+Rp1100
+tp1101
+a(S'Move to the same room as the chair and if already in the same room, move closer'
+p1102
+g2
+((lp1103
+g4
+atp1104
+Rp1105
+tp1106
+a(S'Move around the chair without touching it'
+p1107
+g2
+((lp1108
+g11
+atp1109
+Rp1110
+tp1111
+a(S'Approach the chair'
+p1112
+g2
+((lp1113
+g4
+atp1114
+Rp1115
+tp1116
+a(S'Proceed to the pink colored room'
+p1117
+g2
+((lp1118
+g11
+atp1119
+Rp1120
+tp1121
+a(S'Move next to the chair'
+p1122
+g2
+((lp1123
+g4
+atp1124
+Rp1125
+tp1126
+a(S'Move into the green room'
+p1127
+g2
+((lp1128
+g22
+atp1129
+Rp1130
+tp1131
+a(S'Go to where the green room is'
+p1132
+g2
+((lp1133
+g22
+atp1134
+Rp1135
+tp1136
+a(S'Change rooms so that you are inside the green one'
+p1137
+g2
+((lp1138
+g22
+atp1139
+Rp1140
+tp1141
+a(S'Move to the red room'
+p1142
+g2
+((lp1143
+g11
+atp1144
+Rp1145
+tp1146
+a(S'Be next to the red chair and not the blue chair'
+p1147
+g2
+((lp1148
+g4
+ag11
+ag5
+atp1149
+Rp1150
+tp1151
+a(S'Go next to the red chair'
+p1152
+g2
+((lp1153
+g4
+ag5
+atp1154
+Rp1155
+tp1156
+a(S'Move to the blue room'
+p1157
+g2
+((lp1158
+g33
+atp1159
+Rp1160
+tp1161
+a(S'grab the red chair'
+p1162
+g2
+((lp1163
+g4
+ag5
+atp1164
+Rp1165
+tp1166
+a(S'Enter the blue room'
+p1167
+g2
+((lp1168
+g33
+atp1169
+Rp1170
+tp1171
+a(S'Move close to the red chair'
+p1172
+g2
+((lp1173
+g4
+ag5
+atp1174
+Rp1175
+tp1176
+a(S'Move to the room that contains the chair'
+p1177
+g2
+((lp1178
+g4
+atp1179
+Rp1180
+tp1181
+a(S'Move next to the chair'
+p1182
+g2
+((lp1183
+g4
+atp1184
+Rp1185
+tp1186
+a(S'Move from the current room to the pink room'
+p1187
+g2
+((lp1188
+g11
+atp1189
+Rp1190
+tp1191
+a(S'Find the green room and go stand in it'
+p1192
+g2
+((lp1193
+g22
+atp1194
+Rp1195
+tp1196
+a(S'Move to the pink room if there is a red chair or green room if there is not'
+p1197
+g2
+((lp1198
+g4
+ag5
+atp1199
+Rp1200
+tp1201
+a(S'robot go red chair'
+p1202
+g2
+((lp1203
+g4
+ag5
+atp1204
+Rp1205
+tp1206
+a(S'Go to the red room'
+p1207
+g2
+((lp1208
+g11
+atp1209
+Rp1210
+tp1211
+a(S'move to the room with the red chair'
+p1212
+g2
+((lp1213
+g4
+ag5
+atp1214
+Rp1215
+tp1216
+a(S'Move to the room with a purple floor'
+p1217
+g2
+((lp1218
+g33
+atp1219
+Rp1220
+tp1221
+a(S'Stand next to the chair'
+p1222
+g2
+((lp1223
+g4
+atp1224
+Rp1225
+tp1226
+a(S'Find and walk up to the chair'
+p1227
+g2
+((lp1228
+g4
+atp1229
+Rp1230
+tp1231
+a(S'Move next to the chair in the pink room'
+p1232
+g2
+((lp1233
+g4
+ag5
+atp1234
+Rp1235
+tp1236
+a(S'Move into the green room'
+p1237
+g2
+((lp1238
+g22
+atp1239
+Rp1240
+tp1241
+a(S'Get close to the chair, Robot'
+p1242
+g2
+((lp1243
+g4
+atp1244
+Rp1245
+tp1246
+a(S'Move to the green room'
+p1247
+g2
+((lp1248
+g22
+atp1249
+Rp1250
+tp1251
+a(S'Find and enter the pink room'
+p1252
+g2
+((lp1253
+g11
+atp1254
+Rp1255
+tp1256
+a(S'Move to the room with the chair'
+p1257
+g2
+((lp1258
+g4
+atp1259
+Rp1260
+tp1261
+a(S'Robot, move to another room'
+p1262
+g2
+((lp1263
+g11
+atp1264
+Rp1265
+tp1266
+a(S'Change locations to be next to the chair'
+p1267
+g2
+((lp1268
+g4
+atp1269
+Rp1270
+tp1271
+a(S'Move the blue and red chair in and out of the rooms'
+p1272
+g2
+((lp1273
+g4
+ag5
+atp1274
+Rp1275
+tp1276
+a(S'Find the red chair and stand next to it'
+p1277
+g2
+((lp1278
+g4
+ag5
+atp1279
+Rp1280
+tp1281
+a(S'Find the green room and then go into it'
+p1282
+g2
+((lp1283
+g22
+atp1284
+Rp1285
+tp1286
+a(S'Move to the red room'
+p1287
+g2
+((lp1288
+g11
+atp1289
+Rp1290
+tp1291
+a(S'move to the green room'
+p1292
+g2
+((lp1293
+g22
+atp1294
+Rp1295
+tp1296
+a(S'Move as close to chair as possible'
+p1297
+g2
+((lp1298
+g4
+atp1299
+Rp1300
+tp1301
+a(S'Go to the purple room'
+p1302
+g2
+((lp1303
+g33
+atp1304
+Rp1305
+tp1306
+a(S'Move to the room with the red chair and stand next to it'
+p1307
+g2
+((lp1308
+g4
+ag5
+atp1309
+Rp1310
+tp1311
+a(S'Go from the red room to the green room'
+p1312
+g2
+((lp1313
+g22
+atp1314
+Rp1315
+tp1316
+a(S'Move from the current location to wherever the pink room is at'
+p1317
+g2
+((lp1318
+g11
+atp1319
+Rp1320
+tp1321
+a(S'Move to the blue room from the original position'
+p1322
+g2
+((lp1323
+g33
+atp1324
+Rp1325
+tp1326
+a(S'Move into the blue room'
+p1327
+g2
+((lp1328
+g33
+atp1329
+Rp1330
+tp1331
+a(S'Move to the pink room'
+p1332
+g2
+((lp1333
+g11
+atp1334
+Rp1335
+tp1336
+a(S'Exit the room or stay put, but leave the green room empty'
+p1337
+g2
+((lp1338
+g4
+ag5
+atp1339
+Rp1340
+tp1341
+a(S'Move to the green room'
+p1342
+g2
+((lp1343
+g22
+atp1344
+Rp1345
+tp1346
+a(S'Go to the room with the chair and sit close to it'
+p1347
+g2
+((lp1348
+g4
+atp1349
+Rp1350
+tp1351
+a(S'Move to the room with the chair and get right next to it'
+p1352
+g2
+((lp1353
+g4
+atp1354
+Rp1355
+tp1356
+a(S'Leave the pink room and enter the blue room'
+p1357
+g2
+((lp1358
+g33
+atp1359
+Rp1360
+tp1361
+a(S'Go in the red room by the red chair'
+p1362
+g2
+((lp1363
+g4
+ag5
+atp1364
+Rp1365
+tp1366
+a(S'Move to whatever room the red chair is in and get close to it'
+p1367
+g2
+((lp1368
+g4
+ag5
+atp1369
+Rp1370
+tp1371
+a(S'Go to a location that is adjacent to the chair'
+p1372
+g2
+((lp1373
+g4
+atp1374
+Rp1375
+tp1376
+a(S'Change rooms so that you are in the room that is red'
+p1377
+g2
+((lp1378
+g11
+atp1379
+Rp1380
+tp1381
+a(S'Move toward the red chair'
+p1382
+g2
+((lp1383
+g4
+ag11
+ag5
+atp1384
+Rp1385
+tp1386
+a(S'Stand in the blue room'
+p1387
+g2
+((lp1388
+g33
+atp1389
+Rp1390
+tp1391
+a(S'Move into a room that is red in color'
+p1392
+g2
+((lp1393
+g11
+atp1394
+Rp1395
+tp1396
+a(S'Relocate to the blue room'
+p1397
+g2
+((lp1398
+g33
+atp1399
+Rp1400
+tp1401
+a(S'move to the room with the red chair'
+p1402
+g2
+((lp1403
+g4
+ag5
+atp1404
+Rp1405
+tp1406
+a(S'Move from either Blue to Pink or Green to Pink'
+p1407
+g2
+((lp1408
+g11
+atp1409
+Rp1410
+tp1411
+a(S'Do not move the blue chair, instead move the red chair'
+p1412
+g2
+((lp1413
+g4
+ag5
+atp1414
+Rp1415
+tp1416
+a(S'Move to whatever room the red chair is in'
+p1417
+g2
+((lp1418
+g4
+ag5
+atp1419
+Rp1420
+tp1421
+a(S'Robot move until green room'
+p1422
+g2
+((lp1423
+g22
+atp1424
+Rp1425
+tp1426
+a(S'Find and approach the chair'
+p1427
+g2
+((lp1428
+g4
+atp1429
+Rp1430
+tp1431
+a(S'Move your body away from Chair'
+p1432
+g2
+((lp1433
+g4
+atp1434
+Rp1435
+tp1436
+a(S'Go to purple room'
+p1437
+g2
+((lp1438
+g33
+atp1439
+Rp1440
+tp1441
+a(S'Proceed to the green room'
+p1442
+g2
+((lp1443
+g22
+atp1444
+Rp1445
+tp1446
+a(S'Move into a new room'
+p1447
+g2
+((lp1448
+g11
+atp1449
+Rp1450
+tp1451
+a(S'Put yourself in the blue room'
+p1452
+g2
+((lp1453
+g33
+atp1454
+Rp1455
+tp1456
+a(S'Move the basket into the red room and the chair into the green room'
+p1457
+g2
+((lp1458
+g33
+atp1459
+Rp1460
+tp1461
+a(S'Move by the red chair'
+p1462
+g2
+((lp1463
+g4
+ag11
+ag5
+atp1464
+Rp1465
+tp1466
+a(S'Enter the pink room'
+p1467
+g2
+((lp1468
+g11
+atp1469
+Rp1470
+tp1471
+a(S'Go to green room'
+p1472
+g2
+((lp1473
+g22
+atp1474
+Rp1475
+tp1476
+a(S'Find and enter the pink room'
+p1477
+g2
+((lp1478
+g11
+atp1479
+Rp1480
+tp1481
+a(S'Enter one of the two smaller sized rooms'
+p1482
+g2
+((lp1483
+g11
+atp1484
+Rp1485
+tp1486
+a(S'Move next to the side of the red chair'
+p1487
+g2
+((lp1488
+g4
+ag5
+atp1489
+Rp1490
+tp1491
+a(S'Get in the blue room'
+p1492
+g2
+((lp1493
+g33
+atp1494
+Rp1495
+tp1496
+a(S'Go stand in the blue room'
+p1497
+g2
+((lp1498
+g33
+atp1499
+Rp1500
+tp1501
+a(S'Move to the room with the red chair and get close to it'
+p1502
+g2
+((lp1503
+g4
+ag5
+atp1504
+Rp1505
+tp1506
+a(S'Move to the green room'
+p1507
+g2
+((lp1508
+g22
+atp1509
+Rp1510
+tp1511
+a(S'Go from one room to another without hitting the chair on the way'
+p1512
+g2
+((lp1513
+g22
+atp1514
+Rp1515
+tp1516
+a(S'Perform task in room with chair'
+p1517
+g2
+((lp1518
+g4
+atp1519
+Rp1520
+tp1521
+a(S'Go to the room with the chair and sit close to it'
+p1522
+g2
+((lp1523
+g4
+atp1524
+Rp1525
+tp1526
+a(S'Move to the pink room'
+p1527
+g2
+((lp1528
+g11
+atp1529
+Rp1530
+tp1531
+a(S"Change the room you're in"
+p1532
+g2
+((lp1533
+g11
+atp1534
+Rp1535
+tp1536
+a(S'Complete the task in a room other than the green room'
+p1537
+g2
+((lp1538
+g33
+atp1539
+Rp1540
+tp1541
+a(S'Stand next to the red chair'
+p1542
+g2
+((lp1543
+g4
+ag5
+atp1544
+Rp1545
+tp1546
+a(S'Change locations to be by the red chair'
+p1547
+g2
+((lp1548
+g4
+ag5
+atp1549
+Rp1550
+tp1551
+a(S'Go near the red object'
+p1552
+g2
+((lp1553
+g11
+atp1554
+Rp1555
+tp1556
+a(S'Move to the red room'
+p1557
+g2
+((lp1558
+g11
+atp1559
+Rp1560
+tp1561
+a(S'Move to the red room'
+p1562
+g2
+((lp1563
+g11
+atp1564
+Rp1565
+tp1566
+a(S'Move from on'
+p1567
+g2
+((lp1568
+g22
+atp1569
+Rp1570
+tp1571
+a(S'Move away from the red object into a room'
+p1572
+g2
+((lp1573
+g33
+atp1574
+Rp1575
+tp1576
+a(S'Move to the red room'
+p1577
+g2
+((lp1578
+g11
+atp1579
+Rp1580
+tp1581
+a(S'When the rectangle is green, move next to the red chair; when the rectangle is blue, move to the opposite square'
+p1582
+g2
+((lp1583
+g22
+atp1584
+Rp1585
+tp1586
+a(S'Position yourself in the green room'
+p1587
+g2
+((lp1588
+g22
+atp1589
+Rp1590
+tp1591
+a(S'Move to the same room as the chair and get close to it'
+p1592
+g2
+((lp1593
+g4
+atp1594
+Rp1595
+tp1596
+a(S'Enter the blue room'
+p1597
+g2
+((lp1598
+g33
+atp1599
+Rp1600
+tp1601
+a(S'Change locations to be in the red room'
+p1602
+g2
+((lp1603
+g11
+atp1604
+Rp1605
+tp1606
+a(S'Leave the pink room and enter the green room'
+p1607
+g2
+((lp1608
+g22
+atp1609
+Rp1610
+tp1611
+a(S'go into the green room'
+p1612
+g2
+((lp1613
+g22
+atp1614
+Rp1615
+tp1616
+a(S'Only stand next to the chair in the purple room'
+p1617
+g2
+((lp1618
+g33
+atp1619
+Rp1620
+tp1621
+a(S'Move into the blue room'
+p1622
+g2
+((lp1623
+g33
+atp1624
+Rp1625
+tp1626
+a(S'Stand in the pink colored room'
+p1627
+g2
+((lp1628
+g11
+atp1629
+Rp1630
+tp1631
+a(S'Move to the green room'
+p1632
+g2
+((lp1633
+g22
+atp1634
+Rp1635
+tp1636
+a(S'move to the room with the red chair'
+p1637
+g2
+((lp1638
+g4
+ag5
+atp1639
+Rp1640
+tp1641
+a(S'Proceed to the blue colored room'
+p1642
+g2
+((lp1643
+g4
+atp1644
+Rp1645
+tp1646
+a(S'Move to the close part of the chair'
+p1647
+g2
+((lp1648
+g4
+atp1649
+Rp1650
+tp1651
+a(S'move to the room with the red chair'
+p1652
+g2
+((lp1653
+g4
+ag5
+atp1654
+Rp1655
+tp1656
+a(S'Go to the room with the chair and sit close to it'
+p1657
+g2
+((lp1658
+g4
+atp1659
+Rp1660
+tp1661
+a(S'Find and approach the chair'
+p1662
+g2
+((lp1663
+g4
+atp1664
+Rp1665
+tp1666
+a(S'Move to the same room as the chair and stand next to it'
+p1667
+g2
+((lp1668
+g4
+atp1669
+Rp1670
+tp1671
+a(S'Move to purple room'
+p1672
+g2
+((lp1673
+g33
+atp1674
+Rp1675
+tp1676
+a(S'move to the green room'
+p1677
+g2
+((lp1678
+g22
+atp1679
+Rp1680
+tp1681
+a(S'Move to the red room'
+p1682
+g2
+((lp1683
+g11
+atp1684
+Rp1685
+tp1686
+a(S'Move into the green room'
+p1687
+g2
+((lp1688
+g22
+atp1689
+Rp1690
+tp1691
+a(S'Move into the pink room'
+p1692
+g2
+((lp1693
+g11
+atp1694
+Rp1695
+tp1696
+a(S'Move as close to the chair as you can'
+p1697
+g2
+((lp1698
+g4
+atp1699
+Rp1700
+tp1701
+a(S'Move to the green room'
+p1702
+g2
+((lp1703
+g22
+atp1704
+Rp1705
+tp1706
+a(S'Move the chair but do not move the wastebasket'
+p1707
+g2
+((lp1708
+g33
+atp1709
+Rp1710
+tp1711
+a(S'Go close to the chair'
+p1712
+g2
+((lp1713
+g4
+atp1714
+Rp1715
+tp1716
+a(S'Stand next to the red chair'
+p1717
+g2
+((lp1718
+g4
+ag5
+atp1719
+Rp1720
+tp1721
+a(S"Go into another room and don't knock down the chair"
+p1722
+g2
+((lp1723
+g33
+atp1724
+Rp1725
+tp1726
+a(S'move to the blue room'
+p1727
+g2
+((lp1728
+g33
+atp1729
+Rp1730
+tp1731
+a(S'Move to the green room'
+p1732
+g2
+((lp1733
+g22
+atp1734
+Rp1735
+tp1736
+a(S'Go to the red room'
+p1737
+g2
+((lp1738
+g11
+atp1739
+Rp1740
+tp1741
+a(S'Go in the red room'
+p1742
+g2
+((lp1743
+g11
+atp1744
+Rp1745
+tp1746
+a(S'Robot go to red room'
+p1747
+g2
+((lp1748
+g11
+atp1749
+Rp1750
+tp1751
+a(S'Go into the green colored room'
+p1752
+g2
+((lp1753
+g22
+atp1754
+Rp1755
+tp1756
+a(S'Please move to the red area'
+p1757
+g2
+((lp1758
+g11
+atp1759
+Rp1760
+tp1761
+a(S'Move to the green room'
+p1762
+g2
+((lp1763
+g22
+atp1764
+Rp1765
+tp1766
+a(S'Move close to the red chair'
+p1767
+g2
+((lp1768
+g4
+ag5
+atp1769
+Rp1770
+tp1771
+a(S'Move close to the red chair'
+p1772
+g2
+((lp1773
+g4
+ag5
+atp1774
+Rp1775
+tp1776
+a(S'Move to the room with the red chair and stop when adjacent to it'
+p1777
+g2
+((lp1778
+g4
+ag5
+atp1779
+Rp1780
+tp1781
+a(S'Move to the red room'
+p1782
+g2
+((lp1783
+g11
+atp1784
+Rp1785
+tp1786
+a(S'Find and get close to the chair'
+p1787
+g2
+((lp1788
+g4
+atp1789
+Rp1790
+tp1791
+a(S'move to the green room'
+p1792
+g2
+((lp1793
+g22
+atp1794
+Rp1795
+tp1796
+a(S'Switch to the room with the chair and sit close to it'
+p1797
+g2
+((lp1798
+g4
+atp1799
+Rp1800
+tp1801
+a(S'Move into the room with the red chair'
+p1802
+g2
+((lp1803
+g4
+ag5
+atp1804
+Rp1805
+tp1806
+a(S'Leave the room'
+p1807
+g2
+((lp1808
+g11
+atp1809
+Rp1810
+tp1811
+a(S'Robot to red chair'
+p1812
+g2
+((lp1813
+g4
+ag5
+atp1814
+Rp1815
+tp1816
+a(S'Stand next to the red chair unless it is in the purple room'
+p1817
+g2
+((lp1818
+g22
+atp1819
+Rp1820
+tp1821
+a(S'Move towards the red chair'
+p1822
+g2
+((lp1823
+g4
+ag5
+atp1824
+Rp1825
+tp1826
+a(S'Move to the red room'
+p1827
+g2
+((lp1828
+g11
+atp1829
+Rp1830
+tp1831
+a(S'Go into the green room'
+p1832
+g2
+((lp1833
+g22
+atp1834
+Rp1835
+tp1836
+a(S'Move robot to purple room'
+p1837
+g2
+((lp1838
+g33
+atp1839
+Rp1840
+tp1841
+a(S'Move to the pink part of the layout'
+p1842
+g2
+((lp1843
+g11
+atp1844
+Rp1845
+tp1846
+a(S'Move into the pink room'
+p1847
+g2
+((lp1848
+g11
+atp1849
+Rp1850
+tp1851
+a(S'Go inside the blue room'
+p1852
+g2
+((lp1853
+g33
+atp1854
+Rp1855
+tp1856
+a(S'Move from small room to large room'
+p1857
+g2
+((lp1858
+g11
+atp1859
+Rp1860
+tp1861
+a(S'Go to the chair'
+p1862
+g2
+((lp1863
+g4
+atp1864
+Rp1865
+tp1866
+a(S'Find and enter the pink room'
+p1867
+g2
+((lp1868
+g11
+atp1869
+Rp1870
+tp1871
+a(S'Relocate to the green room'
+p1872
+g2
+((lp1873
+g22
+atp1874
+Rp1875
+tp1876
+a(S'Move close to the chair'
+p1877
+g2
+((lp1878
+g4
+atp1879
+Rp1880
+tp1881
+a(S'Go in the red room'
+p1882
+g2
+((lp1883
+g11
+atp1884
+Rp1885
+tp1886
+a(S'Move to the red room'
+p1887
+g2
+((lp1888
+g11
+atp1889
+Rp1890
+tp1891
+a(S'Move to the blue room'
+p1892
+g2
+((lp1893
+g33
+atp1894
+Rp1895
+tp1896
+a(S'Get close to the red chair in whatever room that is in'
+p1897
+g2
+((lp1898
+g4
+ag5
+atp1899
+Rp1900
+tp1901
+a(S'Go stand next to the red chair'
+p1902
+g2
+((lp1903
+g4
+ag5
+atp1904
+Rp1905
+tp1906
+a(S'Please move next to the chair'
+p1907
+g2
+((lp1908
+g4
+atp1909
+Rp1910
+tp1911
+a(S'Perform task in room with chair'
+p1912
+g2
+((lp1913
+g4
+atp1914
+Rp1915
+tp1916
+a(S'Move from original position to the room with the red chair'
+p1917
+g2
+((lp1918
+g4
+ag5
+atp1919
+Rp1920
+tp1921
+a(S'Move to the pink colored room'
+p1922
+g2
+((lp1923
+g11
+atp1924
+Rp1925
+tp1926
+a(S'Move to the green room'
+p1927
+g2
+((lp1928
+g22
+atp1929
+Rp1930
+tp1931
+a(S'move to the blue room'
+p1932
+g2
+((lp1933
+g33
+atp1934
+Rp1935
+tp1936
+a(S'Move close to the red chair'
+p1937
+g2
+((lp1938
+g4
+ag5
+atp1939
+Rp1940
+tp1941
+a(S'Please go to the chair and stand next to it'
+p1942
+g2
+((lp1943
+g4
+atp1944
+Rp1945
+tp1946
+a(S'Move to the center of the green room, but stop if you hit an obstacle'
+p1947
+g2
+((lp1948
+g22
+atp1949
+Rp1950
+tp1951
+a(S'Go near the chair'
+p1952
+g2
+((lp1953
+g4
+atp1954
+Rp1955
+tp1956
+a(S'Move to a position adjacent to the red chair'
+p1957
+g2
+((lp1958
+g4
+ag5
+atp1959
+Rp1960
+tp1961
+a(S'Move closer to the red chair'
+p1962
+g2
+((lp1963
+g4
+ag5
+atp1964
+Rp1965
+tp1966
+a(S'Move to where the red chair is and get close to it'
+p1967
+g2
+((lp1968
+g4
+ag5
+atp1969
+Rp1970
+tp1971
+a(S'Robot got to red chair'
+p1972
+g2
+((lp1973
+g4
+ag5
+atp1974
+Rp1975
+tp1976
+a(S'Move into the room with the red chair'
+p1977
+g2
+((lp1978
+g4
+ag5
+atp1979
+Rp1980
+tp1981
+a(S'Move to where you are right up against the chair'
+p1982
+g2
+((lp1983
+g4
+atp1984
+Rp1985
+tp1986
+a(S'Move to the room with the chair and close to it'
+p1987
+g2
+((lp1988
+g4
+atp1989
+Rp1990
+tp1991
+a(S'move to the blue room'
+p1992
+g2
+((lp1993
+g33
+atp1994
+Rp1995
+tp1996
+a(S'Move to a different room in the house'
+p1997
+g2
+((lp1998
+g4
+atp1999
+Rp2000
+tp2001
+a(S'Go stand next to the red chair'
+p2002
+g2
+((lp2003
+g4
+ag11
+ag5
+atp2004
+Rp2005
+tp2006
+a(lp2007
+(S'Please go to the chair and stand next to it'
+p2008
+g2
+((lp2009
+g4
+atp2010
+Rp2011
+tp2012
+a(S'move to the green room'
+p2013
+g2
+((lp2014
+g22
+atp2015
+Rp2016
+tp2017
+a(S'Move to the blue room'
+p2018
+g2
+((lp2019
+g33
+atp2020
+Rp2021
+tp2022
+a(S'Move to the blue room'
+p2023
+g2
+((lp2024
+g33
+atp2025
+Rp2026
+tp2027
+a(S'Move to the pink room, and if on the same side as the object move close to it'
+p2028
+g2
+((lp2029
+g11
+atp2030
+Rp2031
+tp2032
+a(S'Robot into purple room'
+p2033
+g2
+((lp2034
+g33
+atp2035
+Rp2036
+tp2037
+a(S'move to the room with the red chair'
+p2038
+g2
+((lp2039
+g4
+ag11
+ag5
+atp2040
+Rp2041
+tp2042
+a(S'Move to the room with the red chair and get close'
+p2043
+g2
+((lp2044
+g4
+ag11
+ag5
+atp2045
+Rp2046
+tp2047
+a(S'Move into the green room'
+p2048
+g2
+((lp2049
+g22
+atp2050
+Rp2051
+tp2052
+a(S'stand next to the red chair'
+p2053
+g2
+((lp2054
+g4
+ag11
+ag5
+atp2055
+Rp2056
+tp2057
+a(S'Relocate to the blue room'
+p2058
+g2
+((lp2059
+g33
+atp2060
+Rp2061
+tp2062
+a(S'Move to the green room'
+p2063
+g2
+((lp2064
+g22
+atp2065
+Rp2066
+tp2067
+a(S'Move to the blue room'
+p2068
+g2
+((lp2069
+g33
+atp2070
+Rp2071
+tp2072
+a(S'Go next to the chair'
+p2073
+g2
+((lp2074
+g4
+atp2075
+Rp2076
+tp2077
+a(S'Move to same location of the chair'
+p2078
+g2
+((lp2079
+g4
+atp2080
+Rp2081
+tp2082
+a(S'Move to the room with the chair and stand next to it'
+p2083
+g2
+((lp2084
+g4
+atp2085
+Rp2086
+tp2087
+a(S'Move so that you are in the red room'
+p2088
+g2
+((lp2089
+g11
+atp2090
+Rp2091
+tp2092
+a(S'Perform task in room with chair'
+p2093
+g2
+((lp2094
+g4
+atp2095
+Rp2096
+tp2097
+a(S'Move into the green room'
+p2098
+g2
+((lp2099
+g22
+atp2100
+Rp2101
+tp2102
+a(S'Move close to the chair'
+p2103
+g2
+((lp2104
+g4
+atp2105
+Rp2106
+tp2107
+a(S'Move to wherever the green room is'
+p2108
+g2
+((lp2109
+g22
+atp2110
+Rp2111
+tp2112
+a(S'If you are next to the red chair, get away from it'
+p2113
+g2
+((lp2114
+g33
+atp2115
+Rp2116
+tp2117
+a(S'Go to the green room'
+p2118
+g2
+((lp2119
+g22
+atp2120
+Rp2121
+tp2122
+a(S'Move to green room'
+p2123
+g2
+((lp2124
+g22
+atp2125
+Rp2126
+tp2127
+a(S'Go to the red room'
+p2128
+g2
+((lp2129
+g11
+atp2130
+Rp2131
+tp2132
+a(S'Leave the red chair where it is'
+p2133
+g2
+((lp2134
+g22
+atp2135
+Rp2136
+tp2137
+a(S'Move to the room with the chair and stand next to it'
+p2138
+g2
+((lp2139
+g4
+atp2140
+Rp2141
+tp2142
+a(S'Find and approach the chair'
+p2143
+g2
+((lp2144
+g4
+atp2145
+Rp2146
+tp2147
+a(S'Switch to the room with the red chair and get close to it'
+p2148
+g2
+((lp2149
+g4
+ag5
+atp2150
+Rp2151
+tp2152
+a(S'Please go to the chair and stand next to it'
+p2153
+g2
+((lp2154
+g4
+atp2155
+Rp2156
+tp2157
+a(S'Move to the center of the blue room'
+p2158
+g2
+((lp2159
+g33
+atp2160
+Rp2161
+tp2162
+a(S'Move to the blue room'
+p2163
+g2
+((lp2164
+g33
+atp2165
+Rp2166
+tp2167
+a(S'Find the red chair'
+p2168
+g2
+((lp2169
+g4
+ag5
+atp2170
+Rp2171
+tp2172
+a(S'Move the robot to a different room in the house'
+p2173
+g2
+((lp2174
+g11
+atp2175
+Rp2176
+tp2177
+a(S'Move to the red room and stand next to the red chair'
+p2178
+g2
+((lp2179
+g4
+ag5
+atp2180
+Rp2181
+tp2182
+a(S'Go by the red chair'
+p2183
+g2
+((lp2184
+g4
+ag5
+atp2185
+Rp2186
+tp2187
+a(S'Go to the blue room'
+p2188
+g2
+((lp2189
+g33
+atp2190
+Rp2191
+tp2192
+a(S'Find and enter the pink room'
+p2193
+g2
+((lp2194
+g11
+atp2195
+Rp2196
+tp2197
+a(S'Enter the room that is a green color'
+p2198
+g2
+((lp2199
+g22
+atp2200
+Rp2201
+tp2202
+a(S'Please move to the red area'
+p2203
+g2
+((lp2204
+g11
+atp2205
+Rp2206
+tp2207
+a(S'Go near green chair'
+p2208
+g2
+((lp2209
+g4
+atp2210
+Rp2211
+tp2212
+a(S'Move into the blue room'
+p2213
+g2
+((lp2214
+g33
+atp2215
+Rp2216
+tp2217
+a(S'Find and approach the chair'
+p2218
+g2
+((lp2219
+g4
+atp2220
+Rp2221
+tp2222
+a(S'Find the red chair and stand next to it'
+p2223
+g2
+((lp2224
+g4
+ag5
+atp2225
+Rp2226
+tp2227
+a(S'Move to stand next to the chair'
+p2228
+g2
+((lp2229
+g4
+atp2230
+Rp2231
+tp2232
+a(S'No matter where you are, go stand with the red chair'
+p2233
+g2
+((lp2234
+g4
+ag5
+atp2235
+Rp2236
+tp2237
+a(S'Move into the green room'
+p2238
+g2
+((lp2239
+g22
+atp2240
+Rp2241
+tp2242
+a(S'move to the green room'
+p2243
+g2
+((lp2244
+g22
+atp2245
+Rp2246
+tp2247
+a(S'Robot to purple room'
+p2248
+g2
+((lp2249
+g33
+atp2250
+Rp2251
+tp2252
+a(S'Find and enter the pink room'
+p2253
+g2
+((lp2254
+g11
+atp2255
+Rp2256
+tp2257
+a(S'Move to the center of the blue room'
+p2258
+g2
+((lp2259
+g33
+atp2260
+Rp2261
+tp2262
+a(S'Move into the room with the red chair'
+p2263
+g2
+((lp2264
+g4
+ag5
+atp2265
+Rp2266
+tp2267
+a(S'Perform task in room with chair'
+p2268
+g2
+((lp2269
+g4
+atp2270
+Rp2271
+tp2272
+a(S'Move to the room that contains the chair'
+p2273
+g2
+((lp2274
+g4
+atp2275
+Rp2276
+tp2277
+a(S'Move to the blue room'
+p2278
+g2
+((lp2279
+g33
+atp2280
+Rp2281
+tp2282
+a(S'Move close to the red chair'
+p2283
+g2
+((lp2284
+g4
+ag5
+atp2285
+Rp2286
+tp2287
+a(S'Go stand next to the red chair'
+p2288
+g2
+((lp2289
+g4
+ag5
+atp2290
+Rp2291
+tp2292
+a(S'Move to the room with the red chair'
+p2293
+g2
+((lp2294
+g4
+ag5
+atp2295
+Rp2296
+tp2297
+a(S'Move close to the chair'
+p2298
+g2
+((lp2299
+g4
+atp2300
+Rp2301
+tp2302
+a(S'Move close to the chair'
+p2303
+g2
+((lp2304
+g4
+atp2305
+Rp2306
+tp2307
+a(S'Move to the green room'
+p2308
+g2
+((lp2309
+g22
+atp2310
+Rp2311
+tp2312
+a(S'move to the green room'
+p2313
+g2
+((lp2314
+g22
+atp2315
+Rp2316
+tp2317
+a(S'Go to the room with the chair'
+p2318
+g2
+((lp2319
+g4
+atp2320
+Rp2321
+tp2322
+a(S'Please go to the chair and stand next to it'
+p2323
+g2
+((lp2324
+g4
+atp2325
+Rp2326
+tp2327
+a(S'If trashcan move out of the box, if not then move to the other box'
+p2328
+g2
+((lp2329
+g11
+atp2330
+Rp2331
+tp2332
+a(S'Robot go to red chair'
+p2333
+g2
+((lp2334
+g4
+ag5
+atp2335
+Rp2336
+tp2337
+a(S'Move close to the chair'
+p2338
+g2
+((lp2339
+g4
+atp2340
+Rp2341
+tp2342
+a(S'Move to the red room'
+p2343
+g2
+((lp2344
+g11
+atp2345
+Rp2346
+tp2347
+a(S'Stand in the blue room'
+p2348
+g2
+((lp2349
+g33
+atp2350
+Rp2351
+tp2352
+a(S'Move to a spot adjacent to the chair'
+p2353
+g2
+((lp2354
+g4
+atp2355
+Rp2356
+tp2357
+a(S'Go to the room with the chair and sit close to it'
+p2358
+g2
+((lp2359
+g4
+atp2360
+Rp2361
+tp2362
+a(S'Go into that room that is red'
+p2363
+g2
+((lp2364
+g11
+atp2365
+Rp2366
+tp2367
+a(S'Move close to the red chair'
+p2368
+g2
+((lp2369
+g4
+ag5
+atp2370
+Rp2371
+tp2372
+a(S'Find and approach the chair'
+p2373
+g2
+((lp2374
+g4
+atp2375
+Rp2376
+tp2377
+a(S'Move next to the chair'
+p2378
+g2
+((lp2379
+g4
+atp2380
+Rp2381
+tp2382
+a(S'Place yourself into the blue room'
+p2383
+g2
+((lp2384
+g33
+atp2385
+Rp2386
+tp2387
+a(S'Move from any room to the pink room no matter the location'
+p2388
+g2
+((lp2389
+g11
+atp2390
+Rp2391
+tp2392
+a(S'Move robot to green room'
+p2393
+g2
+((lp2394
+g22
+atp2395
+Rp2396
+tp2397
+a(S'Go be next to the red chair no matter where it is'
+p2398
+g2
+((lp2399
+g4
+ag5
+atp2400
+Rp2401
+tp2402
+a(S'Please go to the chair and stand next to it'
+p2403
+g2
+((lp2404
+g4
+atp2405
+Rp2406
+tp2407
+a(S'Relocate yourself to be next to the red chair'
+p2408
+g2
+((lp2409
+g4
+ag5
+atp2410
+Rp2411
+tp2412
+a(S'Move next to the red chair'
+p2413
+g2
+((lp2414
+g4
+ag5
+atp2415
+Rp2416
+tp2417
+a(S'Enter the green room'
+p2418
+g2
+((lp2419
+g22
+atp2420
+Rp2421
+tp2422
+a(S'Go in the green room'
+p2423
+g2
+((lp2424
+g22
+atp2425
+Rp2426
+tp2427
+a(S'Relocate to where the green room is'
+p2428
+g2
+((lp2429
+g22
+atp2430
+Rp2431
+tp2432
+a(S'Go near the chair'
+p2433
+g2
+((lp2434
+g4
+atp2435
+Rp2436
+tp2437
+a(S'Move into the blue room'
+p2438
+g2
+((lp2439
+g33
+atp2440
+Rp2441
+tp2442
+a(S'Move to the pink part of the layout'
+p2443
+g2
+((lp2444
+g11
+atp2445
+Rp2446
+tp2447
+a(S'Move to the pink part of the layout'
+p2448
+g2
+((lp2449
+g11
+atp2450
+Rp2451
+tp2452
+a(S'Robot into green room'
+p2453
+g2
+((lp2454
+g22
+atp2455
+Rp2456
+tp2457
+a(S'Go to the room with the chair and sit close to it'
+p2458
+g2
+((lp2459
+g4
+atp2460
+Rp2461
+tp2462
+a(S'Move into the green area'
+p2463
+g2
+((lp2464
+g22
+atp2465
+Rp2466
+tp2467
+a(S'Move into the pink room'
+p2468
+g2
+((lp2469
+g11
+atp2470
+Rp2471
+tp2472
+a(S'move to the room with the red chair'
+p2473
+g2
+((lp2474
+g4
+ag5
+atp2475
+Rp2476
+tp2477
+a(S'Go stand near the red chair'
+p2478
+g2
+((lp2479
+g4
+ag5
+atp2480
+Rp2481
+tp2482
+a(S'Move into the green room'
+p2483
+g2
+((lp2484
+g22
+atp2485
+Rp2486
+tp2487
+a(S'Move towards the red chair'
+p2488
+g2
+((lp2489
+g4
+ag5
+atp2490
+Rp2491
+tp2492
+a(S'Move towards the red chair'
+p2493
+g2
+((lp2494
+g4
+ag5
+atp2495
+Rp2496
+tp2497
+a(S'Go stand in the blue room'
+p2498
+g2
+((lp2499
+g33
+atp2500
+Rp2501
+tp2502
+a(S'move to the room with the red chair'
+p2503
+g2
+((lp2504
+g4
+ag5
+atp2505
+Rp2506
+tp2507
+atp2508
+.

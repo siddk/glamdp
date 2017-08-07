@@ -121,7 +121,7 @@ class ReinforcedDRAGGN:
     def _discount(x, gamma):
         return [sum(gamma ** i * r for i, r in enumerate(x[t:])) for t in range(len(x))]
 
-    def fit(self, episodes):
+    def fit(self, episodes, validate=False):
         start, running_reward = time.time(), None
         for e in range(episodes):
             tic = time.time()
@@ -140,8 +140,12 @@ class ReinforcedDRAGGN:
 
             # Perform Action in Every Environment
             for i in range(self.bsz):
-                # Compute Reward (Equality Check with Actual Label)
-                r = 1 if step_as[i] == self.trainY[idx[i]] else 0
+                if validate:
+                    # Compute Reward (Validation Function)
+                    r = 1 if step_as[i] in self.trainY[idx[i]] else 0
+                else:
+                    # Compute Reward (Equality Check with Actual Label)
+                    r = 1 if step_as[i] == self.trainY[idx[i]] else 0
 
                 # Record the observation, action, value, and reward in the buffers.
                 env_xs[i].append(step_xs[i])
@@ -164,13 +168,21 @@ class ReinforcedDRAGGN:
             if e % 10 == 0:
                 print 'Batch %d complete (%.2fs) (%.1fs elapsed) (episode %d), batch total reward: %.2f, running reward: %.3f' % (e, time.time() - tic, time.time() - start, (e + 1) * self.bsz, sum(episode_rs), running_reward)
 
-    def eval(self, testX, testX_len, testY):
+    def eval(self, testX, testX_len, testY, validate=False):
         # Compute Policy
         step_ps, _ = self.predict(testX, testX_len)
         step_as = np.argmax(step_ps, axis=1)
 
         # Compute Reward
-        r = (step_as == testY).astype(int)
+        if validate:
+            r = []
+            for i in range(len(step_as)):
+                if step_as[i] in testY[i]:
+                    r.append(1.0)
+                else:
+                    r.append(0.0)
+        else:
+            r = (step_as == testY).astype(int)
 
         # Accuracy
         print 'Test Accuracy: %.3f' % np.mean(r)
