@@ -198,8 +198,5 @@ def main(_):
         if e % 10 == 0:
             print 'Batch %d complete (%.2fs) (%.1fs elapsed) (episode %d), batch avg. reward: %.2f, running reward: %.3f' % (e, time.time() - tic, time.time() - start, (e + 1) * FLAGS.num_environments, np.mean(episode_rs), running_reward)
 
-    import IPython
-    I
-
 if __name__ == "__main__":
     tf.app.run()
