@@ -62,6 +62,112 @@ def parse():
     return trX, trX_len, trY, tsX, tsX_len, tsY, word2id, labels
 
 
+def parse_goals():
+    with open('data/goals.en', 'r') as f:
+        nl_commands = map(lambda x: x.strip().split(), f.readlines())
+
+    with open('data/goals.ml', 'r') as f:
+        ml_commands = map(lambda x: x.strip(), f.readlines())
+
+    tr_x, tr_y, ts_x, ts_y = nl_commands[:700], ml_commands[:700], nl_commands[700:], ml_commands[700:]
+
+    # Get Lengths
+    train_x_len, test_x_len = map(lambda x: len(x), tr_x), map(lambda x: len(x), ts_x)
+
+    # Get Max Len
+    max_len = max(max(train_x_len), max(test_x_len))
+
+    # Build Vocabulary
+    word2id = {w: i for i, w in enumerate([PAD] + list(set(reduce(lambda x, y: x + y, tr_x + ts_x))))}
+
+    # Build Output Vocabulary
+    labels = {l: i for i, l in enumerate(list(set(tr_y)))}
+
+    # Build Vectors
+    trX, trX_len = np.zeros([len(tr_x), max_len], dtype=int), np.zeros([len(tr_x)], dtype=int)
+    tsX, tsX_len = np.zeros([len(ts_x), max_len], dtype=int), np.zeros([len(ts_x)], dtype=int)
+    trY, tsY = np.zeros([len(tr_y)], dtype=int), np.zeros([len(ts_y)], dtype=int)
+
+    for i, line in enumerate(tr_x):
+        for j, word in enumerate(line):
+            trX[i][j] = word2id[word]
+        trX_len[i] = train_x_len[i]
+        trY[i] = labels[tr_y[i]]
+
+    for i, line in enumerate(ts_x):
+        for j, word in enumerate(line):
+            tsX[i][j] = word2id[word]
+        tsX_len[i] = test_x_len[i]
+        tsY[i] = labels[ts_y[i]]
+
+    return trX, trX_len, trY, tsX, tsX_len, tsY, word2id, labels
+
+
+def parse_multi_goals():
+    with open('data/goals.en', 'r') as f:
+        nl_commands = map(lambda x: x.strip().split(), f.readlines())
+
+    with open('data/goals.ml', 'r') as f:
+        ml_commands = map(lambda x: x.strip(), f.readlines())
+
+    tr_x, tr_y, ts_x, ts_y = nl_commands[:700], ml_commands[:700], nl_commands[700:], ml_commands[700:]
+
+    # Get Lengths
+    train_x_len, test_x_len = map(lambda x: len(x), tr_x), map(lambda x: len(x), ts_x)
+
+    # Get Max Len
+    max_len = max(max(train_x_len), max(test_x_len))
+
+    # Build Vocabulary
+    word2id = {w: i for i, w in enumerate([PAD] + list(set(reduce(lambda x, y: x + y, tr_x + ts_x))))}
+
+    # Build Output Programs/Args
+    programs, arguments = {}, {}
+    for example in tr_y + ts_y:
+        pairs = example.split()
+        if len(pairs) == 2:
+            if pairs[0] not in programs:
+                programs[pairs[0]] = len(programs)
+            elif pairs[1] not in arguments:
+                arguments[pairs[1]] = len(arguments)
+        elif len(pairs) == 4:
+            if pairs[0] + "_" + pairs[2] not in programs:
+                programs[pairs[0] + "_" + pairs[2]] = len(programs)
+            elif pairs[1] + "_" + pairs[3] not in arguments:
+                arguments[pairs[1] + "_" + pairs[3]] = len(arguments)
+
+    # Build Vectors
+    trX, trX_len = np.zeros([len(tr_x), max_len], dtype=int), np.zeros([len(tr_x)], dtype=int)
+    tsX, tsX_len = np.zeros([len(ts_x), max_len], dtype=int), np.zeros([len(ts_x)], dtype=int)
+    trY, tsY = np.zeros([len(tr_y), 2], dtype=int), np.zeros([len(ts_y), 2], dtype=int)
+
+    for i, line in enumerate(tr_x):
+        for j, word in enumerate(line):
+            trX[i][j] = word2id[word]
+        trX_len[i] = train_x_len[i]
+        output = tr_y[i].split()
+        if len(output) == 2:
+            trY[i][0] = programs[output[0]]
+            trY[i][1] = arguments[output[1]]
+        elif len(output) == 4:
+            trY[i][0] = programs[output[0] + "_" + output[2]]
+            trY[i][1] = arguments[output[1] + "_" + output[3]]
+
+    for i, line in enumerate(ts_x):
+        for j, word in enumerate(line):
+            tsX[i][j] = word2id[word]
+        tsX_len[i] = test_x_len[i]
+        output = ts_y[i].split()
+        if len(output) == 2:
+            tsY[i][0] = programs[output[0]]
+            tsY[i][1] = arguments[output[1]]
+        elif len(output) == 4:
+            tsY[i][0] = programs[output[0] + "_" + output[2]]
+            tsY[i][1] = arguments[output[1] + "_" + output[3]]
+
+    return trX, trX_len, trY, tsX, tsX_len, tsY, word2id, programs, arguments
+
+
 def parse_valid():
     with open('data/validation_function.pik', 'r') as f:
         train, test = pickle.load(f)
