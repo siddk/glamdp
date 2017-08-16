@@ -22,22 +22,21 @@ class ReinforcedMultiDRAGGN:
         self.gamma, self.lambda_, self.vf_, self.ent_ = gamma, lambda_, critic_discount, entropy_discount
         self.session = tf.Session()
 
+        # SET SEEDS => IMPORTANT
+        tf.set_random_seed(3)
+        np.random.seed(7)
+
         # Setup Placeholders
         self.X = tf.placeholder(tf.int64, shape=[self.bsz, trainX.shape[1]], name='Utterance')
         self.X_len = tf.placeholder(tf.int64, shape=[self.bsz], name='Utterance_Length')
-        self.action = tf.placeholder(tf.float32, shape=[self.bsz, self.num_programs * self.num_arguments], name='Act')
+        self.prog_action = tf.placeholder(tf.float32, shape=[self.bsz, self.num_programs], name='Program_Action')
+        self.arg_action = tf.placeholder(tf.float32, shape=[self.bsz, self.num_arguments], name='Argument_Action')
         self.rewards = tf.placeholder(tf.float32, shape=[self.bsz, 1], name='Reward')
         self.advantage = tf.placeholder(tf.float32, shape=[self.bsz, 1], name='Advantage')
         self.keep_prob = tf.placeholder(tf.float32, name='Dropout_Probability')
 
         # Compute Policy, Value Estimate
         self.program_policy, self.argument_policy, self.value = self.forward()
-
-        # Compute Actual Policy by Taking Outer Product times Valid Mask
-        program_splits = tf.split(self.program_policy, self.bsz, axis=0)
-        argument_splits = tf.split(self.argument_policy, self.bsz, axis=0)
-        policy_split = tf.stack([tf.transpose(p) * a for p, a, in zip(program_splits, argument_splits)])
-        self.policy = tf.reshape(policy_split, shape=[self.bsz, self.num_programs * self.num_arguments])
 
         # Compute Actor-Critic Loss
         self.loss_val = self.loss()
@@ -47,6 +46,7 @@ class ReinforcedMultiDRAGGN:
 
         # Initialize all Variables
         self.session.run(tf.global_variables_initializer())
+
 
     def forward(self):
         # Create NL Embedding Matrix, with 0 Vector for PAD_ID (0) [Program Net]
@@ -84,7 +84,8 @@ class ReinforcedMultiDRAGGN:
 
     def loss(self):
         # Policy Gradient (Actor) Loss
-        actor_loss = -tf.reduce_sum(tf.log(self.policy) * self.action * self.advantage)
+        log_term = tf.reduce_sum((tf.log(tf.clip_by_value(self.program_policy, 1e-10, 1.0)) * self.prog_action), axis=1) + tf.reduce_sum((tf.log(tf.clip_by_value(self.argument_policy, 1e-10, 1.0)) * self.arg_action), axis=1)
+        actor_loss = -tf.reduce_sum(tf.expand_dims(log_term, axis=1) * self.advantage)
 
         # Value Function (Critic) Loss
         critic_loss = 0.5 * tf.reduce_sum(tf.square((self.value - self.rewards)))
@@ -92,20 +93,24 @@ class ReinforcedMultiDRAGGN:
         return actor_loss + self.vf_ * critic_loss
 
     def predict(self, state, state_len, dropout=1.0):
-        return self.session.run([self.policy, self.value], feed_dict={self.X: state, self.X_len: state_len,
-                                                                      self.keep_prob: dropout})
+        return self.session.run([self.program_policy, self.argument_policy, self.value],
+                                feed_dict={self.X:state, self.X_len: state_len, self.keep_prob: dropout})
 
-    def act(self, policies):
-        return [np.random.choice(self.num_programs * self.num_arguments, p=p) for p in policies]
+    def act(self, prog_policies, arg_policies):
+        prog_act = [np.random.choice(self.num_programs, p=p) for p in prog_policies]
+        arg_act = [np.random.choice(self.num_arguments, p=p) for p in arg_policies]
+        return prog_act, arg_act
 
-    def train_step(self, env_xs, env_xs_len, env_as, env_rs, env_vs):
+    def train_step(self, env_xs, env_xs_len, env_prog_as, env_arg_as, env_rs, env_vs):
         # Flatten Observations into 2D Tensor
         xs = np.vstack(list(chain.from_iterable(env_xs)))
         xs_len = np.vstack(list(chain.from_iterable(env_xs_len))).squeeze()
 
         # One-Hot Actions
-        as_ = np.zeros((len(xs), self.num_programs * self.num_arguments))
-        as_[np.arange(len(xs)), list(chain.from_iterable(env_as))] = 1
+        prog_as_ = np.zeros((len(xs), self.num_programs))
+        prog_as_[np.arange(len(xs)), list(chain.from_iterable(env_prog_as))] = 1
+        arg_as_ = np.zeros((len(xs), self.num_arguments))
+        arg_as_[np.arange(len(xs)), list(chain.from_iterable(env_arg_as))] = 1
 
         # Compute Discounted Rewards + Advantages
         drs, advs = [], []
@@ -122,8 +127,9 @@ class ReinforcedMultiDRAGGN:
         drs, advs = np.array(drs)[:, np.newaxis], np.array(advs)[:, np.newaxis]
 
         # Perform Training Update
-        self.session.run(self.train_op, feed_dict={self.X: xs, self.X_len: xs_len, self.action: as_,
-                                                   self.rewards: drs, self.advantage: advs, self.keep_prob: 1.0})
+        self.session.run(self.train_op, feed_dict={self.X: xs, self.X_len: xs_len, self.prog_action: prog_as_,
+                                                   self.arg_action: arg_as_, self.rewards: drs, self.advantage: advs,
+                                                   self.keep_prob: 0.5})
 
     @staticmethod
     def _discount(x, gamma):
@@ -133,8 +139,8 @@ class ReinforcedMultiDRAGGN:
         start, running_reward = time.time(), None
         for e in range(episodes):
             tic = time.time()
-            env_xs, env_as = [[] for _ in range(self.bsz)], [[] for _ in range(self.bsz)]
-            env_xs_len = [[] for _ in range(self.bsz)]
+            env_xs, env_prog_as = [[] for _ in range(self.bsz)], [[] for _ in range(self.bsz)]
+            env_arg_as, env_xs_len = [[] for _ in range(self.bsz)], [[] for _ in range(self.bsz)]
             env_rs, env_vs = [[] for _ in range(self.bsz)], [[] for _ in range(self.bsz)]
             episode_rs = np.zeros(self.bsz, dtype=np.float)
 
@@ -143,19 +149,20 @@ class ReinforcedMultiDRAGGN:
             step_xs, step_xs_len = self.trainX[idx], self.trainX_len[idx]
 
             # Get Policies/Actions and Values for all Environments in Single Pass
-            step_ps, step_vs = self.predict(step_xs, step_xs_len)
-            step_as = self.act(step_ps)
+            step_prog_ps, step_arg_ps, step_vs = self.predict(step_xs, step_xs_len)
+            step_prog_as, step_arg_as = self.act(step_prog_ps, step_arg_ps)
 
             # Perform Action in Every Environment
             for i in range(self.bsz):
                 # Compute Reward (Equality Check with Actual Program/Argument Label)
-                program, argument = step_as[i] / self.num_programs, step_as[i] % self.num_programs
+                program, argument = step_prog_as[i], step_arg_as[i]
                 r = 1.0 if (program == self.trainY[idx[i]][0]) and (argument == self.trainY[idx[i]][1]) else 0
 
                 # Record the observation, action, value, and reward in the buffers.
                 env_xs[i].append(step_xs[i])
                 env_xs_len[i].append(step_xs_len[i])
-                env_as[i].append(step_as[i])
+                env_prog_as[i].append(step_prog_as[i])
+                env_arg_as[i].append(step_arg_as[i])
                 env_vs[i].append(step_vs[i][0])
                 env_rs[i].append(r)
                 episode_rs[i] += r
@@ -164,7 +171,7 @@ class ReinforcedMultiDRAGGN:
                 env_vs[i].append(0.0)
 
             # Perform Train Step
-            self.train_step(env_xs, env_xs_len, env_as, env_rs, env_vs)
+            self.train_step(env_xs, env_xs_len, env_prog_as, env_arg_as, env_rs, env_vs)
 
             # Print Statistics
             for er in episode_rs:
@@ -177,19 +184,19 @@ class ReinforcedMultiDRAGGN:
         correct, total = 0, 0
         for start, end in zip(range(0, len(testX) - self.bsz, self.bsz), range(self.bsz, len(testX), self.bsz)):
             # Compute Policy
-            step_ps, _ = self.predict(testX[start:end], testX_len[start:end])
-            step_as = np.argmax(step_ps, axis=1)
+            step_prog_ps, step_arg_ps, _ = self.predict(testX[start:end], testX_len[start:end], dropout=1.0)
+            step_prog_as, step_arg_as = np.argmax(step_prog_ps, axis=1), np.argmax(step_arg_ps, axis=1)
 
             # Get Programs, Arguments
-            step_progs, step_args = step_as / self.num_programs, step_as % self.num_programs
+            step_progs, step_args = step_prog_as, step_arg_as
             prog_corr, arg_corr = step_progs == testY[start:end, 0], step_args == testY[start:end, 1]
             joint_corr = (prog_corr * arg_corr).astype(int)
             correct, total = correct + sum(joint_corr), total + len(joint_corr)
 
         # Compute Final
-        step_ps, _ = self.predict(testX[-self.bsz:], testX_len[-self.bsz:])
-        step_as = np.argmax(step_ps, axis=1)[-(len(testX) - end):]
-        step_progs, step_args = step_as / self.num_programs, step_as % self.num_programs
+        step_prog_ps, step_arg_ps, _ = self.predict(testX[-self.bsz:], testX_len[-self.bsz:], dropout=1.0)
+        step_prog_as, step_arg_as = np.argmax(step_prog_ps, axis=1)[-(len(testX) - end):], np.argmax(step_arg_ps, axis=1)[-(len(testX) - end):]
+        step_progs, step_args = step_prog_as, step_arg_as
         prog_corr, arg_corr = step_progs == testY[end:, 0], step_args == testY[end:, 1]
         joint_corr = (prog_corr * arg_corr).astype(int)
         correct, total = correct + sum(joint_corr), total + len(joint_corr)

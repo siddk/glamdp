@@ -14,7 +14,7 @@ def main(_):
     reinforced_draggn = ReinforcedMultiDRAGGN(trainX, trainX_len, trainY, word2id, programs, arguments)
 
     # Fit
-    reinforced_draggn.fit(600)
+    reinforced_draggn.fit(1600)
 
     # Eval
     reinforced_draggn.eval(testX, testX_len, testY)
