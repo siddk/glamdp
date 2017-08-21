@@ -173,8 +173,8 @@ def parse_valid():
         train, test = pickle.load(f)
 
     # Build X, Y
-    train_x, train_y = map(lambda x: list(x), zip(*train))
-    test_x, test_y = map(lambda x: list(x), zip(*test))
+    train_x, train_x_state, train_y = map(lambda x: list(x), zip(*train))
+    test_x, test_x_state, test_y = map(lambda x: list(x), zip(*test))
 
     # Labels
     labels = {w: i for i, w in enumerate(reduce(lambda x, y: x | y, train_y + test_y))}
@@ -195,6 +195,7 @@ def parse_valid():
     trX, trX_len = np.zeros([len(train_x), max_len], dtype=int), np.zeros([len(train_x)], dtype=int)
     tsX, tsX_len = np.zeros([len(test_x), max_len], dtype=int), np.zeros([len(test_x)], dtype=int)
     trY, tsY = [[] for _ in range(len(train_x))], [[] for _ in range(len(test_y))]
+    trXS, tsXS = np.array(train_x_state, dtype=int), np.array(test_x_state, dtype=int)
 
     for i, line in enumerate(train_x):
         for j, word in enumerate(line):
@@ -208,4 +209,4 @@ def parse_valid():
         tsX_len[i] = test_x_len[i]
         tsY[i] += map(lambda x: labels[x], list(test_y[i]))
 
-    return trX, trX_len, trY, tsX, tsX_len, tsY, word2id, labels
+    return trX, trX_len, trXS, trY, tsX, tsX_len, tsXS, tsY, word2id, labels

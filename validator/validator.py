@@ -1,6 +1,7 @@
 """
 validator.py
 """
+import numpy as np
 import re
 
 CONSTRAINTS = {"inRedRoom", "inBlueRoom", "inGreenRoom", "nextToRedChair", "nextToBlueChair",
@@ -8,6 +9,7 @@ CONSTRAINTS = {"inRedRoom", "inBlueRoom", "inGreenRoom", "nextToRedChair", "next
 
 # Boundaries [(left, right), (bottom, top)] (0, 1, 2)
 ROOM_BOUNDARIES = [[range(0, 8), range(0, 4)], [range(0, 4), range(4, 8)],  [range(4, 8), range(4, 8)]]
+ROOM_COLOR_IDX = {0: "red", 1: "blue", 2: "green"}
 
 # Coordinate Regex
 COORD_RE = re.compile('x: {\d} y: {\d}')
@@ -18,14 +20,44 @@ def parse(lines):
     examples, stride, counter = [], 13, 0
     for idx in range(0, len(lines), stride):
         command = lines[idx]
-
+        initial_state = get_init_state(np.random.choice([lines[idx+1], lines[idx+5], lines[idx+9]]))
         f1, f2, f3 = lines[idx+2], lines[idx+6], lines[idx+10]
         c1, c2, c3 = parse_state(f1), parse_state(f2), parse_state(f3)
         intersection = c1 & c2 & c3
 
-        examples.append((command, intersection))
+        examples.append((command, initial_state, intersection))
 
     return examples
+
+
+def get_init_state(state):
+    ents, constraints = filter(lambda x: 'door' not in x, state.split(',')[:-1]), set()
+    agent_pos, blocks, rooms = ents[0], ents[1:-3], ents[-3:]
+
+    # Compute Agent X, Y Position
+    agent_pos = re.findall(COORD_RE, agent_pos)
+    assert (len(agent_pos) == 1)
+    agent_pos = (int(agent_pos[0][4]), int(agent_pos[0][11]))
+
+    # Find Agent Room (Assume only in 1 room)
+    agent_room = None
+    for i, bounds in enumerate(ROOM_BOUNDARIES):
+        if agent_pos[0] in bounds[0] and agent_pos[1] in bounds[1]:
+            agent_room = i
+
+    # Get Room Color
+    room_color = re.findall(COLOR_RE, rooms[agent_room])
+    state_repr = [0 for _ in range(3)]
+    if room_color[0] == 'red':
+        state_repr[0] = 1
+    elif room_color[0] == 'blue':
+        state_repr[1] = 1
+    elif room_color[0] == 'green':
+        state_repr[2] = 1
+    else:
+        raise EnvironmentError
+
+    return state_repr
 
 
 def parse_state(state):

@@ -47,7 +47,6 @@ class ReinforcedMultiDRAGGN:
         # Initialize all Variables
         self.session.run(tf.global_variables_initializer())
 
-
     def forward(self):
         # Create NL Embedding Matrix, with 0 Vector for PAD_ID (0) [Program Net]
         E = tf.get_variable("Embedding", [len(self.word2id), self.embed_sz], initializer=self.init)
@@ -94,7 +93,7 @@ class ReinforcedMultiDRAGGN:
 
     def predict(self, state, state_len, dropout=1.0):
         return self.session.run([self.program_policy, self.argument_policy, self.value],
-                                feed_dict={self.X:state, self.X_len: state_len, self.keep_prob: dropout})
+                                feed_dict={self.X: state, self.X_len: state_len, self.keep_prob: dropout})
 
     def act(self, prog_policies, arg_policies):
         prog_act = [np.random.choice(self.num_programs, p=p) for p in prog_policies]

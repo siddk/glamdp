@@ -9,13 +9,13 @@ import time
 
 
 class ReinforcedDRAGGN:
-    def __init__(self, trainX, trainX_len, trainY, word2id, labels, embed_sz=30, rnn_sz=128,
+    def __init__(self, trainX, trainX_len, trainX_state, trainY, word2id, labels, embed_sz=30, rnn_sz=128,
                  submodule_sz=64, bsz=32, init=tf.truncated_normal_initializer(stddev=0.1),
                  gamma=0.99, lambda_=1.0, critic_discount=0.5, entropy_discount=0.0001):
         """
         Instantiate ReinforcedDRAGGN Model with necessary hyperparameters.
         """
-        self.trainX, self.trainX_len, self.trainY = trainX, trainX_len, trainY
+        self.trainX, self.trainX_len, self.trainX_state, self.trainY = trainX, trainX_len, trainX_state, trainY
         self.word2id, self.labels = word2id, labels
         self.embed_sz, self.rnn_sz, self.submodule_sz, self.bsz, self.init = embed_sz, rnn_sz, submodule_sz, bsz, init
         self.num_actions = len(self.labels)
@@ -25,6 +25,7 @@ class ReinforcedDRAGGN:
         # Setup Placeholders
         self.X = tf.placeholder(tf.int64, shape=[None, trainX.shape[1]], name='Utterance')
         self.X_len = tf.placeholder(tf.int64, shape=[None], name='Utterance_Length')
+        self.X_state = tf.placeholder(tf.float32, shape=[None, trainX_state.shape[1]])
         self.action = tf.placeholder(tf.float32, shape=[None, self.num_actions], name='Action')
         self.rewards = tf.placeholder(tf.float32, shape=[None, 1], name='Reward')
         self.advantage = tf.placeholder(tf.float32, shape=[None, 1], name='Advantage')
@@ -57,6 +58,12 @@ class ReinforcedDRAGGN:
         self.encoder_gru = tf.contrib.rnn.GRUCell(self.rnn_sz)
         _, state = tf.nn.dynamic_rnn(self.encoder_gru, embedding, sequence_length=self.X_len, dtype=tf.float32)
 
+        # Encode State with Feed-Forward Layer
+        state_encoding = Dense(32)(self.X_state)
+
+        # Concatenate state + state_encoding
+        state = tf.concat([state, state_encoding], axis=1)
+
         # Feed-Forward Layers
         hidden = Dense(self.rnn_sz, activation='relu')(state)
         hidden = tf.nn.dropout(hidden, self.keep_prob)
@@ -83,17 +90,19 @@ class ReinforcedDRAGGN:
 
         return actor_loss + self.vf_ * critic_loss + self.ent_ * entropy
 
-    def predict(self, state, state_len, dropout=1.0):
+    def predict(self, state, state_len, initial_state, dropout=1.0):
         return self.session.run([self.policy, self.value], feed_dict={self.X: state, self.X_len: state_len,
+                                                                      self.X_state: initial_state,
                                                                       self.keep_prob: dropout})
 
     def act(self, policies):
         return [np.random.choice(self.num_actions, p=p) for p in policies]
 
-    def train_step(self, env_xs, env_xs_len, env_as, env_rs, env_vs):
+    def train_step(self, env_xs, env_xs_len, env_xs_state, env_as, env_rs, env_vs):
         # Flatten Observations into 2D Tensor
         xs = np.vstack(list(chain.from_iterable(env_xs)))
         xs_len = np.vstack(list(chain.from_iterable(env_xs_len))).squeeze()
+        xs_state = np.vstack(list(chain.from_iterable(env_xs_state))).squeeze()
 
         # One-Hot Actions
         as_ = np.zeros((len(xs), self.num_actions))
@@ -114,8 +123,9 @@ class ReinforcedDRAGGN:
         drs, advs = np.array(drs)[:, np.newaxis], np.array(advs)[:, np.newaxis]
 
         # Perform Training Update
-        self.session.run(self.train_op, feed_dict={self.X: xs, self.X_len: xs_len, self.action: as_,
-                                                   self.rewards: drs, self.advantage: advs, self.keep_prob: 1.0})
+        self.session.run(self.train_op, feed_dict={self.X: xs, self.X_len: xs_len, self.X_state: xs_state,
+                                                   self.action: as_, self.rewards: drs, self.advantage: advs,
+                                                   self.keep_prob: 1.0})
 
     @staticmethod
     def _discount(x, gamma):
@@ -126,16 +136,16 @@ class ReinforcedDRAGGN:
         for e in range(episodes):
             tic = time.time()
             env_xs, env_as = [[] for _ in range(self.bsz)], [[] for _ in range(self.bsz)]
-            env_xs_len = [[] for _ in range(self.bsz)]
+            env_xs_len, env_xs_state = [[] for _ in range(self.bsz)], [[] for _ in range(self.bsz)]
             env_rs, env_vs = [[] for _ in range(self.bsz)], [[] for _ in range(self.bsz)]
             episode_rs = np.zeros(self.bsz, dtype=np.float)
 
             # Get Observations from all Environments (bsz)
             idx = np.random.choice(len(self.trainX), size=self.bsz)
-            step_xs, step_xs_len = self.trainX[idx], self.trainX_len[idx]
+            step_xs, step_xs_len, step_xs_state = self.trainX[idx], self.trainX_len[idx], self.trainX_state[idx]
 
             # Get Policies/Actions and Values for all Environments in Single Pass
-            step_ps, step_vs = self.predict(step_xs, step_xs_len)
+            step_ps, step_vs = self.predict(step_xs, step_xs_len, step_xs_state)
             step_as = self.act(step_ps)
 
             # Perform Action in Every Environment
@@ -150,6 +160,7 @@ class ReinforcedDRAGGN:
                 # Record the observation, action, value, and reward in the buffers.
                 env_xs[i].append(step_xs[i])
                 env_xs_len[i].append(step_xs_len[i])
+                env_xs_state[i].append(step_xs_state[i])
                 env_as[i].append(step_as[i])
                 env_vs[i].append(step_vs[i][0])
                 env_rs[i].append(r)
@@ -159,7 +170,7 @@ class ReinforcedDRAGGN:
                 env_vs[i].append(0.0)
 
             # Perform Train Step
-            self.train_step(env_xs, env_xs_len, env_as, env_rs, env_vs)
+            self.train_step(env_xs, env_xs_len, env_xs_state, env_as, env_rs, env_vs)
 
             # Print Statistics
             for er in episode_rs:
@@ -168,9 +179,9 @@ class ReinforcedDRAGGN:
             if e % 10 == 0:
                 print 'Batch %d complete (%.2fs) (%.1fs elapsed) (episode %d), batch total reward: %.2f, running reward: %.3f' % (e, time.time() - tic, time.time() - start, (e + 1) * self.bsz, sum(episode_rs), running_reward)
 
-    def eval(self, testX, testX_len, testY, validate=False):
+    def eval(self, testX, testX_len, testX_state, testY, validate=False):
         # Compute Policy
-        step_ps, _ = self.predict(testX, testX_len)
+        step_ps, _ = self.predict(testX, testX_len, testX_state)
         step_as = np.argmax(step_ps, axis=1)
 
         # Compute Reward
