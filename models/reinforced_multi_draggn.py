@@ -20,15 +20,17 @@ class ReinforcedMultiDRAGGN:
         self.embed_sz, self.rnn_sz, self.submodule_sz, self.bsz, self.init = embed_sz, rnn_sz, submodule_sz, bsz, init
         self.num_programs, self.num_arguments = len(self.programs), len(self.arguments)
         self.gamma, self.lambda_, self.vf_, self.ent_ = gamma, lambda_, critic_discount, entropy_discount
+        self.default_state = [1, 0, 0, 0]
         self.session = tf.Session()
 
         # SET SEEDS => IMPORTANT
-        tf.set_random_seed(3)
+        tf.set_random_seed(21)
         np.random.seed(7)
 
         # Setup Placeholders
         self.X = tf.placeholder(tf.int64, shape=[self.bsz, trainX.shape[1]], name='Utterance')
         self.X_len = tf.placeholder(tf.int64, shape=[self.bsz], name='Utterance_Length')
+        self.X_State = tf.placeholder(tf.float32, shape=[self.bsz, 4])
         self.prog_action = tf.placeholder(tf.float32, shape=[self.bsz, self.num_programs], name='Program_Action')
         self.arg_action = tf.placeholder(tf.float32, shape=[self.bsz, self.num_arguments], name='Argument_Action')
         self.rewards = tf.placeholder(tf.float32, shape=[self.bsz, 1], name='Reward')
@@ -63,6 +65,12 @@ class ReinforcedMultiDRAGGN:
         _, state = tf.nn.dynamic_rnn(self.encoder_gru, embedding, sequence_length=self.X_len, dtype=tf.float32)
         state.set_shape([self.bsz, self.rnn_sz])
 
+        # Encode State Observation
+        state_repr = Dense(32, activation='relu')(self.X_State)
+
+        # Concatenate state and observation
+        state = tf.concat([state, state_repr], axis=1)
+
         # Feed-Forward Layers
         hidden = Dense(self.rnn_sz, activation='relu')(state)
         hidden = tf.nn.dropout(hidden, self.keep_prob)
@@ -93,7 +101,9 @@ class ReinforcedMultiDRAGGN:
 
     def predict(self, state, state_len, dropout=1.0):
         return self.session.run([self.program_policy, self.argument_policy, self.value],
-                                feed_dict={self.X: state, self.X_len: state_len, self.keep_prob: dropout})
+                                feed_dict={self.X: state, self.X_len: state_len,
+                                           self.X_State: [self.default_state for _ in range(len(state_len))],
+                                           self.keep_prob: dropout})
 
     def act(self, prog_policies, arg_policies):
         prog_act = [np.random.choice(self.num_programs, p=p) for p in prog_policies]
@@ -127,6 +137,7 @@ class ReinforcedMultiDRAGGN:
 
         # Perform Training Update
         self.session.run(self.train_op, feed_dict={self.X: xs, self.X_len: xs_len, self.prog_action: prog_as_,
+                                                   self.X_State: [self.default_state for _ in range(len(xs_len))],
                                                    self.arg_action: arg_as_, self.rewards: drs, self.advantage: advs,
                                                    self.keep_prob: 0.5})
 
