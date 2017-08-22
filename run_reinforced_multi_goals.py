@@ -10,14 +10,14 @@ def main(_):
     # Parse Train, Test
     trainX, trainX_len, trainY, testX, testX_len, testY, word2id, programs, arguments = parse_multi_goals()
 
+
     # Instantiate Reinforced DRAGGN
     reinforced_draggn = ReinforcedMultiDRAGGN(trainX, trainX_len, trainY, word2id, programs, arguments)
 
     # Fit
     reinforced_draggn.fit(1600)
 
-    # Eval
-    reinforced_draggn.eval(testX, testX_len, testY)
+    reinforced_draggn.eval(testX, testX_len, testY, mode='test')
 
 if __name__ == "__main__":
     tf.app.run()

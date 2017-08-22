@@ -190,7 +190,7 @@ class ReinforcedMultiDRAGGN:
             if e % 10 == 0:
                 print 'Batch %d complete (%.2fs) (%.1fs elapsed) (episode %d), batch total reward: %.2f, running reward: %.3f' % (e, time.time() - tic, time.time() - start, (e + 1) * self.bsz, sum(episode_rs), running_reward)
 
-    def eval(self, testX, testX_len, testY, validate=False):
+    def eval(self, testX, testX_len, testY, mode='valid'):
         correct, total = 0, 0
         for start, end in zip(range(0, len(testX) - self.bsz, self.bsz), range(self.bsz, len(testX), self.bsz)):
             # Compute Policy
@@ -212,4 +212,7 @@ class ReinforcedMultiDRAGGN:
         correct, total = correct + sum(joint_corr), total + len(joint_corr)
 
         # Accuracy
-        print 'Test Accuracy: %.3f' % (float(correct) / float(total))
+        if mode == 'valid':
+            print 'Validation Accuracy: %.3f' % (float(correct) / float(total))
+        else:
+            print 'Test Accuracy: %.3f' % (float(correct) / float(total))
